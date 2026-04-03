@@ -1,4 +1,4 @@
-# Visual Novel Project
+﻿# Visual Novel Project
 
 ## 1. Core Concept
 
@@ -86,5 +86,48 @@ Warm and comforting moments gradually reveal emotional cracks beneath the surfac
 ### Target Feeling
 The player should smile often, then suddenly feel their chest tighten without noticing when it started.
 
-###important
-무조건 한국어로 출력할것
+---
+
+## New Update: Emotional Direction
+
+This project is designed as a soft but heart-aching visual novel.
+
+### Emotional Keywords
+- warmth
+- softness
+- hidden pain
+- gentle romance
+- emotional aftertaste
+
+### Character Direction
+- Yuna: bright smile hiding emotional instability
+- Sera: white-haired red-eyed mysterious heroine with fear of intimacy
+- Sohee: teasing and playful heroine who masks pain with humor
+
+### Narrative Goal
+Make the player feel safe and comfortable first, then gradually create emotional weight that hits the heart.
+
+## New Heroine Draft
+
+Name: Sera
+
+Role:
+White-haired, red-eyed heroine with a distant but fragile personality.
+
+Theme:
+A girl who wants warmth but fears emotional closeness.
+
+---
+
+## Workflow Note
+
+The project will not lock its full structure yet.
+
+Instead of forcing the whole design early, important ideas from ongoing conversation will be saved immediately as they appear.
+These ideas will be documented through PowerShell-ready file creation or append scripts.
+
+---
+
+## Output Language Rule
+
+All final user-facing output should be written in Korean.
