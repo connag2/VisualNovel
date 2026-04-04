@@ -20,6 +20,23 @@
       "runOptions": {
         "runOn": "folderOpen"
       }
+    },
+    {
+      "label": "init-renpy",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\tools\\init_renpy.ps1"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
+      }
     }
   ]
 }
