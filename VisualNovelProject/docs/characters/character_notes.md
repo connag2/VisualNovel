@@ -1,21 +1,21 @@
-﻿# Character Notes
+# Character Notes
 
-## Protagonist - Hajun
-- Kind and calm
-- Understands others well
-- Avoids his own emotional wounds
+## Protagonist - 윤서진
+- 조용하고 무심해 보이지만 세심하고 따뜻함
+- 관계가 깊어지면 잃을까 두려워 거리를 둠
 
-## Yuna
-- Bright, cute, playful
-- Makes scenes feel warm and alive
-- Hidden pain: forces herself to keep smiling
+## 서하린
+- 차갑고 빈틈없는 반장, 속으로는 무너지는 것을 두려워함
+- 완벽주의 뒤에 숨겨진 가정사의 불안
 
-## Sera
-- White hair, red eyes
-- Quiet, distant, emotionally fragile
-- Hidden pain: fear of closeness
+## 유나
+- 활발하고 애정 표현이 많은 직진 후배
+- 귀여운 이미지로만 소비되는 것을 경계하며, 혼자 남겨질까 두려워함
 
-## Sohee
-- Teasing, casual, realistic
-- Easy chemistry with protagonist
-- Hidden pain: hides wounds with jokes
+## 설아
+- 하얀 머리와 붉은 눈, 조용하고 신비로운 분위기
+- 외형으로 인한 편견에 지쳐 스스로를 고립시킴
+
+## 민가은
+- 다정하고 여유로운 선배, 하지만 결정적인 순간엔 선을 그음
+- 과거의 깊은 상처로 인해 감정선 위에서 능숙하게 균형만 잡음

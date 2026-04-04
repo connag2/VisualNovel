@@ -1,20 +1,23 @@
-﻿# Story Outline
+# Story Outline
 
 ## Common Route
-The protagonist meets Yuna, Sera, and Sohee through ordinary school life.
-Daily interactions feel soft and comforting, but emotional instability slowly begins to show.
+주인공 윤서진이 일상적인 학교생활 속에서 하린, 유나, 설아, 가은과 얽힌다.
+편안하고 따뜻한 일상이 전개되지만, 점차 히로인들이 가진 감정적 불안정이 드러나기 시작한다.
 
 ## Route Themes
 
-### Yuna Route
-A bright girl who seems okay begins to fall apart behind her smile.
+### 서하린 Route
+완벽해 보이던 우등생이 감춰왔던 약한 모습을 들키고, 처음으로 누군가에게 기대는 법을 배운다.
 
-### Sera Route
-A distant girl with white hair and red eyes slowly lets the protagonist approach her hidden pain.
+### 유나 Route
+마냥 밝아 보이던 후배가 불안감을 터뜨리고, 단순한 '귀여운 동생' 이상의 관계로 감정의 무게를 맞춘다.
 
-### Sohee Route
-A playful girl who always jokes reveals the loneliness she keeps burying.
+### 설아 Route
+외모 때문에 거리를 두던 신비로운 소녀가 오직 한 사람에게만 마음의 문을 열며 깊어진다.
+
+### 민가은 Route
+과거의 상처로 인해 다가오지 못하게 선을 긋던 선배가 다시 한번 누군가를 믿고 현재를 선택한다.
 
 ## True Ending
-Unlocked after clearing all heroine routes.
-The protagonist confronts both the heroines' pain and the emotional wound inside himself.
+모든 히로인 루트 클리어 후 해금.
+서진이 타인의 상처뿐만 아니라, 관계를 두려워하던 자기 자신의 내면의 상처까지 직면하고 성장한다.
