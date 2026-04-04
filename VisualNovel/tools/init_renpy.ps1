@@ -1,31 +1,34 @@
 param(
-    [string]$BasePath = (Resolve-Path "$PSScriptRoot\..").Path,
-    [switch]$Force
+    [switch]$Force = $true
 )
 
 $ErrorActionPreference = "Stop"
+
+# 현재 스크립트 위치를 기준으로 상위 폴더(VisualNovel)를 찾습니다.
+$BasePath = (Resolve-Path "$PSScriptRoot\..").Path
+
+Write-Host "====================================="
+Write-Host " 랜파이 프로젝트 자동 생성 시작..."
+Write-Host " 대상 경로: $BasePath"
+Write-Host "====================================="
 
 function Ensure-Directory {
     param([string]$Path)
     if (-not (Test-Path $Path)) {
         New-Item -ItemType Directory -Path $Path -Force | Out-Null
-        Write-Host "폴더 생성: $Path"
+        Write-Host " [생성됨] 폴더: $Path"
     }
 }
 
 function Write-Utf8File {
-    param([string]$Path, [string]$Content, [switch]$Overwrite)
-    if ((Test-Path $Path) -and (-not $Overwrite)) {
-        Write-Host "유지: $Path"
-        return
-    }
+    param([string]$Path, [string]$Content)
     $parent = Split-Path $Path -Parent
     Ensure-Directory $parent
     [System.IO.File]::WriteAllText($Path, $Content, [System.Text.UTF8Encoding]::new($false))
-    Write-Host "파일 작성: $Path"
+    Write-Host " [작성됨] 파일: $Path"
 }
 
-# 랜파이 game 폴더 경로
+# 랜파이 game 폴더 경로 지정
 $gamePath = Join-Path $BasePath "game"
 Ensure-Directory $gamePath
 Ensure-Directory (Join-Path $gamePath "routes")
@@ -76,7 +79,7 @@ label common_route:
 function Get-RouteContent {
     param([string]$Name, [string]$Id)
     return @"
-label route_$Id:
+label route_${Id}:
     "$Name 루트에 진입했습니다."
     
     # $Name 스토리 전개
@@ -86,14 +89,15 @@ label route_$Id:
 }
 
 # 파일 생성 실행
-Write-Utf8File -Path (Join-Path $gamePath "characters.rpy") -Content $charactersRpy -Overwrite:$Force
-Write-Utf8File -Path (Join-Path $gamePath "script.rpy") -Content $scriptRpy -Overwrite:$Force
+Write-Utf8File -Path (Join-Path $gamePath "characters.rpy") -Content $charactersRpy
+Write-Utf8File -Path (Join-Path $gamePath "script.rpy") -Content $scriptRpy
 
-Write-Utf8File -Path (Join-Path $gamePath "routes\route_harin.rpy") -Content (Get-RouteContent "서하린" "harin") -Overwrite:$Force
-Write-Utf8File -Path (Join-Path $gamePath "routes\route_yuna.rpy") -Content (Get-RouteContent "유나" "yuna") -Overwrite:$Force
-Write-Utf8File -Path (Join-Path $gamePath "routes\route_seola.rpy") -Content (Get-RouteContent "설아" "seola") -Overwrite:$Force
-Write-Utf8File -Path (Join-Path $gamePath "routes\route_gaeun.rpy") -Content (Get-RouteContent "민가은" "gaeun") -Overwrite:$Force
+Write-Utf8File -Path (Join-Path $gamePath "routes\route_harin.rpy") -Content (Get-RouteContent "서하린" "harin")
+Write-Utf8File -Path (Join-Path $gamePath "routes\route_yuna.rpy") -Content (Get-RouteContent "유나" "yuna")
+Write-Utf8File -Path (Join-Path $gamePath "routes\route_seola.rpy") -Content (Get-RouteContent "설아" "seola")
+Write-Utf8File -Path (Join-Path $gamePath "routes\route_gaeun.rpy") -Content (Get-RouteContent "민가은" "gaeun")
 
-Write-Host "
-랜파이 프로젝트 뼈대 생성 완료
-생성 위치: $gamePath"
+Write-Host "====================================="
+Write-Host " 렌파이 파일 세팅이 완료되었습니다!"
+Write-Host " VisualNovel/game 폴더 안에 script.rpy가 있는지 확인해 주세요."
+Write-Host "====================================="
