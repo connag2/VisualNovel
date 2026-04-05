@@ -2772,7 +2772,7 @@ label scene_14:
 
 # ---------------------------------------------------------
 # [Scene 15 타이틀]
-label scene_15:
+  
 
     scene black with fade
     centered "{size=40}Scene 15{/size}\n\n{size=30}사진 한 장의 거리{/size}" with dissolve
@@ -3012,7 +3012,7 @@ label scene_15:
 
     # ---------------------------------------------------------
 # [Scene 15 타이틀]
-label scene_15:
+
 
     scene black with fade
     centered "{size=40}Scene 9{/size}\n\n{size=30}점심시간 소동{/size}" with dissolve
