@@ -1,11 +1,47 @@
-﻿# 캐릭터 정의 (script.rpy 파일의 최상단에 배치)
+﻿# --- 1. 대화하는 사람을 추적 및 자동 포커스 파이썬 코드 ---
+init python:
+    speaking = None
+    
+    def speaker(name):
+        def callback(event, **kwargs):
+            global speaking
+            if event == "begin":
+                speaking = name
+            elif event == "end":
+                speaking = None
+        return callback
+
+    # 포커스(반투명화)를 부드럽게 적용해주는 클래스
+    class FocusFunction:
+        def __init__(self, char_tag):
+            self.char_tag = char_tag
+            
+        def __call__(self, trans, st, at):
+            # 아무도 말을 안 하거나 본인이 말할 땐 밝기 100%, 다른 사람이 말할 땐 40%
+            target_alpha = 1.0 if (speaking == None or speaking == self.char_tag) else 0.4
+            
+            if trans.alpha is None:
+                trans.alpha = 1.0
+                
+            # 부드러운 애니메이션 (서서히 어두워지고 서서히 밝아짐)
+            if trans.alpha != target_alpha:
+                diff = target_alpha - trans.alpha
+                if abs(diff) < 0.05:
+                    trans.alpha = target_alpha
+                else:
+                    trans.alpha += diff * 0.15
+                    
+            return 0.02 # 0.02초마다 부드럽게 갱신
+
+# --- 2. 캐릭터 정의 (콜백 연결) ---
 define sj = Character('서진', color="#c8c8c8")
 define th = Character('서진', color="#999999", what_prefix="(", what_suffix=")")
 
-define hr = Character('서하린', color="#a4c2f4")
-define yn = Character('유나', color="#fce5cd")
-define sa = Character('설아', color="#ffffff")
-define ge = Character('민가은', color="#e6b8af")
+# 각 캐릭터가 말할 때 작동하도록 speaker("태그")를 달아줍니다.
+define hr = Character('서하린', color="#a4c2f4", callback=speaker("harin"))
+define yn = Character('유나', color="#fce5cd", callback=speaker("yuna"))
+define sa = Character('설아', color="#ffffff", callback=speaker("seola"))
+define ge = Character('민가은', color="#e6b8af", callback=speaker("gaeun"))
 
 define stu_a = Character('남학생 A', color="#999999")
 define stu_b = Character('남학생 B', color="#999999")
@@ -17,41 +53,61 @@ default harin_point = 0
 default seola_point = 0
 default gaeun_point = 0
 
-image yuna angry = Transform("images/yuna angry.webp", zoom=0.8)
-image yuna pout = Transform("images/yuna pout.webp", zoom=0.8)
-image yuna surprise = Transform("images/yuna surprise.webp", zoom=0.8)
-image yuna vivid = Transform("images/yuna vivid.webp", zoom=0.8)
+# --- 3. 대화 시 강조/반투명화 자동 트랜스폼 ---
+transform auto_focus(char_tag):
+    function FocusFunction(char_tag)
 
-# positions.rpy 전체 덮어쓰기
+
+# --- 4. 화면 위치 조정을 위한 트랜스폼 정의 ---
+
+# 1~2명 등장 시 사용할 기본 위치 (더 이상 축소하지 않고 본래의 80% 크기 유지)
 transform left:
     xalign 0.15 yanchor 1.0 ypos 1.25
-
 transform center:
     xalign 0.5 yanchor 1.0 ypos 1.25
-
 transform right:
     xalign 0.85 yanchor 1.0 ypos 1.25
-
-transform left_lower:
-    xalign 0.2 yanchor 1.0 ypos 1.25
-
 transform center_lower:
     xalign 0.5 yanchor 1.0 ypos 1.25
 
-transform right_lower:
-    xalign 0.8 yanchor 1.0 ypos 1.25
-
+# 4명 동시 등장 시 사용할 위치 (공간 확보를 위해 기본 80%에서 10%만 살짝 더 줄임)
 transform char_1:
-    xalign 0.1 yanchor 1.0 ypos 1.25
-
+    xalign 0.05 yanchor 1.0 ypos 1.25 zoom 0.9
 transform char_2:
-    xalign 0.35 yanchor 1.0 ypos 1.25
-
+    xalign 0.35 yanchor 1.0 ypos 1.25 zoom 0.9
 transform char_3:
-    xalign 0.65 yanchor 1.0 ypos 1.25
-
+    xalign 0.65 yanchor 1.0 ypos 1.25 zoom 0.9
 transform char_4:
-    xalign 0.9 yanchor 1.0 ypos 1.25
+    xalign 0.95 yanchor 1.0 ypos 1.25 zoom 0.9
+
+
+# --- 5. 이미지 정의 (크기 80% 축소 + 높이 보정 + 포커스 효과 모두 포함) ---
+
+# [유나 이미지]
+image yuna angry = At(Transform("images/yuna angry.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna pout = At(Transform("images/yuna pout.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna surprise = At(Transform("images/yuna surprise.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna vivid = At(Transform("images/yuna vivid.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna smile = At(Transform("images/yuna smile.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna laugh = At(Transform("images/yuna laugh.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna normal = At(Transform("images/yuna normal.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+
+# [하린 이미지]
+image harin normal = At(Transform("images/harin normal.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
+image harin sigh = At(Transform("images/harin sigh.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
+image harin faint_smile = At(Transform("images/harin faint_smile.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
+image harin surprise = At(Transform("images/harin surprise.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
+
+# [설아 이미지]
+image seola normal = At(Transform("images/seola normal.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
+image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
+
+# [가은 이미지]
+image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
+image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
+image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
+image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
+
 
 # 여기서부터 본 게임 시작
 label start:
