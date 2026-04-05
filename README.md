@@ -50,3 +50,101 @@ A gentle school romance visual novel where getting closer to each heroine reveal
 
 ## 6. Output Language Rule
 All final user-facing output should be written in Korean.
+
+## 7. Final Direction
+
+### Final Genre
+This project is a school romance visual novel that begins with soft daily-life warmth and gradually shifts into a dark emotional drama centered on trauma, fear of intimacy, and the act of staying beside someone without trying to "fix" them.
+
+### Final Tone Rule
+- Early phase: warm, cute, quiet, intimate
+- Middle phase: unease, subtle emotional cracks, restrained tension
+- Late phase: emotional collapse, difficult choices, lingering aftermath
+- Ending phase: not simple happiness, but emotionally meaningful resolution
+
+### Tone Shift Principle
+The early softness is not filler.
+It exists to make the later pain feel personal, believable, and devastating.
+Every warm scene must also carry at least one emotional seed that can bloom into conflict later.
+
+## 8. Intended Player Experience
+
+The intended player experience follows this emotional order:
+
+1. "This feels warm and comforting."
+2. "Something feels slightly off beneath the surface."
+3. "I want to know this character more deeply."
+4. "This character is much more wounded than I expected."
+5. "I cannot save them by force."
+6. "Staying with them is harder and more meaningful than romance alone."
+
+The game should leave the player with emotional aftertaste rather than simple completion satisfaction.
+
+## 9. Narrative Progression Summary
+
+### Phase 1: Common Route
+The protagonist meets each heroine through quiet daily incidents.
+The atmosphere remains gentle, but each heroine reveals subtle emotional instability through behavior, speech, or silence.
+
+### Phase 2: Route Entry
+After the emotional build-up of the common route, the player chooses who to spend meaningful time with.
+This marks the point where Seojin stops being a passive observer and begins stepping into someone else's emotional boundary.
+
+### Phase 3: Personal Route
+Each heroine route moves from surface-level attraction into a confrontation with fear, trauma, avoidance, and emotional dependency.
+The route structure must always progress through:
+- intimacy
+- unease
+- rupture
+- response
+- ending
+
+### Phase 4: Ending
+True endings do not erase pain.
+They represent a form of acceptance, trust, distance, waiting, or mutual understanding.
+
+## 10. Document Map
+
+### Core Documents
+- `README.md`: project overview and entry point
+- `characters.md`: character bible and acting rules
+- `story.md`: core narrative philosophy, theme, and emotional structure
+- `concept_setting.md`: route outlines, scene ideas, and event planning
+- `master_tree.md`: affection, flags, route branching, and ending logic
+- `somethingdo.md`: production task board and writing priorities
+
+### Future Recommended Documents
+- `script_common.md`
+- `script_harin.md`
+- `script_yuna.md`
+- `script_seola.md`
+- `script_gaeun.md`
+- `foreshadowing_map.md`
+- `cg_bgm_direction.md`
+- `system_design.md`
+
+## 11. Production Rule
+
+All major writing decisions must satisfy the following:
+1. The character must remain internally consistent.
+2. The emotional escalation must feel earned.
+3. Pain must not exist for spectacle alone.
+4. Romance must deepen through understanding, not possession.
+5. Final user-facing output should be written in Korean.
+
+## 12. Current Development Priority
+
+### Priority 1
+- Expand the common route into full scene script form
+- Lock foreshadowing placement for each heroine
+- Finalize protagonist emotional arc in playable scenes
+
+### Priority 2
+- Expand all heroine routes into full chapter scripts
+- Define precise ending conditions and route-specific choice logic
+- Create event CG and BGM direction list
+
+### Priority 3
+- Build grand true ending structure
+- Organize script files for implementation
+- Polish route transitions and emotional pacing
