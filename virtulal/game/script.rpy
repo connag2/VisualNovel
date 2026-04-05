@@ -1,19 +1,12 @@
-﻿# ---------------------------------------------------------
-# 1. 게임에서 사용할 캐릭터 정의
-# ---------------------------------------------------------
-
-# 윤서진 (주인공 - 일반 대사용)
+﻿# 캐릭터 정의 (script.rpy 파일의 최상단에 배치)
 define sj = Character('서진', color="#c8c8c8")
-# 윤서진 (주인공 - 독백/속마음용)
 define th = Character('서진', color="#999999", what_prefix="(", what_suffix=")")
 
-# 히로인들
 define hr = Character('서하린', color="#a4c2f4")
 define yn = Character('유나', color="#fce5cd")
 define sa = Character('설아', color="#ffffff")
 define ge = Character('민가은', color="#e6b8af")
 
-# 엑스트라 학생들
 define stu_a = Character('남학생 A', color="#999999")
 define stu_b = Character('남학생 B', color="#999999")
 define girl_a = Character('여학생 A', color="#999999")
@@ -21,7 +14,12 @@ define girl_b = Character('여학생 B', color="#999999")
 
 # 여기서부터 본 게임 시작
 label start:
-    # [프롤로그: 미지근한 온도]
+    # ---------------------------------------------------------
+    # [프롤로그 타이틀 띄우기]
+    scene black with fade
+    centered "{size=50}프롤로그{/size}\n\n{size=30}미지근한 온도{/size}" with dissolve
+    pause 1.0
+
     scene bg morning_room with fade
     play music "audio/bgm_spring_morning.ogg" fadein 2.0
 
@@ -37,7 +35,11 @@ label start:
     th "오늘도 변함없이 맑고 평화로운, 완벽한 하루가 시작된다."
 
     # ---------------------------------------------------------
-    # [Scene 1. 아침 등굣길 - 유나와의 첫 만남]
+    # [Scene 1 타이틀 띄우기]
+    scene black with fade
+    centered "{size=40}Scene 1{/size}\n\n{size=30}아침 등굣길{/size}" with dissolve
+    pause 1.0
+
     scene bg school_gate with fade
     play music "audio/bgm_lazy_afternoon.ogg" fadein 1.0
 
@@ -76,7 +78,11 @@ label start:
     "아침부터 텐션이 높은 녀석이라 피곤하긴 해도, 뭐… 나쁘진 않다."
 
     # ---------------------------------------------------------
-    # [Scene 2. 아침 조회 - 하린과의 교차]
+    # [Scene 2 타이틀 띄우기]
+    scene black with fade
+    centered "{size=40}Scene 2{/size}\n\n{size=30}아침 조회{/size}" with dissolve
+    pause 1.0
+
     scene bg classroom with fade
     play music "audio/bgm_noisy_hallway.ogg" fadein 1.0
 
@@ -131,7 +137,11 @@ label start:
     "창밖으로 따뜻한 바람이 불어왔다. 아주 평범하고, 조금은 따분한 일상이다."
 
     # ---------------------------------------------------------
-    # [Scene 3. 쉬는 시간 - 설아와의 교차]
+    # [Scene 3 타이틀 띄우기]
+    scene black with fade
+    centered "{size=40}Scene 3{/size}\n\n{size=30}쉬는 시간{/size}" with dissolve
+    pause 1.0
+
     scene bg old_library with fade
     play music "audio/bgm_theme_seola.ogg" fadein 1.0
 
@@ -157,7 +167,7 @@ label start:
         "어떻게 할까?"
         
         "조용히 목례만 하고 지나간다.":
-            "나는 발소리를 죽여 걷다, 그녀와 우연히 시선이 마주쳤을 때 가볍게 고개만 고덕였다."
+            "나는 발소리를 죽여 걷다, 그녀와 우연히 시선이 마주쳤을 때 가볍게 고개만 끄덕였다."
             
             show seola smile with dissolve
             sa "……."
@@ -182,7 +192,11 @@ label start:
     "나는 도서관을 빠져나왔다. 고요하고 정적인, 아주 평화로운 시간이었다."
 
     # ---------------------------------------------------------
-    # [Scene 4. 방과 후 - 가은과의 조우]
+    # [Scene 4 타이틀 띄우기]
+    scene black with fade
+    centered "{size=40}Scene 4{/size}\n\n{size=30}방과 후{/size}" with dissolve
+    pause 1.0
+
     scene bg rooftop_sunset with fade
     play music "audio/bgm_theme_gaeun.ogg" fadein 1.0
 
