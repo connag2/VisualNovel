@@ -543,7 +543,7 @@ label start:
     "선배와 주고받는 실없는 농담들이 오렌지빛 공기 중으로 기분 좋게 흩어졌다."
     th "유나, 하린, 설아, 그리고 가은 선배까지."
     th "개성 넘치는 녀석들 틈에 섞여 있지만, 결국 나의 하루는 어제와 크게 다르지 않은 평범하고 미지근한 궤도를 돌고 있다."
-    th "이 학교에서 가장 마음 편하고, 완벽한 방과 후의 풍경."
+    th "이 학교에서 가장 마음 편하고, 완벽 방과 후의 풍경."
     th "나는 캔커피를 한 모금 삼키며, 이 몽글몽글하고 평화로운 일상이 내일도 똑같이 반복되기를 바랐다."
     
     scene black with fade
@@ -905,7 +905,6 @@ label scene_7:
 
     th "각자 따로 보면 별문제 없는 업무들이다."
     th "그런데 이상하게, 이 조합으로 한 공간에 모여 있다는 사실이 조금 낯설었다."
-    
     show yuna smile at char_1
     show seola normal at char_2
     show harin normal at char_3
@@ -1068,7 +1067,6 @@ label scene_7:
             yn "그럼 선배 옆에 있을래요."
 
             th "이런 식으로 말을 곧이곧대로 받는 건 반칙이다."
-            
     hide yuna with dissolve
     hide seola with dissolve
     hide harin with dissolve
@@ -1098,8 +1096,7 @@ label scene_7:
     th "나는 아직도, 그 선을 넘지 않을 수 있다고 생각했다."
     scene black with fade
     "그날 이후, 나의 미지근했던 일상은 아주 천천히 방향을 틀기 시작했다."
-    
-# ---------------------------------------------------------
+    # ---------------------------------------------------------
 # [Scene 8 타이틀]
 label scene_8:
 
@@ -1171,11 +1168,14 @@ label scene_8:
 
     hr "좋아. 그럼 오늘은 세 가지부터 끝내자."
     hr "현수막 문구 정하기, 교실 앞 안내문 초안, 그리고 장식용 색지 재단."
-    show yuna smile at left with dissolve
+    
+    # [수정 1] 설아가 이미 left에 있으므로 유나를 right로 변경
+    show yuna smile at right with dissolve
+    
     yn "저는 뭐 하면 돼요?"
     hr "너는 우선 색지 자르는 쪽."
 
-    show yuna pout at left with dissolve
+    show yuna pout at right with dissolve
     yn "엥, 제일 단순 노동이잖아요."
     hr "그래도 제일 손 많이 가."
     hr "그리고 네가 움직임 빠르잖아."
@@ -1189,13 +1189,13 @@ label scene_8:
             $ yuna_point += 1
 
             sj "가위 혼자 쓰다 손 베지 말고, 반은 내가 할게."
-            show yuna surprise at left with dissolve
+            show yuna surprise at right with dissolve
             yn "…선배가 먼저 도와준다고 하네?"
             yn "오늘 해 뜨는 방향 바뀌었나?"
 
             sj "말 많다."
 
-            show yuna smile at left with dissolve
+            show yuna smile at right with dissolve
             "내가 옆에 앉자 유나는 금세 헤실헤실 웃으며 잘린 색지를 가지런히 쌓았다."
             "손끝은 빨랐고, 기대 이상으로 꼼꼼했다."
             "가끔 내 팔꿈치에 제 팔이 닿을 때마다, 녀석은 괜히 더 기분 좋아 보였다."
@@ -1404,7 +1404,6 @@ label scene_9:
             sa "저쪽은 장식 줄여."
 
             th "신기하게도, 설아와는 말이 적을수록 오히려 더 편해진다."
-            
     hide harin with dissolve
     hide yuna with dissolve
     hide seola with dissolve
@@ -1437,7 +1436,6 @@ label scene_9:
     yn "없는데요?"
     yn "그냥, 엄마한테 연락했는데 답장이 좀 늦어서."
     "말은 가볍게 했지만, 유나는 손에 쥔 휴대폰을 너무 세게 쥐고 있었다."
-    
     menu:
         "뭐라고 할까?"
         "괜히 혼자 끙끙대지 말라고 한다.":
@@ -1512,7 +1510,6 @@ label scene_10:
     "그날 방과 후, 우리는 다시 특별동 준비실에 모였다."
     "낡은 창틀 사이로 늦은 햇빛이 길게 들어와, 공중의 먼지까지 또렷하게 보였다."
     "다들 어제보다 조금 피곤한 얼굴이었다."
-    
     show seola normal at char_2
     show harin normal at char_3
     show gaeun smile at char_4
@@ -1553,7 +1550,6 @@ label scene_10:
     "그 장면이 이상하게 눈에 박혔다."
     th "다들 엉망이 되는 건 싫어한다."
     th "방법만 다를 뿐."
-    
     menu:
         "누구를 먼저 챙길까?"
         "하린부터 본다.":
@@ -1626,7 +1622,6 @@ label scene_10:
             ge "조금 피곤한 것뿐이야."
 
             th "그 말은 진짜 같지 않았다."
-            
     hide harin with dissolve
     hide yuna with dissolve
     hide seola with dissolve
@@ -1664,7 +1659,6 @@ label scene_10:
     th "조금만 더 가까워지면 곤란해질 것 같은데."
     th "조금만 더 멀어지면, 어쩐지 신경 쓰일 것 같기도 했다."
     "그리고 그 순간, 계단 위쪽에서 가은 선배의 기침 소리가 짧게 울렸다."
-    
     hide seola
     hide harin
     hide yuna
@@ -1675,7 +1669,6 @@ label scene_10:
 
     ge "왜, 다들 그런 표정이야."
     ge "진짜 괜찮다니까."
-
     "선배는 웃었고, 우리는 아무도 그 말을 곧이곧대로 받아들이지 못했다."
     
     menu:
@@ -1746,7 +1739,6 @@ label scene_10:
 
             th "처음이었다."
             th "민가은이 그렇게 순순히 물러나는 건."
-            
     hide yuna with dissolve
     hide harin with dissolve
     hide seola with dissolve
@@ -1861,6 +1853,8 @@ label scene_11:
     menu:
         "어디부터 도와줄까?"
         "유나의 반짝이 테러 현장을 수습한다.":
+            # [수정 2] 설아가 이미 center에 있으므로, 겹치지 않게 자연스러운 퇴장 처리
+            hide seola with dissolve
             $ yuna_point += 1
             
             sj "야, 유나. 너 여기 바닥에 반짝이 떨어진 거 안 보이냐."
@@ -1874,6 +1868,8 @@ label scene_11:
             "유나는 빗자루를 들고 콧노래를 부르며 내 옆에 딱 붙어 바닥을 쓸었다."
             "단순한 심부름조차 이렇게 즐거워하는 걸 보면, 참 신기한 에너지를 가진 녀석이다."
         "하린의 서류 작업을 보조한다.":
+            # [수정 2] 겹침 방지
+            hide seola with dissolve
             $ harin_point += 1
             
             sj "반장, 그거 색지별 예산 짠 거지. 영수증 내가 풀로 붙일까?"
@@ -1906,6 +1902,8 @@ label scene_11:
             "설아의 옅은 칭찬에 우리는 말없이 종이 자르는 사각거리는 소리에 집중했다."
             "이 고요한 공간이 꽤 마음에 들었다."
         "가은 선배와 농땡이에 동참한다.":
+            # [수정 2] 겹침 방지
+            hide seola with dissolve
             $ gaeun_point += 1
             
             sj "선배, 혼자 커피 드시기 있습니까. 저도 좀 쉬어야겠습니다."
@@ -1933,7 +1931,6 @@ label scene_11:
     th "어쩌면 이 미지근하고 평화로운 시간이 생각보다 꽤 오래갈지도 모르겠다."
     
     "창밖으로 봄꽃 냄새가 훅 끼쳐오는, 아주 완벽하게 몽글몽글한 오후였다."
-    
 # ---------------------------------------------------------
 # [Scene 12 타이틀]
 label scene_12:
@@ -2019,7 +2016,6 @@ label scene_12:
     "떡볶이를 주장하는 유나, 먹기 편한 치킨을 주장하는 하린, 그리고 둘 다 시키자는 호쾌한 가은 선배의 중재 끝에 결국 '피자와 치킨 세트'라는 가장 클래식한 합의에 도달했다."
     "약 30분 뒤."
     "배달 기사가 학교 철창 너머로 건네준 거대한 박스들을 들고 오자, 준비실은 순식간에 기름지고 고소한 냄새로 가득 찼다."
-    
     scene black with dissolve
     centered "{size=30}피자 파티{/size}" with dissolve
     scene bg old_library with fade
@@ -2030,15 +2026,12 @@ label scene_12:
     yn "와, 냄새 미쳤다! 잘 먹겠습니다!"
     "테이블 위에 신문지를 깔고 박스를 열자마자 유나가 환호성을 지르며 피자 한 조각을 집어 들었다."
     "치즈가 길게 늘어나는 걸 보며 세상을 다 가진 듯한 표정을 짓는 녀석을 보니, 덩달아 헛웃음이 나왔다."
-    
     hr "유나야, 흘리지 않게 밑에 휴지 받치고 먹어."
     hr "치즈 바닥에 떨어지면 닦기 힘들어."
-    
     "하린이는 자신이 먹을 치킨 한 조각을 접시에 조심스럽게 덜어내면서도, 유나에게 잔소리를 잊지 않았다."
     "녀석은 심지어 치킨을 먹을 때도 젓가락을 사용하고 있었다. 손에 기름을 묻히는 것조차 극도로 꺼리는 저 철저함."
     ge "아유, 우리 반장님은 밥 먹을 때도 깐깐하네."
     ge "자, 서진이랑 설아도 눈치 보지 말고 팍팍 먹어. 모자라면 더 시켜줄 테니까."
-
     "가은 선배는 콜라를 종이컵에 따라 모두에게 돌렸다."
     "나도 피자 한 조각을 집어 들고 한입 베어 물었다. 입안 가득 퍼지는 토마토소스와 페퍼로니의 짭짤한 맛에, 하루 종일 쌓였던 피로가 단번에 녹아내리는 기분이었다."
     th "축제 준비, 도우미, 강제 야근."
@@ -2046,7 +2039,6 @@ label scene_12:
     th "이렇게 다 같이 둘러앉아 밥을 먹고 있으니, 꽤 전형적이고 청춘스러운 학원물의 한 장면 같기도 하다."
     "시끌벅적하게 식사가 이어지는 가운데, 나는 문득 주변을 둘러보았다."
     "다들 각자의 방식으로 이 소란스러운 식사 자리를 즐기고 있었다."
-    
     scene bg old_library with dissolve
     show yuna smile at char_1
     show seola normal at char_2
@@ -2184,7 +2176,6 @@ label scene_12:
     "하린이의 해산 선언에 다들 주섬주섬 가방을 챙겨 일어났다."
     "학교 건물을 빠져나와 텅 빈 운동장을 가로지르는 길."
     "가로등 불빛이 우리 다섯 명의 그림자를 길게 늘어뜨렸다."
-    
     hide harin
     show yuna smile at left with dissolve
     show gaeun smile at right with dissolve
@@ -2307,7 +2298,6 @@ label scene_13:
 
             yn "아, 너무 진지했나?"
             yn "아무튼 받으세요! 거절은 불가!"
-            
     "우리는 나란히 정문을 지나 학교 안으로 걸어 들어갔다."
     "유나는 오늘도 평소처럼 재잘거렸고, 나는 오늘도 적당히 받아쳤다."
     "그런데 이상하게, 손에 들린 작은 딸기우유 하나가 생각보다 더 무겁게 느껴졌다."
@@ -2333,9 +2323,11 @@ label scene_14:
     "점심시간."
     "축제 준비를 위해 잠깐 모인 교실은 여전히 어수선했지만, 며칠 전과는 결이 조금 달랐다."
     "낯선 사람들끼리 엮인 느낌은 희미해지고, 대신 애매하게 익숙해진 공기가 생겼다."
-    show yuna smile at char_1
-    show seola normal at char_2
-    show harin normal at char_3
+    
+    # [수정 3] 3명일 때는 중앙으로 쏠리는 char_1,2,3 대신 넓게 분산되는 left, center, right 사용
+    show yuna smile at left
+    show seola normal at center
+    show harin normal at right
     with dissolve
 
     hr "오늘은 교실 앞 안내판 문구랑 장식 위치만 최종으로 보자."
@@ -2347,9 +2339,9 @@ label scene_14:
     sj "그건 누가 정했는데."
 
     yn "제가요."
-    show harin sigh at char_3 with dissolve
+    show harin sigh at right with dissolve
     hr "기각."
-    show yuna pout at char_1 with dissolve
+    show yuna pout at left with dissolve
     yn "너무해."
     "유나는 의자 위에 턱을 괴고 한참 심통 난 얼굴을 하더니, 이내 포기하지 않고 다시 입을 열었다."
     yn "그럼 후보라도 들어봐 주세요!"
@@ -2358,13 +2350,13 @@ label scene_14:
     yn "아니면… '서진 선배와 즐거운 친구들'!"
     sj "마지막 건 지금 당장 폐기해라."
 
-    show seola surprise at char_2 with dissolve
+    show seola surprise at center with dissolve
 
     "설아의 어깨가 아주 조금 들썩였다."
     "웃은 건지 아닌지 애매할 만큼 작은 반응이었다."
 
     sj "설아, 방금 웃었냐."
-    show seola normal at char_2 with dissolve
+    show seola normal at center with dissolve
     sa "…조금."
 
     yn "와."
@@ -2384,13 +2376,13 @@ label scene_14:
             sj "그래도 팀 이름 하나쯤 있으면 부르기 편하긴 하겠네."
             sj "적당히 덜 유치한 걸로."
 
-            show yuna surprise at char_1 with dissolve
+            show yuna surprise at left with dissolve
             yn "헐."
             yn "선배가 제 편을 들어준다?"
 
             sj "너무 감동하지 마라."
             sj "방금 후보들이 너무 심각해서 오히려 더 낫다는 뜻이니까."
-            show yuna laugh at char_1 with dissolve
+            show yuna laugh at left with dissolve
             yn "아하하! 그래도 됐어요!"
             yn "이걸로 오늘 하루 버틸 에너지 충전 완료!"
 
@@ -2400,11 +2392,11 @@ label scene_14:
             sj "반장 말이 맞아."
             sj "네가 이름 붙이는 순간 분위기가 급격히 유치해진다."
 
-            show yuna pout at char_1 with dissolve
+            show yuna pout at left with dissolve
             yn "너무해!"
             yn "둘이 지금 저 협공하는 거예요?"
 
-            show harin faint_smile at char_3 with dissolve
+            show harin faint_smile at right with dissolve
             hr "드물게 의견이 맞았네."
             "하린이가 작게 웃으며 펜 끝으로 표를 톡톡 두드렸다."
 
@@ -2421,7 +2413,7 @@ label scene_14:
 
             yn "오."
             yn "그럼 '조용한 봄' 어때요?"
-            show seola normal at char_2 with dissolve
+            show seola normal at center with dissolve
             sa "…그건 괜찮아."
             th "유나 기준으로 꽤 얌전한 이름이다."
 
@@ -2431,7 +2423,6 @@ label scene_14:
 
     "결국 팀 이름은 정식으로 정하진 않았지만, 유나는 회의가 끝날 때까지 우리를 멋대로 '조용한 봄 팀'이라고 불렀다."
     "하린이는 세 번 정정했고, 가은 선배는 네 번 웃었고, 설아는 두 번쯤 아주 작게 따라 읽었다."
-    
     scene black with dissolve
     centered "{size=30}특별동 준비실{/size}" with dissolve
     scene bg old_library with fade
@@ -2445,7 +2436,6 @@ label scene_14:
     show gaeun laugh with dissolve
     ge "좋잖아."
     ge "생각보다 청춘물 제목 같고."
-    
     show gaeun smile at right
     show yuna smile at left with dissolve
     
@@ -2454,7 +2444,6 @@ label scene_14:
     
     show harin sigh at center_lower with dissolve
     hr "아무도 정식 채택한 적 없거든."
-    
     hide harin
     hide yuna
     hide gaeun
@@ -2472,7 +2461,6 @@ label scene_14:
 
     scene black with fade
     "누군가 붙인 별명 하나만으로도, 사람들 사이의 거리가 조금 줄어들 때가 있다."
-
 # ---------------------------------------------------------
 # [Scene 15 타이틀]
 
@@ -2505,7 +2493,6 @@ label scene_14:
     show gaeun smile at center_lower with dissolve
     ge "오, 좋은데."
     ge "후배님들 이런 건 남겨둬야지."
-    
     hide gaeun
     show seola surprise at center_lower with dissolve
     sa "나는…"
@@ -2567,7 +2554,7 @@ label scene_14:
             "내가 하린이 쪽으로 자리를 옮기자, 하린이는 아주 잠깐 눈을 깜빡였다."
             hr "…왜 여기로 와."
 
-            sj "네가 제일 안 움직일 것 같아서."
+            sj "네가 제일 안 움직일 일 것 같아서."
             sj "사진 찍을 때 한 명쯤 중심 잡아야 하잖아."
             show harin faint_smile at right with dissolve
             hr "무슨 기준이야, 그게."
@@ -2585,6 +2572,8 @@ label scene_14:
             "설아는 내 쪽을 힐끗 보고 아주 조금 안으로 움직였다."
             "그 작은 양보가 생각보다 크게 느껴졌다."
         "가은 선배 옆에 선다.":
+            # [수정 4] 겹침 방지 (설아 퇴장)
+            hide seola with dissolve
             $ gaeun_point += 1
 
             "내가 가은 선배 옆에 서자, 선배는 능청스럽게 웃었다."
@@ -2596,7 +2585,6 @@ label scene_14:
 
             ge "아쉽네."
             ge "난 또 드디어 후배님이 선배 미모의 가치를 알아본 줄."
-            
     hide harin with dissolve
     hide seola with dissolve
     hide gaeun with dissolve
@@ -2616,20 +2604,16 @@ label scene_14:
     "찰칵."
     "사진이 찍히자마자 유나는 바로 화면을 확인했다."
     "그리고 1초 뒤, 준비실 안에 요란한 웃음이 터졌다."
-    
     scene bg old_library with dissolve
     show yuna laugh at left with dissolve
     yn "아하하하!"
     yn "선배 왜 혼자만 표정이 완전 장례식장이에요!"
     sj "누가 갑자기 그렇게 붙어서 찍으래."
-
     show gaeun laugh at center_lower with dissolve
     ge "아니, 진짜네."
     ge "후배님만 유독 영혼이 빠져 있잖아."
-
     show harin faint_smile at right with dissolve
     hr "입꼬리가 1mm도 안 올라갔어."
-    
     hide gaeun
     show seola normal at center_lower with dissolve
     sa "…그래도."
@@ -2662,7 +2646,6 @@ label scene_14:
     yn "업무용 반, 잡담용 반!"
 
     sj "그건 이미 잡담용이 더 많다는 뜻이잖아."
-    
     hide gaeun
     show seola normal at center_lower with dissolve
     sa "…그래도."
@@ -2674,11 +2657,9 @@ label scene_14:
     yn "이름은 당연히 '조용한 봄'이다!"
 
     hr "그건 아직 확정 아니라고 했지."
-
     hide seola
     show gaeun smile at center_lower
     ge "이쯤 되면 사실상 확정이네."
-
     th "정말 이상한 이름인데."
     th "이상하게 점점 익숙해진다."
 
@@ -2698,7 +2679,6 @@ label scene_14:
     th "정말 별일 없는 하루였다."
     th "그런데 이상하게."
     th "이런 평범한 날이, 생각보다 오래 기억에 남을 것 같은 기분이 든다."
-
 # ---------------------------------------------------------
 # [Scene 16 타이틀]
 
@@ -2792,7 +2772,6 @@ label scene_14:
     "하지만 어제까지의 설아라면 굳이 먼저 입을 열지 않았을지도 모른다."
     "이 정도면 나름대로 먼저 발을 들인 셈이었다."
     "그리고 마지막으로, 교실 문틀에 기대어 이쪽을 보고 있는 사람이 하나 더 있었다."
-    
     hide harin
     show gaeun smile at center_lower with dissolve
 
@@ -2807,15 +2786,12 @@ label scene_14:
     ge "나까지 끼면 점심시간 끝나기 전에 못 돌아올걸?"
     ge "너희 넷이면 충분해."
     ge "대신 문구부 아저씨한테 학생회 이름 말하면 조금 깎아주실 수도 있으니까 그건 써먹어."
-
     show harin normal at center_lower
     hide gaeun
     hr "그런 중요한 걸 이제 말해요?"
-    
     hide harin
     show gaeun smile at center_lower
     ge "이게 다 선배의 뒤늦은 사랑이지."
-
     sj "사랑치곤 실용적이네요."
 
     show gaeun laugh at center_lower with dissolve
@@ -2826,7 +2802,6 @@ label scene_14:
     hide yuna with dissolve
 
     "그렇게 해서 점심시간 짧은 심부름 원정대가 꾸려졌다."
-
     scene black with dissolve
     centered "{size=30}시끌벅적한 복도{/size}" with dissolve
     scene bg noisy_hallway with fade
@@ -2876,7 +2851,6 @@ label scene_14:
 
     th "정말 그렇다."
     th "넷이 같이 걷는 것뿐인데도, 평소보다 복도가 덜 지루하게 느껴진다."
-    
     scene black with dissolve
     centered "{size=30}교실{/size}" with dissolve
     scene bg classroom with dissolve
@@ -2886,9 +2860,10 @@ label scene_14:
     "하린이는 필요한 것과 필요 없는 것을 칼같이 구분했고, 설아는 색지와 마스킹테이프 색 조합을 눈으로 빠르게 골랐다."
     "유나는 옆에서 이것저것 들었다 놨다 하며 계속 말을 보탰다."
 
-    show yuna smile at char_1
-    show seola normal at char_2
-    show harin normal at char_3
+    # [수정 5] 3명일 때는 중앙으로 쏠리는 char_1,2,3 대신 넓게 분산되는 left, center, right 사용
+    show yuna smile at left
+    show seola normal at center
+    show harin normal at right
     with dissolve
 
     hr "색지는 이 하늘색이랑 아이보리."
@@ -2918,7 +2893,7 @@ label scene_14:
 
     sj "유나는?"
 
-    show yuna grin at char_1 with dissolve
+    show yuna grin at left with dissolve
 
     yn "저는 귀여움 담당."
     sj "셀프 지정이네."
@@ -2926,7 +2901,7 @@ label scene_14:
     hr "반박은 어렵네."
 
     "하린이의 입에서 자연스럽게 그런 말이 나오자, 유나는 두 손으로 입을 가리며 과장되게 감동한 척했다."
-    show yuna laugh at char_1 with dissolve
+    show yuna laugh at left with dissolve
 
     yn "세상에."
     yn "하린 선배가 방금 저를 인정했어요."
@@ -2952,7 +2927,7 @@ label scene_14:
             hr "네가 확인해주니까 빠르네."
 
             sj "그 말, 은근히 고맙게 들리네."
-            show harin faint_smile at char_3 with dissolve
+            show harin faint_smile at right with dissolve
 
             hr "고마운 거 맞아."
             hr "혼자 보면 놓치는 것도 있거든."
@@ -2974,14 +2949,14 @@ label scene_14:
             yn "근데 진짜 예쁘지 않아요?"
             "나는 잠깐 고민하다가 별 스티커 하나를 장바구니에 넣었다."
 
-            show yuna surprise at char_1 with dissolve
+            show yuna surprise at left with dissolve
             yn "어?"
             yn "선배가 이런 감성템을?"
 
             sj "축제용이야."
             sj "착각하지 마."
 
-            show yuna smile at char_1 with dissolve
+            show yuna smile at left with dissolve
             yn "헤헤."
             yn "그래도 잘 어울려요."
 
@@ -3030,7 +3005,6 @@ label scene_14:
             yn "가은 선배 이런 거 좋아할 것 같아요."
 
             "결국 우리는 그 작은 종 장식도 하나 같이 계산대에 올려두었다."
-            
     hide harin with dissolve
     hide yuna with dissolve
     hide seola with dissolve
@@ -3125,7 +3099,6 @@ label scene_14:
     yn "설아 선배, 은근 웃겨요 진짜."
     "우리는 빈 봉지와 음료 캔을 정리한 뒤 다시 교실로 돌아가기 시작했다."
     "복도를 걷는 발걸음도 올 때보다 훨씬 가벼웠다."
-    
     hide yuna with dissolve
     hide harin with dissolve
     hide seola with dissolve
