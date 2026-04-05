@@ -17,9 +17,29 @@ default harin_point = 0
 default seola_point = 0
 default gaeun_point = 0
 
-# 화면 위치 조정을 위한 트랜스폼 정의 (ypos를 1.0 초과로 설정하여 강제로 내림)
+image yuna angry = Transform("images/yuna angry.webp", zoom=0.8)
+image yuna pout = Transform("images/yuna pout.webp", zoom=0.8)
+image yuna surprise = Transform("images/yuna surprise.webp", zoom=0.8)
+image yuna vivid = Transform("images/yuna vivid.webp", zoom=0.8)
+
+# positions.rpy 전체 덮어쓰기
+transform left:
+    xalign 0.15 yanchor 1.0 ypos 1.25
+
+transform center:
+    xalign 0.5 yanchor 1.0 ypos 1.25
+
+transform right:
+    xalign 0.85 yanchor 1.0 ypos 1.25
+
+transform left_lower:
+    xalign 0.2 yanchor 1.0 ypos 1.25
+
 transform center_lower:
     xalign 0.5 yanchor 1.0 ypos 1.25
+
+transform right_lower:
+    xalign 0.8 yanchor 1.0 ypos 1.25
 
 transform char_1:
     xalign 0.1 yanchor 1.0 ypos 1.25
