@@ -593,7 +593,7 @@ label start:
     girl_a "아, 진짜 좁아 죽겠네. 2학년 놈들 좀 비켜라!"
 
     "우당탕거리는 소음과 땀 냄새 섞인 열기 속에서, 내 앞을 걷고 있던 유나가 뒤에서 밀려드는 덩치 큰 남학생 무리에 치여 크게 휘청거렸다."
-    show yuna surprise with dissolve
+    show yuna surprise at center_lower with dissolve
     yn "앗, 엄…!"
 
     "나는 반사적으로 유나의 어깨를 붙잡아 내 쪽으로 훅 끌어당겼다."
