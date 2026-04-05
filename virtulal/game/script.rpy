@@ -2476,4 +2476,538 @@ label scene_12:
     "우리는 교문 앞에서 각자의 집 방향을 향해 손을 흔들며 헤어졌다."
     "내일 다시 시작될, 똑같지만 조금은 다를 평범한 하루를 기약하며."
 
+    # ---------------------------------------------------------
+# [Scene 13 타이틀]
+label scene_13:
+
+    scene black with fade
+    centered "{size=40}Scene 13{/size}\n\n{size=30}약속의 답례{/size}" with dissolve
+    pause 1.5
+
+    scene bg school_gate with fade
+    play music "audio/bgm_spring_morning.ogg" fadein 2.0
+
+    "다음 날 아침."
+    "전날 늦게까지 축제 준비를 했는데도, 이상하게 몸이 그렇게 무겁진 않았다."
+    "잠은 부족했지만, 봄 아침 공기가 유난히 상쾌해서 그런 걸지도 모른다."
+
+    th "평소 같으면 이 시간에 반쯤 혼이 빠진 얼굴로 걷고 있었겠지."
+    th "그런데 오늘은, 괜히 정문 쪽을 한 번 더 보게 된다."
+
+    "타닥, 타다닥—!"
+    "기다렸다는 듯 익숙한 발소리가 등 뒤에서 튀어왔다."
+
+    show yuna smile at center with dissolve
+
+    yn "서진 선배! 좋은 아침!"
+
+    "유나는 양손을 등 뒤로 감춘 채 싱글벙글 웃고 있었다."
+    "오늘은 숨도 많이 차지 않았고, 머리도 의외로 단정했다."
+    "그런데 저 수상한 자세를 보면, 뭔가 숨기고 있는 건 분명했다."
+
+    sj "너 또 뭐 숨기고 있냐."
+
+    show yuna surprise with dissolve
+    yn "헉."
+    yn "어떻게 알았지?"
+
+    sj "네가 그렇게 티 나게 서 있으면 모르는 게 더 어렵겠다."
+
+    show yuna laugh with dissolve
+    yn "에헤헤. 역시 선배는 눈치가 빠르네."
+    yn "그럼 짜잔~ 공개합니다!"
+
+    "유나는 등 뒤에 숨기고 있던 작은 비닐봉지를 내밀었다."
+    "안에는 딸기우유 하나와, 편의점에서 산 듯한 작은 크림빵이 들어 있었다."
+
+    yn "전에 말했잖아요!"
+    yn "다음엔 내가 선배한테 맛있는 거 사준다고!"
+
+    th "…진짜 기억하고 있었냐."
+
+    sj "아침부터 이걸 사 오려고 일찍 나온 거야?"
+
+    yn "네!"
+    yn "아, 물론 그냥 선배 생각나서 산 거지, 엄청 특별한 의미는 아니고요!"
+    yn "진짜로요!"
+    yn "조금 특별할 수도 있긴 한데 아무튼요!"
+
+    "혼자서 말을 덧붙이느라 바쁜 유나를 보니 웃음이 나왔다."
+
+    menu:
+        "어떻게 받을까?"
+
+        "순순히 받는다.":
+            $ yuna_point += 1
+
+            sj "그래. 고맙게 받지."
+            sj "약속 지키는 건 너도네."
+
+            "내가 비닐봉지를 받아 들자, 유나의 얼굴이 확 밝아졌다."
+
+            show yuna smile with dissolve
+            yn "그쵸!"
+            yn "저도 약속 엄청 잘 지키는 사람이거든요!"
+            yn "그러니까 선배도 앞으로 저랑 한 약속 잘 지켜야 돼요."
+
+            sj "은근슬쩍 조건을 붙이네."
+
+            yn "협상은 타이밍이 중요하니까요."
+
+        "너 먹으라고 도로 준다.":
+            $ yuna_point += 1
+
+            sj "이런 건 보통 네가 더 좋아하지 않냐."
+            sj "반은 네가 먹어."
+
+            show yuna surprise with dissolve
+            yn "어?"
+            yn "진짜 같이 먹어요?"
+
+            sj "그럼 뭐, 내가 혼자 크림빵 두 개라도 먹냐."
+
+            "유나는 잠깐 멍하니 있다가 금세 배시시 웃었다."
+
+            show yuna laugh with dissolve
+            yn "…그럼 오늘 아침 공동 소유!"
+            yn "선배랑 반띵이면 더 맛있을 것 같아요."
+
+        "왜 갑자기 이렇게 잘해주냐고 묻는다.":
+            $ yuna_point += 1
+
+            sj "근데 너, 왜 이렇게까지 잘해주냐."
+            sj "우유 하나 사준 걸 아직도 기억하고."
+
+            "유나는 내 말을 듣고 눈을 두 번 깜빡였다."
+            "그리고 장난기 어린 웃음을 조금 누그러뜨린 채 대답했다."
+
+            show yuna smile with dissolve
+            yn "음…"
+            yn "저한테 잘해준 사람은 오래 기억하는 편이라서요."
+
+            "짧은 대답이었다."
+            "그런데 이상하게도, 농담처럼만 들리진 않았다."
+
+            yn "아, 너무 진지했나?"
+            yn "아무튼 받으세요! 거절은 불가!"
+
+    "우리는 나란히 정문을 지나 학교 안으로 걸어 들어갔다."
+    "유나는 오늘도 평소처럼 재잘거렸고, 나는 오늘도 적당히 받아쳤다."
+    "그런데 이상하게, 손에 들린 작은 딸기우유 하나가 생각보다 더 무겁게 느껴졌다."
+
+    th "이 녀석은 사소한 걸 사소하게 안 넘긴다."
+    th "그래서 더 피곤하고, 그래서 더 신경 쓰인다."
+
+    scene black with fade
+    "아주 평범한 답례였는데, 이상하게 하루 시작이 조금 더 달아졌다."
+
+    jump scene_14
+
+
+# ---------------------------------------------------------
+# [Scene 14 타이틀]
+label scene_14:
+
+    scene black with fade
+    centered "{size=40}Scene 14{/size}\n\n{size=30}팀명은 중요할까{/size}" with dissolve
+    pause 1.5
+
+    scene bg classroom with fade
+    play music "audio/bgm_noisy_hallway.ogg" fadein 2.0
+
+    "점심시간."
+    "축제 준비를 위해 잠깐 모인 교실은 여전히 어수선했지만, 며칠 전과는 결이 조금 달랐다."
+    "낯선 사람들끼리 엮인 느낌은 희미해지고, 대신 애매하게 익숙해진 공기가 생겼다."
+
+    show harin normal at right with dissolve
+    show yuna smile at left with dissolve
+    show seola normal at center with dissolve
+
+    hr "오늘은 교실 앞 안내판 문구랑 장식 위치만 최종으로 보자."
+    hr "점심시간 안에 끝내야 하니까 딴 얘기 금지."
+
+    yn "에이, 또 딴 얘기 금지래."
+    yn "이런 회의에는 팀 이름 정하는 시간이 꼭 있어야 하는데."
+
+    sj "그건 누가 정했는데."
+
+    yn "제가요."
+
+    show harin sigh at right with dissolve
+    hr "기각."
+
+    show yuna pout at left with dissolve
+    yn "너무해."
+
+    "유나는 의자 위에 턱을 괴고 한참 심통 난 얼굴을 하더니, 이내 포기하지 않고 다시 입을 열었다."
+
+    yn "그럼 후보라도 들어봐 주세요!"
+    yn "'봄빛 특공대'."
+    yn "'연화제 정복단'."
+    yn "아니면… '서진 선배와 즐거운 친구들'!"
+
+    sj "마지막 건 지금 당장 폐기해라."
+
+    show seola surprise at center with dissolve
+
+    "설아의 어깨가 아주 조금 들썩였다."
+    "웃은 건지 아닌지 애매할 만큼 작은 반응이었다."
+
+    sj "설아, 방금 웃었냐."
+
+    show seola normal at center with dissolve
+    sa "…조금."
+
+    yn "와."
+    yn "선배, 설아도 웃겼대요."
+    yn "그러니까 제가 맞는 거예요."
+
+    hr "틀렸어."
+
+    "하린이가 단호하게 끊었지만, 이번에는 목소리가 평소보다 덜 차가웠다."
+    "오히려 아주 잠깐, 입꼬리가 흔들린 것 같기도 했다."
+
+    menu:
+        "뭐라고 거들까?"
+
+        "유나 편을 든다.":
+            $ yuna_point += 1
+
+            sj "그래도 팀 이름 하나쯤 있으면 부르기 편하긴 하겠네."
+            sj "적당히 덜 유치한 걸로."
+
+            show yuna surprise at left with dissolve
+            yn "헐."
+            yn "선배가 제 편을 들어준다?"
+
+            sj "너무 감동하지 마라."
+            sj "방금 후보들이 너무 심각해서 오히려 더 낫다는 뜻이니까."
+
+            show yuna laugh at left with dissolve
+            yn "아하하! 그래도 됐어요!"
+            yn "이걸로 오늘 하루 버틸 에너지 충전 완료!"
+
+        "하린 편을 든다.":
+            $ harin_point += 1
+
+            sj "반장 말이 맞아."
+            sj "네가 이름 붙이는 순간 분위기가 급격히 유치해진다."
+
+            show yuna pout at left with dissolve
+            yn "너무해!"
+            yn "둘이 지금 저 협공하는 거예요?"
+
+            show harin faint_smile at right with dissolve
+            hr "드물게 의견이 맞았네."
+
+            "하린이가 작게 웃으며 펜 끝으로 표를 톡톡 두드렸다."
+
+            th "서하린이 저런 식으로 장난을 받는 것도 조금 익숙해졌다."
+
+        "설아한테 의견을 묻는다.":
+            $ seola_point += 1
+
+            sj "설아는."
+            sj "이름 있는 게 좋아, 없는 게 좋아?"
+
+            "설아는 잠시 생각하더니, 안내판 샘플 위에 적힌 글씨를 내려다봤다."
+
+            sa "…없는 게 편한데."
+            sa "근데 굳이 정하면, 너무 시끄럽지 않은 걸로."
+
+            yn "오."
+            yn "그럼 '조용한 봄' 어때요?"
+
+            show seola normal at center with dissolve
+            sa "…그건 괜찮아."
+
+            th "유나 기준으로 꽤 얌전한 이름이다."
+
+    hide yuna with dissolve
+    hide harin with dissolve
+    hide seola with dissolve
+
+    "결국 팀 이름은 정식으로 정하진 않았지만, 유나는 회의가 끝날 때까지 우리를 멋대로 '조용한 봄 팀'이라고 불렀다."
+    "하린이는 세 번 정정했고, 가은 선배는 네 번 웃었고, 설아는 두 번쯤 아주 작게 따라 읽었다."
+
+    scene bg old_library with fade
+    play music "audio/bgm_lazy_afternoon.ogg" fadein 1.5
+
+    "방과 후 준비실에 모였을 때도 그 별명은 계속 이어졌다."
+
+    show gaeun smile at center with dissolve
+    ge "왔네, 조용한 봄 팀."
+
+    sj "선배까지 왜 그러십니까."
+
+    show gaeun laugh with dissolve
+    ge "좋잖아."
+    ge "생각보다 청춘물 제목 같고."
+
+    show yuna smile at left with dissolve
+    yn "그쵸, 그쵸!"
+    yn "역시 가은 선배는 감성이 통한다니까."
+
+    show harin sigh at right with dissolve
+    hr "아무도 정식 채택한 적 없거든."
+
+    show seola normal at center with dissolve
+    sa "…근데."
+    sa "나쁘진 않아."
+
+    "그 짧은 한마디에 준비실 안이 조용해졌다가, 곧 유나가 제일 먼저 환하게 웃었다."
+
+    show yuna laugh at left with dissolve
+    yn "봐요!"
+    yn "설아도 인정했어요!"
+
+    th "이상한 팀이다."
+    th "그런데 이상하게, 점점 진짜 팀처럼 느껴진다."
+
+    scene black with fade
+    "누군가 붙인 별명 하나만으로도, 사람들 사이의 거리가 조금 줄어들 때가 있다."
+
+    jump scene_15
+
+
+# ---------------------------------------------------------
+# [Scene 15 타이틀]
+label scene_15:
+
+    scene black with fade
+    centered "{size=40}Scene 15{/size}\n\n{size=30}사진 한 장의 거리{/size}" with dissolve
+    pause 1.5
+
+    scene bg old_library with fade
+    play music "audio/bgm_spring_morning.ogg" fadein 2.0
+
+    "축제 준비는 생각보다 순조롭게 흘렀다."
+    "색지는 거의 다 잘렸고, 안내판 문구도 정리됐고, 설아의 배치도는 보기 좋게 정돈되어 가고 있었다."
+
+    "문제는 마지막 장식 테스트였다."
+
+    show yuna smile at left with dissolve
+    yn "잠깐만요, 잠깐만."
+    yn "이건 기록해야 돼요."
+    yn "우리 지금 완전 열심히 청춘하고 있잖아요!"
+
+    sj "청춘을 동사처럼 쓰지 마라."
+
+    "유나는 어디서 꺼냈는지 모를 휴대폰을 번쩍 들었다."
+
+    yn "사진 찍어요!"
+    yn "준비실 첫 단체사진!"
+
+    show harin surprise at right with dissolve
+    hr "갑자기?"
+
+    yn "갑자기가 아니고 필수예요!"
+    yn "나중에 축제 끝나고 보면 완전 추억 된다니까."
+
+    show gaeun smile at center with dissolve
+    ge "오, 좋은데."
+    ge "후배님들 이런 건 남겨둬야지."
+
+    show seola surprise with dissolve
+    sa "나는…"
+
+    "설아가 말을 흐렸다."
+    "유나는 금방 눈치를 챘는지 휴대폰을 내리며 살짝 고개를 갸웃했다."
+
+    show yuna normal at left with dissolve
+    yn "아."
+    yn "설아, 사진 싫으면 안 찍어도 돼."
+    yn "아니면 얼굴 안 나오게 손만 찍을 수도 있고."
+
+    "설아는 유나를 가만히 바라봤다."
+    "거절당할 걸 예상한 사람처럼 조심스러운 제안."
+    "그 태도가 나름대로 다정했다."
+
+    sa "…같이 찍는 건."
+    sa "조금 괜찮아."
+
+    show yuna smile at left with dissolve
+    yn "진짜?"
+    yn "오케이! 그럼 바로 진행!"
+
+    th "유나는 저럴 때 사람을 재촉하지 않는다."
+    th "마냥 들이대는 것 같아도, 아주 가끔은 묘하게 선을 잘 지킨다."
+
+    "문제는 자리였다."
+    "좁은 준비실 안에서 다섯 명이 한 프레임에 들어가려니, 생각보다 붙어 서야 했다."
+
+    show harin normal at right with dissolve
+    hr "삼각대 같은 건 없어?"
+
+    yn "없죠!"
+    yn "그래서 셀카예요!"
+
+    sj "아주 계획적이다."
+
+    show gaeun laugh at center with dissolve
+    ge "막내야, 네 팔 길이만 믿고 다섯 명을 넣겠다는 거야?"
+    ge "그건 거의 모험인데."
+
+    yn "가능해요!"
+    yn "제가 또 셀카 장인이라."
+
+    menu:
+        "어디에 설까?"
+
+        "유나 옆에 선다.":
+            $ yuna_point += 1
+
+            "내가 유나 쪽으로 한 걸음 붙자, 유나는 대놓고 눈을 반짝였다."
+
+            show yuna smile at left with dissolve
+            yn "헤헤."
+            yn "역시 선배는 제 옆이 제일 편하죠?"
+
+            sj "그런 말 하는 순간 불편해진다."
+
+            yn "늦었어요."
+            yn "이미 전 엄청 기분 좋아졌거든요."
+
+        "하린 옆에 선다.":
+            $ harin_point += 1
+
+            "내가 하린이 쪽으로 자리를 옮기자, 하린이는 아주 잠깐 눈을 깜빡였다."
+
+            hr "…왜 여기로 와."
+
+            sj "네가 제일 안 움직일 것 같아서."
+            sj "사진 찍을 때 한 명쯤 중심 잡아야 하잖아."
+
+            show harin faint_smile at right with dissolve
+            hr "무슨 기준이야, 그게."
+
+        "설아 쪽에 선다.":
+            $ seola_point += 1
+
+            "설아가 가장 구석으로 빠지려는 걸 보고, 나는 그 옆자리를 먼저 차지했다."
+
+            sj "너 거기로 가면 반밖에 안 나온다."
+
+            show seola normal with dissolve
+            sa "…그럼."
+            sa "조금만 안쪽으로 갈게."
+
+            "설아는 내 쪽을 힐끗 보고 아주 조금 안으로 움직였다."
+            "그 작은 양보가 생각보다 크게 느껴졌다."
+
+        "가은 선배 옆에 선다.":
+            $ gaeun_point += 1
+
+            "내가 가은 선배 옆에 서자, 선배는 능청스럽게 웃었다."
+
+            show gaeun smile at center with dissolve
+            ge "왜, 후배님."
+            ge "나랑 투샷 욕심나?"
+
+            sj "단체사진이라면서요."
+
+            ge "아쉽네."
+            ge "난 또 드디어 후배님이 선배 미모의 가치를 알아본 줄."
+
+    hide harin with dissolve
+    hide seola with dissolve
+    hide gaeun with dissolve
+
+    "결국 유나가 팔을 한껏 뻗고, 우리는 어설프게 어깨를 맞댄 채 프레임 안으로 몸을 욱여넣었다."
+    "하린이는 최대한 단정한 얼굴을 유지하려 했고."
+    "설아는 어색한 표정으로 시선을 어딘가 두고 있었고."
+    "가은 선배는 익숙하게 웃고 있었고."
+    "유나는 세상에서 제일 신난 얼굴이었다."
+
+    yn "하나, 둘, 셋!"
+
+    play sound "audio/sfx_camera_click.ogg"
+
+    "찰칵."
+
+    "사진이 찍히자마자 유나는 바로 화면을 확인했다."
+    "그리고 1초 뒤, 준비실 안에 요란한 웃음이 터졌다."
+
+    show yuna laugh at left with dissolve
+    yn "아하하하!"
+    yn "선배 왜 혼자만 표정이 완전 장례식장이에요!"
+
+    sj "누가 갑자기 그렇게 붙어서 찍으래."
+
+    show gaeun laugh at center with dissolve
+    ge "아니, 진짜네."
+    ge "후배님만 유독 영혼이 빠져 있잖아."
+
+    show harin faint_smile at right with dissolve
+    hr "입꼬리가 1mm도 안 올라갔어."
+
+    show seola normal at center with dissolve
+    sa "…그래도."
+    sa "조금 웃기긴 해."
+
+    "네 사람이 한꺼번에 웃는 바람에, 오히려 내가 제일 억울해졌다."
+
+    sj "됐고."
+    sj "다시 찍어."
+
+    yn "오!"
+    yn "선배가 먼저 재촬영 요청했어!"
+    yn "이건 엄청 희귀한 이벤트다!"
+
+    "두 번째 사진은 조금 나았다."
+    "세 번째는 더 자연스러웠고, 네 번째쯤 되자 이미 장식 테스트는 핑계고 사진 놀이가 되어 있었다."
+
+    "결국 제일 마지막에 찍힌 사진 속 우리는, 누구 하나 제대로 포즈를 맞추지도 못한 채 제각각 웃고 있었다."
+    "그런데 이상하게도, 그 사진이 제일 그럴듯했다."
+
+    show gaeun smile at center with dissolve
+    ge "좋네."
+    ge "이건 나중에 축제 끝나고 꼭 다시 봐야겠다."
+
+    show yuna smile at left with dissolve
+    yn "맞아요!"
+    yn "제가 단체방 같은 거 만들어도 돼요?"
+
+    show harin normal at right with dissolve
+    hr "업무용으로만 쓰면."
+
+    yn "업무용 반, 잡담용 반!"
+
+    sj "그건 이미 잡담용이 더 많다는 뜻이잖아."
+
+    show seola normal at center with dissolve
+    sa "…그래도."
+    sa "있으면 편할 것 같아."
+
+    "설아가 먼저 그렇게 말하자, 유나는 진심으로 놀란 얼굴을 했다가 곧장 웃었다."
+
+    yn "오케이!"
+    yn "그럼 오늘 저녁 안에 만들게요!"
+    yn "이름은 당연히 '조용한 봄'이다!"
+
+    hr "그건 아직 확정 아니라고 했지."
+
+    ge "이쯤 되면 사실상 확정이네."
+
+    th "정말 이상한 이름인데."
+    th "이상하게 점점 익숙해진다."
+
+    scene black with fade
+    play music "audio/bgm_lazy_afternoon.ogg" fadein 1.5
+
+    "그날 집에 돌아가는 길."
+    "휴대폰에는 단체사진이 몇 장 도착해 있었다."
+
+    "첫 번째는 내가 유독 무표정해서 웃긴 사진."
+    "두 번째는 유나가 흔들린 사진."
+    "세 번째는 하린이 드물게 웃는 사진."
+    "네 번째는 설아가 아주 희미하게 웃고 있는 사진."
+    "그리고 마지막은, 다 같이 어설프게 엉켜 있는데 이상하게 가장 자연스러운 사진."
+
+    th "평범하다."
+    th "정말 별일 없는 하루였다."
+
+    th "그런데 이상하게."
+    th "이런 평범한 날이, 생각보다 오래 기억에 남을 것 같은 기분이 든다."
+
     return
