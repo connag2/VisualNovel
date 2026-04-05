@@ -148,3 +148,6 @@ All major writing decisions must satisfy the following:
 - Build grand true ending structure
 - Organize script files for implementation
 - Polish route transitions and emotional pacing
+
+warning!!!! 중요함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+꼭 readme 폴더의 모든 md 파일을 읽고 올것 그리고 스크립트 파일도 읽어서 꼭 현재 스토리가 어느정도로 나갔는지 기억 할것 그리고 스토리 나간후 스토리 진행 상황을 꼭 적을것 그리고 떡밥 이나 그런걸 넣었으면 꼭 맨 밑에 다른 txt 창에 나에게 story_steps.md 파일에 넣으라 알려줄것
