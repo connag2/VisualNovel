@@ -17,21 +17,21 @@ default harin_point = 0
 default seola_point = 0
 default gaeun_point = 0
 
-# 화면 위치 조정을 위한 트랜스폼 정의
+# 화면 위치 조정을 위한 트랜스폼 정의 (ypos를 1.0 초과로 설정하여 강제로 내림)
 transform center_lower:
-    xalign 0.5 yalign 1.0
+    xalign 0.5 yanchor 1.0 ypos 1.15
 
 transform char_1:
-    xalign 0.1 yalign 1.0
+    xalign 0.1 yanchor 1.0 ypos 1.15
 
 transform char_2:
-    xalign 0.35 yalign 1.0
+    xalign 0.35 yanchor 1.0 ypos 1.15
 
 transform char_3:
-    xalign 0.65 yalign 1.0
+    xalign 0.65 yanchor 1.0 ypos 1.15
 
 transform char_4:
-    xalign 0.9 yalign 1.0
+    xalign 0.9 yanchor 1.0 ypos 1.15
 
 # 여기서부터 본 게임 시작
 label start:
