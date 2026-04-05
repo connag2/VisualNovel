@@ -60,25 +60,25 @@ transform auto_focus(char_tag):
 
 # --- 4. 화면 위치 조정을 위한 트랜스폼 정의 ---
 
-# 1~2명 등장 시 사용할 기본 위치 (더 이상 축소하지 않고 본래의 80% 크기 유지)
+# 1~2명 등장 시 사용할 기본 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 크기를 키움(zoom 증가))
 transform left:
-    xalign 0.15 yanchor 1.0 ypos 1.25
+    xalign 0.15 yanchor 1.0 ypos 1.35 zoom 1.1
 transform center:
-    xalign 0.5 yanchor 1.0 ypos 1.25
+    xalign 0.5 yanchor 1.0 ypos 1.35 zoom 1.1
 transform right:
-    xalign 0.85 yanchor 1.0 ypos 1.25
+    xalign 0.85 yanchor 1.0 ypos 1.35 zoom 1.1
 transform center_lower:
-    xalign 0.5 yanchor 1.0 ypos 1.25
+    xalign 0.5 yanchor 1.0 ypos 1.35 zoom 1.1
 
-# 4명 동시 등장 시 사용할 위치 (공간 확보를 위해 기본 80%에서 10%만 살짝 더 줄임)
+# 4명 동시 등장 시 사용할 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 축소를 없앰(zoom 0.9 -> 1.0))
 transform char_1:
-    xalign 0.05 yanchor 1.0 ypos 1.25 zoom 0.9
+    xalign 0.05 yanchor 1.0 ypos 1.35 zoom 1.0
 transform char_2:
-    xalign 0.35 yanchor 1.0 ypos 1.25 zoom 0.9
+    xalign 0.35 yanchor 1.0 ypos 1.35 zoom 1.0
 transform char_3:
-    xalign 0.65 yanchor 1.0 ypos 1.25 zoom 0.9
+    xalign 0.65 yanchor 1.0 ypos 1.35 zoom 1.0
 transform char_4:
-    xalign 0.95 yanchor 1.0 ypos 1.25 zoom 0.9
+    xalign 0.95 yanchor 1.0 ypos 1.35 zoom 1.0
 
 
 # --- 5. 이미지 정의 (크기 80% 축소 + 높이 보정 + 포커스 효과 모두 포함) ---
@@ -2524,7 +2524,7 @@ label scene_14:
 
     yn "없죠!"
     yn "그래서 셀카예요!"
-    sj "아주 계획적이다."
+    sj "아주 계획적이다?"
 
     hide seola
     show gaeun laugh at center_lower with dissolve
