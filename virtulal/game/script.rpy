@@ -3168,7 +3168,7 @@ label scene_14:
     scene black with fade
     "축제는 아직 시작도 안 했지만, 이상하게 오늘 하루는 벌써 조금 특별했다."
 
-        "그때였다."
+    "그때였다."
 
     "복도 저편에서 누군가 급하게 뛰어오는 발소리가 들렸다."
     "한 학생이 우리 옆을 스쳐 지나가며 매점 봉지를 떨어뜨렸고, 안에 들어 있던 우유팩 하나가 바닥을 따라 데구르르 굴러왔다."
@@ -3265,7 +3265,7 @@ label scene_14:
     "우리는 창가에 선 채 자연스럽게 단체방을 확인했다."
     "첫 번째 메시지는 이미 올라와 있었다."
 
-    "유나 : [사진]"
+    "유나 : 사진file"
     "유나 : 어제의 역사적인 첫 단체사진!"
     "유나 : 다들 저장 필수!"
 
@@ -6111,6 +6111,2925 @@ th "나중에 가장 먼저 떠오를지도 모른다."
 
 scene black with fade
 
+# ---------------------------------------------------------
+# [Scene 21 타이틀]
+
+scene black with fade
+centered "{size=40}Scene 21{/size}\n\n{size=30}조금만 더 같이{/size}" with dissolve
+pause 1.5
+
+scene bg old_library with fade
+play music "audio/bgm_lazy_afternoon.ogg" fadein 2.0
+
+"작업이 끝났는데도, 이상하게 아무도 바로 가방을 들지 않았다."
+"언제나처럼 '이제 슬슬 가야지' 하는 분위기는 되었는데,"
+"정작 먼저 문 쪽으로 향하는 사람은 없었다."
+
+show yuna smile at left with dissolve
+show harin faint_smile at center_lower with dissolve
+show seola normal at right with dissolve
+show gaeun smile at far_right with dissolve
+
+yn "음."
+yn "오늘은 뭔가."
+yn "이대로 가면 아쉽지 않아요?"
+
+sj "또 시작이네."
+
+ge "근데 조금 이해돼."
+ge "오늘 작업 텐션 좋았잖아."
+
+hr "그래도 너무 늦어지면 안 돼."
+
+yn "알아요, 알아요."
+yn "그러니까 멀리는 아니고…"
+yn "정말 잠깐만!"
+
+sa "잠깐의 기준이 유나한테 제일 불안한데."
+
+yn "설아 선배."
+yn "절 너무 못 믿으시는 거 아니에요?"
+
+sa "조금."
+
+"설아가 아무렇지 않게 그렇게 말하자,"
+"유나는 또 진심으로 충격받은 척했다."
+"이제는 그 반응도 거의 익숙한 코미디처럼 느껴졌다."
+
+show yuna pout at left with dissolve
+yn "너무하네…"
+sj "근데 다들 같은 생각일걸."
+
+yn "와."
+yn "지금 팀 단합으로 저를 공격하네요."
+
+hr "공격까진 아니고."
+hr "예측 가능하다는 뜻."
+
+"하린이까지 그렇게 정리하자,"
+"결국 준비실 안이 한 번 더 웃음으로 무너졌다."
+
+th "이제는 이런 흐름이 정말 자연스럽다."
+th "누가 시작하면, 누군가 이어받고, 나머지가 받아친다."
+
+show gaeun smile at far_right with dissolve
+ge "좋아."
+ge "그럼 학교 앞 자판기까지만?"
+ge "그 정도면 잠깐 맞지."
+
+yn "오, 찬성!"
+sa "그건 괜찮아."
+hr "자판기면… 뭐."
+
+"셋이 너무 빨리 넘어가 버리자,"
+"시선이 또 자연스럽게 내게 몰렸다."
+
+sj "왜 마지막은 항상 나냐."
+
+show yuna grin at left with dissolve
+yn "클로징 멘트 담당이니까."
+
+sj "언제 그런 직책이 생겼어."
+
+yn "방금."
+
+scene black with dissolve
+centered "{size=30}학교 뒤편 복도{/size}" with dissolve
+
+scene bg sunset_hallway with fade
+play music "audio/bgm_noisy_hallway.ogg" fadein 1.5
+
+"우리는 준비실 불을 끄고 복도로 나왔다."
+"방과 후의 학교는 점점 조용해지고 있었지만,"
+"아직 완전히 텅 빈 시간은 아니었다."
+"어딘가에서 청소 도구 끄는 소리가 들렸고,"
+"멀리 운동장 쪽에선 마지막까지 남아 있는 동아리 애들 목소리가 바람처럼 흘러왔다."
+
+"다섯이 같이 복도를 걷는 모습도 이제는 조금 익숙했다."
+"누가 앞서고 누가 뒤처지는지도 묘하게 일정했다."
+"유나는 늘 반 발짝쯤 앞서 있고,"
+"하린이는 그걸 눈으로 좇으며 속도를 맞추고,"
+"설아는 옆에서 조용히 따라오고,"
+"가은 선배는 뒤에서 느긋하게 흐름을 보고,"
+"나는 그 사이 어딘가에 섞인다."
+
+th "처음엔 어색했는데."
+th "이제는 그냥 이게 자연스럽다."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+hide gaeun
+
+yn "근데요."
+yn "우리 다 같이 있을 때랑 둘셋씩 있을 때 느낌 되게 다른 거 알아요?"
+
+sj "갑자기 분위기 분석이냐."
+
+yn "중요하거든요."
+yn "예를 들면 다 같이 있으면 되게 북적북적한데,"
+yn "또 이상하게 둘씩 말할 때는 조용해져요."
+
+sa "맞아."
+sa "근데 어색하진 않고."
+
+hr "……그건 좀 알 것 같아."
+
+"하린이는 그렇게 말하며 창문 밖을 잠깐 봤다."
+"노을빛이 복도 유리에 옅게 번져 있었다."
+
+ge "그게 편해졌다는 거지."
+ge "사람 수 바뀌어도 분위기가 안 깨지는 거."
+
+sj "선배는 꼭 그런 걸 되게 쉽게 말하네요."
+
+ge "관찰자라서."
+
+show yuna laugh at left with dissolve
+yn "와, 멋있다."
+yn "저도 그런 어른 되고 싶어요."
+
+sj "갑자기 어른이래."
+ge "난 아직 학생인데?"
+yn "그래도 선배는 어른 같단 말이에요."
+
+"가은 선배는 그냥 웃기만 했다."
+"부정도 긍정도 안 하는 저 표정도 이제는 조금 알 것 같았다."
+
+scene bg school_backyard_evening with fade
+play music "audio/bgm_daily_light.ogg" fadein 1.5
+
+"학교 뒤편 자판기까지 오는 길은 정문 쪽보다 한산했다."
+"운동장 옆으로 난 좁은 길을 따라 몇 걸음만 더 가면,"
+"오래된 벤치 두 개와 자판기 세 대가 나란히 서 있는 작은 공간이 나왔다."
+
+"늦은 햇빛이 자판기 유리에 반사되어 반짝거렸다."
+"이 시간대 학교 뒤편은 묘하게 조용하고, 또 느긋했다."
+"유나는 자판기를 보자마자 괜히 들뜬 얼굴이 됐다."
+
+show yuna grin at left with dissolve
+yn "좋아."
+yn "오늘의 취향 조사 갑니다."
+
+sj "또 무슨 조사냐."
+
+yn "자판기 음료 취향!"
+yn "이건 사람을 파악하는 데 아주 중요해요."
+
+hr "너 기준에선 다 중요하잖아."
+
+sa "그래도 재밌긴 해."
+
+"설아가 그렇게 말하자 유나는 곧바로 활짝 웃었다."
+
+show yuna smile at left with dissolve
+yn "역시 설아 선배!"
+yn "그럼 선배부터."
+
+sa "왜 나부터."
+
+yn "왠지 제일 의외일 것 같아서."
+
+"설아는 자판기 칸을 잠깐 훑어봤다."
+"그리고 아주 망설임 없이 버튼 하나를 눌렀다."
+"툭, 하고 떨어진 건 레몬 탄산수였다."
+
+sj "의외로 깔끔하네."
+
+sa "의외였어?"
+sj "조금."
+
+sa "왜."
+
+sj "왠지 달달한 거 안 고를 것 같긴 했는데."
+sj "그래도 탄산수는 더 담백해서."
+
+sa "그냥."
+sa "끝맛이 안 남아서 좋아."
+
+"그 말은 설아답다고 생각했다."
+"군더더기 없는 선택."
+"하지만 유나는 또 이상한 데서 감탄하고 있었다."
+
+yn "끝맛이 안 남아서 좋다…"
+yn "와, 말이 되게 설아 선배 같아요."
+
+sa "그게 무슨 뜻인데."
+
+yn "설명은 못 하겠는데 아무튼요."
+
+scene bg school_backyard_evening with dissolve
+
+show harin normal at center_lower with dissolve
+
+"다음은 하린이 차례였다."
+"하린이는 한참 고민할 것 같더니 의외로 바로 버튼을 눌렀다."
+"나온 건 캔커피였다."
+
+show yuna surprise at left with dissolve
+yn "어?"
+yn "하린이 커피 마셔?"
+
+hr "가끔."
+hr "오늘은 조금 피곤해서."
+
+sj "은근 어른 취향이네."
+
+hr "그런 말 들으면 좀 이상한데."
+
+ge "근데 잘 어울려."
+ge "반장은 캔커피 쪽 이미지 있어."
+
+yn "맞아!"
+yn "왠지 정리 다 끝내고 혼자 창문 보면서 마실 것 같아."
+
+sj "그 상상은 좀 웃긴데."
+
+"하린이는 어이없다는 듯 나와 유나를 번갈아 봤다."
+"그런데 완전히 부정하진 않았다."
+"오히려 괜히 캔을 한 번 더 만지작거렸다."
+
+show harin faint_smile at center_lower with dissolve
+hr "…뭐."
+hr "가끔은 맞을지도."
+
+show yuna grin at left with dissolve
+yn "우와."
+yn "인정했어."
+
+scene bg school_backyard_evening with dissolve
+
+"유나는 말할 것도 없었다."
+"자판기 앞에 서자마자 주저 없이 딸기우유 버튼을 눌렀다."
+"심지어 누르기 전부터 결과를 다 알고 있는 사람 얼굴이었다."
+
+sj "예상 적중."
+
+show yuna laugh at left with dissolve
+yn "이건 예상이 아니라 확신이죠."
+
+sa "이젠 놀랍지도 않아."
+
+hr "일관적이라 좋네."
+
+yn "좋은 거죠?"
+sj "적어도 이해는 쉽다."
+
+"유나는 자판기에서 나온 딸기우유 팩을 두 손으로 받아 들고,"
+"세상에서 제일 만족스러운 표정을 지었다."
+"진짜 저런 작은 걸로 저렇게 기분 좋아할 수 있다는 게,"
+"조금 부럽다고 생각했다."
+
+th "쟤는 좋아하는 걸 좋아한다고 숨기질 않는다."
+th "그래서 더 보기 편한 걸지도."
+
+scene bg school_backyard_evening with dissolve
+
+show gaeun smile at far_right with dissolve
+
+ge "그럼 난…"
+
+"가은 선배는 잠시 고민하더니,"
+"사과주스를 골랐다."
+
+yn "오."
+yn "선배는 뭔가 탄산일 줄 알았어요."
+
+ge "왜?"
+yn "그냥 이미지가요."
+sj "저도 약간 그 생각했는데."
+
+ge "너희 나를 너무 화려하게 보는 거 아냐?"
+ge "의외로 무난한 것도 좋아해."
+
+sa "사과주스면 충분히 무난하네."
+
+hr "근데 잘 어울려."
+
+"가은 선배는 웃으며 빨대를 꽂았다."
+
+ge "좋아."
+ge "그럼 남은 건 서진."
+
+"나는 자판기 앞에 섰다."
+"대충 아무거나 고르면 될 것 같은데,"
+"이상하게 네 사람의 시선이 느껴져서 괜히 조금 신경 쓰였다."
+
+sj "왜 다들 집중하냐."
+
+show yuna grin at left with dissolve
+yn "중요하니까."
+
+sj "네 기준에선 진짜 다 중요하네."
+
+"나는 잠깐 고민하다, 결국 포도 음료를 눌렀다."
+"캔이 아래로 굴러 떨어지는 소리가 작게 울렸다."
+
+show yuna surprise at left with dissolve
+yn "오."
+yn "포도?"
+
+hr "의외다."
+
+sa "조금."
+
+sj "그렇게 의외냐."
+
+ge "아니, 뭔가 깔끔한 거 고를 줄 알았어."
+
+sj "그냥 당겼는데."
+
+"유나는 포도 캔을 보더니 괜히 고개를 끄덕였다."
+
+show yuna smile at left with dissolve
+yn "아니."
+yn "근데 이것도 선배 같아."
+
+sj "또 해석 시작이네."
+
+yn "뭔가요…"
+yn "겉보기엔 무난해 보이는데,"
+yn "은근 자기 취향 확실한 느낌?"
+
+sj "포도 음료 하나로 너무 멀리 갔다."
+
+sa "근데 아주 틀린 말은 아닌 것 같아."
+
+"설아까지 덧붙이자,"
+"나는 반박할 타이밍을 그냥 놓쳐 버렸다."
+
+scene bg school_backyard_evening with dissolve
+
+"결국 우리는 자판기 앞 벤치에 적당히 기대거나 걸터앉은 채 음료를 마셨다."
+"말 그대로 정말 잠깐일 뿐인 시간."
+"그런데 방과 후 준비실에서 이어진 분위기가 그대로 따라와서,"
+"이 짧은 시간조차 자연스럽게 하나의 장면처럼 이어졌다."
+
+show yuna normal at left with dissolve
+show harin faint_smile at center_lower with dissolve
+show seola normal at right with dissolve
+show gaeun smile at far_right with dissolve
+
+yn "좋아."
+yn "그럼 이제 음료 취향이 나왔으니 다른 것도 해 봅시다."
+
+sj "아직 더 있냐."
+
+yn "당연하죠."
+yn "빵 취향, 아이스크림 취향, 계절 취향, 색 취향…"
+
+hr "너 오늘 집 안 갈 생각이야?"
+
+yn "갈 거예요!"
+yn "근데 이런 거 알면 재밌잖아요."
+
+ge "맞아."
+ge "의외로 오래 기억에 남아."
+
+sa "음."
+sa "난 겨울보다 봄."
+
+yn "오!"
+yn "좋아, 계절 취향부터."
+
+sj "진짜 시작하네."
+
+"유나는 자판기 앞에서 아주 자연스럽게 즉석 설문을 열었다."
+"누가 봐도 쓸데없는 대화였지만,"
+"이상하게 한 마디도 버릴 게 없었다."
+
+scene bg school_backyard_evening with dissolve
+
+yn "전 당연히 봄."
+yn "딸기 시즌이니까."
+
+sj "결국 거기로 귀결되네."
+
+hr "나는 가을."
+hr "덥지도 춥지도 않아서 좋아."
+
+sa "난 봄."
+sa "바람이 적당해서."
+
+ge "오, 난 여름."
+yn "선배 진짜요?"
+ge "응."
+ge "해 긴 거 좋아하거든."
+
+"유나는 놀란 얼굴로 고개를 돌렸다."
+
+show yuna smile at left with dissolve
+yn "선배는요?"
+
+sj "겨울."
+
+"대답이 나오자마자 네 사람 반응이 조금씩 갈렸다."
+"유나는 '역시?' 하는 얼굴,"
+"하린이는 '그럴 것 같긴 했다'는 얼굴,"
+"설아는 납득,"
+"가은 선배는 흥미롭다는 얼굴."
+
+show yuna grin at left with dissolve
+yn "와."
+yn "되게 윤서진 선배 같아."
+
+sj "그 말 오늘만 몇 번째냐."
+
+hr "근데 진짜 그래."
+hr "조용한 걸 좋아할 것 같아."
+
+sa "그리고 사람 적은 계절."
+
+sj "그건 맞네."
+
+ge "오, 인정 빠르다."
+
+"가은 선배가 웃자,"
+"나도 괜히 따라 웃었다."
+
+th "이젠 부정하는 게 더 이상하긴 하다."
+
+scene bg school_backyard_evening with dissolve
+
+"대화는 계속 이어졌다."
+
+"좋아하는 색."
+"싫어하는 채소."
+"빵 먹을 때 먼저 뜯는 부분."
+"편의점 가면 꼭 한 번 보는 코너."
+
+"유나는 전부 빠짐없이 리액션을 했고,"
+"하린이는 하나하나 대답하면서도 왜 이걸 말하고 있는지 모르겠다는 얼굴을 했고,"
+"설아는 짧지만 정확한 대답을 했고,"
+"가은 선배는 묘하게 다 맞장구를 잘 쳤다."
+
+"그렇게 쓸데없는 얘기만 한참 한 것 같은데,"
+"신기하게도 지루하지 않았다."
+
+th "이런 시간이 제일 이상하다."
+th "정말 의미 없어 보이는데."
+th "끝나고 나면 이상하게 많이 남는다."
+
+show yuna soft at left with dissolve
+yn "아."
+yn "근데 왠지 알 것 같아요."
+
+sj "뭘."
+
+yn "왜 준비실이 좋아졌는지."
+
+"유나는 딸기우유 팩을 손에 든 채,"
+"자판기 위쪽 하늘을 잠깐 올려다봤다."
+"붉게 물든 빛이 천천히 엷어지고 있었다."
+
+yn "그냥."
+yn "거기 가면 다들 있잖아요."
+
+"아주 쉬운 말이었다."
+"정말로 특별한 표현도 아니고, 꾸민 말도 아니었다."
+"그런데 그 짧은 한 문장이,"
+"오늘 자판기 앞에서 나눈 모든 대화보다 더 오래 남았다."
+
+show harin faint_smile at center_lower with dissolve
+hr "……맞아."
+
+show seola faint_smile at right with dissolve
+sa "응."
+
+ge "그게 제일 크지."
+
+"가은 선배는 별일 아니라는 듯 가볍게 말했지만,"
+"나머지 셋은 조금 다른 표정이었다."
+"유나는 자기 말이 뭐가 그렇게 대단한지도 모르는 얼굴이었고,"
+"하린이는 캔커피를 손끝으로 굴리며 작게 웃었고,"
+"설아는 레몬 탄산수 캔 표면에 맺힌 물방울을 가만히 내려다봤다."
+
+th "그냥 거기 가면 다들 있다."
+th "정말 단순한데."
+th "그래서 더 정확한 말일지도."
+
+scene bg school_backyard_evening with dissolve
+
+"잠깐만 더 있다 가자는 말은 정말로 잠깐으로 끝났다."
+"음료를 반쯤 비우고 나자,"
+"하린이가 먼저 시간을 확인했고,"
+"가은 선배도 슬슬 가야겠다고 했고,"
+"설아도 조용히 일어섰다."
+
+show harin normal at center_lower with dissolve
+hr "이제 진짜 가자."
+yn "네에."
+yn "오늘은 얌전히 해산."
+
+sj "오늘은, 이라니."
+
+sa "본인도 알아."
+
+"유나는 들킨 사람처럼 웃었다."
+
+scene bg school_side_path_evening with dissolve
+
+"우리는 자판기에서 나와 다시 학교 밖 방향으로 천천히 걸었다."
+"조금 전보다 하늘빛은 옅어졌지만,"
+"아직 분위기가 가라앉을 정도는 아니었다."
+"오히려 길게 이어진 하루의 끝이 부드럽게 정리되는 느낌이었다."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+hide gaeun
+
+yn "오늘 알게 된 거 정리할게요."
+sj "또 정리냐."
+
+yn "네."
+yn "설아 선배는 레몬 탄산수."
+yn "하린이는 캔커피."
+yn "가은 선배는 사과주스."
+yn "윤서진 선배는 포도."
+
+hr "왜 마지막만 이름을 풀네임으로 부르는데."
+
+yn "중요 인물이니까요."
+
+sj "전부 중요 인물 아니었냐."
+
+yn "다 중요하지만,"
+yn "선배는 반응 보는 맛이 있거든요."
+
+sa "그건 맞아."
+
+sj "설아까지."
+
+"설아는 대답 대신 아주 조금 웃었다."
+"이제는 그런 사소한 표정 변화도 어렵지 않게 읽혔다."
+
+scene bg school_gate_evening with dissolve
+
+"교문 근처에 다다르자,"
+"역시나 자연스럽게 발걸음이 조금 느려졌다."
+"누군가 먼저 헤어지자는 말을 해야 끝날 흐름."
+"그런데 또 아무도 바로 입을 열지 않았다."
+
+th "며칠 전엔 빨리 끝나길 바랐을지도 모르는데."
+th "지금은 오히려 조금 늦춰지고 있다."
+
+show gaeun smile at far_right with dissolve
+ge "내일도 준비실?"
+yn "당연하죠!"
+hr "상황 보고."
+sa "나는 갈 수 있어."
+sj "이젠 자동으로 잡히네."
+
+ge "좋네."
+ge "그런 분위기."
+
+"가은 선배는 손을 흔들며 먼저 갈림길 쪽으로 빠졌다."
+
+ge "그럼 다들 조심히."
+ge "내일 또 봐."
+
+yn "네에!"
+hr "들어가세요."
+sa "안녕."
+
+"선배가 멀어지고,"
+"이번엔 하린이가 버스 정류장 방향으로 한 걸음 나섰다."
+
+hr "나도 여기서 갈게."
+hr "내일 점심엔 너무 늦지 마."
+
+yn "반장님."
+yn "이제 완전 관리 담당 같아요."
+
+hr "원래 그랬어."
+
+sj "맞는 말이네."
+
+"하린이는 나와 설아, 유나를 한 번씩 보고 작게 웃었다."
+
+show harin faint_smile at center_lower with dissolve
+hr "그래도…"
+hr "내일 보면 좋겠다."
+
+"짧은 말인데,"
+"묘하게 하린이답지 않게 솔직해서,"
+"유나가 바로 눈을 반짝였다."
+
+show yuna soft at left with dissolve
+yn "와."
+yn "하린이 방금 엄청 좋은 말 했어."
+
+hr "그렇게 거창한 건 아닌데."
+sa "그래도 좋았어."
+
+"결국 하린이는 조금 민망한 얼굴로 먼저 몸을 돌렸다."
+
+scene bg school_gate_evening with dissolve
+hide harin
+
+"남은 건 셋."
+"하지만 어색하진 않았다."
+"오히려 이런 식으로 사람이 하나씩 빠져도,"
+"대화의 온도가 그대로 이어지는 게 신기했다."
+
+show yuna smile at left with dissolve
+show seola normal at right with dissolve
+
+sa "유나는 내일도 딸기우유 마실 거야?"
+
+show yuna grin at left with dissolve
+yn "아마도요."
+yn "이미 제 이미지가 그렇게 굳은 것 같긴 하지만."
+
+sj "네가 직접 굳혔잖아."
+
+sa "근데 어울려."
+
+"유나는 그 말에 또 만족한 얼굴로 웃었다."
+
+scene bg crossroads_evening with dissolve
+
+"곧 설아와도 갈림길이 가까워졌다."
+"설아는 늘 그랬듯 짧게 인사하고 갈 것 같았는데,"
+"오늘은 잠깐 멈춰 서서 우리 둘을 번갈아 봤다."
+
+show seola faint_smile at right with dissolve
+sa "오늘 재밌었어."
+
+"짧고 담백한 한마디."
+"그런데 이상하게도 오늘 하루를 정리하는 데에는 그걸로 충분했다."
+
+yn "저도요."
+sj "나도."
+
+"설아는 고개를 한 번 작게 끄덕였다."
+
+sa "그럼 내일."
+
+"그리고 조용히 자기 쪽 길로 걸어갔다."
+"유나는 그 뒷모습을 잠깐 바라보다가, 괜히 작게 중얼거렸다."
+
+show yuna soft at left with dissolve
+yn "설아 선배는 진짜."
+yn "말 하나하나가 오래 남아요."
+
+sj "맞네."
+
+"내가 바로 동의하자,"
+"유나는 의외라는 얼굴로 나를 봤다."
+
+show yuna smile at left with dissolve
+yn "선배도 그렇게 생각해요?"
+sj "다들 생각할걸."
+
+yn "그럼 우리 진짜 많이 친해진 건가."
+
+sj "왜 갑자기 결론이 그렇게 되는데."
+
+yn "왜냐면요."
+yn "예전 같았으면 몰랐을 것까지 자꾸 보이잖아요."
+
+"나는 잠깐 대꾸하지 못했다."
+"그 말이 이상하게 정확했기 때문이다."
+
+th "예전 같았으면 몰랐을 것들."
+th "좋아하는 음료, 계절, 말버릇, 웃는 타이밍."
+th "정말 사소한 건데."
+th "이제는 이상할 만큼 선명하다."
+
+scene bg road_evening with dissolve
+
+"결국 남은 건 또 나와 유나 둘이었다."
+"이제는 이 상황도 낯설지 않았다."
+"같이 걷는 속도도, 중간중간 비는 침묵도."
+
+show yuna normal at left with dissolve
+
+yn "선배."
+sj "왜."
+
+yn "우리 진짜 좀 팀 같죠?"
+
+sj "조금이 아니라 꽤."
+
+"생각보다 빨리 대답이 튀어나왔다."
+"유나는 눈을 동그랗게 떴다가,"
+"곧장 환하게 웃었다."
+
+show yuna laugh at left with dissolve
+yn "우와."
+yn "지금 그거 엄청난 인정이에요."
+
+sj "그렇게까지?"
+
+yn "네."
+yn "윤서진 선배가 그런 말 하면 무게가 있거든요."
+
+sj "그럼 앞으로 조심해야겠네."
+
+yn "아뇨."
+yn "앞으로도 자주 해주세요."
+
+"유나는 아무렇지 않게 그렇게 말했다."
+"그 말이 이상하게 장난처럼만 들리진 않았다."
+
+scene bg crossroads_evening with dissolve
+
+"조금 더 걷자, 우리도 결국 갈라지는 길 앞에 섰다."
+"오늘도 여기까지였다."
+"그런데 이제는 이 헤어짐조차 묘하게 익숙한 루틴 같았다."
+
+show yuna smile at left with dissolve
+
+yn "그럼 내일 진짜 봐요."
+yn "읽씹 금지, 지각 금지, 빠지기 금지."
+
+sj "규칙 계속 늘어나네."
+
+yn "좋은 건 꽉 잡아야 하거든요."
+
+sj "그건 또 무슨 말이야."
+
+yn "그냥요."
+
+"유나는 웃으며 대답을 넘겼다."
+"그리고 익숙하게 손을 흔들었다."
+
+yn "잘 가요, 선배."
+
+sj "너도."
+
+"유나는 몇 걸음 먼저 가다가,"
+"갑자기 뒤돌아보더니 한마디를 더 던졌다."
+
+show yuna grin at left with dissolve
+yn "아."
+yn "포도 음료, 진짜 의외였어요."
+
+sj "아직도 그 얘기냐."
+
+yn "네."
+yn "그래서 더 기억날 것 같아요."
+
+"그 말만 남기고,"
+"유나는 가볍게 달려가듯 자기 길로 멀어졌다."
+
+"나는 그 뒷모습을 잠깐 바라보다가,"
+"휴대폰을 꺼내 단체방을 확인했다."
+
+"유나 : 오늘 자판기 모임도 성공"
+"유나 : 음료 취향 정보 획득 완료"
+"유나 : 내일도 잘 부탁합니다 조용한 봄 ☺"
+
+"곧이어 하린의 답장이 올라왔고,"
+"설아도 짧게 '응'이라고 남겼고,"
+"가은 선배는 사과 이모지를 하나 보냈다."
+
+"나는 잠깐 망설이다가,"
+"결국 짧게 답장을 남겼다."
+
+"서진 : 포도는 놀랄 일이 아니거든"
+"서진 : 내일 보자"
+
+"메시지를 보내자마자,"
+"유나의 답장이 거의 동시에 튀어 올랐다."
+
+"유나 : ㅋㅋㅋㅋ"
+"유나 : 네 포도 선배"
+
+"…헛웃음이 났다."
+
+scene black with fade
+
+"오늘도 큰일은 없었다."
+"정말로 자판기에서 음료를 고르고,"
+"서로의 취향을 조금 더 알고,"
+"같이 걷다가 헤어진 것뿐이다."
+
+"그런데 이상하게도."
+"이런 사소한 장면 하나하나가,"
+"이제는 그냥 지나가는 시간이 아니라"
+"조금씩 모여 쌓이는 무언가처럼 느껴지기 시작했다."
+
+th "아직은 아무 일도 없다."
+th "그래서 좋다."
+
+th "지금은 그냥,"
+th "이렇게 계속."
+th "조금씩 더 익숙해지면 되는 거다."
+
+scene black with fade
+
+# ---------------------------------------------------------
+# [Scene 22 타이틀]
+
+scene black with fade
+centered "{size=40}Scene 22{/size}\n\n{size=30}우리끼리만 아는 말{/size}" with dissolve
+pause 1.5
+
+scene bg classroom_day with fade
+play music "audio/bgm_daily_light.ogg" fadein 2.0
+
+"다음 날 점심시간이 다가오자,"
+"이제는 수업 끝 종이 울리기 전부터 이상하게 마음 한구석이 먼저 준비실 쪽으로 기울었다."
+
+th "겨우 며칠인데."
+th "사람은 생각보다 금방 익숙해지는구나."
+
+"앞줄 누군가가 의자를 끄는 소리와 함께 종이 울렸다."
+"교실 안이 금세 느슨해졌다."
+"나는 반쯤 습관처럼 휴대폰을 확인했다."
+
+"유나 : 오늘은 간식 있습니다"
+"유나 : 중요한 공지니까 빨리 와요"
+"유나 : 특히 포도 선배"
+
+sj "이젠 진짜 그걸로 부르네…"
+
+"곧바로 메시지가 이어졌다."
+
+"하린 : 이상한 별명 고정하지 마."
+"설아 : 이미 고정된 것 같은데."
+"가은 : 포도 선배 조금 웃기네"
+
+th "다들 너무 빨리 받아들이는 거 아니냐."
+
+"결국 나는 작게 헛웃음을 흘리며 자리에서 일어났다."
+"교실 문을 나서는 발걸음이 생각보다 자연스러웠다."
+
+scene black with dissolve
+centered "{size=30}준비실{/size}" with dissolve
+
+scene bg old_library with fade
+play music "audio/bgm_lazy_afternoon.ogg" fadein 1.5
+
+"준비실 문을 열자마자,"
+"평소보다 먼저 달큰한 냄새가 났다."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+"유나는 책상 위 비닐봉지를 펴 두고 있었고,"
+"하린이는 이미 그 봉지 안 내용물을 보고 한숨 쉴 준비가 된 얼굴이었고,"
+"설아는 그 옆에 서서 아주 미세하게 웃고 있었다."
+
+sj "뭐냐."
+sj "냄새부터 수상한데."
+
+show yuna laugh at left with dissolve
+yn "오늘의 간식 테마는 봄!"
+yn "벚꽃 모양 젤리랑 딸기크림 쿠키입니다!"
+
+sj "또 테마까지 붙였냐."
+
+hr "나도 아까 똑같은 말 했어."
+
+sa "근데 좀 귀엽긴 해."
+
+"설아가 그렇게 말하자,"
+"유나는 또 세상 다 얻은 표정이 됐다."
+
+show yuna soft at left with dissolve
+yn "설아 선배가 귀엽다고 했다."
+sj "오늘도 그거 오래 우려먹겠네."
+
+yn "당연하죠."
+yn "좋은 말은 오래 가야 해요."
+
+"하린이는 봉지 안을 다시 들여다보더니,"
+"결국 포기한 듯 작은 숨을 내쉬었다."
+
+show harin faint_smile at center_lower with dissolve
+hr "알았어."
+hr "대신 부스 물품 위에 과자 부스러기 흘리면 안 돼."
+
+yn "네, 체크리스트 반장님."
+
+hr "그 별명도 언제까지 쓰는 거야."
+
+sa "이미 굳은 것 같아."
+
+sj "이 팀 별명 고정 속도 진짜 빠르다."
+
+scene bg old_library with dissolve
+
+"책상 위에는 오늘도 작업할 것들이 놓여 있었다."
+"가격표 초안."
+"장식용 끈."
+"어제 접어 둔 별들."
+"그리고 그 옆에 너무 당당하게 놓인 벚꽃 젤리 봉지."
+
+"정리된 것과 어수선한 것."
+"일과 장난."
+"이제는 그 둘이 함께 있어야 오히려 준비실답게 느껴졌다."
+
+th "이상하네."
+th "처음엔 그냥 어수선하다고만 생각했는데."
+
+show harin normal at center_lower with dissolve
+hr "오늘은 부스 설명 문구 마저 정하고,"
+hr "배치 다시 한 번 확인하고,"
+hr "장식 끈 길이 맞춰서 정리하면 될 것 같아."
+
+show yuna smile at left with dissolve
+yn "좋아."
+yn "작업 전에 당 충전부터."
+
+sj "순서가 왜 그러냐."
+
+yn "집중력 향상을 위해서요."
+
+sa "명분이 점점 그럴듯해져."
+
+"결국 우리는 작업 전에 벚꽃 젤리 봉지를 뜯었다."
+"젤리는 진짜로 벚꽃 모양이었고,"
+"쿠키는 지나치게 분홍색이었다."
+"하린이는 분명 안 먹겠다더니 가장 먼저 젤리 하나를 집었고,"
+"설아는 말없이 분홍 쿠키를 반으로 나눠 들었다."
+
+sj "하린 너 아까 한숨 쉬지 않았냐."
+
+show harin faint_smile at center_lower with dissolve
+hr "별개야."
+hr "이건 이거고, 간식은 간식."
+
+show yuna grin at left with dissolve
+yn "우와."
+yn "완전 명언."
+sa "적어 둘까."
+sj "왜 다 기록하려고 하냐."
+
+yn "이제 우리 팀엔 쌓인 문장들이 많거든요."
+
+th "쌓인 문장."
+th "그 표현도 묘하게 맞다."
+
+scene bg old_library with dissolve
+
+"준비실 안에는 어느새 작은 말들이 조금씩 쌓여 있었다."
+"'여기선 시간이 조금 빨라.'"
+"'좋은 건 꽉 잡아야 하거든요.'"
+"'그냥 거기 가면 다들 있잖아요.'"
+"별거 아닌데, 이상하게 자꾸 남는 말들."
+
+"그리고 그 사이에 포도 선배 같은 이상한 말도 섞여 있다."
+
+th "그건 좀 빼고 싶은데."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+yn "좋아."
+yn "오늘은 문구를 진짜 정합시다."
+
+hr "응."
+hr "너무 길지 않게."
+
+sa "딱 봤을 때 편했으면 좋겠어."
+
+sj "결국 방향은 다 비슷하네."
+
+"우리는 책상 위에 종이를 펼쳐 놓고,"
+"각자 생각나는 문구를 하나씩 적어 보기로 했다."
+"유나는 당연히 제일 먼저 펜을 잡았고,"
+"하린이는 최대한 단정한 글씨로 짧게 적었고,"
+"설아는 잠깐 생각하다 천천히 적었다."
+"나도 대충 빈칸 하나를 차지했다."
+
+scene bg old_library with dissolve
+
+"잠시 뒤,"
+"네 장의 종이가 책상 위에 나란히 놓였다."
+
+show yuna normal at left with dissolve
+yn "전."
+yn "'잠깐 머물고 싶은 봄'."
+
+show harin normal at center_lower with dissolve
+hr "'작고 편한 기록 공간'."
+
+show seola normal at right with dissolve
+sa "'잠깐 쉬어가기 좋은 곳'."
+
+sj "'그냥 편하게 보고 가는 곳'."
+
+"잠깐 정적이 흘렀다."
+"그리고 그다음 순간, 유나가 먼저 웃음을 터뜨렸다."
+
+show yuna laugh at left with dissolve
+yn "와."
+yn "마지막 너무 윤서진 선배다."
+
+sj "또 그 소리냐."
+
+hr "근데 진짜 그래."
+
+sa "꾸미지 않은데."
+sa "제일 정확할 수도."
+
+"설아가 그렇게 말하자,"
+"나는 괜히 시선을 피했다."
+"별로 대단한 말을 쓴 것도 아닌데,"
+"셋이 진지하게 읽는 게 이상하게 민망했다."
+
+ge "오, 다 좋아 보이는데?"
+
+show gaeun smile at far_right with dissolve
+
+"언제 왔는지 모르게,"
+"가은 선배가 문가에 기대 우리 종이를 내려다보고 있었다."
+
+yn "가은 선배!"
+yn "지금 문구 심사 중이에요."
+
+ge "음."
+ge "개인적으로는 설아 거랑 서진 거 사이 어딘가가 좋다."
+ge "딱딱하지 않고, 또 너무 힘주지도 않고."
+
+hr "나도 그 생각 했어."
+
+sa "그럼 섞을까."
+
+sj "어떻게."
+
+sa "……"
+sa "'그냥 편하게 쉬어갈 수 있는 곳'."
+
+"그 말이 나오자,"
+"이상하게 아무도 바로 말을 잇지 않았다."
+"과한 것도 아니고, 밋밋한 것도 아니었다."
+"딱 지금 준비실 분위기랑 비슷했다."
+
+show yuna soft at left with dissolve
+yn "좋다."
+
+show harin faint_smile at center_lower with dissolve
+hr "응."
+hr "이걸로 가자."
+
+ge "채택."
+
+sj "내 문장이 조금 들어갔네."
+
+yn "축하합니다."
+yn "포도 선배 문구 당선."
+
+sj "그 호칭은 빼고 축하하면 안 되냐."
+
+scene bg old_library with dissolve
+
+"결국 부스 소개 문구는"
+"'그냥 편하게 쉬어갈 수 있는 곳'"
+"으로 정리됐다."
+
+"하린이는 그 문장을 가장 단정한 글씨로 다시 옮겨 적었고,"
+"유나는 그 옆에 아주 작은 벚꽃 두 장만 그려 넣었다."
+"설아는 위치가 과하지 않은지 확인했고,"
+"가은 선배는 멀찍이서 전체 균형을 봐 줬다."
+"나는 테이프를 잘라 하린이 옆에 조용히 놓았다."
+
+show yuna smile at left with dissolve
+yn "이제 진짜 그럴듯하다."
+hr "응."
+sa "조금씩 완성돼 가네."
+ge "너희 취향이 다 들어간 느낌이야."
+
+th "다 들어간 느낌."
+th "확실히 그렇다."
+
+"문구 하나 정했을 뿐인데,"
+"묘하게 다 같이 만든 것 같은 기분이 들었다."
+"누구 하나만의 결과물이 아니라,"
+"조금씩 섞이고 다듬어져서 나온 말."
+
+th "준비실도, 우리도."
+th "요즘은 그런 식으로 모양 잡히는 것 같다."
+
+scene bg old_library with dissolve
+
+"문구 정리가 끝나자,"
+"유나는 갑자기 벚꽃 젤리 하나를 집어 들고 진지한 얼굴로 말했다."
+
+show yuna grin at left with dissolve
+yn "좋아."
+yn "그럼 오늘부터 새로운 내부 규칙 추가."
+
+sj "왜 자꾸 규칙이 늘어나."
+
+yn "준비실에서 좋은 말 나오면 저장."
+yn "이건 진짜 필요해요."
+
+hr "또?"
+sa "근데 조금 재밌을 것 같아."
+
+"설아가 동조하자,"
+"하린이도 완전히 반대하진 못했다."
+
+show harin faint_smile at center_lower with dissolve
+hr "정리만 잘하면."
+
+yn "좋아!"
+yn "그럼 이름은…"
+
+sj "설마 이것도 이름 붙이냐."
+
+show yuna laugh at left with dissolve
+yn "당연하죠."
+yn "'조용한 봄 어록'!"
+
+sj "촌스러운데."
+ge "조금 웃기긴 해."
+
+sa "그래도 기억은 잘 날 것 같아."
+
+"결국 준비실 책상 맨 구석에 작은 메모지가 한 장 놓였다."
+"맨 위에는 정말로 유나 글씨로"
+"'조용한 봄 어록'"
+"이라고 적혀 있었다."
+
+"그 아래엔 지금까지 나온 문장들이 아주 짧게 적혔다."
+
+"여기선 시간이 조금 빨라."
+"그냥 거기 가면 다들 있잖아요."
+"좋은 건 꽉 잡아야 하거든요."
+"오늘도 성공."
+
+sj "마지막은 너무 유나 개인 슬로건 아니냐."
+
+show yuna smile at left with dissolve
+yn "중요하거든요."
+hr "그건 인정."
+sa "응."
+
+sj "왜 셋 다 그건 바로 인정해."
+
+scene bg old_library with dissolve
+
+"점심시간 20분은 역시 빨랐다."
+"아무리 짧다고 생각해도,"
+"준비실 안으로 들어오면 더 빨리 흘렀다."
+
+"간식 한 봉지 뜯고,"
+"문구 하나 정하고,"
+"별명 하나 더 굳히고,"
+"이상한 규칙 하나 추가했을 뿐인데,"
+"벌써 절반이 넘었다."
+
+show gaeun smile at far_right with dissolve
+ge "너희 진짜 내부 밈 생기기 시작했네."
+
+sj "그건 또 뭔가요."
+
+ge "우리끼리만 웃긴 말."
+ge "나중엔 다른 애들이 들으면 무슨 말인지 모르는 거."
+
+yn "오."
+yn "그거 좋다."
+
+hr "좋아하면 안 될 것 같은데."
+
+sa "근데 이미 생긴 것 같아."
+
+"설아가 벽 쪽에 붙은 작은 메모지를 봤다."
+"정말 그랬다."
+"포도 선배."
+"미감 탐지기."
+"체크리스트 반장."
+"오늘도 성공."
+"그냥 들으면 별 의미 없을 텐데,"
+"이 안에선 다 통한다."
+
+th "우리끼리만 아는 말."
+th "그게 생긴다는 건."
+th "생각보다 큰 변화일지도."
+
+scene bg old_library with dissolve
+
+"하린이는 마지막으로 장식 끈 길이를 재정리했고,"
+"설아는 창가에 매단 별들이 한쪽으로 쏠리지 않게 살짝 만졌고,"
+"유나는 메모지 아래에 아주 작은 벚꽃 낙서를 추가했다."
+"가은 선배는 그걸 보며 결국 웃음을 참지 못했다."
+
+show gaeun smile at far_right with dissolve
+ge "너 진짜 벚꽃에 진심이다."
+
+show yuna grin at left with dissolve
+yn "봄이잖아요."
+yn "그리고 우리 이름도 조용한 봄이잖아요."
+
+sj "네가 제일 그 이름 좋아하는 것 같긴 하다."
+
+yn "당연하죠."
+yn "제가 제일 먼저 꽂혔으니까."
+
+show harin faint_smile at center_lower with dissolve
+hr "근데 이제 진짜 어울려."
+
+"하린이가 무심하게 그렇게 말하자,"
+"유나는 아주 잠깐 조용해졌다."
+"그리고 이번엔 호들갑 대신,"
+"조금 작게 웃었다."
+
+show yuna soft at left with dissolve
+yn "……응."
+yn "그러네."
+
+"그 짧은 대답이 이상하게 오래 남았다."
+"장난스럽던 이름이,"
+"이제는 정말 우리 쪽 이름처럼 들렸기 때문일 거다."
+
+scene bg old_library with dissolve
+
+"곧 예비종이 울릴 시간이 가까워졌다."
+"하린이는 자동으로 시계를 봤고,"
+"설아는 비닐봉지 안 쓰레기를 접어 정리했고,"
+"유나는 남은 젤리를 억울한 얼굴로 바라봤고,"
+"나는 테이프와 가위를 원래 자리로 돌려놨다."
+
+show harin normal at center_lower with dissolve
+hr "3분 남았어."
+
+show yuna shock at left with dissolve
+yn "왜 또 이렇게 빨라!"
+
+sa "여기선 시간이 조금 빨라."
+
+"설아가 아주 자연스럽게 그 말을 꺼내자,"
+"이번엔 모두가 거의 동시에 웃었다."
+
+sj "이젠 완전 공식 문장이네."
+
+ge "어록 첫 줄다운 위엄인데."
+
+yn "좋아."
+yn "이건 진짜 조용한 봄 대표 문장이다."
+
+hr "대표 문장을 정하는 팀은 또 처음 보네."
+
+sj "우리 팀이 원래 좀 그렇지."
+
+"내가 무심코 그렇게 말하자,"
+"순간 다들 잠깐 나를 봤다."
+
+show yuna smile at left with dissolve
+yn "선배."
+yn "방금 '우리 팀'이라고 했어요."
+
+sj "…그랬나."
+
+sa "응."
+hr "맞아."
+
+"정말 별생각 없이 나온 말이었다."
+"그런데 네 사람은 그 한마디를 이상할 만큼 곧게 받아냈다."
+"유나는 대놓고 기분 좋아 보였고,"
+"하린이는 작게 웃었고,"
+"설아는 아무 말 없이도 조금 부드러운 표정이었고,"
+"가은 선배는 그저 재미있다는 얼굴로 보고 있었다."
+
+th "아."
+th "진짜 그렇게 생각하고 있었나 보네."
+
+scene black with dissolve
+centered "{size=30}복도{/size}" with dissolve
+
+scene bg noisy_hallway with fade
+play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
+
+"준비실 문을 닫고 복도로 나오자,"
+"점심시간 끝의 소란이 다시 우리를 감쌌다."
+"학생들이 교실 쪽으로 흩어지는 흐름 사이에서,"
+"우리는 잠깐 나란히 섰다."
+
+show yuna smile at left with dissolve
+show harin faint_smile at center_lower with dissolve
+show seola faint_smile at right with dissolve
+
+yn "오늘도 성공."
+
+hr "또 그 말이네."
+
+sa "근데 맞아."
+
+sj "이제 반박하기도 어렵다."
+
+ge "좋네."
+ge "짧아도 계속 쌓이는 팀."
+
+"가은 선배는 그렇게 말하고 먼저 손을 흔들었다."
+
+ge "난 먼저 갈게."
+ge "다들 오후 수업도 잘 버텨."
+
+yn "네에!"
+hr "다녀와요."
+sa "응."
+
+"선배가 멀어지고,"
+"우리는 다시 각자 교실 쪽으로 걸음을 옮겼다."
+
+"유나는 내 옆에서 걷다가 작게 웃으며 중얼거렸다."
+
+show yuna grin at left with dissolve
+yn "포도 선배."
+
+sj "또 왜."
+
+yn "아니."
+yn "그냥 불러 보고 싶었어요."
+
+sj "그게 더 이상하거든."
+
+yn "근데 이젠 좀 어울리잖아요."
+
+sj "전혀."
+
+sa "조금."
+
+hr "조금."
+
+sj "왜 다들 한 편이냐."
+
+"셋의 타이밍이 너무 절묘해서,"
+"결국 나도 웃고 말았다."
+
+play sound "audio/sfx_school_bell.ogg"
+
+"본종이 울렸다."
+
+"우리는 각자 다른 방향으로 흩어졌다."
+"하지만 멀어지기 직전까지도,"
+"준비실 안에 남겨 둔 작은 말들과 웃음이"
+"어딘가에 이어져 있는 것 같은 기분이 들었다."
+
+th "우리끼리만 아는 말."
+th "우리 팀."
+th "여기선 시간이 조금 빨라."
+
+th "정말 별거 아닌데."
+th "이상하게 자꾸 좋은 쪽으로 마음에 남는다."
+
+scene black with fade
+
+# ---------------------------------------------------------
+# [Scene 23 타이틀]
+
+scene black with fade
+centered "{size=40}Scene 23{/size}\n\n{size=30}작은 실수는 더 오래 웃긴다{/size}" with dissolve
+pause 1.5
+
+scene bg classroom_evening with fade
+play music "audio/bgm_daily_light.ogg" fadein 2.0
+
+"오후 수업이 끝나갈 무렵,"
+"나는 오늘도 별생각 없이 필기를 하고 있었는데,"
+"머릿속 어딘가에서는 이미 준비실 문을 여는 장면이 먼저 떠오르고 있었다."
+
+th "이젠 진짜 습관이 됐네."
+th "방과 후면 자연스럽게 그쪽을 생각하게 된다."
+
+"종이 울리자 교실 안이 금세 느슨해졌다."
+"가방을 챙기는 소리, 친구를 부르는 소리, 창가 쪽으로 몰리는 발걸음."
+"그 속에서 나는 익숙하게 휴대폰부터 확인했다."
+
+"유나 : 오늘은 진짜 작업 많이 해야 해요"
+"유나 : 다들 늦지 마"
+"유나 : 그리고 오늘 포도 선배 금지"
+
+sj "갑자기 왜."
+
+"곧장 답장이 달렸다."
+
+"유나 : 왜냐면 제가 먼저 말하려고 했거든요"
+"하린 : 그게 더 이상해."
+"설아 : 이미 말했잖아."
+"가은 : 시작부터 시끄럽네"
+
+th "이 단체방은 점점 숨 돌릴 틈이 없어."
+
+scene black with dissolve
+centered "{size=30}준비실{/size}" with dissolve
+
+scene bg old_library with fade
+play music "audio/bgm_lazy_afternoon.ogg" fadein 1.5
+
+"준비실 문을 열자,"
+"오늘은 다들 거의 비슷하게 도착한 모양이었다."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+"유나는 책상 위에 색지를 꺼내 놓고 있었고,"
+"하린이는 벽 쪽 장식 끈 상태를 보고 있었고,"
+"설아는 창가 별 장식이 꼬이지 않았는지 조용히 살펴보는 중이었다."
+
+sj "오늘은 다들 빠르네."
+
+show yuna grin at left with dissolve
+yn "네."
+yn "왜냐면 오늘은 우리 부스의 얼굴이 될 안내판 초안까지 만져야 하거든요."
+
+sj "또 갑자기 말이 거창해졌네."
+
+show harin normal at center_lower with dissolve
+hr "그래도 오늘 할 건 조금 많긴 해."
+hr "배치도랑 설명란도 같이 봐야 하고."
+
+sa "장식 끈도 하나 더 자르면 좋을 것 같아."
+sa "창가 쪽이 조금 비어 보여."
+
+"설아가 그렇게 말하며 창문 위쪽을 가볍게 가리켰다."
+"이제는 이런 식으로 먼저 의견을 내는 것도 조금씩 자연스러워졌다."
+
+th "처음엔 한마디 꺼내는 것도 조심스러워 보였는데."
+th "정말 조금씩이지만, 다 변하고 있네."
+
+scene bg old_library with dissolve
+
+"우리는 늘 그렇듯 책상 주위로 모였다."
+"이제는 누가 어디쯤 서는지도 거의 정해져 있었다."
+"유나는 펜과 가위를 제일 빨리 잡는 자리,"
+"하린이는 전체를 보기 쉬운 정면,"
+"설아는 창가 쪽,"
+"나는 어쩌다 보니 늘 그 사이를 채우는 자리."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+yn "좋아."
+yn "그럼 오늘 목표!"
+yn "첫째, 안내판 문구 다듬기."
+yn "둘째, 장식 위치 최종 확인."
+yn "셋째, 다들 저녁 전에 해산."
+
+sj "마지막이 제일 지켜질 것 같지가 않다."
+
+show yuna pout at left with dissolve
+yn "왜요."
+yn "저도 시간 개념 있거든요."
+
+sa "조금 불안하긴 해."
+
+hr "다들 같은 생각일걸."
+
+"유나는 억울한 얼굴을 했지만,"
+"딱히 반박은 못 했다."
+"그 반응이 웃겨서 나도 모르게 피식 웃었다."
+
+scene bg old_library with dissolve
+
+"오늘의 작업은 생각보다 순조로웠다."
+"하린이는 안내판에 들어갈 문장 간격을 맞추고,"
+"설아는 어느 색이 가장 눈에 덜 피로한지 고르고,"
+"유나는 종이 모서리에 아주 작게 넣을 포인트 장식을 고민하고,"
+"나는 잘린 끈 끝을 정리했다."
+
+"그렇게 10분쯤 지났을까."
+
+show yuna think at left with dissolve
+yn "음."
+yn "이거 오른쪽 아래가 조금 심심하지 않아요?"
+
+hr "또 뭘 넣으려고."
+
+yn "아니, 진짜 조금만."
+yn "아주 쪼끄맣게."
+
+sa "작은 꽃?"
+sj "아니면 별."
+
+show yuna smile at left with dissolve
+yn "오."
+yn "좋다."
+yn "그럼 꽃이랑 별을 하나씩 해볼까요?"
+
+hr "둘 다는 많아."
+
+"하린이는 여전히 단호했지만,"
+"이젠 유나도 그 선을 아는지 바로 물러났다."
+
+show yuna laugh at left with dissolve
+yn "좋아요."
+yn "그럼 하나만."
+
+"그리고 바로 그때였다."
+
+"유나가 네임펜 뚜껑을 열다가,"
+"그 옆에 세워 둔 젤리 통을 팔꿈치로 건드렸다."
+
+"톡."
+
+"아주 가벼운 소리와 함께,"
+"작은 벚꽃 젤리 몇 개가 책상 위를 데구르르 굴렀다."
+
+show yuna shock at left with dissolve
+yn "어."
+
+"그중 두 개는 가격표 종이 위로,"
+"하나는 하린이 체크리스트 쪽으로,"
+"그리고 하나는 정말 절묘하게 내가 정리해 둔 장식 끈 사이로 파고들었다."
+
+"정적이 딱 1초."
+
+show harin surprise at center_lower with dissolve
+hr "민유나."
+
+show seola surprise at right with dissolve
+sa "……정확하다."
+
+sj "이걸 이렇게 흘린다고?"
+
+"유나는 그대로 굳은 채 젤리 통을 들고 있었다."
+"스스로도 너무 완벽하게 사고를 쳐 버렸다는 걸 알아버린 얼굴이었다."
+
+show yuna panic at left with dissolve
+yn "잠깐만요."
+yn "이건."
+yn "진짜 일부러 그런 게 아니라…"
+
+"그 말이 끝나기도 전에,"
+"설아가 먼저 책상 위를 굴러다니는 젤리 하나를 집었다."
+"하린이도 체크리스트 위에 올라간 젤리를 떼어 들었고,"
+"나는 장식 끈 사이로 들어간 하나를 꺼냈다."
+
+"그리고 문제는,"
+"그 장면이 너무 진지할 이유가 없을 만큼 웃겼다는 거다."
+
+show seola faint_smile at right with dissolve
+sa "벚꽃 습격."
+
+"설아가 아주 담담하게 그렇게 말한 순간,"
+"유나가 먼저 빵 터졌고,"
+"그 다음은 나였고,"
+"결국 하린이까지 웃음을 참지 못했다."
+
+show yuna laugh at left with dissolve
+yn "벚꽃 습격이 뭐예요!"
+sj "아니 근데 너무 정확하잖아."
+
+show harin faint_smile at center_lower with dissolve
+hr "진짜 딱 그거네."
+
+"유나는 웃으면서도 책상 위 젤리를 황급히 주워 담기 시작했다."
+"하린이는 그런 유나를 보며 한숨을 쉬었지만,"
+"이번엔 정말 하나도 화난 얼굴이 아니었다."
+
+hr "그래도 문서 위에 흘리는 건 금지."
+yn "죄송합니다, 체크리스트 반장님…"
+
+sa "오늘의 교훈."
+sa "간식은 안전거리 유지."
+
+sj "어록 추가다."
+
+show yuna grin at left with dissolve
+yn "좋아!"
+yn "방금 그거 진짜 좋았어."
+yn "'간식은 안전거리 유지'."
+
+hr "그걸 왜 또 좋아해."
+
+"유나는 젤리 통을 다시 안전한 구석으로 치워 놓더니,"
+"정말로 메모지 한쪽에"
+"'간식은 안전거리 유지'"
+"라고 적어 넣었다."
+
+scene bg old_library with dissolve
+
+"그 짧은 소동 이후,"
+"준비실 안 분위기는 오히려 더 풀어졌다."
+
+"유나는 무언가를 건드릴 때마다 일부러 양손을 번쩍 들며"
+"'이번엔 안 흘림!'"
+"같은 소리를 했고,"
+"설아는 그럴 때마다 작게 웃었고,"
+"하린이는 결국 '이제 됐으니까 집중해'라고 말하면서도 웃고 있었고,"
+"나는 장식 끈을 정리하다가도 자꾸 그 장면이 떠올라 피식거리게 됐다."
+
+th "정말 별일 아닌데."
+th "이런 게 더 오래 남는 걸지도."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+yn "좋아."
+yn "그럼 사고 수습도 끝났고, 다시 안내판!"
+
+sj "사고 수습이라는 표현이 너무 정확하네."
+
+hr "수습 담당이 있잖아."
+
+sj "왜 그게 또 나한테 돌아오냐."
+
+sa "어울리니까."
+
+"이젠 셋 다 너무 자연스럽게 말한다."
+"그만큼 이 별명도 완전히 굳은 모양이었다."
+
+scene bg old_library with dissolve
+
+"우리는 다시 안내판 쪽으로 집중했다."
+"유나는 이번엔 정말 조심해서 종이 오른쪽 아래에 아주 작은 포인트 하나만 넣었고,"
+"하린이는 글씨 간격을 다시 맞췄고,"
+"설아는 전체 균형을 본 뒤 살짝 고개를 끄덕였다."
+
+show seola normal at right with dissolve
+sa "이제 괜찮아."
+
+show harin faint_smile at center_lower with dissolve
+hr "응."
+hr "이 정도면 딱 좋다."
+
+show yuna soft at left with dissolve
+yn "진짜요?"
+
+sj "어."
+sj "이번엔 인정."
+
+"유나는 순간 아주 조용해졌다가,"
+"이내 조금 작은 목소리로 웃었다."
+
+yn "오늘 저."
+yn "젤리도 흘리고, 장식도 통과되고."
+yn "감정 기복 크다."
+
+sj "하루 알차네."
+
+sa "낙폭이 큰 편."
+
+hr "근데 결과는 좋으니까 됐어."
+
+"하린이가 그렇게 말하자,"
+"유나는 대놓고 뿌듯한 얼굴을 했다."
+
+show yuna grin at left with dissolve
+yn "좋아."
+yn "그럼 오늘도 성공."
+
+sj "또 나왔다."
+
+sa "그래도 맞아."
+
+scene bg old_library with dissolve
+
+"가은 선배는 오늘 조금 늦게 왔다."
+"준비실 문을 열고 들어오자마자,"
+"책상 구석에 안전하게 놓인 젤리 통과,"
+"그 옆에 적혀 있는 새 문장을 먼저 발견했다."
+
+show gaeun smile at far_right with dissolve
+
+ge "어라."
+ge "'간식은 안전거리 유지'?"
+ge "이건 또 뭐야."
+
+show yuna laugh at left with dissolve
+yn "오늘 새로 생긴 조용한 봄 어록이에요."
+
+ge "벌써?"
+ge "무슨 일이 있었길래."
+
+sj "벚꽃 습격."
+
+"내가 아무렇지 않게 말하자,"
+"가은 선배는 잠깐 멈췄다가 바로 웃음을 터뜨렸다."
+
+ge "잠깐."
+ge "그 말 너무 웃긴데?"
+
+sa "정확했어."
+
+hr "유나가 젤리 통 엎을 뻔했거든."
+
+ge "아하."
+
+"가은 선배는 상황을 머릿속으로 그려 본 듯,"
+"바로 납득한 얼굴로 고개를 끄덕였다."
+
+ge "좋네."
+ge "이제 진짜 내부 밈이 많아지네."
+
+yn "그쵸!"
+yn "우리끼리만 알아듣는 말 생기는 거 되게 좋지 않아요?"
+
+ge "좋지."
+ge "그게 친해졌다는 뜻이기도 하니까."
+
+"선배의 말은 언제나처럼 가벼웠지만,"
+"묘하게 맞는 말이었다."
+
+th "우리끼리만 알아듣는 말."
+th "확실히, 며칠 전엔 없던 거다."
+
+scene bg old_library with dissolve
+
+"가은 선배가 온 뒤로 준비실 안은 더 시끄러워졌지만,"
+"이상하게 작업은 더 잘 굴러갔다."
+"누군가 말하면 누군가 웃고,"
+"누군가 실수해도 누군가 자연스럽게 받았고,"
+"작업은 그 사이에서 느슨하게 이어졌다."
+
+"결국 안내판 초안은 생각보다 빠르게 완성됐다."
+"문구도 정돈됐고,"
+"장식도 과하지 않았고,"
+"전체 배치도 이제야 정말 하나의 분위기로 묶인 느낌이었다."
+
+show harin normal at center_lower with dissolve
+hr "이 정도면 오늘 목표는 거의 끝."
+
+show yuna smile at left with dissolve
+yn "우와."
+yn "우리 진짜 잘한다."
+
+sj "갑자기 팀 자화자찬이네."
+
+yn "아니."
+yn "진짜 그렇잖아요."
+
+sa "응."
+sa "처음보다 훨씬 빨라졌어."
+
+ge "맞아."
+ge "호흡이 생겼네."
+
+"그 말이 나오자,"
+"잠깐 아무도 바로 장난을 치지 않았다."
+"왜냐하면 다들 비슷하게 느끼고 있었기 때문일 거다."
+
+th "호흡."
+th "그 단어가 제일 정확할지도."
+
+scene bg old_library with dissolve
+
+"예비종이 울리기 전,"
+"유나는 오늘도 어김없이 단체방에 사진을 올렸다."
+
+"유나 : 오늘의 성과!"
+"유나 : 안내판 초안 완성"
+"유나 : 그리고 벚꽃 습격 발생"
+
+sj "왜 그걸 같이 올리냐."
+
+show yuna grin at left with dissolve
+yn "기록은 솔직해야 하니까요."
+
+hr "그건 굳이 안 적어도 됐는데."
+
+sa "근데 안 적으면 아쉬워."
+
+ge "응."
+ge "오히려 그쪽이 더 기억에 남을 듯."
+
+"그럴지도 모른다."
+"안내판 완성도 물론 좋았지만,"
+"오늘을 떠올릴 때 먼저 생각나는 건 아마"
+"체크리스트 위에 얌전히 올라가 있던 벚꽃 젤리 한 개와,"
+"그걸 보며 다 같이 웃던 순간일 거다."
+
+scene bg old_library with dissolve
+
+"예비종이 울렸다."
+
+play sound "audio/sfx_school_bell.ogg"
+
+show harin surprise at center_lower with dissolve
+hr "정리하자."
+
+show yuna smile at left with dissolve
+yn "네, 반장님."
+yn "오늘은 간식 안전거리도 지켰고."
+sj "후반부에나."
+
+sa "그래도 지켰으면 된 거지."
+
+"우리는 서둘러 책상 위를 정리했다."
+"이제는 말하지 않아도 손이 먼저 움직였다."
+"펜 뚜껑을 닫고,"
+"가위를 한쪽에 모으고,"
+"젤리 통을 제대로 닫고,"
+"안내판 초안을 구겨지지 않게 벽 쪽에 세워 두었다."
+
+th "이런 것도 익숙해졌네."
+th "정리하는 속도까지 맞아 가는 걸 보면."
+
+scene black with dissolve
+centered "{size=30}복도{/size}" with dissolve
+
+scene bg noisy_hallway with fade
+play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
+
+"준비실 문을 닫고 복도로 나오자,"
+"점심이든 방과 후든 늘 비슷한 감각이 들었다."
+"짧았고, 웃겼고, 또 금방 지나갔다."
+"그런데 그래서 더 선명했다."
+
+show yuna smile at left with dissolve
+show harin faint_smile at center_lower with dissolve
+show seola faint_smile at right with dissolve
+
+yn "좋아."
+yn "오늘의 결론."
+
+sj "또 정리냐."
+
+yn "네."
+yn "벚꽃 젤리는 위험하다."
+
+hr "그건 네 주변에서만."
+
+sa "간식은 안전거리 유지."
+
+sj "수습 담당은 오늘도 고생했다."
+ge "그리고 벚꽃 습격은 오래 남는다."
+
+show gaeun smile at far_right with dissolve
+
+"다섯 사람의 말이 거의 동시에 엉켰고,"
+"결국 또 웃음이 터졌다."
+
+th "정말 별것 아닌 날."
+th "정말 별것 아닌 실수."
+
+th "그런데."
+th "이상할 정도로 오래 기억될 것 같다."
+
+play sound "audio/sfx_school_bell.ogg"
+
+"본종이 울렸다."
+
+show yuna laugh at left with dissolve
+yn "내일 또 봐요!"
+hr "수업 늦겠다, 빨리 가."
+sa "응."
+ge "다들 해산."
+
+"우리는 각자 흩어졌지만,"
+"오늘 생긴 말 하나는 분명 오래 남을 것 같았다."
+
+th "벚꽃 습격."
+th "정말 유치한데."
+
+th "왜 이렇게 마음에 남는 건지."
+
+scene black with fade
+
+# ---------------------------------------------------------
+# [Scene 24 타이틀]
+
+scene black with fade
+centered "{size=40}Scene 24{/size}\n\n{size=30}문을 열면 있는 사람들{/size}" with dissolve
+pause 1.5
+
+scene bg classroom_day with fade
+play music "audio/bgm_daily_light.ogg" fadein 2.0
+
+"다음 날 점심시간 직전."
+"수업 내용은 분명 칠판 위에 있었는데,"
+"이상하게도 머릿속 한구석엔 자꾸 다른 장면이 먼저 떠올랐다."
+
+th "오늘은 누가 먼저 와 있으려나."
+
+"생각이 거기까지 닿고 나서야,"
+"나는 조금 늦게 그게 이상하다는 걸 깨달았다."
+
+th "준비실에 가는 게 아니라."
+th "누가 있는지를 먼저 떠올렸네."
+
+"종이 울리자 교실 안이 풀어졌다."
+"나는 평소보다 빨리 휴대폰을 켰다."
+
+"유나 : 오늘 점심 준비실 정상 운영"
+"유나 : 출석 체크할 거예요"
+"유나 : 빠지면 포도 압수"
+
+sj "왜 내 포도를 압수해."
+
+"곧바로 메시지가 이어졌다."
+
+"하린 : 네 것도 아닌데."
+"설아 : 포도는 원래 네 거 아니었어."
+"가은 : 포도 선배 자산권 침해"
+
+th "이젠 선배까지 너무 자연스럽네."
+
+"나는 결국 웃음을 참지 못한 채 자리에서 일어났다."
+"교실 밖으로 나서는 발걸음이, 생각보다 가볍다."
+
+scene black with dissolve
+centered "{size=30}준비실 앞{/size}" with dissolve
+
+scene bg hallway_day with fade
+play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
+
+"준비실 앞에 도착했을 때,"
+"문은 닫혀 있었지만 안쪽에서 희미하게 목소리가 들렸다."
+
+"작게 웃는 소리."
+"무언가 종이를 넘기는 소리."
+"그리고 익숙한 누군가의 한숨 섞인 반응."
+
+th "아, 벌써 와 있구나."
+
+"나는 별생각 없이 문고리를 잡았다."
+"그런데 이상하게, 열기 직전의 순간이 조금 좋았다."
+"문을 열면 누가 있을지 알고 있는데도,"
+"그래서 더 반가운 기분."
+
+scene bg old_library with fade
+play music "audio/bgm_lazy_afternoon.ogg" fadein 1.5
+
+"문을 열자,"
+"익숙한 풍경이 한 번에 들어왔다."
+
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+"하린이는 책상 위에 놓인 종이를 정리하고 있었고,"
+"설아는 창가 쪽 별 장식 하나가 돌아간 걸 손끝으로 바로잡고 있었다."
+
+"둘 다 동시에 문 쪽을 돌아봤다."
+
+show harin faint_smile at center_lower with dissolve
+hr "왔네."
+
+show seola faint_smile at right with dissolve
+sa "안 늦었어."
+
+"정말 짧은 말이었다."
+"그런데 그 한마디가 생각보다 훨씬 반갑게 들렸다."
+
+sj "뭐야."
+sj "둘만 있으니까 되게 조용하네."
+
+sa "유나 아직 안 왔어."
+
+hr "그래서 더 조용한 걸지도."
+
+"하린이 말에 설아가 아주 작게 웃었다."
+"그 미세한 웃음이 괜히 눈에 남았다."
+
+th "정말 이상하네."
+th "며칠 전까지만 해도 어색했을 텐데."
+th "지금은 이렇게 둘만 먼저 와 있는 풍경도 편하다."
+
+scene bg old_library with dissolve
+
+"준비실 안은 이제 정말 낯설지 않았다."
+"벽에 붙은 안내판 초안,"
+"창가에 매단 작은 별들,"
+"구석의 '조용한 봄 어록' 메모지,"
+"테이프와 가위가 놓인 위치까지."
+
+"그리고 그 안에 서 있는 사람들."
+
+"하린이는 자연스럽게 내 몫처럼 빈자리를 하나 비워 두었고,"
+"설아는 아무 말 없이 책상 위에 남은 펜을 내 쪽으로 밀어 두었다."
+
+sj "내 자리도 있었냐."
+
+show harin faint_smile at center_lower with dissolve
+hr "이제는 있는 편이지."
+
+sa "원래 늘 여기쯤 서잖아."
+
+"설아는 아주 아무렇지 않게 말했다."
+"그 말이 더 이상하게 느껴졌다."
+"아무렇지 않아서."
+"정말로 내가 늘 그 자리에 있었던 사람처럼 들려서."
+
+th "늘 여기쯤."
+th "그 정도로 익숙해졌나."
+
+scene bg old_library with dissolve
+
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+"나는 가방도 없이 빈손으로 책상 쪽에 다가갔다."
+"하린이가 정리 중이던 종이엔 어제 다듬어 둔 안내판 문구가 다시 적혀 있었고,"
+"설아 쪽 창가엔 별 장식이 햇빛에 아주 약하게 흔들리고 있었다."
+
+sj "뭐 하고 있었어."
+
+hr "안내판 글씨 위치 다시 보는 중."
+hr "아까 와서 보니까 아래쪽 여백이 조금 신경 쓰이더라."
+
+sa "별도 하나 돌아가 있었어."
+sa "바람 때문에."
+
+sj "둘 다 오자마자 바로 일했네."
+
+"내가 그렇게 말하자,"
+"하린이는 종이를 한 번 내려다보다가 조금 어색하게 대답했다."
+
+show harin faint_smile at center_lower with dissolve
+hr "…그냥."
+hr "조금 일찍 오면 뭐라도 하게 되니까."
+
+sa "여기 있으면 손이 먼저 가."
+
+"설아의 말도 비슷했다."
+"둘 다 거창한 말을 하는 건 아닌데,"
+"그 안에 이미 준비실이 '그냥 오는 곳'이 아니라는 뜻이 들어 있었다."
+
+th "다 똑같구나."
+th "나만 그런 게 아니었네."
+
+scene bg old_library with dissolve
+
+"그때였다."
+"복도에서 익숙한 발소리가 빠르게 다가왔다."
+"다음 순간, 문이 벌컥 열렸다."
+
+show yuna smile at left with dissolve
+
+yn "세이프!"
+yn "좋아, 오늘도 다들 있—"
+
+"유나는 말을 하다 말고 잠깐 멈췄다."
+"우리 셋이 이미 너무 자연스럽게 준비실 안에 서 있는 걸 보고,"
+"괜히 웃음이 번진 얼굴이었다."
+
+show yuna soft at left with dissolve
+yn "…어."
+yn "뭔가 좋다."
+
+sj "뭐가."
+
+yn "아니."
+yn "그냥 문 열었는데 다들 있잖아요."
+
+"이번엔 그 말이 아주 가볍게 들리진 않았다."
+"어제 자판기 앞에서 유나가 했던 말이,"
+"이번엔 준비실 한복판에서 조금 다른 모양으로 다시 놓인 기분이었다."
+
+show harin faint_smile at center_lower with dissolve
+hr "너도 지금 왔으니까 다 있는 거지."
+
+show seola faint_smile at right with dissolve
+sa "응."
+sa "이제 다 있네."
+
+"설아의 말에 유나는 대놓고 기분 좋아하는 얼굴이 됐다."
+
+show yuna laugh at left with dissolve
+yn "좋아요!"
+yn "오늘 출석률 100퍼!"
+sj "그걸 그렇게 기뻐할 일이냐."
+
+yn "엄청 중요하죠."
+yn "이런 거 하나하나가 다 분위기라고요."
+
+scene bg old_library with dissolve
+
+"결국 오늘도 유나는 작은 메모지 하나를 꺼냈다."
+"며칠 전부터 생긴 출석 체크용 종이였다."
+"이름 네 개와, 특별 게스트용 별표 칸."
+
+show yuna grin at left with dissolve
+yn "좋아."
+yn "조용한 봄 점심 모임, 전원 출석."
+
+hr "가은 선배는 아직이야."
+yn "특별 게스트는 예외 적용."
+
+sa "규칙이 늘 유나한테 유리해."
+
+sj "진짜 그러네."
+
+"유나는 억울한 척했지만,"
+"이미 체크 표시를 그리는 손은 멈추지 않았다."
+"하린이는 자기 이름 칸에 반듯한 체크를,"
+"설아는 오늘도 작은 점을,"
+"나는 대충 사선을,"
+"유나는 또 하트를 그리려다 하린 눈치를 보고 결국 동그라미를 쳤다."
+
+show harin normal at center_lower with dissolve
+hr "매번 왜 같은 패턴이야."
+
+show yuna pout at left with dissolve
+yn "제 안의 귀여움 본능이…"
+sj "또 시작이다."
+
+scene bg old_library with dissolve
+
+"출석 체크까지 끝나자,"
+"준비실 안 공기는 더 말랑해졌다."
+"이제는 정말 작업을 시작하기 전 잠깐 모여 있는 시간조차 따로 의미가 생긴 느낌이었다."
+
+"유나는 책상에 양팔을 기대고 우리를 한 번씩 보더니,"
+"갑자기 장난기 섞인 얼굴로 말했다."
+
+show yuna grin at left with dissolve
+yn "근데요."
+yn "이제 누가 먼저 와 있는지도 좀 캐릭터 같지 않아요?"
+
+sj "또 무슨 이상한 분석이냐."
+
+yn "아니, 진짜."
+yn "하린이는 먼저 와 있으면 이미 정리하고 있을 것 같고,"
+yn "설아 선배는 조용히 장식 보고 있을 것 같고,"
+yn "선배는 문 열고 들어오자마자 '다 와 있었네' 할 것 같고."
+
+sa "방금 그대로였어."
+
+hr "맞네."
+
+"셋의 시선이 동시에 내게 왔다."
+"반박하고 싶은데,"
+"이상할 정도로 정확해서 말이 안 나왔다."
+
+sj "…너 진짜 별 걸 다 본다."
+
+show yuna smile at left with dissolve
+yn "좋은 건 잘 보이거든요."
+
+"그 말이 너무 아무렇지 않게 나와서,"
+"오히려 내가 잠깐 말문이 막혔다."
+"설아는 유나를 가만히 보다가 아주 조금 고개를 끄덕였고,"
+"하린이는 괜히 종이 한 장을 다시 정리하는 척했다."
+
+scene bg old_library with dissolve
+
+"잠시 뒤, 가은 선배도 준비실에 얼굴을 비쳤다."
+"문을 열자마자 선배는 우리 넷을 한 번 보고,"
+"익숙하게 웃었다."
+
+show gaeun smile at far_right with dissolve
+
+ge "다들 벌써 모였네."
+ge "이제 여기 들어오면 매번 같은 풍경이라 좋다."
+
+yn "그쵸!"
+yn "이제 완전 정착됐죠?"
+
+ge "응."
+ge "문 열었는데 너희 있으면 괜히 안심돼."
+
+"가은 선배의 말은 아주 가볍게 떨어졌는데,"
+"그 말 뒤로 준비실 안이 잠깐 조용해졌다."
+"누구도 특별히 티 내진 않았지만,"
+"다들 조금은 비슷한 감각을 느낀 듯했다."
+
+th "문 열었는데 있으면 안심된다."
+th "…그것도 맞는 말이네."
+
+scene bg old_library with dissolve
+
+"오늘 작업 자체는 아주 크지 않았다."
+"안내판 초안을 벽에 대 보고,"
+"장식 간격을 조금 조정하고,"
+"별 장식 아래에 작은 종이 택을 달아 볼지 고민하고."
+
+"그런데 이상하게 작업보다 중간중간의 짧은 대화가 더 오래 남았다."
+
+show harin normal at center_lower with dissolve
+hr "이쪽은 조금 더 올릴까."
+
+show seola normal at right with dissolve
+sa "아니."
+sa "지금이 더 편해 보여."
+
+show yuna smile at left with dissolve
+yn "저도 설아 선배 쪽!"
+sj "그럼 2 대 1이네."
+
+hr "너는?"
+
+sj "나도 지금 쪽."
+
+show harin faint_smile at center_lower with dissolve
+hr "…알겠어."
+
+"하린이는 군말 없이 위치를 다시 맞췄다."
+"예전 같으면 자기 기준을 더 밀었을지도 모르는데,"
+"지금은 의견이 오가고, 섞이고, 자연스럽게 정리됐다."
+
+th "하린도 많이 편해졌네."
+
+show yuna normal at left with dissolve
+yn "근데 진짜 신기하다."
+yn "우리 다 취향 조금씩 다른데 결과물은 잘 섞여요."
+
+sa "그래서 좋은 걸지도."
+
+ge "응."
+ge "누구 하나만 했으면 안 나왔을 느낌."
+
+sj "그건 맞네."
+
+"괜히 그렇게 대답한 뒤,"
+"나는 벽에 기대 선 안내판을 다시 봤다."
+"누구 하나의 색만 진하지 않았다."
+"대신 조금씩 섞여 있었다."
+"그게 이상하게 준비실 전체 분위기랑 닮아 보였다."
+
+scene bg old_library with dissolve
+
+"작업 도중, 유나는 또 뭔가 떠오른 얼굴로 메모지를 들었다."
+
+show yuna grin at left with dissolve
+yn "좋아."
+yn "오늘의 질문."
+
+sj "왜 매일 있어."
+
+yn "있어야죠."
+yn "문 열었을 때 제일 먼저 반가운 건 뭐예요?"
+yn "장식? 사람? 간식?"
+
+sj "질문이 너무 유나식이다."
+
+sa "근데 궁금하긴 해."
+
+hr "…하나만 고르라는 거지?"
+
+yn "네."
+
+"유나는 정말 진지한 얼굴이었다."
+"하린이는 잠깐 생각했고,"
+"설아는 창가를 한 번 봤고,"
+"가은 선배는 팔짱을 낀 채 우리를 구경했다."
+
+show harin faint_smile at center_lower with dissolve
+hr "나는."
+hr "사람."
+
+show seola faint_smile at right with dissolve
+sa "나도."
+
+"둘이 거의 겹치듯 대답했다."
+"유나는 바로 기분 좋아진 얼굴이 됐다."
+
+show yuna soft at left with dissolve
+yn "…저도."
+
+"이젠 셋의 시선이 자연스럽게 내게 왔다."
+"나는 잠깐 말없이 준비실 안을 둘러봤다."
+"창가의 별 장식."
+"어록 메모지."
+"책상 위 종이들."
+"그리고 그 사이에 서 있는 네 사람."
+
+sj "…사람."
+
+"말은 짧았는데,"
+"이상하게 그 뒤는 더 조용했다."
+"유나는 바로 웃어 버릴 것 같더니,"
+"이번엔 그러지 않았다."
+"하린이는 손에 들고 있던 종이를 괜히 반듯하게 맞췄고,"
+"설아는 아주 조용히 웃었고,"
+"가은 선배는 그저 아는 얼굴로 우리를 봤다."
+
+ge "그럼 정답 나왔네."
+
+scene bg old_library with dissolve
+
+"그 뒤로는 누가 먼저랄 것도 없이 분위기가 조금 더 느슨해졌다."
+"유나는 괜히 '좋아, 그럼 오늘도 사람 출석 완료' 같은 말을 했고,"
+"하린이는 '그 말은 좀 이상해'라고 하면서도 웃었고,"
+"설아는 출석 체크 메모지 옆에 아주 작게 사람 모양 낙서를 하나 그렸다가 유나에게 들켰다."
+
+show yuna surprise at left with dissolve
+yn "어?"
+yn "설아 선배 이거 뭐예요?"
+
+show seola surprise at right with dissolve
+sa "…아무것도 아냐."
+
+show yuna laugh at left with dissolve
+yn "아닌데."
+yn "완전 귀엽잖아."
+
+sj "설아도 이런 거 하네."
+sa "실수."
+
+hr "실수치곤 정성인데."
+
+"설아는 괜히 메모지를 뒤집으려 했지만,"
+"이미 다 들킨 뒤였다."
+"유나는 그 조그만 사람 낙서를 보며 혼자 한참 즐거워했다."
+
+th "이제는 이런 작은 것도 전부 웃기다."
+
+scene bg old_library with dissolve
+
+"예비종이 울리기 직전,"
+"가은 선배가 준비실 문쪽으로 한 걸음 물러서며 웃었다."
+
+show gaeun smile at far_right with dissolve
+ge "좋다."
+ge "이제 여기 오면 진짜 준비실보다 '너희 있는 곳' 같아."
+
+show yuna soft at left with dissolve
+yn "와."
+yn "그 말도 어록."
+
+hr "또 늘어나네."
+
+sa "근데 좋다."
+
+sj "인정."
+
+"유나는 진짜로 어록 메모지에 한 줄을 더 적었다."
+
+"'여기 오면 준비실보다 너희 있는 곳 같아.'"
+
+"그 문장을 보고 있자니,"
+"그 말 자체보다도,"
+"아무도 그걸 과하다고 생각하지 않는다는 사실이 더 크게 느껴졌다."
+
+th "정말 그렇구나."
+th "이제는 장소보다 사람이다."
+
+scene black with dissolve
+centered "{size=30}복도{/size}" with dissolve
+
+scene bg noisy_hallway with fade
+play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
+
+"준비실 문을 닫고 복도로 나오자,"
+"본종 전의 분주한 소리가 다시 우리를 감쌌다."
+
+show yuna smile at left with dissolve
+show harin faint_smile at center_lower with dissolve
+show seola faint_smile at right with dissolve
+
+yn "좋아."
+yn "오늘의 결론."
+
+sj "또 나온다."
+
+yn "문 열었을 때 반가운 건 사람."
+
+hr "간단하네."
+
+sa "근데 맞아."
+
+ge "이제 진짜 팀 같다."
+
+"그 말에 누가 특별히 반응한 건 아니었다."
+"그럴 필요도 없었다."
+"이미 다들 알고 있었으니까."
+
+play sound "audio/sfx_school_bell.ogg"
+
+"본종이 울렸다."
+"우리는 다시 각자 교실 쪽으로 흩어졌다."
+
+"멀어지는 와중에도,"
+"오늘 준비실 문을 열던 순간이 자꾸 떠올랐다."
+
+th "문을 열면 있는 사람들."
+
+th "정말 별거 아닌데."
+th "그게 이렇게까지 반가워질 줄은,"
+th "조금 전까지만 해도 몰랐다."
+
+scene black with fade
+
+# ---------------------------------------------------------
+# [Scene 25 타이틀]
+
+scene black with fade
+centered "{size=40}Scene 25{/size}\n\n{size=30}처음으로 들은 바깥의 말{/size}" with dissolve
+pause 1.5
+
+scene bg classroom_evening with fade
+play music "audio/bgm_daily_light.ogg" fadein 2.0
+
+"오후 수업이 끝날 무렵,"
+"나는 괜히 창밖을 한 번 더 봤다."
+"날씨가 특별히 좋은 것도 아닌데,"
+"요즘은 이 시간이 되면 이상하게 마음이 먼저 가벼워졌다."
+
+th "오늘은 뭐 했더라."
+th "안내판 정리 거의 끝났고."
+th "창가 별 장식도 맞췄고."
+th "어록은 또 늘었고."
+
+th "……이젠 진짜 준비실 생각부터 하네."
+
+"종이 울리자마자 교실 안이 느슨하게 풀어졌다."
+"나는 늘 하던 대로 휴대폰부터 확인했다."
+
+"유나 : 오늘 목표 있음"
+"유나 : 외부 공개 가능한 수준 만들기"
+"유나 : 다들 준비실 집합!"
+
+sj "외부 공개는 또 뭐야…"
+
+"곧바로 이어서 메시지가 떴다."
+
+"하린 : 말만 거창하게 하지 마."
+"설아 : 근데 뭔지 조금 궁금해."
+"가은 : 오, 드디어 바깥 반응 받는 날인가?"
+
+th "선배가 제일 빨리 이해했네."
+
+scene black with dissolve
+centered "{size=30}준비실{/size}" with dissolve
+
+scene bg old_library with fade
+play music "audio/bgm_lazy_afternoon.ogg" fadein 1.5
+
+"준비실 문을 열자,"
+"오늘은 유난히 안쪽이 밝아 보였다."
+"창문으로 들어오는 햇빛 때문인지,"
+"아니면 벽이 조금씩 채워져서 그런 건지 잘 모르겠다."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+"유나는 책상 위에 안내판 초안을 세워 두고 있었고,"
+"하린이는 그걸 조금 떨어져서 전체로 보고 있었고,"
+"설아는 창가에서 별 장식 흔들림을 확인하고 있었다."
+
+show yuna grin at left with dissolve
+yn "왔네요, 포도 선배."
+
+sj "이젠 인사 대신 그거냐."
+
+show harin faint_smile at center_lower with dissolve
+hr "포기해."
+hr "이미 다들 익숙해졌어."
+
+show seola faint_smile at right with dissolve
+sa "조금 어울리기도 하고."
+
+sj "설아까지 그러면 진짜 반박할 힘이 없거든."
+
+"셋이 동시에 웃었다."
+"이제는 이런 대화도 거의 준비운동 같았다."
+"본격적으로 뭘 하기 전, 먼저 한 번 분위기가 풀리는 과정."
+
+scene bg old_library with dissolve
+
+show harin normal at center_lower with dissolve
+
+hr "오늘은 일단 이 안내판."
+hr "최종으로 벽에 대 보고, 괜찮으면 복도 쪽에도 한 번 보여줄까 생각 중이야."
+
+sj "복도?"
+
+show yuna smile at left with dissolve
+yn "네."
+yn "지나가던 애들이 보기라도 하면 좋잖아요."
+yn "우리가 만든 게 어떤 느낌인지."
+
+sa "반응 보는 거네."
+
+ge "그거 중요하지."
+
+show gaeun smile at far_right with dissolve
+
+"가은 선배는 언제나처럼 타이밍 좋게 문가에서 말을 받았다."
+"이제는 진짜 문 열리고 선배 목소리 들리는 것도 익숙하다."
+
+sj "선배 오늘도 자연스럽게 들어오네요."
+
+ge "응."
+ge "이쯤 되면 나도 조용한 봄 준멤버 아니야?"
+
+yn "준멤버가 아니라 거의 고정 특별 게스트예요."
+
+ge "오, 직함 생겼네."
+
+scene bg old_library with dissolve
+
+"우리는 안내판 초안을 들고 벽 쪽으로 갔다."
+"하린이가 양쪽 모서리를 맞췄고,"
+"나는 테이프를 잘라 건넸고,"
+"설아는 조금 떨어져서 전체 균형을 봤고,"
+"유나는 두 손을 모은 채 너무 진지한 얼굴로 결과를 기다렸다."
+
+show seola normal at right with dissolve
+sa "조금만 위."
+
+show harin normal at center_lower with dissolve
+hr "이 정도?"
+
+show yuna think at left with dissolve
+yn "아니, 잠깐."
+yn "왼쪽이 아주 조금 내려간 것 같기도…"
+
+sj "너 방금까지 너무 감성 담당이더니 이런 것도 보냐."
+
+yn "그럼요."
+yn "전 섬세한 사람입니다."
+
+ge "유나는 의외로 디테일 집착 있어."
+
+sj "그건 인정."
+
+"결국 안내판은 하린이와 설아의 눈, 유나의 감, 내 손, 가은 선배의 구경이 합쳐져 벽에 잘 붙었다."
+
+"그리고."
+"이상하게도."
+"정말 괜찮았다."
+
+"지금까지 책상 위에 눕혀져 있을 땐 몰랐는데,"
+"실제로 벽에 붙어 있으니 그럴듯함이 갑자기 훅 올라왔다."
+
+show yuna soft at left with dissolve
+yn "…오."
+
+show harin faint_smile at center_lower with dissolve
+hr "생각보다 더 괜찮네."
+
+show seola faint_smile at right with dissolve
+sa "응."
+sa "진짜 부스 같아졌어."
+
+th "조금 전까진 종이였는데."
+th "붙는 순간 분위기가 생기네."
+
+scene bg old_library with dissolve
+
+"우리는 잠깐 아무 말 없이 안내판을 올려다봤다."
+"'그냥 편하게 쉬어갈 수 있는 곳.'"
+"단정한 글씨."
+"과하지 않은 작은 벚꽃."
+"여백 사이에 남겨진 숨 쉴 자리."
+
+"정말 누구 하나만의 취향은 아니었다."
+"대신 다 같이 만든 느낌이 분명히 있었다."
+
+show gaeun smile at far_right with dissolve
+ge "좋다."
+ge "딱 너희 같아."
+
+sj "너희 같다는 말 자주 하네요."
+
+ge "왜냐면 진짜 그렇거든."
+ge "시끄러운 애 하나 있고."
+ge "반듯한 애 하나 있고."
+ge "조용한데 감각 좋은 애 하나 있고."
+ge "겉으론 덤덤한데 은근 계속 붙어 있는 애 하나 있고."
+
+"마지막 말에서 선배 시선이 내 쪽으로 잠깐 머물렀다."
+"유나는 바로 웃었고,"
+"하린이는 괜히 펜을 만지작거렸고,"
+"설아는 아주 조금 고개를 숙였다."
+
+sj "선배는 사람 분석을 너무 쉽게 해요."
+
+ge "관찰하는 거 좋아하니까."
+
+scene bg old_library with dissolve
+
+"유나는 안내판 앞에 서서 한참을 바라보다가,"
+"갑자기 몸을 홱 돌렸다."
+
+show yuna smile at left with dissolve
+yn "좋아."
+yn "이건 진짜 다른 사람 반응 받아도 안 부끄러울 것 같아요."
+
+hr "그럼 복도 앞쪽 게시판에 잠깐 대 볼까?"
+hr "완전히 붙이진 말고."
+
+sa "응."
+sa "지나가면서 보기 좋을 것 같아."
+
+sj "진짜 공개하네."
+
+yn "왜요."
+yn "긴장돼요?"
+
+sj "조금은."
+
+"내가 별생각 없이 그렇게 말하자,"
+"유나가 의외라는 얼굴로 나를 봤다."
+
+show yuna grin at left with dissolve
+yn "우와."
+yn "선배도 긴장해요?"
+
+sj "사람이니까 하겠지."
+
+sa "그것도 맞네."
+
+hr "다 같이 만든 거니까 더 그렇지."
+
+"하린이 말이 괜히 맞았다."
+"혼자 만든 게 아니니까."
+"그래서 더 별거 아닌 반응 하나에도 신경이 쓰일 것 같았다."
+
+scene black with dissolve
+centered "{size=30}준비실 앞 복도{/size}" with dissolve
+
+scene bg hallway_day with fade
+play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
+
+"우리는 안내판 초안을 조심히 들고 복도 쪽으로 나왔다."
+"점심시간만큼 북적이진 않지만,"
+"방과 후 복도에도 아직 학생들이 조금씩 오갔다."
+
+"하린이는 복도 벽 게시판 한쪽에 안내판을 가볍게 대 보았고,"
+"설아는 두 걸음 뒤로 물러서서 봤고,"
+"유나는 아예 반대편까지 가서 거리감까지 확인했다."
+"가은 선배는 팔짱을 낀 채 그 광경을 구경했고,"
+"나는 왠지 모르게 주변 사람 눈치를 한 번 보게 됐다."
+
+show yuna think at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+
+yn "좋은데."
+yn "멀리서도 꽤 보여요."
+
+hr "글씨 크기는 괜찮은 것 같아."
+
+sa "색도 안 튀고."
+
+sj "진짜 다듬긴 많이 다듬었네."
+
+"그때."
+"복도를 지나가던 다른 반 여학생 둘이,"
+"우리 쪽을 흘끗 보더니 속도를 조금 늦췄다."
+
+stu_b "어?"
+stu_b "저거 이번 축제 거야?"
+stu_c "예쁘다."
+
+"정말 짧은 말이었다."
+"그리고 아마 그 애들은 대수롭지 않게 지나가며 한 말이었을 거다."
+"그런데 그 한마디가 묘하게 또렷하게 남았다."
+
+"예쁘다."
+
+"유나는 눈을 동그랗게 떴고,"
+"하린이는 움직이던 손을 멈췄고,"
+"설아는 아주 조용히 시선을 들어 그 애들 뒷모습을 봤다."
+
+show yuna surprise at left with dissolve
+yn "방금…"
+
+show harin surprise at center_lower with dissolve
+hr "들었지."
+
+show seola faint_smile at right with dissolve
+sa "응."
+
+sj "첫 외부 평가네."
+
+ge "좋네."
+ge "엄청 좋은데?"
+
+scene bg hallway_day with dissolve
+
+"유나는 바로 웃을 줄 알았는데,"
+"이번엔 잠깐 멍한 얼굴이었다."
+"정말 예상 못 한 곳에서 칭찬을 받아 버린 사람 같은 표정."
+
+show yuna soft at left with dissolve
+yn "……와."
+yn "저 지금 조금 감동."
+
+sj "너 아까도 그 말 했잖아."
+
+yn "아니, 이번 건 진짜예요."
+yn "우리끼리 좋다고 한 거 말고,"
+yn "다른 사람이 보고 예쁘다고 한 거잖아요."
+
+show harin faint_smile at center_lower with dissolve
+hr "그러네."
+
+"하린이도 아주 작게 웃었다."
+"평소보다 조금 더 힘 빠진, 편한 웃음이었다."
+
+sa "괜히 기분 좋다."
+
+"설아가 그렇게 말했고,"
+"그 말에 아무도 토를 달지 않았다."
+"정말로 다 같은 기분이었으니까."
+
+th "별거 아닌 한마디."
+th "근데 왜 이렇게 뿌듯하지."
+
+scene bg hallway_day with dissolve
+
+"그 뒤로도 몇 분 정도 더 대강 위치를 바꿔 보며 확인했다."
+"그런데 이미 분위기는 정해져 있었다."
+"첫 칭찬 한 번으로 다들 기분이 눈에 띄게 부드러워졌다."
+
+show yuna smile at left with dissolve
+yn "좋아."
+yn "그럼 오늘의 목표 달성."
+
+sj "외부 공개 성공?"
+
+yn "네."
+yn "그리고 외부 반응 획득 성공."
+
+hr "말은 거창했는데 결과도 나쁘지 않네."
+
+sa "처음으로 바깥 말 들은 날."
+
+ge "그것도 어록감인데."
+
+sj "또 늘리냐."
+
+show yuna grin at left with dissolve
+yn "당연하죠."
+yn "'예쁘다' 추가."
+sj "그건 어록이라기보다 그냥 평가잖아."
+
+sa "그래도 남기고 싶어."
+
+"설아가 그렇게 말하자,"
+"유나는 진짜로 휴대폰 메모장에"
+"'예쁘다 - 지나가던 학생 2명'"
+"이라고 적어 넣었다."
+
+show harin faint_smile at center_lower with dissolve
+hr "너무 구체적이네."
+
+yn "중요하니까요."
+
+scene bg hallway_day with dissolve
+
+"가은 선배는 그런 우리를 가만히 보다가,"
+"아주 만족스러운 얼굴로 웃었다."
+
+show gaeun smile at far_right with dissolve
+ge "좋다."
+ge "너희 지금 엄청 팀 같다."
+
+sj "요즘 맨날 그 소리 하네요."
+
+ge "왜냐면 매번 더 그래지니까."
+
+"그 말에 유나는 괜히 어깨를 폈고,"
+"하린이는 괜히 아닌 척 안내판 모서리를 다시 만졌고,"
+"설아는 게시판 유리창에 희미하게 비친 우리를 잠깐 봤다."
+
+"나도 무심코 그쪽을 따라 봤다."
+"안내판 하나를 사이에 두고,"
+"자연스럽게 모여 선 다섯 사람."
+"누가 봐도 같은 일 하다가 나온 얼굴들."
+
+th "진짜 그렇게 보이나."
+
+th "…보이겠지."
+th "이 정도면."
+
+scene black with dissolve
+centered "{size=30}다시 준비실{/size}" with dissolve
+
+scene bg old_library with fade
+play music "audio/bgm_lazy_afternoon.ogg" fadein 1.0
+
+"우리는 안내판을 다시 준비실 안으로 가져왔다."
+"아직 완전히 밖에 붙일 단계는 아니었지만,"
+"이제 정말 곧이라는 생각이 들었다."
+
+show yuna smile at left with dissolve
+show harin normal at center_lower with dissolve
+show seola normal at right with dissolve
+show gaeun smile at far_right with dissolve
+
+yn "좋아."
+yn "기념으로 오늘 간식 먹어도 되죠?"
+
+sj "결국 또 그거냐."
+
+hr "뭐 가져왔는데."
+
+show yuna laugh at left with dissolve
+yn "오늘은 초코볼입니다."
+yn "외부 평가 성공 기념."
+
+sa "명분이 점점 늘어나."
+
+ge "근데 오늘은 인정."
+
+"유나는 가방에서 작은 초코볼 봉지를 꺼냈다."
+"이번엔 정말 안전거리를 지키는 듯"
+"책상 한쪽 제일 구석에 조심히 올려놨다."
+
+sj "벚꽃 습격 이후로 배운 건 있네."
+
+show yuna grin at left with dissolve
+yn "당연하죠."
+yn "저도 성장하는 사람입니다."
+
+hr "그건 맞네."
+sa "오늘은 사고 없을 듯."
+
+"결국 우리는 초코볼 몇 알씩 나눠 먹으며,"
+"방금 들었던 짧은 칭찬 이야기를 또 한 번 꺼냈다."
+
+scene bg old_library with dissolve
+
+"누가 먼저랄 것도 없이,"
+"'예쁘다'라는 단어를 각자 한 번쯤 되짚었다."
+
+show harin faint_smile at center_lower with dissolve
+hr "솔직히."
+hr "조금 더 다듬어야 한다고 생각했는데,"
+hr "지나가다 보기엔 충분한가 봐."
+
+show seola faint_smile at right with dissolve
+sa "응."
+sa "우리가 너무 가까이서만 봤나 봐."
+
+show yuna soft at left with dissolve
+yn "근데 전."
+yn "그냥 우리끼리 좋다고 했던 것도 좋았어요."
+yn "오늘은 거기에 하나 더 생긴 느낌."
+
+sj "외부 검증 완료?"
+
+yn "네."
+yn "조용한 봄 공식 인증."
+
+ge "누가 인증했는데?"
+yn "지나가던 학생 2명."
+
+"가은 선배가 웃음을 터뜨렸고,"
+"나도 결국 따라 웃었다."
+
+scene bg old_library with dissolve
+
+"그날 준비실 안의 공기는,"
+"평소보다 조금 더 가벼웠다."
+"작업이 엄청 진척된 것도 아니고,"
+"큰 사건이 생긴 것도 아닌데,"
+"바깥에서 들은 짧은 칭찬 하나가"
+"이상할 정도로 오래 기분을 띄워 놓았다."
+
+th "정말 단순하네."
+th "근데 이런 걸로 충분한 날도 있지."
+
+"창가 쪽 별 장식이 아주 약하게 흔들렸다."
+"어록 메모지 한쪽엔 유나가 적은 새 줄이 추가돼 있었다."
+
+"'예쁘다' - 지나가던 학생 2명"
+
+"정말 유치한 기록인데,"
+"이상하게 지우고 싶진 않았다."
+
+scene black with dissolve
+centered "{size=30}복도{/size}" with dissolve
+
+scene bg noisy_hallway with fade
+play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
+
+"예비종이 울리기 전,"
+"우리는 준비실 문 앞에 잠깐 모여 섰다."
+
+show yuna smile at left with dissolve
+show harin faint_smile at center_lower with dissolve
+show seola faint_smile at right with dissolve
+
+yn "좋아."
+yn "오늘의 결론."
+
+sj "또 나온다."
+
+yn "외부 반응도 성공."
+hr "인정."
+sa "예쁘다도 얻었고."
+ge "초코볼도 무사했고."
+
+sj "마지막은 왜 들어가."
+
+show yuna laugh at left with dissolve
+yn "중요하잖아요."
+
+"또 웃음이 번졌다."
+"복도엔 여전히 다른 학생들 발소리가 오갔지만,"
+"우리 쪽 공기만은 이상하게 조금 느슨하고 따뜻했다."
+
+th "우리끼리만의 시간."
+th "그리고 그 바깥에서 잠깐 닿아 온 말 한마디."
+
+th "그 둘이 섞이니까."
+th "오늘은 이상하게 더 오래 남을 것 같다."
+
+play sound "audio/sfx_school_bell.ogg"
+
+"본종이 울렸다."
+"우리는 다시 각자 흩어졌다."
+
+"교실로 돌아가는 길."
+"방금 복도에서 들었던 그 짧은 말이 계속 귀에 남았다."
+
+th "예쁘다."
+
+th "……뭐."
+th "틀린 말은 아니었네."
+
+scene black with fade
 
 
-    return
+
+return
