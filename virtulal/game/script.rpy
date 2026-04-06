@@ -60,83 +60,45 @@ transform auto_focus(char_tag):
 
 # --- 4. 화면 위치 조정을 위한 트랜스폼 정의 ---
 
+# 1~2명 등장 시 사용할 기본 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 크기를 키움(zoom 증가))
 transform left:
-    xalign 0.20
-    yanchor 1.0
-    ypos 1.0
-    zoom 1.0
-
+    xalign 0.15 yanchor 1.0 ypos 1.35 zoom 1.1
 transform center:
-    xalign 0.5
-    yanchor 1.0
-    ypos 1.0
-    zoom 1.0
-
+    xalign 0.5 yanchor 1.0 ypos 1.35 zoom 1.1
 transform right:
-    xalign 0.80
-    yanchor 1.0
-    ypos 1.0
-    zoom 1.0
-
+    xalign 0.85 yanchor 1.0 ypos 1.35 zoom 1.1
 transform center_lower:
-    xalign 0.5
-    yanchor 1.0
-    ypos 1.03
-    zoom 1.0
+    xalign 0.5 yanchor 1.0 ypos 1.35 zoom 1.1
 
+# 4명 동시 등장 시 사용할 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 축소를 없앰(zoom 0.9 -> 1.0))
 transform char_1:
-    xalign 0.10
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
-
+    xalign 0.05 yanchor 1.0 ypos 1.35 zoom 1.0
 transform char_2:
-    xalign 0.37
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
-
+    xalign 0.35 yanchor 1.0 ypos 1.35 zoom 1.0
 transform char_3:
-    xalign 0.63
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
-
+    xalign 0.65 yanchor 1.0 ypos 1.35 zoom 1.0
 transform char_4:
-    xalign 0.90
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
+    xalign 0.95 yanchor 1.0 ypos 1.35 zoom 1.0
 
 transform far_left:
-    xalign 0.08
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
+    xalign 0.05
+    yalign 1.0
 
 transform left2:
-    xalign 0.26
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
+    xalign 0.22
+    yalign 1.0
 
 transform center2:
     xalign 0.5
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
+    yalign 1.0
 
 transform right2:
-    xalign 0.74
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
+    xalign 0.78
+    yalign 1.0
 
 transform far_right:
-    xalign 0.92
-    yanchor 1.0
-    ypos 1.0
-    zoom 0.9
+    xalign 0.95
+    yalign 1.0
 
 transform idle_bounce:
     yoffset 0
@@ -201,7 +163,6 @@ image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.8, yoffset=
 image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
 image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
 image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-
 
 # 여기서부터 본 게임 시작
 label start:
