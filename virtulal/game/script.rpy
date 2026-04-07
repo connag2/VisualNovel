@@ -65,86 +65,86 @@ transform left:
     xalign 0.18
     yalign 1.0
     zoom 1.10
-    yoffset 92
+    yoffset 156
 transform center:
     xalign 0.5
     yalign 1.0
     zoom 1.10
-    yoffset 92
+    yoffset 156
 transform right:
     xalign 0.82
     yalign 1.0
     zoom 1.10
-    yoffset 92
+    yoffset 156
 transform center_lower:
     xalign 0.5
     yalign 1.0
     zoom 1.10
-    yoffset 92
+    yoffset 156
 
 # 4명 동시 등장 시 사용할 위치
 transform char_1:
     xalign 0.10
     yalign 1.0
     zoom 1.00
-    yoffset 82
+    yoffset 140
 transform char_2:
     xalign 0.37
     yalign 1.0
     zoom 1.00
-    yoffset 82
+    yoffset 140
 transform char_3:
     xalign 0.63
     yalign 1.0
     zoom 1.00
-    yoffset 82
+    yoffset 140
 transform char_4:
     xalign 0.90
     yalign 1.0
     zoom 1.00
-    yoffset 82
+    yoffset 140
 
 transform far_left:
     xalign 0.06
     yalign 1.0
     zoom 1.00
-    yoffset 82
+    yoffset 140
 
 transform left2:
     xalign 0.24
     yalign 1.0
     zoom 1.03
-    yoffset 86
+    yoffset 146
 
 transform center2:
     xalign 0.5
     yalign 1.0
     zoom 1.07
-    yoffset 90
+    yoffset 152
 
 transform right2:
     xalign 0.76
     yalign 1.0
     zoom 1.03
-    yoffset 86
+    yoffset 146
 
 transform far_right:
     xalign 0.94
     yalign 1.0
     zoom 1.00
-    yoffset 82
+    yoffset 140
 
 transform left_mid:
     xalign 0.24
     yalign 1.0
     zoom 1.03
-    yoffset 86
+    yoffset 146
 
 transform right_mid:
     xalign 0.76
     yalign 1.0
     zoom 1.03
-    yoffset 86
+    yoffset 146
 
 define flash = Fade(0.08, 0.0, 0.18, color="#ffffff")
 
@@ -186,78 +186,78 @@ transform sway_soft:
 # --- 5. 이미지 정의 (크기 80% 축소 + 높이 보정 + 포커스 효과 모두 포함) ---
 
 # [유나 이미지]
-image yuna angry = At(Transform("images/yuna angry.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna pout = At(Transform("images/yuna pout.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna surprise = At(Transform("images/yuna surprise.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna vivid = At(Transform("images/yuna vivid.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna smile = At(Transform("images/yuna smile.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna laugh = At(Transform("images/yuna laugh.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna normal = At(Transform("images/yuna normal.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
+image yuna angry = At(Transform("images/yuna angry.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna pout = At(Transform("images/yuna pout.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna surprise = At(Transform("images/yuna surprise.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna vivid = At(Transform("images/yuna vivid.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna smile = At(Transform("images/yuna smile.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna laugh = At(Transform("images/yuna laugh.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna normal = At(Transform("images/yuna normal.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
 
 # [하린 이미지]
-image harin normal = At(Transform("images/harin normal.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin sigh = At(Transform("images/harin sigh.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin faint_smile = At(Transform("images/harin faint_smile.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin surprise = At(Transform("images/harin surprise.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
+image harin normal = At(Transform("images/harin normal.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin sigh = At(Transform("images/harin sigh.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin faint_smile = At(Transform("images/harin faint_smile.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin surprise = At(Transform("images/harin surprise.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
 
 # [설아 이미지]
-image seola normal = At(Transform("images/seola normal.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
+image seola normal = At(Transform("images/seola normal.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 
 # [가은 이미지]
-image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
+image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
 
 # 여기서부터 본 게임 시작
 # [추가 이미지 별칭/호환 정의 - 실제 존재 리소스만 사용]
-image yuna annoyed = At(Transform("images/yuna annoyed.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna anxious = At(Transform("images/yuna anxious.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna flustered = At(Transform("images/yuna flustered.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna grin = At(Transform("images/yuna grin.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna grip = At(Transform("images/yuna grip.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna happy = At(Transform("images/yuna happy.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna hollow = At(Transform("images/yuna hollow.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna sad = At(Transform("images/yuna sad.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
-image yuna sigh = At(Transform("images/yuna sigh.webp", zoom=0.94, yoffset=0), auto_focus("yuna"))
+image yuna annoyed = At(Transform("images/yuna annoyed.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna anxious = At(Transform("images/yuna anxious.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna flustered = At(Transform("images/yuna flustered.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna grin = At(Transform("images/yuna grin.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna grip = At(Transform("images/yuna grip.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna happy = At(Transform("images/yuna happy.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna hollow = At(Transform("images/yuna hollow.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna sad = At(Transform("images/yuna sad.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
+image yuna sigh = At(Transform("images/yuna sigh.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
 image yuna shock = "yuna surprise"
 image yuna serious = "yuna normal"
 image yuna soft = "yuna smile"
 image yuna think = "yuna normal"
 image yuna panic = "yuna surprise"
 
-image harin angry = At(Transform("images/harin angry.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin annoyed = At(Transform("images/harin annoyed.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin anxious = At(Transform("images/harin anxious.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin flustered = At(Transform("images/harin flustered.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin happy = At(Transform("images/harin happy.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin hollow = At(Transform("images/harin hollow.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin sad = At(Transform("images/harin sad.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin smile = At(Transform("images/harin smile.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
-image harin vivid = At(Transform("images/harin vivid.webp", zoom=0.94, yoffset=0), auto_focus("harin"))
+image harin angry = At(Transform("images/harin angry.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin annoyed = At(Transform("images/harin annoyed.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin anxious = At(Transform("images/harin anxious.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin flustered = At(Transform("images/harin flustered.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin happy = At(Transform("images/harin happy.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin hollow = At(Transform("images/harin hollow.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin sad = At(Transform("images/harin sad.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin smile = At(Transform("images/harin smile.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
+image harin vivid = At(Transform("images/harin vivid.webp", zoom=0.94, yoffset=12), auto_focus("harin"))
 
-image seola angry = At(Transform("images/seola angry.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola annoyed = At(Transform("images/seola annoyed.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola anxious = At(Transform("images/seola anxious.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola faint_smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola flustered = At(Transform("images/seola flustered.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola happy = At(Transform("images/seola happy.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola hollow = At(Transform("images/seola hollow.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola sad = At(Transform("images/seola sad.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola sigh = At(Transform("images/seola sigh.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
-image seola vivid = At(Transform("images/seola vivid.webp", zoom=0.94, yoffset=0), auto_focus("seola"))
+image seola angry = At(Transform("images/seola angry.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola annoyed = At(Transform("images/seola annoyed.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola anxious = At(Transform("images/seola anxious.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola faint_smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola flustered = At(Transform("images/seola flustered.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola happy = At(Transform("images/seola happy.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola hollow = At(Transform("images/seola hollow.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola sad = At(Transform("images/seola sad.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola sigh = At(Transform("images/seola sigh.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
+image seola vivid = At(Transform("images/seola vivid.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 
-image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
-image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=0.94, yoffset=0), auto_focus("gaeun"))
+image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
 
 image bg classroom_day = "bg classroom"
 image bg classroom_evening = "bg classroom"
