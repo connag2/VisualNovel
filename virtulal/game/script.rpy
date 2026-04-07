@@ -3780,7 +3780,7 @@ label scene_14:
     centered "{size=40}Scene 17{/size}\n\n{size=30}방과 후의 아지트{/size}" with dissolve
     pause 1.5
 
-    scene bg sunset_classroom with fade
+    scene bg classroom with fade
     play music "audio/bgm_lazy_afternoon.ogg" fadein 2.0
 
     "수업이 끝난 뒤의 교실은 점심시간과는 다른 의미로 소란스러웠다."
@@ -4398,7 +4398,7 @@ label scene_14:
     centered "{size=40}Scene 18{/size}\n\n{size=30}같이 걷는 하굣길{/size}" with dissolve
     pause 1.5
 
-    scene bg sunset_hallway with fade
+    scene bg noisy_hallway with fade
     play music "audio/bgm_noisy_hallway.ogg" fadein 2.0
 
     "방과 후의 학교는 점심시간과는 또 다른 소음을 갖고 있었다."
@@ -4461,7 +4461,7 @@ label scene_14:
     th "확실히."
     th "처음엔 나도 이렇게 될 줄은 몰랐다."
 
-    scene bg sunset_stairs with dissolve
+    scene bg noisy_hallway with dissolve
 
     "계단을 내려갈 땐 자연스럽게 두 줄이 됐다."
     "유나는 앞쪽 난간을 손끝으로 툭툭 두드리며 내려갔고,"
@@ -4503,7 +4503,7 @@ label scene_14:
 
     "그렇게 말하는 얼굴이 너무 당연해서, 뭐라 반박할 기운도 안 났다."
 
-    scene bg school_gate_sunset with fade
+    scene bg school_gate with fade
     play music "audio/bgm_lazy_afternoon.ogg" fadein 1.5
 
     "교문 근처로 나오자 바깥 공기가 학교 안보다 훨씬 넓게 느껴졌다."
@@ -4568,7 +4568,7 @@ label scene_14:
     yn "축하합니다."
     yn "강제 동행에 당첨되셨어요."
 
-    scene bg city_sidewalk_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "우리는 결국 학교 앞 길을 나란히 걸었다."
     "정문을 벗어나자 교복 차림 학생들이 여기저기 흩어졌고,"
@@ -4626,7 +4626,7 @@ label scene_14:
     "기계 팔이 천천히 내려갔다."
     "토끼 귀를 스치고, 인형 몸통을 아주 어설프게 집고, 그대로 미끄러졌다."
 
-    show yuna shock at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "아악."
     yn "아깝다!"
 
@@ -4647,7 +4647,7 @@ label scene_14:
 
     sj "인형한테 약속까지 하네."
 
-    scene bg convenience_store_front with dissolve
+    scene bg store with dissolve
 
     "인형뽑기 소동이 끝난 뒤에도 이상하게 누구 하나 먼저 가자는 말을 하지 않았다."
     "그래서 우리는 자연스럽게 편의점 앞까지 걸어갔다."
@@ -4679,7 +4679,7 @@ label scene_14:
     scene black with dissolve
     centered "{size=30}편의점{/size}" with dissolve
 
-    scene bg convenience_store_inside with fade
+    scene bg store with fade
     play music "audio/bgm_daily_light.ogg" fadein 1.5
 
     "편의점 안은 바깥보다 조금 더 따뜻했다."
@@ -4691,7 +4691,7 @@ label scene_14:
 
     sj "유나는 또 왜 그렇게 진지해."
 
-    show yuna serious at left, sway_soft with dissolve
+    show yuna normal at left, sway_soft with dissolve
     yn "선택의 순간은 늘 엄숙한 법이거든요."
     yn "초코냐 딸기냐, 지금 이건 아주 중대한 문제예요."
 
@@ -4722,7 +4722,7 @@ label scene_14:
     "아직 완전히 어두워지지도 않았고, 그렇다고 환하지도 않은 시간."
     "묘하게 모든 게 부드럽게 보이는 시간이었다."
 
-    scene bg convenience_store_front_evening with dissolve
+    scene bg store with dissolve
 
     show yuna smile at left, tiny_bounce with dissolve
     show harin normal at center_lower, sway_soft with dissolve
@@ -4830,7 +4830,7 @@ label scene_14:
 
     "하린이 말에 또 웃음이 번졌다."
 
-    scene bg convenience_store_front_evening with dissolve
+    scene bg store with dissolve
 
     "아이스크림이 절반쯤 줄어들 무렵,"
     "대화는 또 사소한 쪽으로 흘렀다."
@@ -4861,7 +4861,7 @@ label scene_14:
     "그 말이 웃기거나 이상해서가 아니라,"
     "너무 자연스럽고, 또 너무 예상 밖이라서."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "……그건 좀 좋다."
 
     hr "응."
@@ -4882,7 +4882,7 @@ label scene_14:
     th "오늘 하루를 설명하기엔."
     th "그 말 하나로 충분한 것 같기도 했다."
 
-    scene bg bus_stop_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "결국 아이스크림을 다 먹고 나서야 우리는 다시 길을 걸었다."
     "편의점 앞에서 조금만 더, 조금만 더 하다가,"
@@ -4965,7 +4965,7 @@ label scene_14:
     "문이 닫히고 버스가 떠난 뒤에도,"
     "유나는 한동안 그쪽을 보다가 천천히 몸을 돌렸다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "이상하네요."
     yn "며칠 전까지만 해도 그냥 같은 학교 사람들이었는데."
 
@@ -4997,7 +4997,7 @@ label scene_14:
     ge "후후."
     ge "그 반응도 이제 좀 익숙해졌네."
 
-    scene bg city_sidewalk_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "가은 선배는 지하철역 쪽 갈림길에서 먼저 손을 흔들었다."
 
@@ -5053,7 +5053,7 @@ label scene_14:
 
     th "언제 이렇게까지 익숙해졌지."
 
-    scene bg crossroads_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "조금 더 걷자, 결국 우리도 갈림길 앞에 섰다."
     "한쪽은 버스 정류장 쪽, 다른 한쪽은 주택가 쪽."
@@ -5151,7 +5151,7 @@ label scene_14:
     centered "{size=40}Scene 19{/size}\n\n{size=30}점심 20분의 약속{/size}" with dissolve
     pause 1.5
 
-    scene bg classroom_day with fade
+    scene bg classroom with fade
     play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "다음 날 점심시간."
@@ -5303,7 +5303,7 @@ label scene_14:
     "설아가 너무 자연스럽게 편을 들어 주는 바람에,"
     "유나는 순간 말문이 막힌 얼굴을 했다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "……설아 선배."
     yn "저 지금 약간 감동했어요."
 
@@ -5484,7 +5484,7 @@ label scene_14:
     hr "잠깐."
     hr "10분 남았어."
 
-    show yuna shock at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "벌써요?!"
     yn "왜 준비실 시간은 이렇게 빨라."
 
@@ -5495,7 +5495,7 @@ label scene_14:
     "설아가 너무 아무렇지 않게 말해서,"
     "다들 잠깐 멈췄다가 작게 웃었다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "와."
     yn "그 말 되게 좋다."
 
@@ -5631,7 +5631,7 @@ label scene_14:
     show harin surprise at center_lower, excited_hop with dissolve
     hr "이제 진짜 가야 해."
 
-    show yuna shock at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "벌써?!"
     yn "진짜 너무 짧다…"
 
@@ -5648,7 +5648,7 @@ label scene_14:
     th "지금은 그냥 움직이면 된다."
     th "그만큼 익숙해졌다는 뜻일까."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "내일도 올 거죠?"
 
     hr "상황 되면."
@@ -5707,7 +5707,7 @@ label scene_14:
     "당황한 건지 아닌지 잘 모르겠는 표정."
     "하지만 아주 미세하게, 입꼬리가 올라갔다."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "……그럼 다행."
 
     "그 짧은 변화 하나에,"
@@ -5749,7 +5749,7 @@ label scene_14:
     centered "{size=40}Scene 20{/size}\n\n{size=30}같이 만들면 빨라지는 것들{/size}" with dissolve
     pause 1.5
 
-    scene bg classroom_evening with fade
+    scene bg classroom with fade
     play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "오후 수업은 평소보다 조금 더 빨리 지나간 기분이었다."
@@ -5857,7 +5857,7 @@ label scene_14:
     hr "일단 부스 소개는 너무 과하면 안 돼."
     hr "짧고 깔끔하게."
 
-    show yuna think at left, sway_soft with dissolve
+    show yuna normal at left, sway_soft with dissolve
     yn "음…"
     yn "'작고 조용한 봄의 기록'?"
     yn "아니면 '잠깐 머물고 싶은 곳'?"
@@ -5909,7 +5909,7 @@ label scene_14:
     "설아는 잠깐 손을 멈췄다."
     "그리곤 아주 살짝 시선을 내 쪽으로 돌렸다."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "그 별명."
     sa "이제 진짜 굳어졌네."
 
@@ -5975,7 +5975,7 @@ label scene_14:
     hr "근데…"
     hr "생각보다 괜찮긴 하다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "진짜요?"
     hr "응."
     sa "예뻐."
@@ -6113,7 +6113,7 @@ label scene_14:
     "설아는 제일 깔끔했고,"
     "가은 선배는 심판인데도 중간에 끼어들어 하나 접었다."
 
-    show yuna shock at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "잠깐만!"
     yn "왜 선배가 제일 예쁘게 접어요!"
 
@@ -6157,7 +6157,7 @@ label scene_14:
 
     "결과는 설아 승."
 
-    show yuna shock at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "우와."
     yn "설아 선배 손 진짜 예뻐요."
     yn "아니, 손이 예쁜 게 아니라 접는 게 예쁜 건가."
@@ -6173,7 +6173,7 @@ label scene_14:
     "설아는 잠깐 말이 없었다."
     "그러더니 완성된 별을 가볍게 손끝으로 굴리며 아주 작게 말했다."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "그럼."
     sa "오늘은 내가 이긴 걸로."
 
@@ -6200,7 +6200,7 @@ label scene_14:
     th "이제 진짜."
     th "준비실이 점점 준비실 같지 않아지고 있다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "좋다."
 
     "유나가 아주 작게 말했다."
@@ -6397,7 +6397,7 @@ label scene_14:
     scene black with dissolve
     centered "{size=30}학교 뒤편 복도{/size}" with dissolve
 
-    scene bg sunset_hallway with fade
+    scene bg noisy_hallway with fade
     play music "audio/bgm_noisy_hallway.ogg" fadein 1.5
 
     "우리는 준비실 불을 끄고 복도로 나왔다."
@@ -6457,7 +6457,7 @@ label scene_14:
     "가은 선배는 그냥 웃기만 했다."
     "부정도 긍정도 안 하는 저 표정도 이제는 조금 알 것 같았다."
 
-    scene bg school_backyard_evening with fade
+    scene bg school_road_dusk with fade
     play music "audio/bgm_daily_light.ogg" fadein 1.5
 
     "학교 뒤편 자판기까지 오는 길은 정문 쪽보다 한산했다."
@@ -6519,7 +6519,7 @@ label scene_14:
 
     yn "설명은 못 하겠는데 아무튼요."
 
-    scene bg school_backyard_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     show harin normal at center_lower, sway_soft with dissolve
 
@@ -6558,7 +6558,7 @@ label scene_14:
     yn "우와."
     yn "인정했어."
 
-    scene bg school_backyard_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "유나는 말할 것도 없었다."
     "자판기 앞에 서자마자 주저 없이 딸기우유 버튼을 눌렀다."
@@ -6584,7 +6584,7 @@ label scene_14:
     th "쟤는 좋아하는 걸 좋아한다고 숨기질 않는다."
     th "그래서 더 보기 편한 걸지도."
 
-    scene bg school_backyard_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     show gaeun smile at far_right, tiny_bounce with dissolve
 
@@ -6659,7 +6659,7 @@ label scene_14:
     "설아까지 덧붙이자,"
     "나는 반박할 타이밍을 그냥 놓쳐 버렸다."
 
-    scene bg school_backyard_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "결국 우리는 자판기 앞 벤치에 적당히 기대거나 걸터앉은 채 음료를 마셨다."
     "말 그대로 정말 잠깐일 뿐인 시간."
@@ -6699,7 +6699,7 @@ label scene_14:
     "누가 봐도 쓸데없는 대화였지만,"
     "이상하게 한 마디도 버릴 게 없었다."
 
-    scene bg school_backyard_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     yn "전 당연히 봄."
     yn "딸기 시즌이니까."
@@ -6750,7 +6750,7 @@ label scene_14:
 
     th "이젠 부정하는 게 더 이상하긴 하다."
 
-    scene bg school_backyard_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "대화는 계속 이어졌다."
 
@@ -6771,7 +6771,7 @@ label scene_14:
     th "정말 의미 없어 보이는데."
     th "끝나고 나면 이상하게 많이 남는다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "아."
     yn "근데 왠지 알 것 같아요."
 
@@ -6794,7 +6794,7 @@ label scene_14:
     show harin faint_smile at center_lower, tiny_bounce with dissolve
     hr "……맞아."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "응."
 
     ge "그게 제일 크지."
@@ -6809,7 +6809,7 @@ label scene_14:
     th "정말 단순한데."
     th "그래서 더 정확한 말일지도."
 
-    scene bg school_backyard_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "잠깐만 더 있다 가자는 말은 정말로 잠깐으로 끝났다."
     "음료를 반쯤 비우고 나자,"
@@ -6828,7 +6828,7 @@ label scene_14:
 
     "유나는 들킨 사람처럼 웃었다."
 
-    scene bg school_side_path_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "우리는 자판기에서 나와 다시 학교 밖 방향으로 천천히 걸었다."
     "조금 전보다 하늘빛은 옅어졌지만,"
@@ -6865,7 +6865,7 @@ label scene_14:
     "설아는 대답 대신 아주 조금 웃었다."
     "이제는 그런 사소한 표정 변화도 어렵지 않게 읽혔다."
 
-    scene bg school_gate_evening with dissolve
+    scene bg school_gate with dissolve
 
     "교문 근처에 다다르자,"
     "역시나 자연스럽게 발걸음이 조금 느려졌다."
@@ -6917,7 +6917,7 @@ label scene_14:
     "묘하게 하린이답지 않게 솔직해서,"
     "유나가 바로 눈을 반짝였다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "와."
     yn "하린이 방금 엄청 좋은 말 했어."
 
@@ -6926,7 +6926,7 @@ label scene_14:
 
     "결국 하린이는 조금 민망한 얼굴로 먼저 몸을 돌렸다."
 
-    scene bg school_gate_evening with dissolve
+    scene bg school_gate with dissolve
     hide harin
 
     "남은 건 셋."
@@ -6949,13 +6949,13 @@ label scene_14:
 
     "유나는 그 말에 또 만족한 얼굴로 웃었다."
 
-    scene bg crossroads_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "곧 설아와도 갈림길이 가까워졌다."
     "설아는 늘 그랬듯 짧게 인사하고 갈 것 같았는데,"
     "오늘은 잠깐 멈춰 서서 우리 둘을 번갈아 봤다."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "오늘 재밌었어."
 
     "짧고 담백한 한마디."
@@ -6971,7 +6971,7 @@ label scene_14:
     "그리고 조용히 자기 쪽 길로 걸어갔다."
     "유나는 그 뒷모습을 잠깐 바라보다가, 괜히 작게 중얼거렸다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "설아 선배는 진짜."
     yn "말 하나하나가 오래 남아요."
 
@@ -6999,7 +6999,7 @@ label scene_14:
     th "정말 사소한 건데."
     th "이제는 이상할 만큼 선명하다."
 
-    scene bg road_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "결국 남은 건 또 나와 유나 둘이었다."
     "이제는 이 상황도 낯설지 않았다."
@@ -7035,7 +7035,7 @@ label scene_14:
     "유나는 아무렇지 않게 그렇게 말했다."
     "그 말이 이상하게 장난처럼만 들리진 않았다."
 
-    scene bg crossroads_evening with dissolve
+    scene bg school_road_dusk with dissolve
 
     "조금 더 걷자, 우리도 결국 갈라지는 길 앞에 섰다."
     "오늘도 여기까지였다."
@@ -7129,7 +7129,7 @@ label scene_14:
     centered "{size=40}Scene 22{/size}\n\n{size=30}우리끼리만 아는 말{/size}" with dissolve
     pause 1.5
 
-    scene bg classroom_day with fade
+    scene bg classroom with fade
     play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "다음 날 점심시간이 다가오자,"
@@ -7192,7 +7192,7 @@ label scene_14:
     "설아가 그렇게 말하자,"
     "유나는 또 세상 다 얻은 표정이 됐다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "설아 선배가 귀엽다고 했다."
     sj "오늘도 그거 오래 우려먹겠네."
 
@@ -7364,7 +7364,7 @@ label scene_14:
     "과한 것도 아니고, 밋밋한 것도 아니었다."
     "딱 지금 준비실 분위기랑 비슷했다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "좋다."
 
     show harin faint_smile at center_lower, tiny_bounce with dissolve
@@ -7534,7 +7534,7 @@ label scene_14:
     "그리고 이번엔 호들갑 대신,"
     "조금 작게 웃었다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "……응."
     yn "그러네."
 
@@ -7553,7 +7553,7 @@ label scene_14:
     show harin normal at center_lower, sway_soft with dissolve
     hr "3분 남았어."
 
-    show yuna shock at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "왜 또 이렇게 빨라!"
 
     sa "여기선 시간이 조금 빨라."
@@ -7607,7 +7607,7 @@ label scene_14:
 
     show yuna smile at left, tiny_bounce with dissolve
     show harin faint_smile at center_lower, tiny_bounce with dissolve
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
 
     yn "오늘도 성공."
 
@@ -7682,7 +7682,7 @@ label scene_14:
     centered "{size=40}Scene 23{/size}\n\n{size=30}작은 실수는 더 오래 웃긴다{/size}" with dissolve
     pause 1.5
 
-    scene bg classroom_evening with fade
+    scene bg classroom with fade
     play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "오후 수업이 끝나갈 무렵,"
@@ -7792,7 +7792,7 @@ label scene_14:
 
     "그렇게 10분쯤 지났을까."
 
-    show yuna think at left, sway_soft with dissolve
+    show yuna normal at left, sway_soft with dissolve
     yn "음."
     yn "이거 오른쪽 아래가 조금 심심하지 않아요?"
 
@@ -7828,7 +7828,7 @@ label scene_14:
     "아주 가벼운 소리와 함께,"
     "작은 벚꽃 젤리 몇 개가 책상 위를 데구르르 굴렀다."
 
-    show yuna shock at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "어."
 
     "그중 두 개는 가격표 종이 위로,"
@@ -7848,7 +7848,7 @@ label scene_14:
     "유나는 그대로 굳은 채 젤리 통을 들고 있었다."
     "스스로도 너무 완벽하게 사고를 쳐 버렸다는 걸 알아버린 얼굴이었다."
 
-    show yuna panic at left, excited_hop with dissolve
+    show yuna surprise at left, excited_hop with dissolve
     yn "잠깐만요."
     yn "이건."
     yn "진짜 일부러 그런 게 아니라…"
@@ -7861,7 +7861,7 @@ label scene_14:
     "그리고 문제는,"
     "그 장면이 너무 진지할 이유가 없을 만큼 웃겼다는 거다."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "벚꽃 습격."
 
     "설아가 아주 담담하게 그렇게 말한 순간,"
@@ -7947,7 +7947,7 @@ label scene_14:
     hr "응."
     hr "이 정도면 딱 좋다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "진짜요?"
 
     sj "어."
@@ -8132,7 +8132,7 @@ label scene_14:
 
     show yuna smile at left, tiny_bounce with dissolve
     show harin faint_smile at center_lower, tiny_bounce with dissolve
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
 
     yn "좋아."
     yn "오늘의 결론."
@@ -8187,7 +8187,7 @@ label scene_14:
     centered "{size=40}Scene 24{/size}\n\n{size=30}문을 열면 있는 사람들{/size}" with dissolve
     pause 1.5
 
-    scene bg classroom_day with fade
+    scene bg classroom with fade
     play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "다음 날 점심시간 직전."
@@ -8225,7 +8225,7 @@ label scene_14:
     scene black with dissolve
     centered "{size=30}준비실 앞{/size}" with dissolve
 
-    scene bg hallway_day with fade
+    scene bg noisy_hallway with fade
     play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
 
     "준비실 앞에 도착했을 때,"
@@ -8259,7 +8259,7 @@ label scene_14:
     show harin faint_smile at center_lower, tiny_bounce with dissolve
     hr "왔네."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "안 늦었어."
 
     "정말 짧은 말이었다."
@@ -8357,7 +8357,7 @@ label scene_14:
     "우리 셋이 이미 너무 자연스럽게 준비실 안에 서 있는 걸 보고,"
     "괜히 웃음이 번진 얼굴이었다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "…어."
     yn "뭔가 좋다."
 
@@ -8373,7 +8373,7 @@ label scene_14:
     show harin faint_smile at center_lower, tiny_bounce with dissolve
     hr "너도 지금 왔으니까 다 있는 거지."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "응."
     sa "이제 다 있네."
 
@@ -8562,13 +8562,13 @@ label scene_14:
     hr "나는."
     hr "사람."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "나도."
 
     "둘이 거의 겹치듯 대답했다."
     "유나는 바로 기분 좋아진 얼굴이 됐다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "…저도."
 
     "이젠 셋의 시선이 자연스럽게 내게 왔다."
@@ -8628,7 +8628,7 @@ label scene_14:
     ge "좋다."
     ge "이제 여기 오면 진짜 준비실보다 '너희 있는 곳' 같아."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "와."
     yn "그 말도 어록."
 
@@ -8660,7 +8660,7 @@ label scene_14:
 
     show yuna smile at left, tiny_bounce with dissolve
     show harin faint_smile at center_lower, tiny_bounce with dissolve
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
 
     yn "좋아."
     yn "오늘의 결론."
@@ -8702,7 +8702,7 @@ label scene_14:
     centered "{size=40}Scene 25{/size}\n\n{size=30}처음으로 들은 바깥의 말{/size}" with dissolve
     pause 1.5
 
-    scene bg classroom_evening with fade
+    scene bg classroom with fade
     play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "오후 수업이 끝날 무렵,"
@@ -8762,7 +8762,7 @@ label scene_14:
     hr "포기해."
     hr "이미 다들 익숙해졌어."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "조금 어울리기도 하고."
 
     sj "설아까지 그러면 진짜 반박할 힘이 없거든."
@@ -8817,7 +8817,7 @@ label scene_14:
     show harin normal at center_lower, sway_soft with dissolve
     hr "이 정도?"
 
-    show yuna think at left, sway_soft with dissolve
+    show yuna normal at left, sway_soft with dissolve
     yn "아니, 잠깐."
     yn "왼쪽이 아주 조금 내려간 것 같기도…"
 
@@ -8839,13 +8839,13 @@ label scene_14:
     "지금까지 책상 위에 눕혀져 있을 땐 몰랐는데,"
     "실제로 벽에 붙어 있으니 그럴듯함이 갑자기 훅 올라왔다."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "…오."
 
     show harin faint_smile at center_lower, tiny_bounce with dissolve
     hr "생각보다 더 괜찮네."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "응."
     sa "진짜 부스 같아졌어."
 
@@ -8926,7 +8926,7 @@ label scene_14:
     scene black with dissolve
     centered "{size=30}준비실 앞 복도{/size}" with dissolve
 
-    scene bg hallway_day with fade
+    scene bg noisy_hallway with fade
     play music "audio/bgm_noisy_hallway.ogg" fadein 1.2
 
     "우리는 안내판 초안을 조심히 들고 복도 쪽으로 나왔다."
@@ -8939,7 +8939,7 @@ label scene_14:
     "가은 선배는 팔짱을 낀 채 그 광경을 구경했고,"
     "나는 왠지 모르게 주변 사람 눈치를 한 번 보게 됐다."
 
-    show yuna think at left, sway_soft with dissolve
+    show yuna normal at left, sway_soft with dissolve
     show harin normal at center_lower, sway_soft with dissolve
     show seola normal at right, sway_soft with dissolve
 
@@ -8976,7 +8976,7 @@ label scene_14:
     show harin surprise at center_lower, excited_hop with dissolve
     hr "들었지."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "응."
 
     sj "첫 외부 평가네."
@@ -8984,13 +8984,13 @@ label scene_14:
     ge "좋네."
     ge "엄청 좋은데?"
 
-    scene bg hallway_day with dissolve
+    scene bg noisy_hallway with dissolve
 
     "유나는 바로 웃을 줄 알았는데,"
     "이번엔 잠깐 멍한 얼굴이었다."
     "정말 예상 못 한 곳에서 칭찬을 받아 버린 사람 같은 표정."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "……와."
     yn "저 지금 조금 감동."
 
@@ -9015,7 +9015,7 @@ label scene_14:
     th "별거 아닌 한마디."
     th "근데 왜 이렇게 뿌듯하지."
 
-    scene bg hallway_day with dissolve
+    scene bg noisy_hallway with dissolve
 
     "그 뒤로도 몇 분 정도 더 대강 위치를 바꿔 보며 확인했다."
     "그런데 이미 분위기는 정해져 있었다."
@@ -9055,7 +9055,7 @@ label scene_14:
 
     yn "중요하니까요."
 
-    scene bg hallway_day with dissolve
+    scene bg noisy_hallway with dissolve
 
     "가은 선배는 그런 우리를 가만히 보다가,"
     "아주 만족스러운 얼굴로 웃었다."
@@ -9138,11 +9138,11 @@ label scene_14:
     hr "조금 더 다듬어야 한다고 생각했는데,"
     hr "지나가다 보기엔 충분한가 봐."
 
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
     sa "응."
     sa "우리가 너무 가까이서만 봤나 봐."
 
-    show yuna soft at left, tiny_bounce with dissolve
+    show yuna smile at left, tiny_bounce with dissolve
     yn "근데 전."
     yn "그냥 우리끼리 좋다고 했던 것도 좋았어요."
     yn "오늘은 거기에 하나 더 생긴 느낌."
@@ -9189,7 +9189,7 @@ label scene_14:
 
     show yuna smile at left, tiny_bounce with dissolve
     show harin faint_smile at center_lower, tiny_bounce with dissolve
-    show seola faint_smile at right, tiny_bounce with dissolve
+    show seola smile at right, tiny_bounce with dissolve
 
     yn "좋아."
     yn "오늘의 결론."
@@ -9237,7 +9237,7 @@ label scene_14:
     centered "{size=40}Scene 27{/size}\n\n{size=30}같이 고르는 사소한 것들{/size}" with dissolve
     pause 1.5
 
-    scene bg clubroom_afternoon with fade
+    scene bg old_library with fade
     play music "audio/bgm_lazy_afternoon.ogg" fadein 2.0
 
     play sound "audio/sfw_walking.ogg"
@@ -9679,6 +9679,660 @@ label scene_14:
 
     stop music fadeout 2.0
 
+    # ---------------------------------------------------------
+    # Scene 28
+    scene black with fade
+    centered "{size=40}Scene 28{/size}
 
+{size=30}끝나기 전에 한 번 더{/size}" with dissolve
+    pause 1.5
+
+    scene bg classroom with fade
+    play music "audio/bgm_playful_bickering.ogg" fadein 2.0
+
+    "종례가 끝난 뒤의 교실은 늘 비슷하다."
+    "의자가 끌리는 소리, 가방 지퍼를 여닫는 소리, 오늘 하루를 다 털어낸 듯한 한숨과 웃음이 뒤섞이며 순식간에 어수선해진다."
+    play sound "audio/sfw_school_crowd.ogg" volume 0.6
+    "그 소란 속에서도 우리 반 창가 쪽에는 이상하리만치 익숙한 흐름이 생겨 있었다."
+    stop sound fadeout 1.0
+    "누가 먼저 말하지 않아도, 다섯 사람의 시선이 자연스럽게 한곳으로 모인다."
+
+    show harin normal at center_lower with dissolve
+    hr "오늘은 준비실 가기 전에 교실 뒤 게시판부터 정리해야 해."
+    hr "축제 공지 종이가 모서리부터 들뜨기 시작했어. 저 상태면 내일 아침엔 반쯤 떨어져 있을 거야."
+
+    show yuna smile at char_2 with dissolve
+    yn "반장님 레이더 또 발동했다."
+    yn "진짜 그런 건 어떻게 그렇게 제일 먼저 보여요?"
+
+    show seola smile at char_4 with dissolve
+    sa "하린은 그런 걸 보면 못 지나가."
+
+    show gaeun smile at right_mid with dissolve
+    ge "직업병 같은 거지. 반장병."
+
+    hr "그런 이상한 병명 붙이지 마."
+    hr "그리고 너희도 오늘은 그냥 지나갈 생각 아니지?"
+
+    sj "이미 불려온 표정인데 뭘 새삼."
+    th "요즘은 방과 후가 되면 각자 알아서 준비실로 가기 전에 한 번쯤 뭉친다."
+    th "처음엔 누가 누구를 따라온다는 느낌이었는데, 이제는 그냥 원래 그런 순서처럼 굳어졌다."
+
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
+    "하린은 들뜬 공지 종이의 모서리를 손끝으로 눌러보며 미세하게 인상을 찌푸렸다."
+    "유나는 그런 하린의 옆얼굴을 보고 괜히 킥킥 웃더니 자기 가방을 책상 위에 턱 올려놓았다."
+
+    yn "좋아, 그럼 오늘의 미션은 게시판 구조 작전!"
+    yn "가은 선배는 높이 담당, 하린 선배는 정렬 담당, 설아 선배는 감성 감독, 서진 선배는 힘 담당."
+    sj "나는 왜 늘 힘 담당이냐."
+    yn "든든해 보이니까."
+    ge "좋은 말 같은데 묘하게 잡일 배정 같다?"
+
+    show yuna laugh with dissolve
+    "유나는 그렇게 말하고는 맨 먼저 교실 뒤로 쪼르르 달려갔다."
+    play sound "audio/sfw_running.ogg" volume 0.7
+    "타닥타닥, 경쾌한 발소리 뒤로 봄 저녁의 공기가 얇게 흔들렸다."
+    stop sound fadeout 0.7
+
+    scene bg classroom with dissolve
+    show harin sigh at left_mid with dissolve
+    show yuna smile at char_2 with dissolve
+    show seola normal at char_4 with dissolve
+    show gaeun smile at right_mid with dissolve
+
+    "결국 다 같이 게시판 앞에 모여들었다."
+    "색이 바랜 공지 종이와 살짝 기울어진 장식 테이프 몇 줄을 손보는 것뿐인데도, 이상하게 다들 제법 진지했다."
+
+    hr "유나, 테이프는 한 번에 길게 자르지 마."
+    hr "끝이 접히면 보기 안 좋아."
+    yn "아, 들켰다."
+    yn "근데 이 정도는 티 안 나지 않아요?"
+
+    hr "내 눈엔 보여."
+    ge "그 말은 이미 끝났다는 뜻이네."
+
+    play sound "audio/sfx_paper_cut.ogg" volume 0.6
+    "설아가 조용히 가위를 들어 삐뚤어진 테이프 끝을 정리했다."
+    "짧고 깔끔한 소리와 함께 접힌 부분이 반듯하게 잘려 나갔다."
+
+    sa "이제 괜찮아."
+    sa "하린이 화 안 나도 돼."
+
+    show harin faint_smile with dissolve
+    hr "…화 안 났어."
+    sj "조금 났던 것 같은데."
+    ge "조금보다 반 정도?"
+
+    show harin annoyed with dissolve
+    hr "안 났다니까."
+
+    show yuna laugh at char_2, excited_hop
+    yn "아하하, 표정이 이미 말해주는데?"
+
+    "하린이 차갑게 노려보자 유나는 금방 입을 꾹 다물었지만, 눈웃음만은 전혀 숨기지 못했다."
+    th "예전 같았으면 저 시선 하나에 교실 전체가 조용해졌을 텐데."
+    th "이제는 다들 그 안에 진짜 화보다 익숙한 체념이 더 많다는 걸 안다."
+
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.6
+    "가은 선배가 의자를 끌어다 게시판 앞에 섰다."
+    "까치발을 들고 윗부분을 누르자, 노을빛이 들어온 교실 창문 쪽에서 긴 그림자가 천천히 기울었다."
+
+    ge "이쯤?"
+    hr "왼쪽 1센티만."
+    ge "정확히 1센티?"
+    hr "대충 말한 건데 진짜 딱 그 정도야."
+    sj "무섭네."
+    sa "하린은 눈금자가 몸에 들어 있는 것 같아."
+
+    show harin smile with dissolve
+    hr "그건 좀 웃긴 비유네."
+
+    "설아의 담담한 한마디에 하린의 입가가 아주 잠깐 풀렸다."
+    "유나는 그 작은 변화도 놓치지 않고 바로 손가락으로 허공을 콕 찔렀다."
+
+    yn "방금 웃음 적립."
+    yn "오늘도 성공."
+
+    sj "그 적립 기준은 대체 누가 정하냐."
+    yn "당연히 나지."
+    ge "독재 국가네."
+
+    play sound "audio/sfx_ui_click.ogg" volume 0.5
+    "유나는 자기 혼자 만족스러운 얼굴로 허공에 도장을 찍듯 손을 툭 내렸다."
+
+    "별것 아닌 정리가 끝났을 뿐인데 게시판은 묘하게 더 반듯해졌고, 교실 뒤편은 조금 더 우리 손을 탄 자리처럼 보였다."
+    "다들 한 걸음 물러나 그 결과를 바라봤다."
+
+    sa "조금 달라졌어."
+    ge "응. 작은데 티 난다."
+    hr "원래 이런 건 작은 차이가 커."
+    yn "맞아."
+    yn "우리도 맨 처음엔 이렇게 안 친했잖아."
+
+    "순간 다들 조용해졌다."
+    "유나는 별 생각 없이 툭 던진 말 같았지만, 그래서 더 진심처럼 들렸다."
+
+    sj "그건 맞네."
+    sj "처음엔 다들 이렇게 오래 같이 있을 줄 몰랐지."
+
+    show seola smile with dissolve
+    sa "지금은 안 이상해."
+    sa "같이 있는 게."
+
+    ge "그러게."
+    ge "이제는 안 모이면 오히려 허전할 것 같은데?"
+
+    show yuna smile with dissolve
+    yn "봐봐!"
+    yn "내가 말했잖아. 우리 팀 은근 잘 맞는다고."
+
+    hr "은근이 아니라 이미 많이 맞아."
+
+    "하린이 아주 자연스럽게 그렇게 말하자 유나가 잠깐 눈을 깜빡였다."
+    "그리고는 곧바로 환하게 웃으며 두 손으로 자기 입을 가렸다."
+
+    yn "서하린한테 방금 공식 인정 받았다…!"
+    yn "오늘 일기장에 적어야지."
+    hr "그런 건 또 적지 마."
+    sa "이미 적었을 얼굴이야."
+    ge "맞아, 지금 표정 완전 저장 완료인데."
+
+    play sound "audio/sfx_school_bell.ogg" volume 0.7
+    "멀리서 늦은 예비종 같은 소리가 작게 울렸다."
+    "당장 뛰어가야 할 만큼 급한 시간은 아니었지만, 그래도 방과 후의 공기가 슬슬 다음 순서를 재촉하기 시작했다."
+
+    sj "가자. 준비실도 가야지."
+    yn "응!"
+
+    play sound "audio/sfw_walking.ogg"
+    "다섯 사람은 거의 동시에 몸을 돌렸다."
+    "누가 먼저라고 할 것도 없이, 발걸음이 하나의 흐름처럼 복도로 이어졌다."
+    stop sound fadeout 1.0
+
+    # ---------------------------------------------------------
+    # Scene 29
+    scene black with fade
+    centered "{size=40}Scene 29{/size}
+
+{size=30}사서 먹는 시간{/size}" with dissolve
+    pause 1.5
+
+    scene bg store with fade
+    play music "audio/bgm_comedic_yuna.ogg" fadein 2.0
+
+    "준비실 작업은 생각보다 빨리 끝났다."
+    "색지를 정리하고, 메모해 둔 목록을 다시 맞추고, 내일 쓸 것들을 한쪽에 모아두고 나니 아직 해가 완전히 지기 전의 애매한 여유가 남았다."
+    "그 애매한 틈을 유나가 놓칠 리 없었다."
+
+    show yuna grin at char_2 with dissolve
+    yn "좋아, 오늘은 해산 전에 보급이다!"
+    yn "다들 저녁 전이니까 애매하게 출출하죠?"
+
+    show harin normal at left_mid with dissolve
+    hr "애매하게라는 말이 제일 위험해."
+    hr "그럴 때 군것질하면 저녁 망쳐."
+
+    show gaeun laugh at right_mid with dissolve
+    ge "근데 그 애매한 때 먹는 게 제일 맛있잖아."
+
+    show seola smile at char_4 with dissolve
+    sa "맞아."
+    sa "애매해서 더 좋을 때 있어."
+
+    sj "둘이 손잡고 유나 편 드네."
+
+    "매점 앞 작은 냉장 진열장과 과자 선반 앞은 방과 후 특유의 달콤한 냄새로 가득했다."
+    "유나는 이미 신난 얼굴로 이쪽저쪽을 훑고 있었고, 가은 선배는 뒤에서 여유롭게 웃으며 그걸 구경했다."
+
+    play sound "audio/sfx_ui_hover.ogg" volume 0.4
+    "유나의 손가락이 선반 위를 이리저리 훑을 때마다 포장지가 바스락거렸다."
+
+    yn "오늘은 각자 하나씩 고르기 금지."
+    yn "서로 하나씩 추천해 주기!"
+
+    hr "왜 그런 룰이 또 생겨."
+    yn "재밌잖아요."
+    yn "자기 취향만 고르면 맨날 비슷한 것만 먹게 되니까, 오늘은 상대 취향 생각해서 고르는 거지."
+
+    ge "오, 그거 괜찮다."
+    ge "생각보다 성격 보이겠네."
+
+    sa "누가 누구 거 고를지 정해야 해."
+    sj "괜히 복잡해지는데."
+
+    show yuna vivid with dissolve
+    yn "이미 정했어요!"
+    yn "하린 선배는 서진 선배 거, 서진 선배는 설아 선배 거, 설아 선배는 가은 선배 거, 가은 선배는 내 거, 나는 하린 선배 거!"
+
+    hr "왜 제일 마지막에 네가 제일 신난 목소리야."
+    yn "중요하니까!"
+
+    "어이없다는 말이 여기저기서 나왔지만, 이상하게 아무도 진짜로 거절하지는 않았다."
+    th "이제는 다들 안다."
+    th "유나가 이런 걸 제안했을 때 가장 재밌는 결론은, 대충 따라가 주는 쪽에서 나온다는 걸."
+
+    play sound "audio/sfw_walking.ogg" volume 0.7
+    "각자 선반 앞에 흩어졌다."
+    "하린은 성분표라도 볼 듯 진지한 얼굴로 포장을 뒤집어 보고 있었고, 설아는 냉장칸 앞에서 한참을 가만히 서 있었다."
+    "가은 선배는 유나가 뭘 좋아할지 이미 감이 온다는 표정으로 음료 코너를 둘러봤고, 유나는 웬일로 장난을 줄이고 과자 봉지를 엄숙하게 들여다봤다."
+    stop sound fadeout 0.8
+
+    scene bg store with dissolve
+    show harin normal at left_mid with dissolve
+    show yuna normal at char_2 with dissolve
+    show seola normal at char_4 with dissolve
+    show gaeun smile at right_mid with dissolve
+
+    "잠시 뒤, 다섯 사람은 계산대 옆 좁은 공간에 다시 모였다."
+    "각자 고른 것들을 손에 들고 있는데, 그 조합이 묘하게 웃겼다."
+
+    hr "이거."
+    "하린은 내 쪽으로 지나치게 달지 않은 곡물 바 하나를 내밀었다."
+    hr "네가 단 건 잘 안 먹고, 그렇다고 너무 퍽퍽한 것도 싫어하잖아."
+
+    sj "…언제 그걸 다 파악했냐."
+    hr "옆자리였잖아, 한동안."
+    hr "그리고 너 은근 표정에 다 써 있어."
+
+    ge "와, 관찰력 무섭다."
+    yn "역시 체크리스트 반장답다. 먹는 취향도 데이터화돼 있어."
+
+    show harin annoyed with dissolve
+    hr "체크리스트 반장은 이제 별명이 된 거야?"
+    sa "응."
+    sa "안 없어질 것 같아."
+
+    "하린은 체념한 듯 한숨을 쉬었지만, 입가에는 미세한 웃음이 걸려 있었다."
+
+    sj "그럼 내 차례."
+    "나는 설아에게 작게 흔드는 캔 음료 하나를 내밀었다."
+    play sound "audio/sfx_can_open.ogg" volume 0.5
+    sj "너 너무 단 건 별로 안 좋아하는 것 같아서. 탄산은 약한 걸로 골랐어."
+
+    show seola surprise with dissolve
+    sa "…기억했어?"
+    sj "지난번 피자 파티 때 네가 제일 늦게 고른 거."
+    sj "강한 맛은 좀 오래 보더라."
+
+    show seola smile with dissolve
+    sa "고마워."
+    sa "맞아. 이거 좋아."
+
+    "설아가 캔을 내려다보는 눈빛이 아주 조용하게 풀렸다."
+    "말은 짧았지만, 만족한 건 확실히 보였다."
+
+    ge "그럼 나는 유나 거."
+    "가은 선배는 형광빛 포장이 귀여운 젤리와 딸기우유를 한꺼번에 내밀었다."
+    ge "너는 하나만 주면 분명 아쉬워할 것 같아서 세트로."
+
+    show yuna surprise at char_2 with dissolve
+    yn "헐, 선배 천재예요?"
+    yn "저 진짜 방금 딱 이 조합 상상했는데!"
+
+    ge "봐봐, 내가 사람 보는 눈은 있다니까."
+    yn "와, 이건 진짜 사랑이다."
+
+    sj "과자 하나 받았다고 사랑까지 가냐."
+    yn "먹는 거 앞에선 충분히 가능하거든요?"
+
+    "다들 웃었다."
+    "작고 환한 웃음이 매점 안의 달큰한 공기와 섞여 둥글게 퍼졌다."
+
+    sa "내 차례."
+    "설아는 가은 선배에게 작은 캔커피와 버터 쿠키를 내밀었다."
+    sa "선배는 따뜻한 거 들고 있을 때 제일 편해 보여."
+    sa "그리고 쿠키는… 그냥 어울려."
+
+    ge "뭐야, 너무 다정한 해석인데?"
+    ge "나 지금 괜히 감동했어."
+
+    show gaeun laugh with dissolve
+    "가은 선배가 웃으며 쿠키 상자를 가볍게 흔들었다."
+    "노을빛이 투명한 포장 비닐에 반사되어 반짝였다."
+
+    yn "마지막! 내 차례!"
+    "유나는 두 손으로 아주 엄숙하게 작은 견과류 봉지와 무가당 요거트를 하린 앞에 바쳤다."
+
+    hr "…의외네."
+    yn "의외라는 표정 뭐예요."
+    yn "저도 이제 하린 선배 취향 알아요."
+    yn "달달한 것보다 안 부담스러운 거 좋아하고, 먹으면서도 죄책감 안 드는 거 선호하잖아요."
+
+    show harin surprise with dissolve
+    hr "그런 말은 좀 이상하지만… 틀리진 않았어."
+
+    ge "유나도 사람 잘 본다니까."
+    sj "의외로 이런 데선 세심하지."
+
+    show yuna grin at char_2, excited_hop
+    yn "의외로 빼요!"
+
+    play sound "audio/sfx_eating.ogg" volume 0.5
+    "그대로 매점 앞 좁은 벤치와 창틀 쪽에 걸터앉아 다 같이 포장을 뜯었다."
+    "누군가는 한 입 먹고 고개를 끄덕였고, 누군가는 남의 손에 든 걸 슬쩍 다시 봤다."
+    "추천이라는 이름을 붙였지만, 결국은 서로를 얼마나 보고 있었는지 확인하는 시간에 가까웠다."
+
+    hr "생각보다 다들 잘 골랐네."
+    sa "응."
+    sa "진짜 다 어울려."
+    ge "이 정도면 우리 이제 취향 데이터도 꽤 쌓였는데?"
+
+    sj "듣기만 하면 연구 모임 같다."
+    yn "좋지 않아요?"
+    yn "서로를 오래 봐야만 아는 것들 있잖아."
+
+    "유나는 젤리를 오물거리다가 문득 말을 멈추고, 차분해진 눈으로 다들 한 번씩 바라봤다."
+    "평소처럼 왁 하고 튀어 오르는 장난기가 아니라, 그냥 순수하게 좋아서 확인하는 표정이었다."
+
+    yn "진짜 신기하다."
+    yn "처음엔 그냥 같이 축제 준비하는 사람들이었는데."
+    yn "이제는 누가 뭘 고를지 대충 상상도 되고, 그게 맞아떨어지기도 하고."
+
+    show harin smile with dissolve
+    hr "계속 같이 있었으니까."
+
+    show seola smile with dissolve
+    sa "계속 같이 있었는데도 안 질렸고."
+
+    ge "오히려 더 재밌어졌지."
+
+    sj "부정할 수는 없네."
+
+    "대답이 겹치자 잠깐 정적이 생겼다가, 이내 누가 먼저랄 것도 없이 또 웃음이 번졌다."
+    "어색해서가 아니라, 너무 자연스러워서 나오는 웃음이었다."
+
+    play sound "audio/sfx_stomach_growl.ogg" volume 0.6
+    "그때, 정말 절묘한 타이밍에 누군가의 배에서 작게 꼬르륵 소리가 났다."
+    "잠깐 정적. 그리고 바로, 고개를 푹 숙인 사람은 하린이었다."
+
+    show harin flustered with dissolve
+    hr "…못 들은 걸로 해."
+
+    show yuna laugh at char_2, excited_hop
+    yn "아하하하! 하린 선배도 배고프잖아!"
+    ge "이건 귀한 장면인데."
+    sa "오늘 최고다."
+    sj "매점 오길 잘했네."
+
+    "하린은 얼굴을 붉힌 채 요거트 뚜껑을 괜히 더 반듯하게 접었다."
+    "그 모습이 너무 드물고 인간적이라, 다들 한참 웃다가 겨우 진정했다."
+
+    show harin sigh with dissolve
+    hr "웃을 거면 다 먹고 빨리 가."
+    hr "…그래도, 오늘은 괜찮았어."
+
+    "작고 낮은 목소리였지만 다들 들었다."
+    "그래서 이번엔 놀리지 않고, 그냥 각자 자기 손에 든 것을 한 번 더 내려다보며 가볍게 웃었다."
+
+    stop music fadeout 2.0
+
+    # ---------------------------------------------------------
+    # Scene 30
+    scene black with fade
+    centered "{size=40}Scene 30{/size}
+
+{size=30}헤어지기 아쉬운 길{/size}" with dissolve
+    pause 1.5
+
+    scene bg school_road_dusk with fade
+    play music "audio/bgm_stand_by_you.ogg" fadein 2.0
+
+    "학교 밖으로 나오자, 하늘은 이미 낮과 밤의 사이에 걸쳐 있었다."
+    "붉지도 푸르지도 않은 애매한 빛이 골목과 전신주, 멀리 이어지는 도로를 한 번 부드럽게 덮고 있었다."
+    "봄 저녁 특유의 선선한 공기 속에서, 다섯 사람의 걸음은 이상하리만치 느렸다."
+
+    play sound "audio/sfw_walking.ogg" volume 0.7
+    "누가 먼저 속도를 늦췄는지는 모른다."
+    "그런데 어느새 아무도 서두르지 않고 있었다."
+
+    show yuna smile at char_2 with dissolve
+    show harin normal at left_mid with dissolve
+    show seola normal at char_4 with dissolve
+    show gaeun smile at right_mid with dissolve
+
+    yn "오늘 진짜 꽉 찼다."
+    yn "교실도 정리하고, 준비실도 갔다가, 매점까지 성공했어."
+    yn "이 정도면 완전 알찬 하루 인정?"
+
+    sj "너 기준으론 하루에 이벤트 세 개는 기본 아닌가."
+    yn "그래도 오늘은 더 좋았어요."
+
+    ge "왜?"
+
+    show yuna smile with dissolve
+    yn "그냥요."
+    yn "뭐 해도 다 같이 한 느낌이어서."
+
+    "유나는 멋쩍은 듯 웃으며 운동화 끝으로 길바닥의 작은 돌멩이를 툭 찼다."
+    "돌멩이는 멀리 가지도 못하고 몇 번 또르르 굴러가다 멈췄다."
+
+    sa "나도."
+    sa "오늘 이상하게 빨리 지나갔어."
+
+    hr "시간이 빠른 건 대체로 바쁠 때인데."
+    hr "오늘은 바쁘다기보다…"
+    hr "계속 이어져 있었지."
+
+    ge "맞아. 끊기는 데가 없었어."
+    ge "누구 하나 먼저 빠지지도 않고, 중간에 어색하게 비는 순간도 없고."
+
+    th "그 말이 이상하게 오래 남았다."
+    th "끊기는 데가 없었다."
+    th "하루를 돌아보면 정말 그랬다."
+    th "아침엔 자연스럽게 웃었고, 점심엔 같이 고르고, 방과 후엔 같이 정리하고, 끝나고도 또 같이 걷고 있었다."
+    th "별일이 있어서가 아니라, 같이 있는 흐름이 너무 자연스러워져서."
+
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.5
+    "바람이 한 번 지나가자 유나의 반묶음 머리와 설아의 긴 머리카락이 동시에 살짝 흔들렸다."
+    "가은 선배는 손에 든 빈 캔을 가볍게 굴렸고, 하린은 가방끈을 고쳐 잡으며 하늘을 한 번 올려다봤다."
+
+    sj "축제 끝나도 이렇게 다닐까."
+
+    "그 말은 생각보다 조용하게 떨어졌다."
+    "농담처럼 던진 것도, 무겁게 꺼낸 것도 아니었는데 다들 바로 대답하지 못했다."
+
+    show yuna surprise with dissolve
+    yn "…어?"
+
+    "먼저 반응한 건 유나였다."
+    "눈을 동그랗게 뜬 얼굴에, 순간 아주 짧게 당황이 스쳤다."
+
+    ge "뭐야, 갑자기 벌써 아쉬운 소리?"
+    ge "그건 좀 이른데."
+
+    sa "이르긴 한데."
+    sa "생각은 해봤어."
+
+    show harin faint_smile with dissolve
+    hr "나도."
+    hr "축제 준비 끝나면 이 핑계로 모이긴 어려울 테니까."
+
+    "정말 사소한 현실적인 말이었다."
+    "하지만 그래서 더 진짜처럼 들렸다."
+    "지금 이 시간들이 끝이 있는 종류라는 걸, 다들 이미 어렴풋이 알고 있었던 셈이다."
+
+    show yuna pout with dissolve
+    yn "싫은데."
+    yn "그냥 끝나면 끝, 이건 좀 싫어요."
+
+    "유나는 입술을 살짝 내밀며 발끝으로 바닥을 한 번 더 툭 건드렸다."
+    "장난을 칠 때의 삐죽임과는 조금 달랐다."
+    "이번에는 진짜로 아쉬워하는 얼굴이었다."
+
+    sj "나도 그냥 한 말은 아니었어."
+    sj "요즘은 좀… 당연해졌거든."
+    sj "점심 되면 준비실 갈 것 같고, 끝나면 또 어디선가 모일 것 같고."
+
+    sa "응."
+    sa "맞아."
+
+    ge "아, 그 느낌 알아."
+    ge "나도 수업 끝나면 오늘은 또 누가 먼저 와 있을까 생각하게 되더라."
+
+    hr "솔직히 말하면."
+    hr "이제는 네가 없으면 조용해서 이상하고."
+    hr "네가 없으면 너무 시끄럽지도 않아서 이상해."
+
+    "하린의 시선이 유나 쪽으로 향했다."
+    "말은 여전히 담백했지만, 그 안에 담긴 익숙함만큼은 분명했다."
+
+    show yuna surprise at char_2
+    pause 0.2
+    show yuna smile at char_2, excited_hop
+    yn "뭐야, 그거 완전 고백 아니에요?"
+
+    hr "아니거든."
+    ge "들었지? 공식적으로 유나는 소음인데 필요한 소음이래."
+    sa "중요한 소리네."
+    sj "없으면 허전한 쪽."
+
+    "유나는 잠깐 아무 말도 못 하더니, 결국 참지 못하고 웃어버렸다."
+    "눈가가 반짝일 만큼 환한 웃음이었다."
+
+    yn "진짜 이상하다."
+    yn "맨날 놀리면서 왜 이렇게 다정해."
+
+    hr "네가 놀릴 거리를 너무 많이 주니까."
+    sa "근데 다정한 건 맞아."
+    ge "응, 그건 맞지."
+
+    play sound "audio/sfw_walking.ogg" volume 0.6
+    "갈림길이 보이기 시작했다."
+    "누군가는 여기서 버스를 타야 하고, 누군가는 오른쪽 골목으로, 누군가는 언덕 쪽으로 올라가야 했다."
+    "매번 지나치는 자리인데도 오늘은 유난히 가까워 보였다."
+
+    yn "벌써 여기야?"
+    ge "천천히 왔는데도 결국 도착은 하네."
+
+    sa "오늘 길이 짧다."
+
+    th "설아 말이 딱 맞았다."
+    th "분명 평소와 같은 거리인데도, 오늘은 이상할 만큼 짧았다."
+
+    show gaeun smile with dissolve
+    ge "그럼 하나 정하자."
+    ge "축제 끝나도 그냥 끝내지 말기."
+    ge "누가 먼저 말 안 해도, 가끔은 계속 같이 있기."
+
+    show yuna vivid with dissolve
+    yn "좋아!"
+    yn "완전 좋아!"
+    yn "그럼 우리… 음, 이유 없어도 모이는 걸로!"
+
+    hr "이유 없는 모임은 너무 즉흥적이야."
+    hr "적어도 명분은 하나 있어야지."
+
+    sj "명분은 만들면 되잖아."
+    sj "간식 먹기든, 산책이든, 사진 정리든."
+
+    sa "사소한 것에 진심이기로 했으니까."
+
+    "설아가 아주 담담하게 전에 했던 말을 다시 꺼냈다."
+    "그 말이 이 저녁길에 유난히 잘 어울렸다."
+
+    ge "좋네."
+    ge "그럼 결정."
+    ge "축제가 끝나도 우리는 사소한 핑계를 계속 만들기로."
+
+    show harin smile with dissolve
+    hr "그 정도면 나도 찬성."
+
+    show yuna grin at char_2, excited_hop
+    yn "됐다!"
+    yn "와, 오늘 진짜 역사적인 날이다!"
+    yn "공식 미래 약속 성립!"
+
+    sj "네가 붙이는 이름은 왜 다 거창하냐."
+    yn "중요하니까요."
+
+    "유나는 아주 만족스러운 얼굴로 고개를 끄덕였다."
+    "가은 선배는 그런 유나를 보며 작게 웃었고, 설아는 조용히 그 장면을 눈에 담았다."
+    "하린은 아무 말 없이도 표정이 한결 부드러워져 있었다."
+
+    play sound "audio/sfx_camera_click.ogg" volume 0.7
+    "그때 유나가 갑자기 휴대폰을 번쩍 들었다."
+
+    yn "잠깐, 이건 남겨야 해."
+    yn "오늘 표정들 다 좋단 말이야."
+
+    sj "또 사진이냐."
+    ge "좋지, 찍자."
+    sa "응. 오늘은 찍어도 돼."
+    hr "갑자기 준비할 시간도 안 주고…"
+
+    show harin flustered with dissolve
+    "하린이 그렇게 말했지만 이미 늦었다."
+    "유나는 갈림길 앞에 다섯 사람을 억지로 끌어 모으더니, 자기 키에 맞춰 휴대폰 각도를 몇 번 바꿨다."
+
+    yn "좋아, 다들 조금만 붙어요!"
+    yn "오늘은 자연스럽게, 너무 꾸미지 말고!"
+
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.6
+    "어깨가 닿고, 소매가 스치고, 누군가의 웃음이 누군가의 숨결 가까이에서 섞였다."
+    "그 거리감이 전혀 어색하지 않았다."
+
+    ge "유나야, 너 지금 제일 꾸미고 있어."
+    sa "맞아. 표정 제일 열심히 만들어."
+    sj "입꼬리 너무 올라갔는데."
+
+    show yuna pout with dissolve
+    yn "아 진짜! 빨리 찍어요!"
+
+    play sound "audio/sfx_camera_click.ogg" volume 0.9
+    with flash
+    "찰칵."
+    "셔터음과 함께, 오늘의 끝자락이 한 장의 사진으로 고정되었다."
+
+    "유나는 찍힌 화면을 확인하더니 그대로 한동안 말이 없었다."
+    "다들 이상해서 유나를 보자, 녀석은 화면을 가슴 쪽으로 끌어안듯 붙들고 작게 웃었다."
+
+    show yuna smile with dissolve
+    yn "좋다."
+    yn "진짜 좋다."
+
+    "짧은 한마디였는데, 그 말 안에는 오늘 하루 전체가 다 들어 있는 것 같았다."
+
+    hr "나중에 보내 줘."
+    sa "나도."
+    ge "나도 꼭."
+    sj "원본 훼손하지 말고."
+
+    show yuna laugh at char_2, excited_hop
+    yn "저를 뭘로 보고!"
+    yn "아주 예쁘게 보내드리겠습니다!"
+
+    play sound "audio/sfw_walking.ogg" volume 0.7
+    "결국 갈림길 앞에서 한참 더 머물렀다."
+    "안녕을 말하고도 두세 마디씩 더 붙었고, 돌아서는 척하다가도 다시 손을 흔들었다."
+    "정말로 떠나기 아쉬운 사람들처럼."
+
+    ge "그럼 내일 봐, 얘들아."
+    sa "내일 봐."
+    hr "늦지 마."
+    sj "들어가다가 연락하고."
+
+    show yuna smile with dissolve
+    yn "응."
+    yn "내일도 같이 있어요."
+
+    "그 말은 약속이라기보다 이미 정해진 사실처럼 들렸다."
+    "그래서 누구도 대답을 망설이지 않았다."
+
+    sj "그래."
+    hr "응."
+    sa "같이 있어."
+    ge "당연하지."
+
+    "저녁길 위로 웃음이 한 번 더 번졌다."
+    "그리고 그제야, 다섯 사람은 각자의 방향으로 천천히 흩어졌다."
+    "멀어지는 발걸음 속에서도 이상하게 마음은 가벼웠다."
+
+    th "이제는 안다."
+    th "이 관계가 단순히 축제 준비 때문에 묶인 건 아니라는 걸."
+    th "사소한 말, 사소한 약속, 사소한 같이 걷는 길 같은 것들이 어느새 우리를 여기까지 데려왔다는 걸."
+    th "그래서 더 오래 붙잡고 싶어진다는 것도."
+
+    stop sound fadeout 1.0
+    stop music fadeout 2.0
 
     return
