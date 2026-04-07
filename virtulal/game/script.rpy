@@ -1,12 +1,27 @@
 ﻿# --- 1. 대화하는 사람을 추적 및 자동 포커스 파이썬 코드 ---
 init python:
     speaking = None
-    
+    reaction_tick = 0
+    reaction_mode = "listen"
+
+    def _detect_reaction_mode(what):
+        if not what:
+            return "listen"
+
+        text = str(what)
+        if ("!?" in text) or ("?!" in text) or ("!" in text) or ("?" in text):
+            return "surprised"
+        if ("…" in text) or ("..." in text):
+            return "soft"
+        return "listen"
+
     def speaker(name):
         def callback(event, **kwargs):
-            global speaking
+            global speaking, reaction_tick, reaction_mode
             if event == "begin":
                 speaking = name
+                reaction_mode = _detect_reaction_mode(kwargs.get("what", ""))
+                reaction_tick += 1
             elif event == "end":
                 speaking = None
         return callback
@@ -15,22 +30,67 @@ init python:
     class FocusFunction:
         def __init__(self, char_tag):
             self.char_tag = char_tag
-            
+
         def __call__(self, trans, st, at):
             is_active = (speaking is None or speaking == self.char_tag)
 
-            # 말하는 캐릭터는 더 또렷하게, 나머지는 너무 죽지 않게만 살짝만 낮춤
-            target_alpha = 1.0 if is_active else 0.62
-            target_zoom = 1.0 if is_active else 0.985
-            target_yoffset = 0 if is_active else 3
-            
+            if not hasattr(trans, "_last_reaction_tick"):
+                trans._last_reaction_tick = -1
+                trans._react_offset = 0.0
+                trans._react_zoom = 0.0
+
+            # 새 대사가 시작될 때, 말하지 않는 캐릭터도 살짝 반응하게 함.
+            if trans._last_reaction_tick != reaction_tick:
+                trans._last_reaction_tick = reaction_tick
+
+                if is_active:
+                    if reaction_mode == "surprised":
+                        trans._react_offset = -2.0
+                        trans._react_zoom = 0.008
+                    elif reaction_mode == "soft":
+                        trans._react_offset = -1.0
+                        trans._react_zoom = 0.003
+                    else:
+                        trans._react_offset = -1.4
+                        trans._react_zoom = 0.004
+                else:
+                    if reaction_mode == "surprised":
+                        trans._react_offset = -8.0
+                        trans._react_zoom = 0.016
+                    elif reaction_mode == "soft":
+                        trans._react_offset = -2.5
+                        trans._react_zoom = 0.005
+                    else:
+                        trans._react_offset = -4.0
+                        trans._react_zoom = 0.009
+
+            # 시간이 지나며 자연스럽게 원위치로 돌아가게 함.
+            if abs(trans._react_offset) < 0.08:
+                trans._react_offset = 0.0
+            else:
+                trans._react_offset *= 0.72
+
+            if abs(trans._react_zoom) < 0.0006:
+                trans._react_zoom = 0.0
+            else:
+                trans._react_zoom *= 0.72
+
+            # 말하는 캐릭터는 더 또렷하게, 나머지는 너무 죽지 않게만 살짝 낮춤.
+            base_alpha = 1.0 if is_active else 0.72
+            base_zoom = 1.0 if is_active else 0.987
+            base_yoffset = 0 if is_active else 3
+
+            target_alpha = base_alpha
+            target_zoom = base_zoom + trans._react_zoom
+            target_yoffset = base_yoffset + trans._react_offset
+
             if trans.alpha is None:
                 trans.alpha = 1.0
             if trans.zoom is None:
                 trans.zoom = 1.0
             if trans.yoffset is None:
                 trans.yoffset = 0
-                
+
             # 부드러운 애니메이션
             if trans.alpha != target_alpha:
                 diff = target_alpha - trans.alpha
@@ -44,15 +104,15 @@ init python:
                 if abs(diff) < 0.002:
                     trans.zoom = target_zoom
                 else:
-                    trans.zoom += diff * 0.18
+                    trans.zoom += diff * 0.20
 
             if trans.yoffset != target_yoffset:
                 diff = target_yoffset - trans.yoffset
                 if abs(diff) < 0.2:
                     trans.yoffset = target_yoffset
                 else:
-                    trans.yoffset += diff * 0.18
-                    
+                    trans.yoffset += diff * 0.22
+
             return 0.02 # 0.02초마다 부드럽게 갱신
 
 # --- 2. 캐릭터 정의 (콜백 연결) ---
@@ -386,7 +446,7 @@ label start:
     pause 1.5
 
     scene bg school_gate with fade
-    play music "audio/bgm_lazy_afternoon.ogg" fadein 2.0
+    play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "집에서 학교까지는 걸어서 대략 15분 남짓."
     "조금 이른 시간이라 그런지, 등교하는 학생들의 발걸음에는 아직 아침 특유의 나른한 여유가 묻어난다."
@@ -433,8 +493,10 @@ label start:
     "유나가 두 검지손가락으로 자기 볼을 콕 찌르며 과장되게 애교를 부린다."
 
     sj "상쾌하긴. 하도 옆에서 짹짹거려서 덜 깬 잠이 다 달아난다."
-    show yuna smile at center_lower, tiny_bounce with dissolve
+    show cg yuna_close_playful with dissolve
     yn "그거 칭찬이죠? 잠 깨워줬으니까 수고비로 매점에서 바나나 우유 쏘기! 약속!"
+    scene bg school_gate with dissolve
+    show yuna smile at center_lower, tiny_bounce with dissolve
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나가 아주 자연스럽게 내 교복 마이 소매 끝자락을 꾹 잡아끌었다."
     "이런 스킨십에도 거침이 없다. 나는 체념한 듯 픽 웃으며 유나의 잰발걸음에 맞춰 걷는 속도를 올렸다."
@@ -677,9 +739,11 @@ label start:
             "드르륵- 탁!"
             play sound "audio/sfw_Window_close.ogg"
             "마찰음과 함께 창문이 닫히며, 밖의 수군거림도, 피부를 따갑게 데우던 햇살도 일순간 차단되었다."
-            show seola surprise at center_lower, excited_hop with dissolve
+            show seola surprise at center_lower, react_surprised with dissolve
             "설아가 놀란 듯 책에서 시선을 떼고 나를 올려다보았다."
             "그녀의 붉은 눈동자에 내 얼굴이 작게 비쳤다."
+            show cg seola_sunlight_soft with dissolve
+            "닫힌 창문 틈으로 한결 부드러워진 빛이 설아의 흰 머리카락 위에 고요하게 내려앉았다."
             
             sj "바람이 좀 많이 불어서. 책장 넘어가면 거슬리잖아."
             sj "답답하면 다시 열고."
@@ -692,6 +756,8 @@ label start:
             
             sa "고마워. 안 답답해."
             
+            scene bg old_library with dissolve
+            show seola normal at center_lower, sway_soft with dissolve
             th "설아가 다시 책으로 시선을 내렸다."
             th "여전히 말수는 적고 표정은 무심했지만, 어깨에 미세하게 들어가 있던 힘이 조금 풀린 것처럼 보였다."
             th "긁적거리던 손도 어느새 무릎 위로 얌전히 내려가 있었다."
@@ -728,7 +794,7 @@ label start:
     "끼이익—."
     play sound "audio/sfw_Creaky_metal_door.ogg"
     "무거운 철문을 열고 옥상으로 나서자, 뺨을 스치는 시원한 바람과 함께 예상치 못한 불청객의 모습이 눈에 들어왔다."
-    show cg gaeun_rooftop with dissolve
+    show cg gaeun_rooftop_warm with dissolve
 
     ge "어라? 우리 성실한 후배님 아니신가. 여기서 다 보네."
     "녹슨 철조망 난간에 삐딱하게 기대어 캔커피를 홀짝이던 사람이 여유로운 미소로 나를 반겼다."
@@ -775,7 +841,8 @@ label start:
     scene bg rooftop_sunset with dissolve
     show gaeun normal at center_lower, sway_soft with dissolve
     
-    "선배는 한 손으로 입을 단단히 틀어막은 채 잠시 거칠게 숨을 고르더니, 곧바로 고개를 들며 다시 평소의 나른하고 여유로운 미소를 지어 보였다."
+    "선배는 한 손으로 입을 단단히 틀어막은 채 잠시 거칠게 숨을 고르더니, 곧바로 난간에 캔을 조심히 내려놓고 다시 평소의 나른하고 여유로운 미소를 지어 보였다."
+    play sound "audio/sfx_can_set_down.ogg" volume 0.6
     ge "아… 응. 켁, 커피를 너무 급하게 넘겼나 봐. 목에 뭐가 콱 걸렸네."
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "선배는 자신의 가슴을 가볍게 두드리며 아무렇지 않게 웃었다."
@@ -9772,7 +9839,7 @@ label scene_14:
     pause 1.5
 
     scene bg classroom with fade
-    play music "audio/bgm_playful_bickering.ogg" fadein 2.0
+    play music "audio/bgm_group_fun.ogg" fadein 2.0
 
     "종례가 끝난 뒤의 교실은 늘 비슷하다."
     "의자가 끌리는 소리, 가방 지퍼를 여닫는 소리, 오늘 하루를 다 털어낸 듯한 한숨과 웃음이 뒤섞이며 순식간에 어수선해진다."
@@ -9785,14 +9852,14 @@ label scene_14:
     hr "오늘은 준비실 가기 전에 교실 뒤 게시판부터 정리해야 해."
     hr "축제 공지 종이가 모서리부터 들뜨기 시작했어. 저 상태면 내일 아침엔 반쯤 떨어져 있을 거야."
 
-    show yuna smile at char_2 with dissolve
+    show yuna smile at char_2, react_tiny with dissolve
     yn "반장님 레이더 또 발동했다."
     yn "진짜 그런 건 어떻게 그렇게 제일 먼저 보여요?"
 
-    show seola smile at char_4 with dissolve
+    show seola smile at char_4, react_tiny with dissolve
     sa "하린은 그런 걸 보면 못 지나가."
 
-    show gaeun smile at right_mid with dissolve
+    show gaeun smile at right_mid, react_tiny with dissolve
     ge "직업병 같은 거지. 반장병."
 
     hr "그런 이상한 병명 붙이지 마."
@@ -9817,6 +9884,10 @@ label scene_14:
     play sound "audio/sfw_running.ogg" volume 0.7
     "타닥타닥, 경쾌한 발소리 뒤로 봄 저녁의 공기가 얇게 흔들렸다."
     stop sound fadeout 0.7
+
+    show cg group_work_table with dissolve
+    "결국 다 같이 책상 하나를 끌어다 놓고, 테이프와 색지와 가위를 한가득 펼쳐 둔 채 게시판에 붙일 자잘한 것들을 먼저 손봤다."
+    "별것 아닌 준비인데도 손이 겹치고 시선이 맞물릴 때마다, 교실 한구석이 우리끼리만 쓰는 작업실처럼 느껴졌다."
 
     scene bg classroom with dissolve
     show harin sigh at left_mid with dissolve
@@ -9847,7 +9918,7 @@ label scene_14:
     sj "조금 났던 것 같은데."
     ge "조금보다 반 정도?"
 
-    show harin annoyed with dissolve
+    show harin annoyed at left_mid, react_tiny with dissolve
     hr "안 났다니까."
 
     show yuna laugh at char_2, excited_hop
@@ -9868,8 +9939,14 @@ label scene_14:
     sj "무섭네."
     sa "하린은 눈금자가 몸에 들어 있는 것 같아."
 
-    show harin smile with dissolve
+    show cg harin_small_smile with dissolve
     hr "그건 좀 웃긴 비유네."
+
+    scene bg classroom with dissolve
+    show harin smile at left_mid with dissolve
+    show yuna smile at char_2 with dissolve
+    show seola normal at char_4 with dissolve
+    show gaeun smile at right_mid with dissolve
 
     "설아의 담담한 한마디에 하린의 입가가 아주 잠깐 풀렸다."
     "유나는 그 작은 변화도 놓치지 않고 바로 손가락으로 허공을 콕 찔렀다."
@@ -9906,10 +9983,11 @@ label scene_14:
     ge "그러게."
     ge "이제는 안 모이면 오히려 허전할 것 같은데?"
 
-    show yuna smile with dissolve
+    show yuna surprise at char_2, react_surprised with dissolve
     yn "봐봐!"
     yn "내가 말했잖아. 우리 팀 은근 잘 맞는다고."
 
+    show harin faint_smile at left_mid, react_tiny with dissolve
     hr "은근이 아니라 이미 많이 맞아."
 
     "하린이 아주 자연스럽게 그렇게 말하자 유나가 잠깐 눈을 깜빡였다."
@@ -9942,7 +10020,7 @@ label scene_14:
     pause 1.5
 
     scene bg store with fade
-    play music "audio/bgm_comedic_yuna.ogg" fadein 2.0
+    play music "audio/bgm_daily_light.ogg" fadein 2.0
 
     "준비실 작업은 생각보다 빨리 끝났다."
     "색지를 정리하고, 메모해 둔 목록을 다시 맞추고, 내일 쓸 것들을 한쪽에 모아두고 나니 아직 해가 완전히 지기 전의 애매한 여유가 남았다."
@@ -9973,6 +10051,15 @@ label scene_14:
 
     yn "오늘은 각자 하나씩 고르기 금지."
     yn "서로 하나씩 추천해 주기!"
+    show cg store_snack_choice with dissolve
+    "밝은 조명 아래 늘어선 과자 봉지와 음료 라벨 사이로 유나의 손끝이 바쁘게 움직였다."
+    "누가 뭘 집을지 서로 힐끗힐끗 살피는 그 순간마저, 묘하게 놀이처럼 들떠 있었다."
+
+    scene bg store with dissolve
+    show yuna grin at char_2 with dissolve
+    show harin normal at left_mid with dissolve
+    show gaeun laugh at right_mid with dissolve
+    show seola smile at char_4 with dissolve
 
     hr "왜 그런 룰이 또 생겨."
     yn "재밌잖아요."
@@ -9984,7 +10071,10 @@ label scene_14:
     sa "누가 누구 거 고를지 정해야 해."
     sj "괜히 복잡해지는데."
 
-    show yuna vivid with dissolve
+    show yuna vivid at char_2, excited_hop with dissolve
+    show harin sigh at left_mid, react_tiny
+    show gaeun surprise at right_mid, react_tiny
+    show seola surprise at char_4, react_tiny
     yn "이미 정했어요!"
     yn "하린 선배는 서진 선배 거, 서진 선배는 설아 선배 거, 설아 선배는 가은 선배 거, 가은 선배는 내 거, 나는 하린 선배 거!"
 
@@ -10021,7 +10111,8 @@ label scene_14:
     ge "와, 관찰력 무섭다."
     yn "역시 체크리스트 반장답다. 먹는 취향도 데이터화돼 있어."
 
-    show harin annoyed with dissolve
+    show harin annoyed at left_mid, react_tiny with dissolve
+    show yuna laugh at char_2, react_tiny
     hr "체크리스트 반장은 이제 별명이 된 거야?"
     sa "응."
     sa "안 없어질 것 같아."
@@ -10033,7 +10124,8 @@ label scene_14:
     play sound "audio/sfx_can_open.ogg" volume 0.5
     sj "너 너무 단 건 별로 안 좋아하는 것 같아서. 탄산은 약한 걸로 골랐어."
 
-    show seola surprise with dissolve
+    show seola surprise at char_4, react_surprised with dissolve
+    show harin normal at left_mid, react_tiny
     sa "…기억했어?"
     sj "지난번 피자 파티 때 네가 제일 늦게 고른 거."
     sj "강한 맛은 좀 오래 보더라."
@@ -10049,7 +10141,8 @@ label scene_14:
     "가은 선배는 형광빛 포장이 귀여운 젤리와 딸기우유를 한꺼번에 내밀었다."
     ge "너는 하나만 주면 분명 아쉬워할 것 같아서 세트로."
 
-    show yuna surprise at char_2 with dissolve
+    show yuna surprise at char_2, react_surprised with dissolve
+    show gaeun laugh at right_mid, react_tiny
     yn "헐, 선배 천재예요?"
     yn "저 진짜 방금 딱 이 조합 상상했는데!"
 
@@ -10125,7 +10218,7 @@ label scene_14:
     "대답이 겹치자 잠깐 정적이 생겼다가, 이내 누가 먼저랄 것도 없이 또 웃음이 번졌다."
     "어색해서가 아니라, 너무 자연스러워서 나오는 웃음이었다."
 
-    play sound "audio/sfx_stomach_growl.ogg" volume 0.6
+    play sound "audio/sfx_Stomach_growl.ogg" volume 0.6
     "그때, 정말 절묘한 타이밍에 누군가의 배에서 작게 꼬르륵 소리가 났다."
     "잠깐 정적. 그리고 바로, 고개를 푹 숙인 사람은 하린이었다."
 
@@ -10159,7 +10252,7 @@ label scene_14:
     pause 1.5
 
     scene bg school_road_dusk with fade
-    play music "audio/bgm_stand_by_you.ogg" fadein 2.0
+    play music "audio/bgm_after_school_soft.ogg" fadein 2.0
 
     "학교 밖으로 나오자, 하늘은 이미 낮과 밤의 사이에 걸쳐 있었다."
     "붉지도 푸르지도 않은 애매한 빛이 골목과 전신주, 멀리 이어지는 도로를 한 번 부드럽게 덮고 있었다."
@@ -10211,11 +10304,14 @@ label scene_14:
     "가은 선배는 손에 든 빈 캔을 가볍게 굴렸고, 하린은 가방끈을 고쳐 잡으며 하늘을 한 번 올려다봤다."
 
     sj "축제 끝나도 이렇게 다닐까."
+    show yuna surprise at char_2, react_surprised with dissolve
+    show seola surprise at char_4, react_tiny
+    show gaeun surprise at right_mid, react_tiny
 
     "그 말은 생각보다 조용하게 떨어졌다."
     "농담처럼 던진 것도, 무겁게 꺼낸 것도 아니었는데 다들 바로 대답하지 못했다."
 
-    show yuna surprise with dissolve
+    show yuna surprise at char_2, react_surprised with dissolve
     yn "…어?"
 
     "먼저 반응한 건 유나였다."
@@ -10230,6 +10326,8 @@ label scene_14:
     show harin faint_smile with dissolve
     hr "나도."
     hr "축제 준비 끝나면 이 핑계로 모이긴 어려울 테니까."
+    show seola normal at char_4, react_tiny with dissolve
+    show gaeun normal at right_mid, react_tiny with dissolve
 
     "정말 사소한 현실적인 말이었다."
     "하지만 그래서 더 진짜처럼 들렸다."
@@ -10370,9 +10468,17 @@ label scene_14:
     "유나는 찍힌 화면을 확인하더니 그대로 한동안 말이 없었다."
     "다들 이상해서 유나를 보자, 녀석은 화면을 가슴 쪽으로 끌어안듯 붙들고 작게 웃었다."
 
+    show cg group_selfie with dissolve
+    "화면 속에는 노을빛과 다섯 사람의 웃음, 그리고 오늘 하루의 공기가 그대로 남아 있었다."
     show yuna smile with dissolve
     yn "좋다."
     yn "진짜 좋다."
+
+    scene bg school_road_dusk with dissolve
+    show yuna smile at char_2 with dissolve
+    show harin smile at left_mid with dissolve
+    show seola smile at char_4 with dissolve
+    show gaeun smile at right_mid with dissolve
 
     "짧은 한마디였는데, 그 말 안에는 오늘 하루 전체가 다 들어 있는 것 같았다."
 
