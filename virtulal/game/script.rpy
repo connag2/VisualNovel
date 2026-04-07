@@ -238,47 +238,47 @@ define flash = Fade(0.08, 0.0, 0.18, color="#ffffff")
 
 transform idle_bounce:
     yoffset 0
-    ease 0.28 yoffset -4
-    ease 0.28 yoffset 0
-    pause 0.18
+    ease 0.34 yoffset -4
+    ease 0.34 yoffset 0
+    pause 0.24
     repeat
 
 transform soft_bounce:
     yoffset 0
-    ease 0.40 yoffset -3
-    ease 0.40 yoffset 0
-    pause 0.25
+    ease 0.48 yoffset -3
+    ease 0.48 yoffset 0
+    pause 0.32
     repeat
 
 transform tiny_bounce:
     yoffset 0
-    ease 0.50 yoffset -2
-    ease 0.50 yoffset 0
-    pause 0.30
+    ease 0.62 yoffset -2
+    ease 0.62 yoffset 0
+    pause 0.38
     repeat
 
 transform excited_hop:
     yoffset 0
-    ease 0.12 yoffset -12
-    ease 0.12 yoffset 0
-    ease 0.10 yoffset -6
-    ease 0.10 yoffset 0
+    ease 0.16 yoffset -12
+    ease 0.16 yoffset 0
+    ease 0.13 yoffset -6
+    ease 0.13 yoffset 0
 
 transform sway_soft:
     yoffset 0
-    ease 1.2 yoffset -1
-    ease 1.2 yoffset 0
+    ease 1.6 yoffset -1
+    ease 1.6 yoffset 0
     repeat
 
 transform react_tiny:
     yoffset 0
-    ease 0.10 yoffset -3
-    ease 0.10 yoffset 0
+    ease 0.16 yoffset -3
+    ease 0.16 yoffset 0
 
 transform react_surprised:
     yoffset 0
-    ease 0.08 yoffset -8
-    ease 0.08 yoffset 0
+    ease 0.12 yoffset -8
+    ease 0.12 yoffset 0
 
 
 # --- 5. 이미지 정의 (크기 80% 축소 + 높이 보정 + 포커스 효과 모두 포함) ---
@@ -10525,4 +10525,4 @@ label scene_14:
     stop sound fadeout 1.0
     stop music fadeout 2.0
 
-    return
+    return 
