@@ -62,156 +62,175 @@ transform auto_focus(char_tag):
 
 # 1~2명 등장 시 사용할 기본 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 크기를 키움(zoom 증가))
 transform left:
-    xalign 0.15 yanchor 1.0 ypos 1.35 zoom 1.1
+    xalign 0.18
+    yalign 1.0
+    zoom 1.22
 transform center:
-    xalign 0.5 yanchor 1.0 ypos 1.35 zoom 1.1
+    xalign 0.5
+    yalign 1.0
+    zoom 1.22
 transform right:
-    xalign 0.85 yanchor 1.0 ypos 1.35 zoom 1.1
+    xalign 0.82
+    yalign 1.0
+    zoom 1.22
 transform center_lower:
-    xalign 0.5 yanchor 1.0 ypos 1.35 zoom 1.1
+    xalign 0.5
+    yalign 1.0
+    zoom 1.22
 
-# 4명 동시 등장 시 사용할 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 축소를 없앰(zoom 0.9 -> 1.0))
+# 4명 동시 등장 시 사용할 위치
 transform char_1:
-    xalign 0.05 yanchor 1.0 ypos 1.35 zoom 1.0
+    xalign 0.10
+    yalign 1.0
+    zoom 1.08
 transform char_2:
-    xalign 0.35 yanchor 1.0 ypos 1.35 zoom 1.0
+    xalign 0.37
+    yalign 1.0
+    zoom 1.08
 transform char_3:
-    xalign 0.65 yanchor 1.0 ypos 1.35 zoom 1.0
+    xalign 0.63
+    yalign 1.0
+    zoom 1.08
 transform char_4:
-    xalign 0.95 yanchor 1.0 ypos 1.35 zoom 1.0
+    xalign 0.90
+    yalign 1.0
+    zoom 1.08
 
 transform far_left:
-    xalign 0.05
+    xalign 0.06
     yalign 1.0
+    zoom 1.08
 
 transform left2:
-    xalign 0.22
+    xalign 0.24
     yalign 1.0
+    zoom 1.12
 
 transform center2:
     xalign 0.5
     yalign 1.0
+    zoom 1.18
 
 transform right2:
-    xalign 0.78
+    xalign 0.76
     yalign 1.0
+    zoom 1.12
 
 transform far_right:
-    xalign 0.95
+    xalign 0.94
     yalign 1.0
+    zoom 1.08
 
 transform idle_bounce:
     yoffset 0
-    ease 0.22 yoffset -8
-    ease 0.22 yoffset 0
-    pause 0.08
+    ease 0.28 yoffset -4
+    ease 0.28 yoffset 0
+    pause 0.18
     repeat
 
 transform soft_bounce:
     yoffset 0
-    ease 0.35 yoffset -5
-    ease 0.35 yoffset 0
-    pause 0.15
+    ease 0.40 yoffset -3
+    ease 0.40 yoffset 0
+    pause 0.25
     repeat
 
 transform tiny_bounce:
     yoffset 0
-    ease 0.45 yoffset -3
-    ease 0.45 yoffset 0
-    pause 0.2
+    ease 0.50 yoffset -2
+    ease 0.50 yoffset 0
+    pause 0.30
     repeat
 
 transform excited_hop:
     yoffset 0
-    ease 0.12 yoffset -18
+    ease 0.12 yoffset -12
     ease 0.12 yoffset 0
-    ease 0.10 yoffset -10
+    ease 0.10 yoffset -6
     ease 0.10 yoffset 0
 
 transform sway_soft:
-    subpixel True
-    xoffset 0
-    ease 0.8 xoffset -3
-    ease 0.8 xoffset 3
-    ease 0.8 xoffset 0
+    yoffset 0
+    ease 1.2 yoffset -1
+    ease 1.2 yoffset 0
     repeat
 
 
 # --- 5. 이미지 정의 (크기 80% 축소 + 높이 보정 + 포커스 효과 모두 포함) ---
 
 # [유나 이미지]
-image yuna angry = At(Transform("images/yuna angry.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna pout = At(Transform("images/yuna pout.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna surprise = At(Transform("images/yuna surprise.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna vivid = At(Transform("images/yuna vivid.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna smile = At(Transform("images/yuna smile.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna laugh = At(Transform("images/yuna laugh.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna normal = At(Transform("images/yuna normal.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna angry = At(Transform("images/yuna angry.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna pout = At(Transform("images/yuna pout.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna surprise = At(Transform("images/yuna surprise.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna vivid = At(Transform("images/yuna vivid.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna smile = At(Transform("images/yuna smile.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna laugh = At(Transform("images/yuna laugh.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna normal = At(Transform("images/yuna normal.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
 
 # [하린 이미지]
-image harin normal = At(Transform("images/harin normal.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin sigh = At(Transform("images/harin sigh.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin faint_smile = At(Transform("images/harin faint_smile.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin surprise = At(Transform("images/harin surprise.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
+image harin normal = At(Transform("images/harin normal.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin sigh = At(Transform("images/harin sigh.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin faint_smile = At(Transform("images/harin faint_smile.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin surprise = At(Transform("images/harin surprise.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
 
 # [설아 이미지]
-image seola normal = At(Transform("images/seola normal.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
+image seola normal = At(Transform("images/seola normal.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
 
 # [가은 이미지]
-image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
+image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
 
 # 여기서부터 본 게임 시작
 # [추가 이미지 별칭/호환 정의 - 실제 존재 리소스만 사용]
-image yuna annoyed = At(Transform("images/yuna annoyed.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna anxious = At(Transform("images/yuna anxious.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna flustered = At(Transform("images/yuna flustered.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna grin = At(Transform("images/yuna grin.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna grip = At(Transform("images/yuna grip.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna happy = At(Transform("images/yuna happy.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna hollow = At(Transform("images/yuna hollow.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna sad = At(Transform("images/yuna sad.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
-image yuna sigh = At(Transform("images/yuna sigh.webp", zoom=0.8, yoffset=-150), auto_focus("yuna"))
+image yuna annoyed = At(Transform("images/yuna annoyed.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna anxious = At(Transform("images/yuna anxious.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna flustered = At(Transform("images/yuna flustered.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna grin = At(Transform("images/yuna grin.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna grip = At(Transform("images/yuna grip.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna happy = At(Transform("images/yuna happy.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna hollow = At(Transform("images/yuna hollow.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna sad = At(Transform("images/yuna sad.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
+image yuna sigh = At(Transform("images/yuna sigh.webp", zoom=0.94, yoffset=-40), auto_focus("yuna"))
 image yuna shock = "yuna surprise"
 image yuna serious = "yuna normal"
 image yuna soft = "yuna smile"
 image yuna think = "yuna normal"
 image yuna panic = "yuna surprise"
 
-image harin angry = At(Transform("images/harin angry.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin annoyed = At(Transform("images/harin annoyed.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin anxious = At(Transform("images/harin anxious.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin flustered = At(Transform("images/harin flustered.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin happy = At(Transform("images/harin happy.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin hollow = At(Transform("images/harin hollow.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin sad = At(Transform("images/harin sad.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin smile = At(Transform("images/harin smile.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
-image harin vivid = At(Transform("images/harin vivid.webp", zoom=0.8, yoffset=-150), auto_focus("harin"))
+image harin angry = At(Transform("images/harin angry.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin annoyed = At(Transform("images/harin annoyed.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin anxious = At(Transform("images/harin anxious.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin flustered = At(Transform("images/harin flustered.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin happy = At(Transform("images/harin happy.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin hollow = At(Transform("images/harin hollow.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin sad = At(Transform("images/harin sad.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin smile = At(Transform("images/harin smile.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
+image harin vivid = At(Transform("images/harin vivid.webp", zoom=0.94, yoffset=-40), auto_focus("harin"))
 
-image seola angry = At(Transform("images/seola angry.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola annoyed = At(Transform("images/seola annoyed.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola anxious = At(Transform("images/seola anxious.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola faint_smile = At(Transform("images/seola smile.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola flustered = At(Transform("images/seola flustered.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola happy = At(Transform("images/seola happy.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola hollow = At(Transform("images/seola hollow.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola sad = At(Transform("images/seola sad.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola sigh = At(Transform("images/seola sigh.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola smile = At(Transform("images/seola smile.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
-image seola vivid = At(Transform("images/seola vivid.webp", zoom=0.8, yoffset=-150), auto_focus("seola"))
+image seola angry = At(Transform("images/seola angry.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola annoyed = At(Transform("images/seola annoyed.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola anxious = At(Transform("images/seola anxious.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola faint_smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola flustered = At(Transform("images/seola flustered.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola happy = At(Transform("images/seola happy.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola hollow = At(Transform("images/seola hollow.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola sad = At(Transform("images/seola sad.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola sigh = At(Transform("images/seola sigh.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
+image seola vivid = At(Transform("images/seola vivid.webp", zoom=0.94, yoffset=-40), auto_focus("seola"))
 
-image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
-image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=0.8, yoffset=-150), auto_focus("gaeun"))
+image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
+image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=0.94, yoffset=-40), auto_focus("gaeun"))
 
 image bg classroom_day = "bg classroom"
 image bg classroom_evening = "bg classroom"
@@ -333,7 +352,7 @@ label start:
     
     # 캐릭터와 CG 겹침을 방지하기 위해 배경 초기화
     scene bg school_gate
-    show yuna laugh at idle_bounce with dissolve
+    show yuna laugh at center_lower, idle_bounce with dissolve
     
     yn "에이, 선배가 아침부터 너무 흐물흐물하게, 영혼 가출한 좀비처럼 걷고 있으니까 후배로서 기합 좀 넣어준 거죠! 나 착하죠?"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
@@ -343,13 +362,13 @@ label start:
     th "어쩌다 신학기 동아리 심부름으로 몇 번 엮인 이후부터, 녀석은 나를 자기 전담 장난감이라도 되는 양 쫄래쫄래 쫓아다니기 시작했다."
     th "처음엔 남의 영역에 거침없이 훅훅 들어오는 그 하이텐션이 좀 부담스러웠는데… 매일 아침 이렇게 강아지처럼 꼬리를 치며 나타나니 이젠 적응이 되어버렸다."
     sj "그래, 등짝 때려줘서 참 고맙다. 근데 너 방향 이쪽 아니지 않아? 1학년 건물은 반대쪽 언덕이잖아."
-    show yuna pout at sway_soft with dissolve
+    show yuna pout at center_lower, sway_soft with dissolve
     yn "아, 진짜! 그게 뭐가 중요해요? 선배 오는 길목이니까 겸사겸사 마중 나온 거잖아요."
     yn "아침부터 이렇게 예쁘고 귀여운 후배 얼굴 짠! 하고 보면, 하루가 막 상쾌해지고 눈이 맑아지고 막 그러지 않아요?"
     "유나가 두 검지손가락으로 자기 볼을 콕 찌르며 과장되게 애교를 부린다."
 
     sj "상쾌하긴. 하도 옆에서 짹짹거려서 덜 깬 잠이 다 달아난다."
-    show yuna smile at tiny_bounce with dissolve
+    show yuna smile at center_lower, tiny_bounce with dissolve
     yn "그거 칭찬이죠? 잠 깨워줬으니까 수고비로 매점에서 바나나 우유 쏘기! 약속!"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나가 아주 자연스럽게 내 교복 마이 소매 끝자락을 꾹 잡아끌었다."
@@ -362,7 +381,7 @@ label start:
     sj "어, 안녕. 먼저 들어가."
 
     "가볍게 손을 들어 인사를 받아주고 다시 고개를 돌린 순간."
-    show yuna pout at sway_soft with dissolve
+    show yuna pout at center_lower, sway_soft with dissolve
     "내 소매를 쥐고 있던 유나가 갑자기 입술을 삐죽 내밀며 볼을 빵빵하게 부풀리고 있었다."
     sj "유나야? 갑자기 표정이 왜 그래."
 
@@ -370,7 +389,7 @@ label start:
     sj "친하긴. 그냥 짝꿍이라 숙제 몇 번 물어보고 프린트 빌려준 게 다야."
     yn "흐응~ 그냥 짝꿍? 선배는 참 발도 넓다니까. 나한테만 다정한 줄 알았더니 완전 만인의 연인이었어."
     sj "무슨 헛소리야. 너 아침 안 먹었지? 헛것이 보이나 본데."
-    show yuna laugh at idle_bounce with dissolve
+    show yuna laugh at center_lower, idle_bounce with dissolve
     yn "아하하, 농담이에요 농담! 선배가 나 말고 다른 사람 챙기는 거 보니까 아주 조~금 질투 나서 그랬죠."
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나는 금세 장난스러운 미소를 되찾더니, 교복 주머니를 뒤적거렸다."
@@ -378,14 +397,14 @@ label start:
     yn "자, 아~ 하세요! 아침부터 당 떨어지면 안 되니까."
 
     sj "됐다, 아침부터 단 거 먹으면 입 텁텁해. 너나 먹어."
-    show yuna pout at sway_soft with dissolve
+    show yuna pout at center_lower, sway_soft with dissolve
     yn "아, 진짜! 후배의 정성을 이렇게 무시하기예요? 까줄 테니까 진짜 하나만 먹어봐요. 이거 먹으면 기분 완전 좋아진다니까?"
     play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "유나는 야무진 손놀림으로 사탕 껍질을 까더니, 내 입가로 사탕을 쑥 밀어 넣었다."
     "얼떨결에 사탕을 받아먹은 내 입안에 달콤하고 인공적인 딸기 향이 확 퍼졌다."
 
     sj "…어우, 달아."
-    show yuna smile at tiny_bounce with dissolve
+    show yuna smile at center_lower, tiny_bounce with dissolve
     yn "그쵸? 완전 맛있죠! 자, 사탕도 먹여줬으니까 이따 쉬는 시간에 매점 가는 거 절대 잊지 마요!"
     play sound "audio/sfw_walking.ogg"
     "유나가 자신의 입에도 사탕을 쏙 넣고는 콧노래를 부르며 앞장서 걷기 시작했다."
@@ -468,7 +487,7 @@ label start:
         "어떻게 할까?"
         "그냥 둬도 괜찮지 않냐고 묻는다.":
             sj "야, 그 정도는 그냥 둬도 아무도 모를 것 같은데. 굳이 다 지우고 처음부터 다시 긋게?"
-            show harin normal at sway_soft with dissolve
+            show harin normal at center_lower, sway_soft with dissolve
             "하린이가 수정테이프를 밀던 손을 멈추지 않고 건조하게 대답했다."
             hr "내가 알아."
             hr "교실 앞 게시판에 한 달 내내 붙어있을 건데, 삐뚤빼뚤하고 지저분하면 보기 안 좋잖아."
@@ -479,7 +498,7 @@ label start:
             th "나는 더 말려봐야 내 입만 아프다는 걸 깨닫고 가볍게 고개를 끄덕이며 돌아섰다."
         "내가 도와줄지 묻는다.":
             sj "종이 끄트머리라도 좀 잡아줄까? 애들 또 뛰어다니면 흔들려서 아예 종이가 찢어질라."
-            show harin smile at tiny_bounce with dissolve
+            show harin smile at center_lower, tiny_bounce with dissolve
             "하린이가 지우던 손을 멈추고 나를 올려다보았다."
             "경계심이 살짝 누그러진, 아주 옅지만 분명한 미소가 그녀의 입가에 스쳐 지나갔다."
             hr "고맙지만 괜찮아. 거의 다 지웠고, 선만 다시 긋기만 하면 돼."
@@ -579,7 +598,7 @@ label start:
             "내가 책을 반납하고 돌아서려던 찰나, 우연히 설아와 시선이 마주쳤다."
             stop sound fadeout 1.0
             "나는 가볍게 눈인사만 건넸다."
-            show seola normal at sway_soft with dissolve
+            show seola normal at center_lower, sway_soft with dissolve
             sa "……."
             "설아 역시 아주 희미하게, 그러나 분명하게 고개를 한 번 끄덕이더니 다시 책으로 시선을 돌렸다."
             th "서로에게 아무것도 묻지 않고, 무엇도 강요하지 않는 관계."
@@ -593,7 +612,7 @@ label start:
             "드르륵- 탁!"
             play sound "audio/sfw_Window_close.ogg"
             "마찰음과 함께 창문이 닫히며, 밖의 수군거림도, 피부를 따갑게 데우던 햇살도 일순간 차단되었다."
-            show seola surprise at excited_hop with dissolve
+            show seola surprise at center_lower, excited_hop with dissolve
             "설아가 놀란 듯 책에서 시선을 떼고 나를 올려다보았다."
             "그녀의 붉은 눈동자에 내 얼굴이 작게 비쳤다."
             
@@ -602,7 +621,7 @@ label start:
             play sound "audio/sfw_walking.ogg"
             "나는 변명하듯 툭 한마디를 던지고 다시 내 자리로 돌아섰다."
             stop sound fadeout 1.0
-            show seola normal at sway_soft with dissolve
+            show seola normal at center_lower, sway_soft with dissolve
             sa "…아니."
             "등 뒤에서, 나지막하고 투명한 목소리가 들려왔다."
             
@@ -667,7 +686,7 @@ label start:
     "캔에서 전해지는 따뜻한 온기가 손바닥을 기분 좋게 데웠다."
     sj "매번 이렇게 태평하시네요. 3학년이면 입시 스트레스 같은 거 엄청 받을 때 아닌가요?"
     sj "선생님들이 하도 닦달해서 숨도 못 쉰다던데."
-    show gaeun smile at tiny_bounce with dissolve
+    show gaeun smile at center_lower, tiny_bounce with dissolve
     ge "에이, 내가 무슨 스트레스? 난 늘 긍정적이고 행복한걸."
     ge "게다가 이렇게 귀여운 후배님이 옥상까지 찾아와서 말동무도 해주고 말이야. 이보다 더 좋을 순 없지!"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
@@ -679,7 +698,7 @@ label start:
 
     "내가 혀를 차며 다가오려는 선배의 어깨를 가볍게 툭, 밀어내는 시늉을 하자—"
 
-    show gaeun surprise at excited_hop with hpunch
+    show gaeun surprise at center_lower, excited_hop with hpunch
     "욱, 콜록, 켁!"
     show cg gaeun_rooftop_fragile with dissolve
     "선배가 갑자기 마시던 캔커피를 황급히 입에서 떼며 격렬하게 기침을 했다."
@@ -689,7 +708,7 @@ label start:
     "나는 놀라서 엉거주춤하게 손을 뻗었다."
     
     scene bg rooftop_sunset with dissolve
-    show gaeun normal at sway_soft with dissolve
+    show gaeun normal at center_lower, sway_soft with dissolve
     
     "선배는 한 손으로 입을 단단히 틀어막은 채 잠시 거칠게 숨을 고르더니, 곧바로 고개를 들며 다시 평소의 나른하고 여유로운 미소를 지어 보였다."
     ge "아… 응. 켁, 커피를 너무 급하게 넘겼나 봐. 목에 뭐가 콱 걸렸네."
@@ -706,7 +725,7 @@ label start:
             sj "조심 좀 하세요. 어른이 음료수도 하나 제대로 못 마십니까."
             play sound "audio/sfw_cloth_moving.ogg" volume 0.7
             "나는 쯧쯧 혀를 차며 선배의 등을 가볍게 톡톡 두드려주었다."
-            show gaeun smile at tiny_bounce with dissolve
+            show gaeun smile at center_lower, tiny_bounce with dissolve
             ge "앗, 아파라. 후배님 손맛 한 번 맵네. 등 부서지겠다."
             ge "그래도 챙겨주는 건 너밖에 없다. 진짜 괜찮다니까. 감동해서 눈물 날 뻔."
             
@@ -714,7 +733,7 @@ label start:
             th "아프다면서도 내 손길을 피하지 않는 걸 보면 정말 꽤나 감동한 눈치다. 가끔은 저 능청스러움을 당해낼 재간이 없다."
         "그냥 농담으로 넘긴다.":
             sj "천천히 좀 드세요. 뒤에서 누가 쫓아옵니까? 아니면 제가 뺏어 먹을까 봐 그래요?"
-            show gaeun laugh at idle_bounce with dissolve
+            show gaeun laugh at center_lower, idle_bounce with dissolve
             ge "콜록… 정곡 찔렸네."
             ge "우리 귀여운 후배님이 내 거까지 뺏어 먹을까 봐 불안해서 그랬지! 얼른 마시기나 해, 캔 구멍 뚫어지겠다."
             th "기침을 하면서도 받아치는 선배의 장난기 가득한 대답에 나도 결국 픽 웃고 말았다."
@@ -758,7 +777,7 @@ label start:
     "얼마나 급하게 뛰어왔는지 하얀 뺨이 복숭아처럼 붉게 상기되어 있었다."
     "1학년 교실은 아예 건물이 달라서 구름다리를 건너와야 하는데, 쉬는 시간 종이 친 지 1분도 안 돼서 여기까지 뛰어 올라온 모양이다."
     sj "야, 뭐 하러 여기까지 뛰어와. 내가 1층으로 내려가려고 했는데."
-    show yuna laugh at idle_bounce with dissolve
+    show yuna laugh at center_lower, idle_bounce with dissolve
     yn "에이, 우리 귀차니즘 말기 선배가 언제 꾸물꾸물 내려오나 기다리다간 내 피 같은 쉬는 시간이 다 끝날걸요?"
     yn "그리고 내가 친히 모시러 와야 선배도 기분 좋게 지갑을 열 거 아니에요! 자, 빨리 가요! 늦으면 초코 소라빵 다 매진된단 말이에요!"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
@@ -823,7 +842,7 @@ label start:
     "유나가 어깨를 움츠리며 두 손으로 우유를 소중하게 받아 들었다."
     "그런데 우유를 받아 든 그녀의 표정이 생각보다 훨씬 더 밝고 벅차 보였다."
     "단순히 공짜 간식을 얻어먹어서 기쁜 수준을 넘어, 마치 산타 할아버지에게 소원하던 선물을 받은 어린아이 같은 표정이었다."
-    show yuna smile at tiny_bounce with dissolve
+    show yuna smile at center_lower, tiny_bounce with dissolve
     yn "……선배. 진짜 기억하고 있었네요?"
     sj "당연하지. 네가 어제부터 하루 종일 귀에 딱지가 앉도록 세뇌를 시켰는데 어떻게 잊냐."
     "내 가벼운 핀잔에도 유나는 전혀 개의치 않고 바나나 우유를 양손으로 감싸 쥐며 헤실헤실 웃었다."
@@ -833,7 +852,7 @@ label start:
     sj "우유 하나 사주는 게 뭐 대단한 약속이라고 그렇게 눈까지 반짝이면서 감동을 하냐. 오버하지 말고 얼른 빨대나 꽂아."
     play sound "audio/sfx_can_open.ogg" volume 1.5
     "내가 픽 웃으며 이온 음료 뚜껑을 따서 한 모금 마시자, 유나는 바나나 우유 뚜껑의 은박지를 조심스럽게 벗겨내며 나를 빤히 올려다보았다."
-    show yuna laugh at idle_bounce with dissolve
+    show yuna laugh at center_lower, idle_bounce with dissolve
     yn "대단한 거예요! 나한테는 이 바나나 우유가 완전 다이아몬드보다 값진, 감동적인 약속의 증표라구요."
     yn "아, 나 진짜 이거 너무 아까워서 못 마실 것 같아요. 평생 내 방 책상 위에 가보로 장식해둘까?"
     sj "방구석에 우유 썩은 냄새 진동해서 파리 꼬이는 꼴 보고 싶으면 그렇게 하든가."
@@ -1458,7 +1477,7 @@ label scene_8:
     "나는 대꾸하지 않았다."
     "그 말이 농담처럼 들리면서도, 어쩐지 조금 지나치게 정확했다."
 
-    show gaeun normal at sway_soft with dissolve
+    show gaeun normal at center_lower, sway_soft with dissolve
     "그때, 가은 선배가 말을 멈추고 작게 기침했다."
     "전날보다 약하고 짧았지만, 나는 그 소리를 놓치지 못했다."
 
@@ -1467,7 +1486,7 @@ label scene_8:
     ge "먼지 때문이야."
     ge "구관은 공기까지 연식이 느껴져서 문제라니까."
 
-    show gaeun smile at tiny_bounce with dissolve
+    show gaeun smile at center_lower, tiny_bounce with dissolve
     "선배는 곧장 웃으며 넘겼다."
     "하지만 웃는 얼굴이 아주 잠깐 늦게 올라왔다."
 
@@ -1614,7 +1633,7 @@ label scene_9:
     "창밖으로 들어오는 빛이 옆얼굴을 비추자, 이상할 정도로 표정이 비어 보였다."
 
     sj "뭐 하냐."
-    show yuna surprise at excited_hop with dissolve
+    show yuna surprise at center_lower, excited_hop with dissolve
     "유나는 내 목소리에 화들짝 놀라 휴대폰을 급히 뒤집었다."
 
     yn "아, 깜짝이야!"
@@ -1623,7 +1642,7 @@ label scene_9:
     sj "네가 멍하니 있었던 거지."
     sj "무슨 일 있어?"
     
-    show yuna smile at tiny_bounce with dissolve
+    show yuna smile at center_lower, tiny_bounce with dissolve
     yn "없는데요?"
     yn "그냥, 엄마한테 연락했는데 답장이 좀 늦어서."
     "말은 가볍게 했지만, 유나는 손에 쥔 휴대폰을 너무 세게 쥐고 있었다."
@@ -1637,7 +1656,7 @@ label scene_9:
             sj "괜히 혼자 끙끙대지 마."
             sj "말할 거 있으면 하고."
             
-            show yuna smile at tiny_bounce with dissolve
+            show yuna smile at center_lower, tiny_bounce with dissolve
             yn "……선배는 진짜."
             yn "맨날 무심한 척하면서, 이런 건 또 다 보네."
 
@@ -1651,14 +1670,14 @@ label scene_9:
             sj "표정이 너무 죽었어."
             sj "당 보충이나 해."
 
-            show yuna surprise at excited_hop with dissolve
+            show yuna surprise at center_lower, excited_hop with dissolve
             yn "…이거, 저 주는 거예요?"
             sj "내가 마실 거면 내가 벌써 땄겠지."
 
             "유나는 캔을 받아 들고 한참 말이 없었다."
             "그리고 아주 작게 웃었다."
             
-            show yuna smile at tiny_bounce with dissolve
+            show yuna smile at center_lower, tiny_bounce with dissolve
             yn "고마워요."
             yn "이런 거, 되게 오래 기억하는 성격인 거 알죠?"
 
@@ -1672,7 +1691,7 @@ label scene_9:
             yn "아무 말 안 하는 것도, 생각보다 위로되네요."
 
             sj "시끄러운 네가 그런 말 하니까 어색하다."
-            show yuna laugh at idle_bounce with dissolve
+            show yuna laugh at center_lower, idle_bounce with dissolve
             yn "아하하, 뭐예요 그게."
             
             th "웃긴."
@@ -2422,11 +2441,11 @@ label scene_13:
     "그런데 저 수상한 자세를 보면, 뭔가 숨기고 있는 건 분명했다."
 
     sj "너 또 뭐 숨기고 있냐."
-    show yuna surprise at excited_hop with dissolve
+    show yuna surprise at center_lower, excited_hop with dissolve
     yn "헉."
     yn "어떻게 알았지?"
     sj "네가 그렇게 티 나게 서 있으면 모르는 게 더 어렵겠다."
-    show yuna laugh at idle_bounce with dissolve
+    show yuna laugh at center_lower, idle_bounce with dissolve
     yn "에헤헤. 역시 선배는 눈치가 빠르네."
     yn "그럼 짜잔~ 공개합니다!"
     "유나는 등 뒤에 숨기고 있던 작은 비닐봉지를 내밀었다."
@@ -2452,7 +2471,7 @@ label scene_13:
             sj "약속 지키는 건 너도네."
 
             "내가 비닐봉지를 받아 들자, 유나의 얼굴이 확 밝아졌다."
-            show yuna smile at tiny_bounce with dissolve
+            show yuna smile at center_lower, tiny_bounce with dissolve
             yn "그쵸!"
             yn "저도 약속 엄청 잘 지키는 사람이거든요!"
             yn "그러니까 선배도 앞으로 저랑 한 약속 잘 지켜야 돼요."
@@ -2466,14 +2485,14 @@ label scene_13:
             sj "이런 건 보통 네가 더 좋아하지 않냐."
             sj "반은 네가 먹어."
 
-            show yuna surprise at excited_hop with dissolve
+            show yuna surprise at center_lower, excited_hop with dissolve
             yn "어?"
             yn "진짜 같이 먹어요?"
 
             sj "그럼 뭐, 내가 혼자 크림빵 두 개라도 먹냐."
 
             "유나는 잠깐 멍하니 있다가 금세 배시시 웃었다."
-            show yuna laugh at idle_bounce with dissolve
+            show yuna laugh at center_lower, idle_bounce with dissolve
             yn "…그럼 오늘 아침 공동 소유!"
             yn "선배랑 반띵이면 더 맛있을 것 같아요."
 
@@ -2486,7 +2505,7 @@ label scene_13:
             "유나는 내 말을 듣고 눈을 두 번 깜빡였다."
             "그리고 장난기 어린 웃음을 조금 누그러뜨린 채 대답했다."
 
-            show yuna smile at tiny_bounce with dissolve
+            show yuna smile at center_lower, tiny_bounce with dissolve
             yn "음…"
             yn "저한테 잘해준 사람은 오래 기억하는 편이라서요."
             "짧은 대답이었다."
@@ -2629,7 +2648,7 @@ label scene_14:
     ge "왔네, 조용한 봄 팀."
 
     sj "선배까지 왜 그러십니까."
-    show gaeun laugh at idle_bounce with dissolve
+    show gaeun laugh at center_lower, idle_bounce with dissolve
     ge "좋잖아."
     ge "생각보다 청춘물 제목 같고."
     show gaeun smile at right, tiny_bounce
