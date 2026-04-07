@@ -57,38 +57,11 @@ default gaeun_point = 0
 transform auto_focus(char_tag):
     function FocusFunction(char_tag)
 
+
 # --- 4. 화면 위치 조정을 위한 트랜스폼 정의 ---
-# 캐릭터가 공중에 뜨지 않도록 바닥 기준(yalign 1.0)으로 통일
+
+# 1~2명 등장 시 사용할 기본 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 크기를 키움(zoom 증가))
 transform left:
-<<<<<<< HEAD
-    xalign 0.15 yalign 1.0 zoom 1.1
-transform center:
-    xalign 0.5 yalign 1.0 zoom 1.1
-transform right:
-    xalign 0.85 yalign 1.0 zoom 1.1
-transform center_lower:
-    xalign 0.5 yalign 1.0 zoom 1.1
-
-transform char_1:
-    xalign 0.05 yalign 1.0 zoom 1.0
-transform char_2:
-    xalign 0.35 yalign 1.0 zoom 1.0
-transform char_3:
-    xalign 0.65 yalign 1.0 zoom 1.0
-transform char_4:
-    xalign 0.95 yalign 1.0 zoom 1.0
-
-transform far_left:
-    xalign 0.05 yalign 1.0
-transform left2:
-    xalign 0.22 yalign 1.0
-transform center2:
-    xalign 0.5 yalign 1.0
-transform right2:
-    xalign 0.78 yalign 1.0
-transform far_right:
-    xalign 0.95 yalign 1.0
-=======
     xalign 0.18
     yalign 1.0
     zoom 1.10
@@ -174,7 +147,6 @@ transform right_mid:
     yoffset 146
 
 define flash = Fade(0.08, 0.0, 0.18, color="#ffffff")
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
 
 transform idle_bounce:
     yoffset 0
@@ -210,46 +182,10 @@ transform sway_soft:
     ease 1.2 yoffset 0
     repeat
 
-# --- 5. 이미지 정의 (크기 80% 축소 + 포커스 효과 모두 포함) ---
-# 공중부양 버그를 막기 위해 yoffset=-150 속성 제거
+
+# --- 5. 이미지 정의 (크기 80% 축소 + 높이 보정 + 포커스 효과 모두 포함) ---
 
 # [유나 이미지]
-<<<<<<< HEAD
-image yuna angry = At(Transform("images/yuna angry.webp", zoom=0.8), auto_focus("yuna"))
-image yuna pout = At(Transform("images/yuna pout.webp", zoom=0.8), auto_focus("yuna"))
-image yuna surprise = At(Transform("images/yuna surprise.webp", zoom=0.8), auto_focus("yuna"))
-image yuna vivid = At(Transform("images/yuna vivid.webp", zoom=0.8), auto_focus("yuna"))
-image yuna smile = At(Transform("images/yuna smile.webp", zoom=0.8), auto_focus("yuna"))
-image yuna laugh = At(Transform("images/yuna laugh.webp", zoom=0.8), auto_focus("yuna"))
-image yuna normal = At(Transform("images/yuna normal.webp", zoom=0.8), auto_focus("yuna"))
-image yuna grin = At(Transform("images/yuna grin.webp", zoom=0.8), auto_focus("yuna"))
-image yuna flustered = At(Transform("images/yuna flustered.webp", zoom=0.8), auto_focus("yuna"))
-image yuna anxious = At(Transform("images/yuna anxious.webp", zoom=0.8), auto_focus("yuna"))
-
-# 에러를 방지하기 위해 정의되지 않은 표정들은 기존 이미지로 매핑 처리
-image yuna shock = "yuna surprise"
-image yuna panic = "yuna flustered"
-image yuna soft = "yuna smile"
-image yuna serious = "yuna normal"
-
-# [하린 이미지]
-image harin normal = At(Transform("images/harin normal.webp", zoom=0.8), auto_focus("harin"))
-image harin sigh = At(Transform("images/harin sigh.webp", zoom=0.8), auto_focus("harin"))
-image harin faint_smile = At(Transform("images/harin faint_smile.webp", zoom=0.8), auto_focus("harin"))
-image harin surprise = At(Transform("images/harin surprise.webp", zoom=0.8), auto_focus("harin"))
-
-# [설아 이미지]
-image seola normal = At(Transform("images/seola normal.webp", zoom=0.8), auto_focus("seola"))
-image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.8), auto_focus("seola"))
-image seola smile = At(Transform("images/seola smile.webp", zoom=0.8), auto_focus("seola"))
-image seola faint_smile = "seola smile"
-
-# [가은 이미지]
-image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.8), auto_focus("gaeun"))
-image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.8), auto_focus("gaeun"))
-image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.8), auto_focus("gaeun"))
-image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.8), auto_focus("gaeun"))
-=======
 image yuna angry = At(Transform("images/yuna angry.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
 image yuna pout = At(Transform("images/yuna pout.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
 image yuna surprise = At(Transform("images/yuna surprise.webp", zoom=0.94, yoffset=12), auto_focus("yuna"))
@@ -273,7 +209,6 @@ image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.94, yoffset
 image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
 image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
 image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
 
 # 여기서부터 본 게임 시작
 # [추가 이미지 별칭/호환 정의 - 실제 존재 리소스만 사용]
@@ -370,10 +305,11 @@ label start:
     play sound "audio/sfw_walking.ogg"
     "나는 몸을 일으켜 느릿느릿 화장실로 향했다."
     "세면대의 차가운 물을 틀어 얼굴에 끼얹었다. {w=0.5}거울 속에는 살짝 피곤해 보이는, 어딜 가나 흔하게 볼 수 있는 평범한 남학생이 서 있다."
+    
     th "그래서 나는, 그 누구와도 화상을 입지 않을 '미지근한 온도'를 유지하는 법을 배웠다."
     th "적당히 친절하고, 적당히 다정하게. {w=0.3}하지만 결정적인 순간에는 절대 선을 넘지 않는 것."
     th "괜히 타인의 진심이나 상처에 발을 들였다가 피곤해지는 건 딱 질색이니까. {w=0.5}그게 내 생존 방식이자, 이 평범한 고교 생활을 지탱하는 유일한 모토다."
-
+    
     scene black with fade
     centered "{size=30}아침 등굣길{/size}" with dissolve
     scene bg school_road_morning with fade
@@ -382,13 +318,16 @@ label start:
     play sound "audio/sfw_walking.ogg"
     "거리에는 나와 같은 교복을 입은 학생들이 무리 지어 걸어가고 있었다."
     "어제 본 예능 프로그램 이야기, 새로 산 화장품 이야기, 피시방에서 올린 티어 이야기… {w=0.5}시시콜콜하고 가벼운 대화들이 벚꽃잎처럼 흩날린다."
+    
     th "새 학기가 시작된 지도 어느덧 한 달이 지났다."
     th "서로 눈치를 보며 탐색하던 시기는 지나갔고, 교실 안의 무리는 어느 정도 견고하게 나뉘어 안정을 찾아가고 있다."
+    
     "멀리, 언덕 위로 우리 학교인 사립 연화(蓮花) 고등학교의 깔끔한 신관 건물이 보이기 시작했다."
     "지역 최고 수준의 시설과 높은 명문대 진학률을 자랑하는, 겉보기엔 그야말로 흠잡을 데 없는 훌륭한 학교."
+    
     th "물론, 그 완벽한 간판 이면에는 학생들 사이의 보이지 않는 숨 막히는 서열과 성적 압박, 그리고 잔인할 정도로 빠르게 도는 소문들이 폐쇄적인 생태계를 이루고 있지만."
     th "내가 그 압력 밥솥 같은 생태계의 중심에 설 일은 없다. 나는 그저 교실 뒷자리에 앉아 풍경처럼 존재하는 관찰자일 뿐이니까."
-
+    
     scene black with dissolve
     centered "{size=30}연화 고등학교 교실{/size}" with dissolve
     scene bg classroom_ceiling with dissolve
@@ -440,11 +379,7 @@ label start:
     
     # 캐릭터와 CG 겹침을 방지하기 위해 배경 초기화
     scene bg school_gate
-<<<<<<< HEAD
-    show yuna laugh with dissolve
-=======
     show yuna laugh at center_lower, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     
     yn "에이, 선배가 아침부터 너무 흐물흐물하게, 영혼 가출한 좀비처럼 걷고 있으니까 후배로서 기합 좀 넣어준 거죠! 나 착하죠?"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
@@ -454,21 +389,13 @@ label start:
     th "어쩌다 신학기 동아리 심부름으로 몇 번 엮인 이후부터, 녀석은 나를 자기 전담 장난감이라도 되는 양 쫄래쫄래 쫓아다니기 시작했다."
     th "처음엔 남의 영역에 거침없이 훅훅 들어오는 그 하이텐션이 좀 부담스러웠는데… 매일 아침 이렇게 강아지처럼 꼬리를 치며 나타나니 이젠 적응이 되어버렸다."
     sj "그래, 등짝 때려줘서 참 고맙다. 근데 너 방향 이쪽 아니지 않아? 1학년 건물은 반대쪽 언덕이잖아."
-<<<<<<< HEAD
-    show yuna pout with dissolve
-=======
     show yuna pout at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "아, 진짜! 그게 뭐가 중요해요? 선배 오는 길목이니까 겸사겸사 마중 나온 거잖아요."
     yn "아침부터 이렇게 예쁘고 귀여운 후배 얼굴 짠! 하고 보면, 하루가 막 상쾌해지고 눈이 맑아지고 막 그러지 않아요?"
     "유나가 두 검지손가락으로 자기 볼을 콕 찌르며 과장되게 애교를 부린다."
 
     sj "상쾌하긴. 하도 옆에서 짹짹거려서 덜 깬 잠이 다 달아난다."
-<<<<<<< HEAD
-    show yuna smile with dissolve
-=======
     show yuna smile at center_lower, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "그거 칭찬이죠? 잠 깨워줬으니까 수고비로 매점에서 바나나 우유 쏘기! 약속!"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나가 아주 자연스럽게 내 교복 마이 소매 끝자락을 꾹 잡아끌었다."
@@ -481,11 +408,7 @@ label start:
     sj "어, 안녕. 먼저 들어가."
 
     "가볍게 손을 들어 인사를 받아주고 다시 고개를 돌린 순간."
-<<<<<<< HEAD
-    show yuna pout with dissolve
-=======
     show yuna pout at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     "내 소매를 쥐고 있던 유나가 갑자기 입술을 삐죽 내밀며 볼을 빵빵하게 부풀리고 있었다."
     sj "유나야? 갑자기 표정이 왜 그래."
 
@@ -493,11 +416,7 @@ label start:
     sj "친하긴. 그냥 짝꿍이라 숙제 몇 번 물어보고 프린트 빌려준 게 다야."
     yn "흐응~ 그냥 짝꿍? 선배는 참 발도 넓다니까. 나한테만 다정한 줄 알았더니 완전 만인의 연인이었어."
     sj "무슨 헛소리야. 너 아침 안 먹었지? 헛것이 보이나 본데."
-<<<<<<< HEAD
-    show yuna laugh with dissolve
-=======
     show yuna laugh at center_lower, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "아하하, 농담이에요 농담! 선배가 나 말고 다른 사람 챙기는 거 보니까 아주 조~금 질투 나서 그랬죠."
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나는 금세 장난스러운 미소를 되찾더니, 교복 주머니를 뒤적거렸다."
@@ -505,22 +424,14 @@ label start:
     yn "자, 아~ 하세요! 아침부터 당 떨어지면 안 되니까."
 
     sj "됐다, 아침부터 단 거 먹으면 입 텁텁해. 너나 먹어."
-<<<<<<< HEAD
-    show yuna pout with dissolve
-=======
     show yuna pout at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "아, 진짜! 후배의 정성을 이렇게 무시하기예요? 까줄 테니까 진짜 하나만 먹어봐요. 이거 먹으면 기분 완전 좋아진다니까?"
     play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "유나는 야무진 손놀림으로 사탕 껍질을 까더니, 내 입가로 사탕을 쑥 밀어 넣었다."
     "얼떨결에 사탕을 받아먹은 내 입안에 달콤하고 인공적인 딸기 향이 확 퍼졌다."
 
     sj "…어우, 달아."
-<<<<<<< HEAD
-    show yuna smile with dissolve
-=======
     show yuna smile at center_lower, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "그쵸? 완전 맛있죠! 자, 사탕도 먹여줬으니까 이따 쉬는 시간에 매점 가는 거 절대 잊지 마요!"
     play sound "audio/sfw_walking.ogg"
     "유나가 자신의 입에도 사탕을 쏙 넣고는 콧노래를 부르며 앞장서 걷기 시작했다."
@@ -598,7 +509,6 @@ label start:
     "하린이는 도망치는 녀석들의 등짝에 대고 소리를 지르거나 화를 내는 대신, 입술을 일자로 꾹 다문 채 서랍에서 수정테이프를 꺼냈다."
     "그러고는 빗나간 1mm의 선을 지우기 위해, 아예 그 주변의 완벽했던 두 줄 전체를 새하얗게 덮어 지우기 시작했다."
     "마치 그 작은 오점 하나가 종이 전체를 망쳐버렸다는 듯이."
-    stop sound
 
     menu:
         "어떻게 할까?"
@@ -715,11 +625,7 @@ label start:
             "내가 책을 반납하고 돌아서려던 찰나, 우연히 설아와 시선이 마주쳤다."
             stop sound fadeout 1.0
             "나는 가볍게 눈인사만 건넸다."
-<<<<<<< HEAD
-            show seola normal with dissolve
-=======
             show seola normal at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             sa "……."
             "설아 역시 아주 희미하게, 그러나 분명하게 고개를 한 번 끄덕이더니 다시 책으로 시선을 돌렸다."
             th "서로에게 아무것도 묻지 않고, 무엇도 강요하지 않는 관계."
@@ -733,11 +639,7 @@ label start:
             "드르륵- 탁!"
             play sound "audio/sfw_Window_close.ogg"
             "마찰음과 함께 창문이 닫히며, 밖의 수군거림도, 피부를 따갑게 데우던 햇살도 일순간 차단되었다."
-<<<<<<< HEAD
-            show seola surprise with dissolve
-=======
             show seola surprise at center_lower, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             "설아가 놀란 듯 책에서 시선을 떼고 나를 올려다보았다."
             "그녀의 붉은 눈동자에 내 얼굴이 작게 비쳤다."
             
@@ -746,11 +648,7 @@ label start:
             play sound "audio/sfw_walking.ogg"
             "나는 변명하듯 툭 한마디를 던지고 다시 내 자리로 돌아섰다."
             stop sound fadeout 1.0
-<<<<<<< HEAD
-            show seola normal with dissolve
-=======
             show seola normal at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             sa "…아니."
             "등 뒤에서, 나지막하고 투명한 목소리가 들려왔다."
             
@@ -815,11 +713,7 @@ label start:
     "캔에서 전해지는 따뜻한 온기가 손바닥을 기분 좋게 데웠다."
     sj "매번 이렇게 태평하시네요. 3학년이면 입시 스트레스 같은 거 엄청 받을 때 아닌가요?"
     sj "선생님들이 하도 닦달해서 숨도 못 쉰다던데."
-<<<<<<< HEAD
-    show gaeun smile with dissolve
-=======
     show gaeun smile at center_lower, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     ge "에이, 내가 무슨 스트레스? 난 늘 긍정적이고 행복한걸."
     ge "게다가 이렇게 귀여운 후배님이 옥상까지 찾아와서 말동무도 해주고 말이야. 이보다 더 좋을 순 없지!"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
@@ -841,11 +735,7 @@ label start:
     "나는 놀라서 엉거주춤하게 손을 뻗었다."
     
     scene bg rooftop_sunset with dissolve
-<<<<<<< HEAD
-    show gaeun normal with dissolve
-=======
     show gaeun normal at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     
     "선배는 한 손으로 입을 단단히 틀어막은 채 잠시 거칠게 숨을 고르더니, 곧바로 고개를 들며 다시 평소의 나른하고 여유로운 미소를 지어 보였다."
     ge "아… 응. 켁, 커피를 너무 급하게 넘겼나 봐. 목에 뭐가 콱 걸렸네."
@@ -862,11 +752,7 @@ label start:
             sj "조심 좀 하세요. 어른이 음료수도 하나 제대로 못 마십니까."
             play sound "audio/sfw_cloth_moving.ogg" volume 0.7
             "나는 쯧쯧 혀를 차며 선배의 등을 가볍게 톡톡 두드려주었다."
-<<<<<<< HEAD
-            show gaeun smile with dissolve
-=======
             show gaeun smile at center_lower, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             ge "앗, 아파라. 후배님 손맛 한 번 맵네. 등 부서지겠다."
             ge "그래도 챙겨주는 건 너밖에 없다. 진짜 괜찮다니까. 감동해서 눈물 날 뻔."
             
@@ -874,11 +760,7 @@ label start:
             th "아프다면서도 내 손길을 피하지 않는 걸 보면 정말 꽤나 감동한 눈치다. 가끔은 저 능청스러움을 당해낼 재간이 없다."
         "그냥 농담으로 넘긴다.":
             sj "천천히 좀 드세요. 뒤에서 누가 쫓아옵니까? 아니면 제가 뺏어 먹을까 봐 그래요?"
-<<<<<<< HEAD
-            show gaeun laugh with dissolve
-=======
             show gaeun laugh at center_lower, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             ge "콜록… 정곡 찔렸네."
             ge "우리 귀여운 후배님이 내 거까지 뺏어 먹을까 봐 불안해서 그랬지! 얼른 마시기나 해, 캔 구멍 뚫어지겠다."
             th "기침을 하면서도 받아치는 선배의 장난기 가득한 대답에 나도 결국 픽 웃고 말았다."
@@ -915,22 +797,14 @@ label start:
     play sound "audio/sfw_running.ogg"
     "자리에서 느릿느릿 일어나 기지개를 켜는데, 뒷문 쪽에서 유독 통통 튀는, 뾱뾱거리는 듯한 경쾌한 발소리가 들려왔다."
     stop sound
-<<<<<<< HEAD
-    show yuna smile at center_lower with dissolve
-=======
     show yuna smile at center_lower, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
 
     yn "서진 선배! 나 왔어요!"
     "앞머리가 살짝 흐트러진 채, 숨을 할딱이며 교실 뒷문으로 불쑥 고개를 들이민 것은 1학년 후배 유나였다."
     "얼마나 급하게 뛰어왔는지 하얀 뺨이 복숭아처럼 붉게 상기되어 있었다."
     "1학년 교실은 아예 건물이 달라서 구름다리를 건너와야 하는데, 쉬는 시간 종이 친 지 1분도 안 돼서 여기까지 뛰어 올라온 모양이다."
     sj "야, 뭐 하러 여기까지 뛰어와. 내가 1층으로 내려가려고 했는데."
-<<<<<<< HEAD
-    show yuna laugh with dissolve
-=======
     show yuna laugh at center_lower, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "에이, 우리 귀차니즘 말기 선배가 언제 꾸물꾸물 내려오나 기다리다간 내 피 같은 쉬는 시간이 다 끝날걸요?"
     yn "그리고 내가 친히 모시러 와야 선배도 기분 좋게 지갑을 열 거 아니에요! 자, 빨리 가요! 늦으면 초코 소라빵 다 매진된단 말이에요!"
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
@@ -953,11 +827,7 @@ label start:
 
     play sound "audio/sfw_cloth_moving.ogg" volume 0.8
     "우당탕거리는 소음과 땀 냄새 섞인 열기 속에서, 내 앞을 걷고 있던 유나가 뒤에서 밀려드는 덩치 큰 남학생 무리에 치여 크게 휘청거렸다."
-<<<<<<< HEAD
-    show yuna surprise at center_lower with dissolve
-=======
     show yuna surprise at center_lower, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "앗, 엄…!"
     play sound "audio/sfx_arm_grap.ogg"
     "나는 반사적으로 유나의 어깨를 붙잡아 내 쪽으로 훅 끌어당겼다."
@@ -994,20 +864,12 @@ label start:
     sj "자, 어제 넥타이 똑바로 매준 값. 이거면 됐지?"
 
     "나는 차가운 냉장고 물방울이 맺힌 뚱뚱한 바나나 우유를 유나의 볼에 살짝 들이밀었다."
-<<<<<<< HEAD
-    show yuna surprise at center_lower with dissolve
-=======
     show yuna surprise at center_lower, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "앗, 차가!"
     "유나가 어깨를 움츠리며 두 손으로 우유를 소중하게 받아 들었다."
     "그런데 우유를 받아 든 그녀의 표정이 생각보다 훨씬 더 밝고 벅차 보였다."
     "단순히 공짜 간식을 얻어먹어서 기쁜 수준을 넘어, 마치 산타 할아버지에게 소원하던 선물을 받은 어린아이 같은 표정이었다."
-<<<<<<< HEAD
-    show yuna smile with dissolve
-=======
     show yuna smile at center_lower, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "……선배. 진짜 기억하고 있었네요?"
     sj "당연하지. 네가 어제부터 하루 종일 귀에 딱지가 앉도록 세뇌를 시켰는데 어떻게 잊냐."
     "내 가벼운 핀잔에도 유나는 전혀 개의치 않고 바나나 우유를 양손으로 감싸 쥐며 헤실헤실 웃었다."
@@ -1017,11 +879,7 @@ label start:
     sj "우유 하나 사주는 게 뭐 대단한 약속이라고 그렇게 눈까지 반짝이면서 감동을 하냐. 오버하지 말고 얼른 빨대나 꽂아."
     play sound "audio/sfx_can_open.ogg" volume 1.5
     "내가 픽 웃으며 이온 음료 뚜껑을 따서 한 모금 마시자, 유나는 바나나 우유 뚜껑의 은박지를 조심스럽게 벗겨내며 나를 빤히 올려다보았다."
-<<<<<<< HEAD
-    show yuna laugh with dissolve
-=======
     show yuna laugh at center_lower, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "대단한 거예요! 나한테는 이 바나나 우유가 완전 다이아몬드보다 값진, 감동적인 약속의 증표라구요."
     yn "아, 나 진짜 이거 너무 아까워서 못 마실 것 같아요. 평생 내 방 책상 위에 가보로 장식해둘까?"
     sj "방구석에 우유 썩은 냄새 진동해서 파리 꼬이는 꼴 보고 싶으면 그렇게 하든가."
@@ -1139,11 +997,7 @@ label scene_6:
     th "저렇게까지 기뻐할 일인가."
 
     sj "나는 방금 강제 징집 당한 기분인데, 너는 되게 신났네."
-<<<<<<< HEAD
-    show yuna smile at left with dissolve
-=======
     show yuna smile at left, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "당연하죠!"
     yn "선배랑 같이 있으면 재미있잖아요. 그리고 선배 혼자 보내면 분명 중간에 몰래 도망칠 것 같단 말이에요."
     sj "너 나를 대체 뭘로 보는 거냐."
@@ -1179,33 +1033,19 @@ label scene_6:
             yn "…진짜요?"
             sj "왜 그렇게 놀라."
             sj "혼자 하린이한테 끌려다니는 것보단 둘이 끌려다니는 게 낫다는 뜻이야."
-<<<<<<< HEAD
-            show harin sigh at right with dissolve
-            hr "표현이 꼭 그래야 해?"
-            show yuna laugh at left with dissolve
-=======
             show harin sigh at right, sway_soft with dissolve
             hr "표현이 꼭 그래야 해?"
             show yuna laugh at left, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "헤헤… 그래도 좋아요."
             yn "방금 그 말, 나 오늘 집 가서 자기 전에 한 번 더 떠올릴래요."
         "너 때문에 더 시끄러워질 것 같다고 말한다.":
             sj "네가 있으면 덜 심심한 대신 두 배는 시끄러워질 것 같은데."
-<<<<<<< HEAD
-            show yuna pout at left with dissolve
-=======
             show yuna pout at left, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "아, 진짜!"
             yn "그렇게 말하면서 또 은근히 나 기다려줄 거잖아요."
 
             sj "자신감은 인정한다."
-<<<<<<< HEAD
-            show yuna smile at left with dissolve
-=======
             show yuna smile at left, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "선배가 맨날 그렇게 툴툴대도 결국 나 안 떼어내는 거, 나 다 안다니까요?"
             th "쓸데없이 정확하다."
 
@@ -1259,11 +1099,7 @@ label scene_7:
 
     "가은 선배 옆쪽 자리에는 이미 하린이가 앉아 명단을 정리하고 있었다."
     "언제 가져왔는지 모를 자와 형광펜, 포스트잇이 정확한 각도로 정렬되어 있었다."
-<<<<<<< HEAD
-    show harin normal at right with dissolve
-=======
     show harin normal at right, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     hr "윤서진, 여기."
     hr "우리 반 배정표랑 진행 일정표야. 아직 확정본은 아니고 초안."
     play sound "audio/sfx_paper_flutter.ogg" volume 0.5
@@ -1277,11 +1113,7 @@ label scene_7:
     "그때 문 바깥에서 가벼운 발소리가 들렸다."
     
     stop sound
-<<<<<<< HEAD
-    show yuna smile at left with dissolve
-=======
     show yuna smile at left, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "죄송합니다아! 안 늦었죠?!"
     "유나가 두 손에 종이컵 음료가 든 비닐봉지를 달랑거리며 들어왔다."
     "헐레벌떡 뛰어왔는지 앞머리가 조금 흐트러져 있었지만, 표정만큼은 어김없이 환했다."
@@ -1290,11 +1122,7 @@ label scene_7:
     
     play sound "audio/sfx_Sliding_door.ogg"
     "그 말이 끝나기 무섭게 문가에서 아주 조용한 인기척이 났다."
-<<<<<<< HEAD
-    show seola normal at char_2 with dissolve
-=======
     show seola normal at char_2, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     "설아였다."
     "양손에는 말아 놓은 도화지 몇 장과 얇은 파일철이 들려 있었다."
     "창백한 손목 위로 연필 자국 같은 희미한 얼룩이 스쳐 지나갔다."
@@ -1332,17 +1160,10 @@ label scene_7:
 
     hr "그런 건 나중에."
     hr "먼저 해야 할 일부터 끝내자."
-<<<<<<< HEAD
-    show yuna pout at char_1 with dissolve
-    yn "하린 선배는 낭만이 없어요."
-    hr "축제 준비에 낭만 찾다가 일정 밀리면 그게 더 큰 문제야."
-    show gaeun laugh at char_4 with dissolve
-=======
     show yuna pout at char_1, sway_soft with dissolve
     yn "하린 선배는 낭만이 없어요."
     hr "축제 준비에 낭만 찾다가 일정 밀리면 그게 더 큰 문제야."
     show gaeun laugh at char_4, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     ge "둘이 벌써부터 잘 맞네."
     ge "한 명은 브레이크고 한 명은 엑셀이야. 차가 굴러가긴 하겠다."
 
@@ -1355,21 +1176,13 @@ label scene_7:
     
     play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "그때 조용히 파일철을 펼치던 설아의 도화지 한 장이 바닥으로 미끄러져 내렸다."
-<<<<<<< HEAD
-    show seola surprise at char_2 with dissolve
-=======
     show seola surprise at char_2, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     "나는 가장 먼저 몸을 숙여 그것을 주웠다."
     "도화지 위에는 축제 메인 포스터 초안 같은 것이 연필선으로 그려져 있었다."
     "벚꽃과 교정 풍경, 그리고 어딘가 쓸쓸하게 비어 있는 중앙의 길."
 
     sj "이거 네가 그린 거야?"
-<<<<<<< HEAD
-    show seola normal at char_2 with dissolve
-=======
     show seola normal at char_2, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     sa "…응."
 
     sj "잘 그렸네."
@@ -1405,11 +1218,7 @@ label scene_7:
     play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "가은 선배가 웃으며 자리에서 일어나려던 순간이었다."
     
-<<<<<<< HEAD
-    show gaeun surprise at char_4 with hpunch
-=======
     show gaeun surprise at char_4, excited_hop with hpunch
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     "켁, 콜록…!"
     
     "갑작스러운 기침 소리가 좁은 준비실 안에 번졌다."
@@ -1417,11 +1226,7 @@ label scene_7:
 
     sj "선배."
     "내가 반사적으로 부르자, 가은 선배는 손등으로 입가를 가린 채 고개를 살짝 저었다."
-<<<<<<< HEAD
-    show gaeun normal at char_4 with dissolve
-=======
     show gaeun normal at char_4, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     ge "괜찮아."
     ge "요즘 교실이 좀 건조해서 그래. 먼지 먹었나 보다."
 
@@ -1435,11 +1240,7 @@ label scene_7:
 
     ge "괜찮아, 막내야."
     ge "너까지 뛰어다니면 여기 바닥 무너질 것 같아."
-<<<<<<< HEAD
-    show yuna pout at char_1 with dissolve
-=======
     show yuna pout at char_1, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "뭐예요, 그게."
     "유나가 볼을 부풀리며 투덜대자, 준비실 안 공기가 아주 조금 풀렸다."
     "정말 아주 조금."
@@ -1468,11 +1269,7 @@ label scene_7:
         "누구를 먼저 도울까?"
         "하린의 정리를 잠깐 도와준다.":
             sj "반장, 그거 나도 같이 정리할까?"
-<<<<<<< HEAD
-            show harin surprise at char_3 with dissolve
-=======
             show harin surprise at char_3, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             "하린이는 잠깐 의외라는 표정을 지었다."
             hr "…네가 먼저 말하는 건 좀 드문데."
             hr "그래도 고마워. 테이프랑 색지 종류별로만 나눠줘."
@@ -1484,11 +1281,7 @@ label scene_7:
             th "그런데 이상하게도, 저렇게까지 해야 겨우 버틸 수 있는 사람처럼 보일 때가 있다."
         "설아가 든 도화지를 대신 들어준다.":
             sj "그거 내가 좀 들어줄까?"
-<<<<<<< HEAD
-            show seola surprise at char_2 with dissolve
-=======
             show seola surprise at char_2, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             "설아는 내 손과 자신의 도화지를 번갈아 보더니, 잠깐 망설였다."
             sa "…괜찮아."
             sa "가볍거든."
@@ -1504,21 +1297,13 @@ label scene_7:
             th "그래도 설아가 먼저 무언가를 건넨 건 처음이었다."
         "유나가 뛰어가지 못하게 옆에 붙잡아 둔다.":
             sj "너는 물 가지러 간다더니 벌써 나갈 자세네."
-<<<<<<< HEAD
-            show yuna laugh at char_1 with dissolve
-=======
             show yuna laugh at char_1, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "왜요, 나 엄청 유능한 심부름 요정인데."
             sj "유능한 건 모르겠고."
             sj "복도에서 또 뛰다가 넘어질까 봐 일단 여기 있어."
             "내가 무심하게 말하자, 유나는 눈을 몇 번 깜빡였다."
             "그러더니 이상할 정도로 순순히 내 옆에 붙어 섰다."
-<<<<<<< HEAD
-            show yuna smile at char_1 with dissolve
-=======
             show yuna smile at char_1, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "…네."
             yn "그럼 선배 옆에 있을래요."
 
@@ -1585,11 +1370,7 @@ label scene_8:
     yn "나 아까 학생회실에서 스티커도 받아왔어요. 별 모양, 하트 모양, 반짝이 들어간 거까지!"
 
     sj "축제 장식이야, 유치원 미술시간이야."
-<<<<<<< HEAD
-    show yuna pout at left with dissolve
-=======
     show yuna pout at left, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "아, 진짜."
     yn "감성이 부족해, 감성이. 이런 디테일이 분위기를 사는 거라구요."
 
@@ -1613,11 +1394,7 @@ label scene_8:
     ge "이 정도면 우리 팀, 생각보다 그럴듯하게 굴러가겠는데?"
 
     sj "지금은 시작 5분 차라 그렇죠."
-<<<<<<< HEAD
-    show gaeun laugh at right with dissolve
-=======
     show gaeun laugh at right, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     ge "후배님은 꼭 한마디씩 비틀어야 직성이 풀리더라."
     play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     sa "…배치도 초안 가져왔어."
@@ -1633,20 +1410,12 @@ label scene_8:
     th "대충."
     th "설아가 말하는 대충은 보통 남들 기준의 꽤 열심히다."
     
-<<<<<<< HEAD
-    show harin normal at center_lower with dissolve
-=======
     show harin normal at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     hide gaeun with dissolve
 
     hr "좋아. 그럼 오늘은 세 가지부터 끝내자."
     hr "현수막 문구 정하기, 교실 앞 안내문 초안, 그리고 장식용 색지 재단."
-<<<<<<< HEAD
-    show yuna smile at right with dissolve
-=======
     show yuna smile at right, tiny_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "저는 뭐 하면 돼요?"
     hr "너는 우선 색지 자르는 쪽."
 
@@ -1662,11 +1431,7 @@ label scene_8:
         "누구부터 도와줄까?"
         "유나 옆에 가서 색지를 같이 자른다.":
             sj "가위 혼자 쓰다 손 베지 말고, 반은 내가 할게."
-<<<<<<< HEAD
-            show yuna surprise at right with dissolve
-=======
             show yuna surprise at right, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "…선배가 먼저 도와준다고 하네?"
             yn "오늘 해 뜨는 방향 바뀌었나?"
 
@@ -1693,21 +1458,13 @@ label scene_8:
             hr "학생들이 멈춰서 읽게 하려면."
 
             sj "의외네. 반장은 되게 모범답안 좋아할 줄 알았는데."
-<<<<<<< HEAD
-            show harin normal at center_lower with dissolve
-=======
             show harin normal at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             hr "모범답안은 보기엔 깔끔해도, 기억에는 안 남으니까."
             th "그 말이 조금 의외였다."
             th "서하린은 늘 정답만 고를 것처럼 보여서."
         "설아가 가져온 배치도를 같이 본다.":
             sj "여기 비워둔 공간은 일부러?"
-<<<<<<< HEAD
-            show seola normal at left with dissolve
-=======
             show seola normal at left, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             sa "응."
             sa "다 채우면 답답해 보여."
 
@@ -1725,11 +1482,7 @@ label scene_8:
             th "그건 배치 이야기만은 아닌 것처럼 들렸다."
             
             scene bg classroom with dissolve
-<<<<<<< HEAD
-            show seola normal at left with dissolve
-=======
             show seola normal at left, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
 
     hide yuna with dissolve
     hide harin with dissolve
@@ -1783,11 +1536,7 @@ label scene_9:
 
     "다음 날 점심시간."
     "학생회에서 내려온 수정 지시 하나로, 어제 만든 계획표 절반이 무용지물이 됐다."
-<<<<<<< HEAD
-    show harin normal at center_lower with dissolve
-=======
     show harin normal at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     hr "부스 배치가 바뀌었다고?"
     hr "어제 분명 최종안이라고 했는데."
     "하린이는 전달받은 출력물을 내려다보며 가만히 입술을 깨물었다."
@@ -1797,13 +1546,8 @@ label scene_9:
 
     yn "에이, 뭐 어때요!"
     yn "다시 하면 되죠. 어차피 축제 준비는 원래 이런 거라던데."
-<<<<<<< HEAD
-    show yuna smile at left with dissolve
-    show harin sigh at center_lower with dissolve
-=======
     show yuna smile at left, tiny_bounce with dissolve
     show harin sigh at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     hr "그 '다시'가 문제야."
     hr "시간표 다시 짜야 하고, 인원 배치 다시 정리해야 하고, 포스터 문구도 바뀔 수 있어."
 
@@ -1818,11 +1562,7 @@ label scene_9:
     play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "설아는 말없이 바뀐 배치도를 넘겨받아 보고 있었다."
     "한참 동안 아무 말도 하지 않다가, 아주 담백하게 한 줄만 던졌다."
-<<<<<<< HEAD
-    show seola normal at right with dissolve
-=======
     show seola normal at right, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     sa "문구는 안 바꿔도 돼."
     sa "배치만 옮기면 돼."
     "하린이의 손이 잠깐 멈췄다."
@@ -1850,11 +1590,7 @@ label scene_9:
             sj "반장, 숨 좀 돌려."
             sj "네가 지금 표정으로 계속 보면 종이가 먼저 타겠다."
 
-<<<<<<< HEAD
-            show harin surprise at center_lower with dissolve
-=======
             show harin surprise at center_lower, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             "하린이는 의외라는 표정을 지었다."
             hr "…내 표정, 그렇게 안 좋아 보여?"
 
@@ -1872,11 +1608,7 @@ label scene_9:
         "유나 쪽으로 붙어서 분위기를 풀어준다.":
             sj "너무 죽상 짓지 마."
             sj "아까 말 틀린 것도 아니었어. 결국 다시 하면 되긴 하지."
-<<<<<<< HEAD
-            show yuna surprise at left with dissolve
-=======
             show yuna surprise at left, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "…선배가 내 편 들어주네?"
             sj "내 편, 네 편이 아니라."
             sj "반장이 예민한 건 이해하고, 네 말도 틀린 건 아니라는 뜻."
@@ -1922,21 +1654,13 @@ label scene_9:
     stop sound fadeout 1.0
     
     "그때, 복도 창문 앞에 서 있는 유나의 뒷모습이 눈에 들어왔다."
-<<<<<<< HEAD
-    show yuna normal at center_lower with dissolve
-=======
     show yuna normal at center_lower, sway_soft with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     "아까까지만 해도 시끄럽게 떠들던 녀석이, 지금은 조용히 휴대폰 화면만 내려다보고 있었다."
     "밝은 표정도, 장난스러운 몸짓도 없었다."
     "창밖으로 들어오는 빛이 옆얼굴을 비추자, 이상할 정도로 표정이 비어 보였다."
 
     sj "뭐 하냐."
-<<<<<<< HEAD
-    show yuna surprise with dissolve
-=======
     show yuna surprise at center_lower, excited_hop with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     "유나는 내 목소리에 화들짝 놀라 휴대폰을 급히 뒤집었다."
 
     yn "아, 깜짝이야!"
@@ -1994,11 +1718,7 @@ label scene_9:
             yn "아무 말 안 하는 것도, 생각보다 위로되네요."
 
             sj "시끄러운 네가 그런 말 하니까 어색하다."
-<<<<<<< HEAD
-            show yuna laugh with dissolve
-=======
             show yuna laugh at center_lower, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
             yn "아하하, 뭐예요 그게."
             
             th "웃긴."
@@ -2043,11 +1763,7 @@ label scene_10:
     yn "오는 길에 학생회 선배 붙잡혀서 테이프 좀 나눠주고 왔어요."
 
     sj "네가 붙잡힌 건지, 네가 먼저 끼어든 건지 모르겠다."
-<<<<<<< HEAD
-    show yuna laugh at char_1 with dissolve
-=======
     show yuna laugh at char_1, idle_bounce with dissolve
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
     yn "헤헤. 둘 다?"
 
     "겉보기엔 평소와 다르지 않았다."
@@ -2287,10 +2003,7 @@ label scene_10:
     th "정말 유치한데."
     th "왜 이렇게 마음에 남는 건지."
     scene black with fade
-<<<<<<< HEAD
-=======
 
->>>>>>> 7f3db28ebbb2407af8c8e08e1d5532759398c356
 # ---------------------------------------------------------
 # [Scene 11 타이틀]
 label scene_11:
@@ -5438,7 +5151,7 @@ label scene_14:
     "가은 : 준비실 아지트화 축하"
 
     "나는 화면을 보다가, 잠시 멈췄다."
- 
+
     th "원래라면 그냥 읽고 넘겼을 텐데."
 
     "손가락이 자연스럽게 키보드 위로 올라갔다."
