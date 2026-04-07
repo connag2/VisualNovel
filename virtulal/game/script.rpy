@@ -240,57 +240,49 @@ label start:
     play sound "audio/sfw_walking.ogg"
     "나 역시 밤공기의 서늘함이 채 가시지 않은 맑은 봄바람을 맞으며 천천히 걷고 있었다."
     "길가에 핀 벚꽃나무에서 연분홍빛 꽃잎들이 드문드문 떨어져 내리는, 꽤나 그림 같은 풍경이다."
-    
     th "이맘때의 아침 공기는 사람을 묘하게 들뜨게 하는 구석이 있다."
+    stop sound fadeout 1.0
     th "물론 나는 그런 분위기에 휩쓸려 오버하는 성격은 아니지만, 그래도 이런 쾌적한 아침이라면 학교 가는 길이 아주 끔찍하지만은 않다."
-    
     "그렇게 학교 정문이 저만치 보일 무렵."
 
     play sound "audio/sfw_running.ogg" volume 0.8
     "타닥, 타다닥—!"
     "등 뒤에서부터 통통 튀는, 아주 가볍고 경쾌한 발소리가 빠르게 다가왔다."
-    
     th "누군가 잰걸음으로 달려오는 소리. 굳이 뒤돌아보지 않아도 누군지 알 수 있다."
     th "내 좁고 평탄한 인간관계에서, 아침부터 이렇게 요란하고 에너지 넘치게 다가올 사람은 단 한 명뿐이니까."
 
+    stop sound
     "탁!"
     play sound "audio/sfx_slap.ogg" volume 1.2
     with hpunch
     "아니나 다를까, 누군가 내 등짝을 제법 매운 손길로 찰싹 내려친다."
-    
     show cg yuna_morning_surprise with dissolve
     yn "서진 선배! 안녕! 완전~ 좋은 아침!"
-    
     "돌아보자, 햇살을 등지고 선 1학년 후배 유나가 특유의 반묶음 머리를 찰랑거리며 활짝 웃고 있었다."
     "달려오느라 살짝 상기된 두 뺨과 반짝거리는 눈동자. 그리고 언제나처럼 훅 풍겨오는 옅고 달콤한 딸기 샴푸 향기."
-    
     sj "어, 안녕. 아침부터 기운도 넘치네. 등 뚫어지는 줄 알았다."
     
+    # 캐릭터와 CG 겹침을 방지하기 위해 배경 초기화
+    scene bg school_gate
     show yuna laugh with dissolve
-    yn "에이, 선배가 아침부터 너무 흐물흐물하게, 영혼 가출한 좀비처럼 걷고 있으니까 후배로서 기합 좀 넣어준 거죠! 나 착하죠?"
     
-    play sound "audio/sfw_cloth_moving.ogg"
+    yn "에이, 선배가 아침부터 너무 흐물흐물하게, 영혼 가출한 좀비처럼 걷고 있으니까 후배로서 기합 좀 넣어준 거죠! 나 착하죠?"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나는 내 앞으로 쏙 끼어들며 두 손으로 브이(V) 자를 그려 보였다."
     "조금 넉넉한 치수로 맞춘 탓에 손등을 반쯤 덮은 교복 소매가 그녀의 움직임에 맞춰 귀엽게 펄럭였다."
-    
     th "유나는 언제나 에너지가 넘치고 장난기가 많아서, 가만히 옆에만 있어도 주변 공기마저 덩달아 밝아지게 만드는 타입이다."
     th "어쩌다 신학기 동아리 심부름으로 몇 번 엮인 이후부터, 녀석은 나를 자기 전담 장난감이라도 되는 양 쫄래쫄래 쫓아다니기 시작했다."
     th "처음엔 남의 영역에 거침없이 훅훅 들어오는 그 하이텐션이 좀 부담스러웠는데… 매일 아침 이렇게 강아지처럼 꼬리를 치며 나타나니 이젠 적응이 되어버렸다."
-    
     sj "그래, 등짝 때려줘서 참 고맙다. 근데 너 방향 이쪽 아니지 않아? 1학년 건물은 반대쪽 언덕이잖아."
-    
     show yuna pout with dissolve
     yn "아, 진짜! 그게 뭐가 중요해요? 선배 오는 길목이니까 겸사겸사 마중 나온 거잖아요."
     yn "아침부터 이렇게 예쁘고 귀여운 후배 얼굴 짠! 하고 보면, 하루가 막 상쾌해지고 눈이 맑아지고 막 그러지 않아요?"
-    
     "유나가 두 검지손가락으로 자기 볼을 콕 찌르며 과장되게 애교를 부린다."
 
     sj "상쾌하긴. 하도 옆에서 짹짹거려서 덜 깬 잠이 다 달아난다."
-    
     show yuna smile with dissolve
     yn "그거 칭찬이죠? 잠 깨워줬으니까 수고비로 매점에서 바나나 우유 쏘기! 약속!"
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나가 아주 자연스럽게 내 교복 마이 소매 끝자락을 꾹 잡아끌었다."
     "이런 스킨십에도 거침이 없다. 나는 체념한 듯 픽 웃으며 유나의 잰발걸음에 맞춰 걷는 속도를 올렸다."
 
@@ -298,52 +290,41 @@ label start:
     girl_a "어, 윤서진! 너도 이제 오냐?"
 
     "옆을 지나가던 같은 반 여학생 무리 중 한 명이 나를 향해 손을 흔들었다. 며칠 전 수행평가 프린트물을 빌려준 적이 있는 녀석이다."
-    
     sj "어, 안녕. 먼저 들어가."
 
     "가볍게 손을 들어 인사를 받아주고 다시 고개를 돌린 순간."
-    
     show yuna pout with dissolve
     "내 소매를 쥐고 있던 유나가 갑자기 입술을 삐죽 내밀며 볼을 빵빵하게 부풀리고 있었다."
-    
     sj "유나야? 갑자기 표정이 왜 그래."
 
     yn "…방금 저 선배 누구예요? 되게 친하게 인사하네."
-    
     sj "친하긴. 그냥 짝꿍이라 숙제 몇 번 물어보고 프린트 빌려준 게 다야."
     yn "흐응~ 그냥 짝꿍? 선배는 참 발도 넓다니까. 나한테만 다정한 줄 알았더니 완전 만인의 연인이었어."
     sj "무슨 헛소리야. 너 아침 안 먹었지? 헛것이 보이나 본데."
-    
     show yuna laugh with dissolve
     yn "아하하, 농담이에요 농담! 선배가 나 말고 다른 사람 챙기는 거 보니까 아주 조~금 질투 나서 그랬죠."
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나는 금세 장난스러운 미소를 되찾더니, 교복 주머니를 뒤적거렸다."
     "그러고는 예의 그 투명한 비닐에 싸인 딸기맛 사탕을 두 개 꺼내어, 하나를 내 눈앞에 들이밀었다."
-    
     yn "자, 아~ 하세요! 아침부터 당 떨어지면 안 되니까."
 
     sj "됐다, 아침부터 단 거 먹으면 입 텁텁해. 너나 먹어."
-    
     show yuna pout with dissolve
     yn "아, 진짜! 후배의 정성을 이렇게 무시하기예요? 까줄 테니까 진짜 하나만 먹어봐요. 이거 먹으면 기분 완전 좋아진다니까?"
-    
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "유나는 야무진 손놀림으로 사탕 껍질을 까더니, 내 입가로 사탕을 쑥 밀어 넣었다."
     "얼떨결에 사탕을 받아먹은 내 입안에 달콤하고 인공적인 딸기 향이 확 퍼졌다."
 
     sj "…어우, 달아."
-    
     show yuna smile with dissolve
     yn "그쵸? 완전 맛있죠! 자, 사탕도 먹여줬으니까 이따 쉬는 시간에 매점 가는 거 절대 잊지 마요!"
-    
     play sound "audio/sfw_walking.ogg"
     "유나가 자신의 입에도 사탕을 쏙 넣고는 콧노래를 부르며 앞장서 걷기 시작했다."
     "녀석의 발걸음에 맞춰 찰랑거리는 머리카락에서 기분 좋은 샴푸 향이 났다."
-    
     th "참 속도 편하고 투명한 녀석이다. 겉과 속이 저렇게 똑같으니 곁에 있어도 피곤하지 않은 거겠지."
     th "나의 평화롭고 미지근한 일상은, 이 녀석 덕분에 조금 더 소란스럽지만 따뜻하게 흘러가고 있다."
     th "이런 것도 꽤 나쁘지 않은 일상이다."
+    stop sound fadeout 1.5
 
     # ---------------------------------------------------------
     # Scene 2
@@ -356,20 +337,18 @@ label start:
 
     "조회 시간 10분 전."
     "아직 담임 선생님이 들어오지 않은 2학년 교실은 그야말로 통제 불능의 시장통이다."
-    play sound "audio/sfw_school_crowd.ogg"
+    play sound "audio/sfw_school_crowd.ogg" volume 0.7
     "교실 뒤편에서는 어제저녁에 본 예능 프로그램을 재연하느라 책상을 치며 웃는 녀석들이 있고, 앞자리에서는 1교시 수학 숙제를 베끼느라 샤프심을 부러뜨려 가며 사투를 벌이는 녀석들이 있다."
     "창문 너머로 불어오는 따뜻한 봄바람마저 교실의 왁자지껄한 열기에 섞여 미지근해질 지경이다."
-    
+    stop sound fadeout 2.0
     "하지만, 그 아수라장 한가운데서 유독 이질적일 만큼 차갑고 정적인 공기를 유지하는 반경 1미터의 구역이 있다."
     show harin normal at center_lower with dissolve
 
     "우리 반 반장, 서하린."
     "다들 봄기운에 취해 춘추복 마이를 대충 벗어 던지거나 체육복 바지를 겹쳐 입고 있지만, 하린이만은 예외다."
     "목 끝까지 단정하게 채운 블라우스 단추, 먼지 하나 없이 빳빳하게 다려진 치마의 주름. 그녀의 책상 위에는 교과서와 필통마저 한 치의 오차도 없이 직각으로 정돈되어 있다."
-    
     th "반장이라는 타이틀이 저렇게 사람을 숨 막히게 만드는 건지, 아니면 원래 저런 성격이라 반장이 된 건지는 모르겠다."
     th "분명한 건, 저렇게 매사를 각 잡고 살면 본인만 피곤할 텐데 대단하다는 거다."
-    
     "하린이는 교탁 앞에 서서 주변의 소음 따위는 전혀 들리지 않는다는 듯 무언가에 열중하고 있었다."
     sj "좋은 아침. 반장님은 아침부터 무슨 집중을 그렇게 하십니까."
 
@@ -378,13 +357,10 @@ label start:
 
     "딱 부러지고 군더더기 없는 목소리."
     "차갑다기보다는, 굳이 필요 없는 감정을 섞지 않고 해야 할 말만 정확하게 전달하는 기계적인 깔끔함이다."
-    
     "나는 내 자리로 가려다 말고, 무심코 교탁 위를 내려다보았다."
     "하린이는 자를 대고 검은색 볼펜으로 이번 달 칠판 당번 배정표를 그리고 있었다."
-    
     show cg harin_perfectionist_focus with dissolve
     "단순히 줄을 긋는 수준이 아니라, 칸의 간격부터 이름의 자간까지 마치 인쇄소 폰트처럼 완벽하게 맞춰 넣는 중이었다."
-    
     play sound "audio/sfx_pen_click.ogg"
     "딸깍. {w=0.3}딸깍."
 
@@ -392,12 +368,11 @@ label start:
     th "버릇인 걸까? 무언가 집중할 때면 저렇게 볼펜을 누르곤 한다."
     th "그나저나 저 배정표, 그냥 대충 빈칸에 이름만 적어 넣으면 되는 거 아닌가?"
     th "누가 본다고 굳이 자까지 대가며 저렇게 공을 들이는지 모르겠지만… 뭐, 완벽하지 않으면 직성이 풀리지 않는 서하린 스타일이니까."
-    
     play sound "audio/sfw_running.ogg"
     "그때였다. 뒷자리에서 체육복 겉옷을 던지며 쫓고 쫓기던 남학생 둘이 우당탕거리며 교탁 쪽으로 밀려들었다."
-    
     stu_a "야! 내놔, 그거 오늘 체육 시간에 입어야 된다고!"
     stu_b "잡아보시지! 메롱!"
+    stop sound
 
     "쿵-!"
     play sound "audio/sfx_Desk_thud.ogg"
@@ -409,18 +384,15 @@ label start:
     show harin sigh at center_lower with dissolve
     
     "그 순간, 하린이가 자를 대고 숨을 참아가며 조심스럽게 긋고 있던 검은색 선이, 아주 미세하게… 한 1mm 정도 삐끗하게 빗나가버렸다."
-    
     hr "하아……."
 
     "하린이는 눈을 질끈 감았다."
     "아주 짧고 작게 새어 나온 한숨이었지만, 그 안에는 깊은 짜증과 피로가 배어 있었다."
-    
     "장난을 치던 녀석들도 순간적으로 얼어붙은 분위기를 파악했는지 멋쩍게 웃으며 슬금슬금 뒷자리로 도망쳤다."
     stu_a "아, 미안 미안 반장! 우리가 밀려다가 너무 세게 부딪혔다."
-    
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "하린이는 도망치는 녀석들의 등짝에 대고 소리를 지르거나 화를 내는 대신, 입술을 일자로 꾹 다문 채 서랍에서 수정테이프를 꺼냈다."
-    "그러더니 빗나간 1mm의 선을 지우기 위해, 아예 그 주변의 완벽했던 두 줄 전체를 새하얗게 덮어 지우기 시작했다."
+    "그러고는 빗나간 1mm의 선을 지우기 위해, 아예 그 주변의 완벽했던 두 줄 전체를 새하얗게 덮어 지우기 시작했다."
     "마치 그 작은 오점 하나가 종이 전체를 망쳐버렸다는 듯이."
 
     menu:
@@ -436,7 +408,6 @@ label start:
             hr "네가 신경 안 쓴다고 남들도 안 쓰는 건 아니야. 됐어, 넌 얼른 네 자리에 가서 앉기나 해."
             th "역시 깐깐하고 철저한 반장님이다. 타인의 시선과 책임감에 묶여 사는 전형적인 모범생."
             th "나는 더 말려봐야 내 입만 아프다는 걸 깨닫고 가볍게 고개를 끄덕이며 돌아섰다."
-            
         "내가 도와줄지 묻는다.":
             sj "종이 끄트머리라도 좀 잡아줄까? 애들 또 뛰어다니면 흔들려서 아예 종이가 찢어질라."
             show harin smile with dissolve
@@ -450,11 +421,11 @@ label start:
             th "완벽주의자답게 자기 일은 절대 남에게 안 맡기는 성격이다."
             th "남의 손을 타서 오점이 남거나 폐를 끼치느니, 차라리 혼자 두 배로 고생하는 걸 택하는 타입."
             th "뭐, 그게 본인 마음이 편하다면 굳이 내가 더 참견할 이유는 없겠지."
-
     hide harin with dissolve
 
     play sound "audio/sfw_walking.ogg"
     "나는 하린이의 부탁대로(혹은 내 스스로 거슬려서) 교탁 주변을 얼쩡거리던 녀석들을 쫓아내고 내 자리에 가방을 내려놓았다."
+    stop sound fadeout 1.0
     play sound "audio/sfx_Sliding_door.ogg"
     "얼마 지나지 않아 앞문이 열리고 담임 선생님이 출석부를 들고 들어오셨다."
     "하린이는 언제 선이 빗나갔냐는 듯 완벽하게 수정된 당번 표를 교탁 구석에 올려둔 채, 반듯한 자세로 일어나 차렷 구령을 붙였다."
@@ -474,7 +445,7 @@ label start:
     "식곤증과 함께 교실 전체가 붕 뜬 것처럼 어수선해지는 이 시간대를, 나는 별로 좋아하지 않는다."
     play sound "audio/sfw_walking.ogg"
     "그래서 나는 대출 기한이 다 된 소설책을 핑계 삼아 교실을 빠져나와, 인적이 드문 구관 4층의 도서관으로 향했다."
-
+    stop sound
     "드르륵—."
     play sound "audio/sfx_Sliding_door.ogg"
     "뻑뻑한 미닫이문을 열고 들어가자, 특유의 마른 먼지 냄새와 오래된 종이 냄새가 훅 끼쳐왔다."
@@ -489,17 +460,15 @@ label start:
 
     "새하얗게 색소가 빠진 긴 머리카락과 묘하게 붉은빛이 도는 눈동자, 그리고 햇빛을 받아 투명할 정도로 창백한 피부."
     "언제 봐도 현실감이 떨어지는, 마치 혼자만 채도가 낮은 세계에 살고 있는 듯한 이질적인 동급생."
-    
     th "설아는 워낙 눈에 띄는 선천적 외모 탓에, 학기 초부터 다른 반 녀석들까지 구경을 오거나 등 뒤에서 수군거리는 일이 잦았다."
     th "하지만 본인은 주변의 시선 따위는 전혀 신경 쓰지 않는다는 듯, 항상 묵묵히 제 할 일만 하는 타입이다."
     th "쓸데없는 말은 하지 않고, 타인에게 먼저 다가가지도 않는 성격."
     th "그런 점에서 나는 그녀에게 묘한 동질감과 편안함을 느끼고 있었다."
-    
     play sound "audio/sfw_walking.ogg"
     "나는 설아와 서너 칸 정도 떨어진, 적당히 거리가 있는 테이블에 조용히 의자를 빼고 앉았다."
+    stop sound fadeout 1.0
     "우리는 서로 가벼운 목례조차 나누지 않았지만, 이 공간에서는 그 무심함이 오히려 당연하게 느껴졌다."
-
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.4
     "사락, 사락."
     "넓은 도서관 안에는 나와 설아가 책장을 넘기는 소리만이 규칙적으로 울려 퍼졌다."
     "완벽한 정적이었다."
@@ -507,27 +476,22 @@ label start:
     "하지만 그 평화는 그리 오래가지 못했다."
     girl_a "아, 진짜? 대박."
     girl_b "야, 쉿! 여기 도서관이야. 근데 걔 진짜 그 소문 맞대?"
-    
     "창문 너머, 1층 화단 쪽을 걸어가는 다른 반 여학생들의 목소리가 열린 창문 틈을 타고 넘어왔다."
-    
     girl_a "나도 들었어. 아침마다 아저씨 차 타고 등교한다며? 머리 하얀 애."
     girl_b "헐… 얼굴 믿고 그러는 건가? 겉보기엔 완전 조용해 보이던데."
     girl_a "원래 그런 애들이 뒤로 더 무서운 거라니까. 조심해, 엮이면 피곤해져."
-    
     "여과 없이 쏟아지는 악의적인 수군거림이 봄날의 따뜻한 공기를 불쾌하게 오염시켰다."
 
     th "소문이란 건 참 잔인할 정도로 빠르다."
     th "특히나 설아처럼 남들과 조금 다르게 생긴, 튀는 표적에게는 더더욱 쉽고 가혹하게 달라붙기 마련이다."
-    
     "나는 무심코 고개를 들어 설아 쪽을 바라보았다."
     "설아는 여전히 읽고 있던 책에서 시선을 떼지 않고 있었다."
     "표정 하나, 호흡 하나 변하지 않은 무심한 얼굴이었다. 마치 방금 들려온 이야기가 자신과는 아무 상관 없는 먼 나라의 언어라도 되는 것처럼."
     "다만—"
 
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.6
     "스윽, 슥."
     "설아는 시선을 책에 고정한 채, 무의식적으로 자신의 왼쪽 목덜미와 팔 안쪽을 아주 가볍게, 느릿느릿 긁적이고 있었다."
-    
     th "햇살이 너무 정통으로 떨어져서 피부가 따가운 걸까?"
     th "아니면 도서관 구석에 날아다니는 날벌레라도 신경이 쓰이는 건지."
     th "무엇이 되었든, 그녀의 하얀 피부 위에 옅은 붉은 자국이 남는 것이 묘하게 거슬렸다."
@@ -544,36 +508,31 @@ label start:
             play sound "audio/sfw_walking.ogg"
             "나는 읽던 책을 덮고, 바닥에 끌리는 소리가 나지 않게 조심하며 자리에서 일어났다."
             "내가 책을 반납하고 돌아서려던 찰나, 우연히 설아와 시선이 마주쳤다."
+            stop sound fadeout 1.0
             "나는 가볍게 눈인사만 건넸다."
-            
             show seola normal with dissolve
             sa "……."
-            
             "설아 역시 아주 희미하게, 그러나 분명하게 고개를 한 번 끄덕이더니 다시 책으로 시선을 돌렸다."
-            
             th "서로에게 아무것도 묻지 않고, 무엇도 강요하지 않는 관계."
             th "침묵이 전혀 불편하지 않은 이 미지근한 거리가, 나는 아주 마음에 든다."
-            
         "가서 창문을 조금 닫아준다.":
             play sound "audio/sfw_walking.ogg"
             "나는 가볍게 혀를 차며 자리에서 일어났다."
             "소문이 기분 나쁘다기보다는, 책을 읽는 데 방해가 되는 저 저급한 소음 자체가 거슬렸기 때문이다."
             "나는 설아의 자리 쪽으로 다가가, 반쯤 열려 있던 낡은 창문을 잡아당겼다."
-            
+            stop sound
             "드르륵- 탁!"
             play sound "audio/sfw_Window_close.ogg"
             "마찰음과 함께 창문이 닫히며, 밖의 수군거림도, 피부를 따갑게 데우던 햇살도 일순간 차단되었다."
-            
             show seola surprise with dissolve
             "설아가 놀란 듯 책에서 시선을 떼고 나를 올려다보았다."
             "그녀의 붉은 눈동자에 내 얼굴이 작게 비쳤다."
             
             sj "바람이 좀 많이 불어서. 책장 넘어가면 거슬리잖아."
             sj "답답하면 다시 열고."
-            
             play sound "audio/sfw_walking.ogg"
             "나는 변명하듯 툭 한마디를 던지고 다시 내 자리로 돌아섰다."
-            
+            stop sound fadeout 1.0
             show seola normal with dissolve
             sa "…아니."
             "등 뒤에서, 나지막하고 투명한 목소리가 들려왔다."
@@ -586,12 +545,13 @@ label start:
 
     hide seola with dissolve
     
-    play sound "audio/sfx_school_bell.ogg"
+    play sound "audio/sfx_school_bell.ogg" volume 0.8
     "얼마 지나지 않아, 오후 수업을 알리는 예비종이 울렸다."
-    
+    stop sound fadeout 2.0
     play sound "audio/sfw_walking.ogg"
     "나는 책을 반납하고 도서관을 빠져나왔다."
     "말 한마디 제대로 나누지 않았지만, 여느 때와 다름없이 고요하고 평화로운 휴식 시간이었다."
+    stop sound fadeout 1.0
 
     # ---------------------------------------------------------
     # Scene 4
@@ -605,18 +565,16 @@ label start:
     "정규 수업이 모두 끝나고, 방과 후 청소 시간마저 대충 마무리된 시각."
     "학교 건물을 등지고 서쪽으로 기울어가는 태양이 온 세상을 짙은 오렌지빛으로 물들이고 있었다."
     "하루 중 가장 나른하고 부드러운 시간."
-    
     play sound "audio/sfw_walking.ogg"
     "나는 빈 교실에 가방을 둔 채, 습관처럼 발걸음을 옥상으로 돌렸다."
-    
     th "대부분의 학생들은 피시방을 가거나 학원으로 향하느라 바쁘게 교문을 빠져나갔을 테고."
     th "남아있는 녀석들은 운동장에서 땀을 빼거나, 자율학습실에 처박혀 있을 시간이다."
     th "그러니 이 시간의 옥상은 온전히 나만의 고요한 아지트… 라고 생각했는데."
+    stop sound fadeout 1.0
 
     "끼이익—."
     play sound "audio/sfw_Creaky_metal_door.ogg"
     "무거운 철문을 열고 옥상으로 나서자, 뺨을 스치는 시원한 바람과 함께 예상치 못한 불청객의 모습이 눈에 들어왔다."
-    
     show cg gaeun_rooftop with dissolve
 
     ge "어라? 우리 성실한 후배님 아니신가. 여기서 다 보네."
@@ -624,7 +582,6 @@ label start:
     "바람에 부드럽게 흩날리는 긴 머리카락, 노을빛을 받아 더욱 뚜렷해진 이목구비."
     "학교 최고 미인 중 한 명이자, 특유의 사람 좋은 웃음과 친화력으로 누구와도 금방 친해지는 다정한 3학년 선배."
     "민가은 선배였다."
-    
     sj "선배, 또 청소 농땡이 치고 여기 올라와 계신 겁니까? 3학년이 모범을 보이셔야지."
     
     scene bg rooftop_sunset with dissolve
@@ -632,53 +589,42 @@ label start:
     
     ge "농땡이라니 섭섭하게. 수험생의 고독하고 우아한 휴식 시간이라고 해둘래?"
     ge "그리고 모범은 무슨, 원래 3학년쯤 되면 적당히 후배들한테 양보하고 뒤로 빠져주는 게 미덕이거든."
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "가은 선배는 뻔뻔하게 어깨를 으쓱하더니, 주머니에서 온기가 남은 캔커피 하나를 꺼내 내 쪽으로 가볍게 휙 던졌다."
-
     "탁."
-    play sound "audio/sfx_picking_up_can.ogg"
+    play sound "audio/sfx_picking_up_can.ogg" volume 0.8
     ge "자, 여기 뇌물. 이거 마시고 나 본 건 쉿, 비밀로 해줘."
-    
     "선배 특유의 윙크를 받으며, 나는 캔커피를 만지작거리며 난간 옆으로 다가가 나란히 기대섰다."
     "캔에서 전해지는 따뜻한 온기가 손바닥을 기분 좋게 데웠다."
-    
     sj "매번 이렇게 태평하시네요. 3학년이면 입시 스트레스 같은 거 엄청 받을 때 아닌가요?"
     sj "선생님들이 하도 닦달해서 숨도 못 쉰다던데."
-    
     show gaeun smile with dissolve
     ge "에이, 내가 무슨 스트레스? 난 늘 긍정적이고 행복한걸."
     ge "게다가 이렇게 귀여운 후배님이 옥상까지 찾아와서 말동무도 해주고 말이야. 이보다 더 좋을 순 없지!"
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "선배가 꺄르르 웃으며, 장난스럽게 내 머리를 헝클어뜨리려 손을 뻗어왔다."
     "거리낌 없이 훅 다가오는 옅은 향수 냄새에 흠칫 놀란 내가 살짝 인상을 쓰며 뒤로 물러서자, 선배의 웃음소리가 더 커졌다."
-    
     ge "아하하! 진짜 튕기기는."
     ge "나 좋다고 번호표 뽑고 기다리는 애들이 연병장 세 바퀴인데, 넌 참 복에 겨웠다니까. 한 번만 쓰다듬어 보자, 응?"
-    
     sj "선배, 허풍이 갈수록 느시네요. 커피나 드세요, 식겠습니다."
 
     "내가 혀를 차며 다가오려는 선배의 어깨를 가볍게 툭, 밀어내는 시늉을 하자—"
 
     show gaeun surprise with hpunch
     "욱, 콜록, 켁!"
-    
     show cg gaeun_rooftop_fragile with dissolve
     "선배가 갑자기 마시던 캔커피를 황급히 입에서 떼며 격렬하게 기침을 했다."
     "어깨가 들썩일 정도로 큰 기침이었다. 순간적으로 얼굴이 창백해진 선배는 허리를 살짝 숙인 채 입을 틀어막았다."
-    
     sj "어, 괜찮으세요? 갑자기 왜 그러세요, 사레들리셨어요?"
 
     "나는 놀라서 엉거주춤하게 손을 뻗었다."
     
     scene bg rooftop_sunset with dissolve
     show gaeun normal with dissolve
+    
     "선배는 한 손으로 입을 단단히 틀어막은 채 잠시 거칠게 숨을 고르더니, 곧바로 고개를 들며 다시 평소의 나른하고 여유로운 미소를 지어 보였다."
-    
     ge "아… 응. 켁, 커피를 너무 급하게 넘겼나 봐. 목에 뭐가 콱 걸렸네."
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "선배는 자신의 가슴을 가볍게 두드리며 아무렇지 않게 웃었다."
     "하지만 눈가에는 기침 탓인지 아주 옅게 눈물이 맺혀 있었다."
     
@@ -689,35 +635,28 @@ label start:
         "어떻게 할까?"
         "등을 두드려준다.":
             sj "조심 좀 하세요. 어른이 음료수도 하나 제대로 못 마십니까."
-            
-            play sound "audio/sfw_cloth_moving.ogg"
+            play sound "audio/sfw_cloth_moving.ogg" volume 0.7
             "나는 쯧쯧 혀를 차며 선배의 등을 가볍게 톡톡 두드려주었다."
-            
             show gaeun smile with dissolve
             ge "앗, 아파라. 후배님 손맛 한 번 맵네. 등 부서지겠다."
             ge "그래도 챙겨주는 건 너밖에 없다. 진짜 괜찮다니까. 감동해서 눈물 날 뻔."
             
             th "선배는 여전히 사람 좋은 미소를 짓고 있었다."
             th "아프다면서도 내 손길을 피하지 않는 걸 보면 정말 꽤나 감동한 눈치다. 가끔은 저 능청스러움을 당해낼 재간이 없다."
-            
         "그냥 농담으로 넘긴다.":
             sj "천천히 좀 드세요. 뒤에서 누가 쫓아옵니까? 아니면 제가 뺏어 먹을까 봐 그래요?"
-            
             show gaeun laugh with dissolve
             ge "콜록… 정곡 찔렸네."
             ge "우리 귀여운 후배님이 내 거까지 뺏어 먹을까 봐 불안해서 그랬지! 얼른 마시기나 해, 캔 구멍 뚫어지겠다."
-            
             th "기침을 하면서도 받아치는 선배의 장난기 가득한 대답에 나도 결국 픽 웃고 말았다."
             th "참 대단한 성격이다."
-
+            
     "노을이 길게 늘어지는 옥상."
     "선배와 주고받는 실없는 농담들이 오렌지빛 공기 중으로 기분 좋게 흩어졌다."
-    
     th "유나, 하린, 설아, 그리고 가은 선배까지."
     th "개성 넘치는 녀석들 틈에 섞여 있지만, 결국 나의 하루는 어제와 크게 다르지 않은 평범하고 미지근한 궤도를 돌고 있다."
     th "이 학교에서 가장 마음 편하고, 완벽 방과 후의 풍경."
     th "나는 캔커피를 한 모금 삼키며, 이 몽글몽글하고 평화로운 일상이 내일도 똑같이 반복되기를 바랐다."
-    
     scene black with fade
     "그렇게, 아주 완벽하게 위장된 나의 첫날이 저물어가고 있었다."
 
@@ -731,39 +670,34 @@ label start:
     play music "audio/bgm_spring_morning.ogg" fadein 2.0
 
     "다음 날, 2교시 수학 시간이 끝난 직후의 쉬는 시간."
-    play sound "audio/sfw_school_crowd.ogg"
+    play sound "audio/sfw_school_crowd.ogg" volume 0.8
     "지루한 수식과 졸음과의 사투가 끝남을 알리는 종소리가 울리기가 무섭게, 교실은 그야말로 해방을 맞은 포로수용소처럼 돌변했다."
     "다들 아침을 부실하게 먹고 온 탓인지, 아니면 그저 갇혀 있던 에너지를 발산하고 싶은 건지. 복도에는 1층 매점을 향해 돌진하는 짐승 같은 발소리들이 요란하게 울려 퍼졌다."
-    
+    stop sound fadeout 2.0
     th "평소의 나라면 이 아비규환의 레이스에 굳이 끼어들지 않았을 거다."
     th "그냥 책상에 엎드려 부족한 잠을 보충하거나, 이어폰을 꽂고 외부의 소음을 차단하는 게 내 평소의 완벽한 쉬는 시간 루틴이니까."
     th "하지만 오늘은 불행히도 어제 아침에 잡힌 선약이 하나 있었다."
-
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "나는 하품을 길게 내뱉으며 책상 서랍에서 지갑을 꺼냈다."
-    
     play sound "audio/sfw_running.ogg"
     "자리에서 느릿느릿 일어나 기지개를 켜는데, 뒷문 쪽에서 유독 통통 튀는, 뾱뾱거리는 듯한 경쾌한 발소리가 들려왔다."
-    
+    stop sound
     show yuna smile at center_lower with dissolve
 
     yn "서진 선배! 나 왔어요!"
     "앞머리가 살짝 흐트러진 채, 숨을 할딱이며 교실 뒷문으로 불쑥 고개를 들이민 것은 1학년 후배 유나였다."
     "얼마나 급하게 뛰어왔는지 하얀 뺨이 복숭아처럼 붉게 상기되어 있었다."
     "1학년 교실은 아예 건물이 달라서 구름다리를 건너와야 하는데, 쉬는 시간 종이 친 지 1분도 안 돼서 여기까지 뛰어 올라온 모양이다."
-    
     sj "야, 뭐 하러 여기까지 뛰어와. 내가 1층으로 내려가려고 했는데."
-    
     show yuna laugh with dissolve
     yn "에이, 우리 귀차니즘 말기 선배가 언제 꾸물꾸물 내려오나 기다리다간 내 피 같은 쉬는 시간이 다 끝날걸요?"
     yn "그리고 내가 친히 모시러 와야 선배도 기분 좋게 지갑을 열 거 아니에요! 자, 빨리 가요! 늦으면 초코 소라빵 다 매진된단 말이에요!"
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나는 내 대답도 듣지 않고, 아주 자연스럽게 내 교복 마이 소매를 덥석 잡아끌었다."
     "어제 아침과 똑같은 패턴. 손끝에서 전해지는 녀석의 체온이 제법 따뜻했다."
-    
     play sound "audio/sfw_walking.ogg"
     "나는 못 이기는 척, 살짝 끌려가는 시늉을 하며 유나와 함께 복도로 나섰다."
+    stop sound fadeout 1.0
     
     scene black with dissolve
     centered "{size=30}시끌벅적한 복도{/size}" with dissolve
@@ -776,19 +710,15 @@ label start:
     stu_a "야! 밀지 마! 나 돈 떨어뜨렸다고!"
     girl_a "아, 진짜 좁아 죽겠네. 2학년 놈들 좀 비켜라!"
 
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.8
     "우당탕거리는 소음과 땀 냄새 섞인 열기 속에서, 내 앞을 걷고 있던 유나가 뒤에서 밀려드는 덩치 큰 남학생 무리에 치여 크게 휘청거렸다."
-    
     show yuna surprise at center_lower with dissolve
     yn "앗, 엄…!"
-    
     play sound "audio/sfx_arm_grap.ogg"
     "나는 반사적으로 유나의 어깨를 붙잡아 내 쪽으로 훅 끌어당겼다."
-    
     show cg yuna_hallway with dissolve
     "내 팔 안쪽 공간으로 쏙 들어온 유나가 흠칫 놀라며 동그랗게 눈을 뜨고 나를 올려다보았다."
     "코끝에 어제 맡았던 그 달콤한 딸기 샴푸 향기가 확 끼쳤다."
-    
     sj "조심해. 그렇게 급하게 가다 계단에서 구르면 약도 없다. 바나나 우유 도망 안 가니까 내 뒤에 딱 붙어서 천천히 와."
     "내가 가볍게 타박하며 그녀를 내 등 뒤로 세우자, 유나는 아주 잠깐 멍한 표정을 짓더니 이내 얼굴에 화색이 확 돌며 활짝 웃었다."
     
@@ -798,11 +728,9 @@ label start:
     yn "헤헤… 선배 완전 박력 넘치네. 나 방금 진짜, 아주 사아아알짝 설렜잖아요."
     sj "쓸데없는 소리. 발 밟히기 싫으면 헛소리 말고 옷자락이나 꽉 잡아."
     yn "네에~ 알겠습니다, 기사님!"
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나는 내 등 뒤로 쏙 숨어, 내 교복 마이 뒷자락을 양손으로 꼭 쥐었다."
     "등 뒤에서 나를 방패 삼아 종종걸음으로 따라오는 기척. 가끔씩 내 등에 녀석의 머리카락이 스칠 때마다 간질거리는 느낌이 들었다."
-    
     th "정말 꼬리 흔드는 강아지 같다니까. 주인이 이끄는 대로 맹목적으로 따라오는 작고 시끄러운 강아지."
     th "뭐, 이렇게 무방비하게 기대오는 녀석을 굳이 쳐낼 만큼 내가 매정한 놈은 아니니까."
 
@@ -813,65 +741,54 @@ label start:
     scene bg store with fade
     play music "audio/bgm_lazy_afternoon.ogg" fadein 1.0
 
-    play sound "audio/sfw_school_crowd.ogg"
+    play sound "audio/sfw_school_crowd.ogg" volume 0.6
     "전쟁통 같은 인파를 뚫고 마침내 매점에 도착했다."
     "달착지근한 빵 냄새와 매콤한 컵라면 냄새가 뒤섞인 매점 안은 이미 발 디딜 틈이 없었다."
     "나는 유나를 한쪽 구석에 세워두고, 전투적으로 계산대 줄을 파고들어 녀석이 노래를 부르던 바나나 우유 하나와 내가 마실 시원한 이온 음료를 사서 빠져나왔다."
-    
+    stop sound fadeout 2.0
     sj "자, 어제 넥타이 똑바로 매준 값. 이거면 됐지?"
 
     "나는 차가운 냉장고 물방울이 맺힌 뚱뚱한 바나나 우유를 유나의 볼에 살짝 들이밀었다."
-    
     show yuna surprise at center_lower with dissolve
     yn "앗, 차가!"
-    
     "유나가 어깨를 움츠리며 두 손으로 우유를 소중하게 받아 들었다."
     "그런데 우유를 받아 든 그녀의 표정이 생각보다 훨씬 더 밝고 벅차 보였다."
     "단순히 공짜 간식을 얻어먹어서 기쁜 수준을 넘어, 마치 산타 할아버지에게 소원하던 선물을 받은 어린아이 같은 표정이었다."
-    
     show yuna smile with dissolve
     yn "……선배. 진짜 기억하고 있었네요?"
     sj "당연하지. 네가 어제부터 하루 종일 귀에 딱지가 앉도록 세뇌를 시켰는데 어떻게 잊냐."
-    
     "내 가벼운 핀잔에도 유나는 전혀 개의치 않고 바나나 우유를 양손으로 감싸 쥐며 헤실헤실 웃었다."
-    
     yn "아니, 보통 이런 가벼운 약속은 그냥 빈말로 하고 넘기거나 귀찮아서 까먹는 사람들도 엄청 많잖아요."
     yn "근데 선배는 나랑 한 약속 안 잊고 지켜줬어…."
 
     sj "우유 하나 사주는 게 뭐 대단한 약속이라고 그렇게 눈까지 반짝이면서 감동을 하냐. 오버하지 말고 얼른 빨대나 꽂아."
-    
-    play sound "audio/sfx_can_open.ogg"
+    play sound "audio/sfx_can_open.ogg" volume 1.5
     "내가 픽 웃으며 이온 음료 뚜껑을 따서 한 모금 마시자, 유나는 바나나 우유 뚜껑의 은박지를 조심스럽게 벗겨내며 나를 빤히 올려다보았다."
-    
     show yuna laugh with dissolve
     yn "대단한 거예요! 나한테는 이 바나나 우유가 완전 다이아몬드보다 값진, 감동적인 약속의 증표라구요."
     yn "아, 나 진짜 이거 너무 아까워서 못 마실 것 같아요. 평생 내 방 책상 위에 가보로 장식해둘까?"
-    
     sj "방구석에 우유 썩은 냄새 진동해서 파리 꼬이는 꼴 보고 싶으면 그렇게 하든가."
     yn "아하하! 농담이에요, 농담! 선배가 나 생각해서 사준 거니까 아주 맛있게, 바닥에 남은 한 방울까지 싹싹 다 먹을 거예요!"
-    
     play sound "audio/sfx_eating.ogg"
     "유나는 우유에 빨대를 꽂더니 아주 힘차게 쭉 빨아들였다."
     "볼이 빵빵해지도록 달콤한 우유를 머금은 채, 두 눈을 반달로 접으며 나를 향해 환하게 웃는 얼굴."
     "그 햇살처럼 투명하고 티 없는 미소를 보고 있자니, 번잡한 매점까지 뚫고 오느라 쌓였던 피로가 조금은 가시는 듯했다."
-    
     th "약속을 지켜줬다는 그 사소한 사실 하나에 저렇게까지 기뻐하다니."
     th "타인에게 바라는 기대치나 허들이 얼마나 낮으면 저러는 걸까 싶으면서도, 나를 맹목적으로 따르는 이 녀석이 밉지는 않다."
     th "오히려 누군가의 작은 호의를 의심 한 점 없이, 있는 그대로 기쁘게 받아들일 수 있는 유나가 조금 부럽기도 하다."
     th "어쩌면 쟤는, 내가 절대 가질 수 없는 평범하고 밝은 빛의 세계에 사는 애일지도 모른다."
     
-    play sound "audio/sfx_school_bell.ogg"
+    play sound "audio/sfx_school_bell.ogg" volume 0.8
     "그때, 3교시 시작을 알리는 예비종이 매점 복도 스피커를 타고 요란하게 울렸다."
-    
+    stop sound fadeout 2.0
     sj "벌써 종 치네. 천천히 마시면서 슬슬 올라가자. 너 또 지각해서 복도에 서 있지 말고."
     yn "네에! 아, 선배! 다음번에는 내가 선배한테 짱 맛있는 거 쏠 테니까 기대해요! 꼭이요!"
-    
     play sound "audio/sfw_walking.ogg"
     "유나는 빈 손으로 내 소매를 다시 꼭 쥐고 콧노래를 흥얼거리며 앞장서 걷기 시작했다."
     "녀석의 발걸음에 맞춰 찰랑거리는 머리카락에서 또다시 기분 좋은 향기가 났다."
-    
     th "나의 미지근하고 조용한, 조금은 회색빛이었던 일상에 난입한 가장 시끄럽고 달콤한 소음."
     th "오늘도, 그렇게 평화로운 궤도를 벗어나지 않고 아주 안전하게 흘러가고 있었다."
+    stop sound fadeout 1.5
 
     # ---------------------------------------------------------
     # Scene 6
@@ -892,16 +809,16 @@ label scene_6:
     th "조금 시끄럽고, 조금 귀찮고, 조금 따분한 정도에서 끝나는 하루."
     th "나는 그 정도의 온도면 충분했다."
     
-    play sound "audio/sfx_school_bell.ogg"
+    play sound "audio/sfx_school_bell.ogg" volume 0.8
     "마지막 종이 울리고, 들뜬 교실 안 공기가 단번에 풀어졌다."
+    stop sound fadeout 2.0
     "가방을 챙겨 교문을 향할 준비를 하던 우리들 앞에서, 담임 선생님이 출석부를 덮으며 학생들을 다시 붙잡았다."
     "다음 주부터 시작되는 봄 축제, 연화제 준비 때문에 각 반에서 운영 도우미를 몇 명씩 차출해야 한다는 이야기였다."
     "선생님은 교탁 앞에 붙은 명단을 내려다보며 아주 자연스럽게 반장 이름을 먼저 불렀다."
     
     show harin normal at center_lower with dissolve
     hr "네."
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "하린이는 자리에서 반듯하게 일어나 짧게 대답했다."
     "선생님은 그 반응이 당연하다는 듯 고개를 끄덕이고는, 두 번째 이름을 불렀다."
 
@@ -910,22 +827,19 @@ label scene_6:
     "교실 여기저기서 장난스러운 야유와 웃음소리가 튀어나왔다."
     stu_a "오, 웬일이래. 윤서진도 이제 학급을 위해 봉사하냐?"
     stu_b "야, 저 녀석 또 특유의 귀찮아 죽겠다는 표정 나왔다."
-    
     th "왜 하필 나지."
 
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "나는 작게 한숨을 삼키며 자리에서 일어났다."
     "선생님은 내 표정을 대충 읽었는지, 웃으며 덧붙였다."
     "특별활동도 안 하고, 방과 후에 바로 집 가는 학생이니 시간 비우기 제일 쉬울 것 같다고 했다."
     "거기에다 반장이 혼자 끌고 가기엔 잡무가 많을 테니, 적당히 손발 맞출 애 하나가 필요하다는 이유도 덧붙었다."
-    
     th "아주 합리적이고, 그래서 더 반박하기 짜증나는 선정 기준이다."
 
     sj "…네."
 
     "나는 영혼 빠진 목소리로 대답했다."
     "곧바로 시선이 옆으로 옮겨졌다."
-    
     hr "미안."
     hr "내가 일부러 고른 건 아닌데, 어쩌다 보니 같이 하게 됐네."
 
@@ -943,10 +857,8 @@ label scene_6:
     show harin normal at center_lower with dissolve
     "종례가 끝나자마자 교실은 다시 부산스럽게 흔들리기 시작했다."
     "누군가는 바로 학원 가방을 메고 뛰쳐나갔고, 누군가는 교실 뒤에 남아 오늘 저녁 메뉴를 두고 시답잖은 논쟁을 벌였다."
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "나는 느릿하게 가방을 들어 올렸다."
-
     play sound "audio/sfx_Sliding_door.ogg"
     "그때, 교실 뒷문이 벌컥 열렸다."
     
@@ -970,11 +882,9 @@ label scene_6:
     th "저렇게까지 기뻐할 일인가."
 
     sj "나는 방금 강제 징집 당한 기분인데, 너는 되게 신났네."
-    
     show yuna smile at left with dissolve
     yn "당연하죠!"
     yn "선배랑 같이 있으면 재미있잖아요. 그리고 선배 혼자 보내면 분명 중간에 몰래 도망칠 것 같단 말이에요."
-    
     sj "너 나를 대체 뭘로 보는 거냐."
     yn "도망 잘 치는 사람?"
 
@@ -987,7 +897,6 @@ label scene_6:
 
     hr "응. 우리 반 대표 맡았어."
     hr "학생회 준비실로 바로 오라고 하던데, 너도 거기 가는 거지?"
-    
     "아주 잠깐."
     "정말 눈 깜빡할 정도로 짧은 순간이었지만, 유나의 웃는 얼굴이 아주 미세하게 굳었다."
     "금세 다시 원래의 밝은 표정으로 돌아왔지만, 이상하게도 그 짧은 틈이 눈에 걸렸다."
@@ -998,7 +907,7 @@ label scene_6:
 
     th "방해 안 하고, 라."
     th "저 말은 이미 방해할 준비가 끝난 사람의 대사처럼 들리는데."
-
+    
     menu:
         "유나에게 뭐라고 할까?"
         "너라도 있어서 다행이라고 말한다.":
@@ -1007,29 +916,22 @@ label scene_6:
 
             show yuna surprise at left with dissolve
             yn "…진짜요?"
-            
             sj "왜 그렇게 놀라."
             sj "혼자 하린이한테 끌려다니는 것보단 둘이 끌려다니는 게 낫다는 뜻이야."
-            
             show harin sigh at right with dissolve
             hr "표현이 꼭 그래야 해?"
-            
             show yuna laugh at left with dissolve
             yn "헤헤… 그래도 좋아요."
             yn "방금 그 말, 나 오늘 집 가서 자기 전에 한 번 더 떠올릴래요."
-            
         "너 때문에 더 시끄러워질 것 같다고 말한다.":
             sj "네가 있으면 덜 심심한 대신 두 배는 시끄러워질 것 같은데."
-            
             show yuna pout at left with dissolve
             yn "아, 진짜!"
             yn "그렇게 말하면서 또 은근히 나 기다려줄 거잖아요."
 
             sj "자신감은 인정한다."
-            
             show yuna smile at left with dissolve
             yn "선배가 맨날 그렇게 툴툴대도 결국 나 안 떼어내는 거, 나 다 안다니까요?"
-            
             th "쓸데없이 정확하다."
 
     hide harin with dissolve
@@ -1046,7 +948,7 @@ label scene_6:
 
     th "하지만 내게 그런 건 대체로 귀찮고 피곤한 소란일 뿐이다."
     th "그랬어야 했다."
-
+    stop sound fadeout 1.0
     jump scene_7
 
 
@@ -1069,61 +971,51 @@ label scene_7:
     
     show gaeun smile at center_lower with dissolve
     ge "왔네, 우리 후배님들."
-    
     "창가 쪽 책상에 걸터앉아 있던 민가은 선배가 손을 흔들었다."
     "학생회 완장을 느슨하게 찬 채 웃고 있는 얼굴은 오늘도 한없이 부드럽고 능청스러웠다."
-    
     ge "내가 오늘 전체 도우미 명단 정리 맡았거든."
     ge "근데 이렇게 보니까 라인업이 제법 재미있네."
-    
     sj "재미는 선배만 느끼시는 것 같습니다."
 
     show gaeun laugh at center_lower with dissolve
     ge "차갑다, 차가워."
     ge "축제 준비는 원래 이런 우연한 조합에서 시작하는 거야. 그러다 친해지고, 추억 생기고, 나중엔 울고 웃고 난리도 나는 거지."
-    
     th "마지막 말이 조금 걸렸지만, 굳이 짚고 넘어갈 정도는 아니었다."
 
     "가은 선배 옆쪽 자리에는 이미 하린이가 앉아 명단을 정리하고 있었다."
     "언제 가져왔는지 모를 자와 형광펜, 포스트잇이 정확한 각도로 정렬되어 있었다."
-    
     show harin normal at right with dissolve
     hr "윤서진, 여기."
     hr "우리 반 배정표랑 진행 일정표야. 아직 확정본은 아니고 초안."
-
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "나는 하린이가 내민 종이를 받아 들었다."
     "빽빽하게 적힌 체크 항목과 일정표가 눈에 들어오자, 벌써부터 피로가 몰려오는 기분이 들었다."
 
     sj "이걸 오늘 다 보자는 건 아니지?"
     hr "아직 아니야."
     hr "오늘은 담당 구역이랑 역할만 나누면 돼."
-
     play sound "audio/sfw_running.ogg"
     "그때 문 바깥에서 가벼운 발소리가 들렸다."
     
+    stop sound
     show yuna smile at left with dissolve
     yn "죄송합니다아! 안 늦었죠?!"
-    
     "유나가 두 손에 종이컵 음료가 든 비닐봉지를 달랑거리며 들어왔다."
     "헐레벌떡 뛰어왔는지 앞머리가 조금 흐트러져 있었지만, 표정만큼은 어김없이 환했다."
-    
     ge "오, 막내도 왔네."
     ge "좋아, 이제 한 명만 더 오면 되겠다."
     
     play sound "audio/sfx_Sliding_door.ogg"
     "그 말이 끝나기 무섭게 문가에서 아주 조용한 인기척이 났다."
-
     show seola normal at char_2 with dissolve
     "설아였다."
     "양손에는 말아 놓은 도화지 몇 장과 얇은 파일철이 들려 있었다."
     "창백한 손목 위로 연필 자국 같은 희미한 얼룩이 스쳐 지나갔다."
-    
     th "설아까지?"
 
     play sound "audio/sfw_walking.ogg"
     "설아는 방 안에 들어서자마자 우리를 한 번씩 조용히 훑어보고, 말없이 가장 구석 자리에 섰다."
-    
+    stop sound fadeout 1.0
     ge "좋아, 인원 다 모였네."
 
     hide gaeun with dissolve
@@ -1131,7 +1023,7 @@ label scene_7:
     hide yuna with dissolve
     hide seola with dissolve
 
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "가은 선배는 학생회 쪽에서 정리한 명단을 들어 보이며 하나씩 설명하기 시작했다."
     "하린이는 2학년 대표 겸 전체 일정 정리."
     "나는 물품 이동, 인원 체크, 행사 당일 현장 보조."
@@ -1153,78 +1045,64 @@ label scene_7:
 
     hr "그런 건 나중에."
     hr "먼저 해야 할 일부터 끝내자."
-    
     show yuna pout at char_1 with dissolve
     yn "하린 선배는 낭만이 없어요."
-    
     hr "축제 준비에 낭만 찾다가 일정 밀리면 그게 더 큰 문제야."
-    
     show gaeun laugh at char_4 with dissolve
     ge "둘이 벌써부터 잘 맞네."
     ge "한 명은 브레이크고 한 명은 엑셀이야. 차가 굴러가긴 하겠다."
 
     sj "그 차에 제가 왜 타고 있는지는 아직도 모르겠습니다."
-    
     "내 말에 유나가 키득 웃고, 가은 선배도 어깨를 들썩였다."
     "반면 하린이는 손에 쥔 볼펜 끝을 딸깍, 딸깍 눌렀다."
-    
     play sound "audio/sfx_pen_click.ogg"
     th "또 저 버릇이다."
     th "집중할 때마다, 혹은 신경이 곤두설 때마다 무의식적으로 반복하는 습관."
     
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "그때 조용히 파일철을 펼치던 설아의 도화지 한 장이 바닥으로 미끄러져 내렸다."
-    
     show seola surprise at char_2 with dissolve
     "나는 가장 먼저 몸을 숙여 그것을 주웠다."
     "도화지 위에는 축제 메인 포스터 초안 같은 것이 연필선으로 그려져 있었다."
     "벚꽃과 교정 풍경, 그리고 어딘가 쓸쓸하게 비어 있는 중앙의 길."
 
     sj "이거 네가 그린 거야?"
-    
     show seola normal at char_2 with dissolve
     sa "…응."
 
     sj "잘 그렸네."
     sj "생각보다 훨씬."
-    
     "말을 꺼낸 뒤에야, 표현이 어딘가 실례였다는 걸 깨달았다."
     "하지만 설아는 기분 나쁜 기색 없이 도화지를 받아 들었다."
-    
     sa "생각보다, 라는 말은 빼도 돼."
 
     sj "미안."
 
     sa "괜찮아."
     sa "대충 들은 말은 아니니까."
-    
     th "이상하게도 그 말이 오래 남았다."
     th "대충 들은 말은 아니라."
     
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "설아가 도화지를 정리하려 손을 뻗는 순간, 소매 끝이 살짝 밀려 올라갔다."
     "손목 안쪽에 붉은 긁힌 자국이 옅게 남아 있었다."
     "도서관에서 봤던 그것과 닮아 있었다."
-
     "내 시선이 닿은 걸 알아챘는지, 설아는 아주 자연스럽게 소매를 다시 끌어내렸다."
     
     sa "종이가 건조해서, 가끔 베여."
-
     th "나는 아무 말도 하지 않았다."
     th "거짓말이라고 단정할 수는 없었지만, 진실처럼 들리지도 않았다."
     
     show gaeun normal at char_4 with dissolve
     ge "좋아, 그럼 역할 설명은 이 정도면 됐고."
     ge "오늘은 간단하게 자리 배치만 보고 끝내자. 다들 오래 붙잡아 두면 첫날부터 도망갈 테니까."
-    
     sj "적어도 제 심리는 정확히 파악하고 계시네요."
 
     show gaeun smile at char_4 with dissolve
     ge "후배님은 얼굴에 다 써 있거든."
-    
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "가은 선배가 웃으며 자리에서 일어나려던 순간이었다."
-
+    
     show gaeun surprise at char_4 with hpunch
     "켁, 콜록…!"
     
@@ -1233,7 +1111,6 @@ label scene_7:
 
     sj "선배."
     "내가 반사적으로 부르자, 가은 선배는 손등으로 입가를 가린 채 고개를 살짝 저었다."
-    
     show gaeun normal at char_4 with dissolve
     ge "괜찮아."
     ge "요즘 교실이 좀 건조해서 그래. 먼지 먹었나 보다."
@@ -1248,10 +1125,8 @@ label scene_7:
 
     ge "괜찮아, 막내야."
     ge "너까지 뛰어다니면 여기 바닥 무너질 것 같아."
-    
     show yuna pout at char_1 with dissolve
     yn "뭐예요, 그게."
-    
     "유나가 볼을 부풀리며 투덜대자, 준비실 안 공기가 아주 조금 풀렸다."
     "정말 아주 조금."
     "하린이는 책상 위 일정표를 정리하며 낮게 입을 열었다."
@@ -1262,8 +1137,7 @@ label scene_7:
     hr "윤서진, 너는 이거 가져가서 한 번 읽어봐. 빠진 물품 있으면 표시해두고."
 
     sj "알았어."
-    
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "나는 하린이가 건네는 종이 뭉치를 받아 들었다."
     "생각보다 무게감이 있었다."
     "서류의 무게인지, 앞으로의 귀찮음인지 분간이 안 갈 정도로."
@@ -1280,10 +1154,8 @@ label scene_7:
         "누구를 먼저 도울까?"
         "하린의 정리를 잠깐 도와준다.":
             sj "반장, 그거 나도 같이 정리할까?"
-            
             show harin surprise at char_3 with dissolve
             "하린이는 잠깐 의외라는 표정을 지었다."
-            
             hr "…네가 먼저 말하는 건 좀 드문데."
             hr "그래도 고마워. 테이프랑 색지 종류별로만 나눠줘."
 
@@ -1292,13 +1164,10 @@ label scene_7:
 
             th "숨 막힐 정도로 꼼꼼하다."
             th "그런데 이상하게도, 저렇게까지 해야 겨우 버틸 수 있는 사람처럼 보일 때가 있다."
-            
         "설아가 든 도화지를 대신 들어준다.":
             sj "그거 내가 좀 들어줄까?"
-            
             show seola surprise at char_2 with dissolve
             "설아는 내 손과 자신의 도화지를 번갈아 보더니, 잠깐 망설였다."
-            
             sa "…괜찮아."
             sa "가볍거든."
 
@@ -1309,28 +1178,22 @@ label scene_7:
 
             show seola normal at char_2 with dissolve
             sa "그럼, 잠깐만."
-            
             th "거절과 허락의 중간 같은 대답."
             th "그래도 설아가 먼저 무언가를 건넨 건 처음이었다."
-            
         "유나가 뛰어가지 못하게 옆에 붙잡아 둔다.":
             sj "너는 물 가지러 간다더니 벌써 나갈 자세네."
-            
             show yuna laugh at char_1 with dissolve
             yn "왜요, 나 엄청 유능한 심부름 요정인데."
-            
             sj "유능한 건 모르겠고."
             sj "복도에서 또 뛰다가 넘어질까 봐 일단 여기 있어."
-            
             "내가 무심하게 말하자, 유나는 눈을 몇 번 깜빡였다."
             "그러더니 이상할 정도로 순순히 내 옆에 붙어 섰다."
-            
             show yuna smile at char_1 with dissolve
             yn "…네."
             yn "그럼 선배 옆에 있을래요."
 
             th "이런 식으로 말을 곧이곧대로 받는 건 반칙이다."
-
+            
     hide yuna with dissolve
     hide seola with dissolve
     hide harin with dissolve
@@ -1342,7 +1205,6 @@ label scene_7:
     th "하린의 손끝은 필요 이상으로 예민했고."
     th "설아의 소매 안쪽에는 설명되지 않는 자국이 남아 있었고."
     th "가은 선배의 기침은 그냥 넘기기엔 조금 깊었다."
-    
     th "하지만 그때의 나는, 그 모든 걸 그저 사소한 이질감 정도로만 여겼다."
     th "누구에게나 말하지 않는 사정 하나쯤은 있다고."
     th "굳이 들여다보지 않아도 되는, 남의 체온 같은 거라고."
@@ -1355,14 +1217,13 @@ label scene_7:
     play sound "audio/sfx_Sliding_door.ogg"
     "준비실 문을 나서자 학교는 여전히 평소처럼 시끄럽고 평화로웠다."
     "복도에서는 축제 얘기로 들뜬 학생들이 웃고 떠들었고, 창밖 운동장에서는 석양이 천천히 내려앉고 있었다."
-    
     play sound "audio/sfw_walking.ogg"
     "나는 서류 뭉치를 옆구리에 끼고 천천히 계단을 내려갔다."
 
     th "그저 조금 더 귀찮아졌을 뿐이다."
     th "조금 더 얽히게 됐을 뿐이고, 조금 더 가까이서 보게 됐을 뿐이다."
     th "나는 아직도, 그 선을 넘지 않을 수 있다고 생각했다."
-    
+    stop sound fadeout 1.5
     scene black with fade
     "그날 이후, 나의 미지근했던 일상은 아주 천천히 방향을 틀기 시작했다."
 
@@ -1380,7 +1241,6 @@ label scene_8:
     "축제 준비 첫날이라는 말이 무색하게, 우리 반 교실은 평소보다 더 어수선했다."
     "책상은 몇 개씩 밀려 한쪽으로 붙어 있었고, 창가 쪽에는 색지와 가위, 풀, 박스테이프 따위가 대충 쌓여 있었다."
     "평소 같으면 집으로 가는 발걸음을 재촉했을 시간인데, 나는 지금 잘 정리되지 않은 행사 물품들 한가운데 서 있었다."
-    
     th "도망칠 기회는 분명 있었는데."
     th "하필 반장이 출석 체크를 너무 철저하게 하는 바람에, 적당히 빠질 틈도 사라졌다."
     
@@ -1390,12 +1250,11 @@ label scene_8:
     hr "윤서진, 거기 멍하니 서 있지 말고 색지부터 종류별로 나눠놔."
     hr "가로 현수막 문구도 오늘 안에 대충 초안 잡아야 해."
 
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     yn "선배, 이거 보세요!"
     yn "나 아까 학생회실에서 스티커도 받아왔어요. 별 모양, 하트 모양, 반짝이 들어간 거까지!"
 
     sj "축제 장식이야, 유치원 미술시간이야."
-    
     show yuna pout at left with dissolve
     yn "아, 진짜."
     yn "감성이 부족해, 감성이. 이런 디테일이 분위기를 사는 거라구요."
@@ -1410,7 +1269,6 @@ label scene_8:
     "잠시 뒤, 교실 뒷문이 열리고 설아가 들어왔다."
     "품 안에 말아 든 도화지와 클립보드 몇 장."
     "그 뒤로 한 박자 늦게, 민가은 선배도 느긋한 얼굴로 모습을 드러냈다."
-    
     hide yuna with dissolve
     hide harin with dissolve
 
@@ -1421,50 +1279,43 @@ label scene_8:
     ge "이 정도면 우리 팀, 생각보다 그럴듯하게 굴러가겠는데?"
 
     sj "지금은 시작 5분 차라 그렇죠."
-    
     show gaeun laugh at right with dissolve
     ge "후배님은 꼭 한마디씩 비틀어야 직성이 풀리더라."
-
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     sa "…배치도 초안 가져왔어."
 
     "설아는 군더더기 없이 클립보드를 내밀었다."
     "축제 안내 패널과 교실 앞 장식 배치를 간단한 선으로 정리한 도안이었다."
     "불필요한 장식은 거의 없는데, 이상할 정도로 시선이 잘 모였다."
-
+    
     sj "벌써 이만큼 했어?"
 
     sa "어제 대충 생각해뒀어."
 
     th "대충."
     th "설아가 말하는 대충은 보통 남들 기준의 꽤 열심히다."
-
+    
     show harin normal at center_lower with dissolve
     hide gaeun with dissolve
 
     hr "좋아. 그럼 오늘은 세 가지부터 끝내자."
     hr "현수막 문구 정하기, 교실 앞 안내문 초안, 그리고 장식용 색지 재단."
-    
     show yuna smile at right with dissolve
     yn "저는 뭐 하면 돼요?"
-    
     hr "너는 우선 색지 자르는 쪽."
 
     show yuna pout at right with dissolve
     yn "엥, 제일 단순 노동이잖아요."
-    
     hr "그래도 제일 손 많이 가."
     hr "그리고 네가 움직임 빠르잖아."
-
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "유나는 투덜거리면서도 결국 자리에 앉아 색지를 펼쳤다."
     "입으로는 불만을 말하지만 손은 제법 야무졌다."
-
+    
     menu:
         "누구부터 도와줄까?"
         "유나 옆에 가서 색지를 같이 자른다.":
             sj "가위 혼자 쓰다 손 베지 말고, 반은 내가 할게."
-            
             show yuna surprise at right with dissolve
             yn "…선배가 먼저 도와준다고 하네?"
             yn "오늘 해 뜨는 방향 바뀌었나?"
@@ -1478,7 +1329,6 @@ label scene_8:
             
             th "생각보다 익숙하다."
             th "누군가 옆에 딱 붙어 있는 거리감이."
-            
         "하린 옆에서 현수막 문구를 같이 본다.":
             sj "문구는 뭐로 할 건데."
             sj "설마 '꿈과 낭만이 피어나는 연화제' 같은 건 아니지?"
@@ -1489,37 +1339,35 @@ label scene_8:
 
             "하린이는 아주 잠깐 미간을 찌푸렸다."
             "그리고 내가 적당히 던진 농담을 의외로 진지하게 검토하기 시작했다."
-            
             hr "차라리 간결한 쪽이 나아."
             hr "학생들이 멈춰서 읽게 하려면."
 
             sj "의외네. 반장은 되게 모범답안 좋아할 줄 알았는데."
-            
             show harin normal at center_lower with dissolve
             hr "모범답안은 보기엔 깔끔해도, 기억에는 안 남으니까."
-            
             th "그 말이 조금 의외였다."
             th "서하린은 늘 정답만 고를 것처럼 보여서."
-            
         "설아가 가져온 배치도를 같이 본다.":
             sj "여기 비워둔 공간은 일부러?"
-            
             show seola normal at left with dissolve
             sa "응."
             sa "다 채우면 답답해 보여."
 
+            scene cg seola_blueprint with dissolve
             "설아는 손가락으로 도안의 중앙 빈칸을 조용히 짚었다."
 
             sa "비어 있는 데가 있어야, 나머지가 더 보여."
-            
             sj "…디자인 쪽 사람 말 같네."
 
             sa "그런 거 아냐."
             sa "그냥, 꽉 차 있으면 숨 막혀서."
-            
+
             th "무심코 흘린 말 같았는데, 어딘가 묘하게 걸렸다."
             th "꽉 차 있으면 숨 막힌다."
             th "그건 배치 이야기만은 아닌 것처럼 들렸다."
+            
+            scene bg classroom with dissolve
+            show seola normal at left with dissolve
 
     hide yuna with dissolve
     hide harin with dissolve
@@ -1554,10 +1402,10 @@ label scene_8:
     "선배는 곧장 웃으며 넘겼다."
     "하지만 웃는 얼굴이 아주 잠깐 늦게 올라왔다."
 
-    play sound "audio/sfx_school_bell.ogg"
+    play sound "audio/sfx_school_bell.ogg" volume 0.8
     "어느새 창밖은 늦은 오후 빛으로 물들어 있었다."
+    stop sound fadeout 2.0
     "첫날 작업은 예정한 것보다 조금 덜 끝났고, 그래서 하린이의 표정은 예정한 것보다 조금 더 굳어 있었다."
-    
     scene black with fade
     "그리고 그 날, 아주 사소한 균열이 하나 더 생겼다."
 
@@ -1573,20 +1421,16 @@ label scene_9:
 
     "다음 날 점심시간."
     "학생회에서 내려온 수정 지시 하나로, 어제 만든 계획표 절반이 무용지물이 됐다."
-    
     show harin normal at center_lower with dissolve
     hr "부스 배치가 바뀌었다고?"
     hr "어제 분명 최종안이라고 했는데."
-    
     "하린이는 전달받은 출력물을 내려다보며 가만히 입술을 깨물었다."
     "목소리는 여전히 차분했지만, 볼펜을 누르는 손끝이 평소보다 빨랐다."
-    
     play sound "audio/sfx_pen_click.ogg"
     "딸깍. 딸깍. 딸깍."
 
     yn "에이, 뭐 어때요!"
     yn "다시 하면 되죠. 어차피 축제 준비는 원래 이런 거라던데."
-    
     show yuna smile at left with dissolve
     show harin sigh at center_lower with dissolve
     hr "그 '다시'가 문제야."
@@ -1600,14 +1444,12 @@ label scene_9:
     th "반장은 지금 장난을 받을 상태가 아니다."
     th "그건 누가 봐도 티가 났다."
 
-    play sound "audio/sfx_paper_flutter.ogg"
+    play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "설아는 말없이 바뀐 배치도를 넘겨받아 보고 있었다."
     "한참 동안 아무 말도 하지 않다가, 아주 담백하게 한 줄만 던졌다."
-    
     show seola normal at right with dissolve
     sa "문구는 안 바꿔도 돼."
     sa "배치만 옮기면 돼."
-    
     "하린이의 손이 잠깐 멈췄다."
 
     hr "…왜?"
@@ -1634,8 +1476,7 @@ label scene_9:
             sj "네가 지금 표정으로 계속 보면 종이가 먼저 타겠다."
 
             show harin surprise at center_lower with dissolve
-            "하린이는 의외라는 눈으로 나를 봤다."
-            
+            "하린이는 의외라는 표정을 지었다."
             hr "…내 표정, 그렇게 안 좋아 보여?"
 
             sj "응."
@@ -1649,17 +1490,13 @@ label scene_9:
             hr "근데 내가 놓치면 다 엉망이 될 것 같아서."
 
             th "그 말은 책임감처럼 들리면서도, 거의 강박에 가까웠다."
-            
         "유나 쪽으로 붙어서 분위기를 풀어준다.":
             sj "너무 죽상 짓지 마."
             sj "아까 말 틀린 것도 아니었어. 결국 다시 하면 되긴 하지."
-            
             show yuna surprise at left with dissolve
             yn "…선배가 내 편 들어주네?"
-            
             sj "내 편, 네 편이 아니라."
             sj "반장이 예민한 건 이해하고, 네 말도 틀린 건 아니라는 뜻."
-            
             "유나는 나를 한참 보다가, 조금 힘 빠진 웃음을 지었다."
 
             show yuna smile at left with dissolve
@@ -1668,14 +1505,12 @@ label scene_9:
 
             th "늘 해맑은 줄만 알았는데."
             th "유나도 생각보다 쉽게 상처받는 쪽일지도 모른다."
-            
         "설아가 표시한 수정 부분을 바로 정리한다.":
             sj "좋아, 그럼 말 나온 김에 수정할 부분부터 적자."
             sj "설아, 네가 짚은 데 내가 받아 적을게."
 
             show seola surprise at right with dissolve
             "설아는 아주 잠깐 눈을 깜빡였다."
-            
             sa "…응."
 
             "우리는 나란히 배치도를 내려다봤다."
@@ -1687,7 +1522,7 @@ label scene_9:
             sa "저쪽은 장식 줄여."
 
             th "신기하게도, 설아와는 말이 적을수록 오히려 더 편해진다."
-
+            
     hide harin with dissolve
     hide yuna with dissolve
     hide seola with dissolve
@@ -1701,16 +1536,15 @@ label scene_9:
     "수정안을 얼추 정리한 뒤, 나는 프린트 몇 장을 들고 복도로 나왔다."
     "교무실 쪽 복도는 점심시간 특유의 소란이 조금 덜했다."
     "멀리서 웃음소리와 실내화 끄는 소리만 웅웅 울렸다."
+    stop sound fadeout 1.0
     
     "그때, 복도 창문 앞에 서 있는 유나의 뒷모습이 눈에 들어왔다."
-    
     show yuna normal at center_lower with dissolve
     "아까까지만 해도 시끄럽게 떠들던 녀석이, 지금은 조용히 휴대폰 화면만 내려다보고 있었다."
     "밝은 표정도, 장난스러운 몸짓도 없었다."
     "창밖으로 들어오는 빛이 옆얼굴을 비추자, 이상할 정도로 표정이 비어 보였다."
 
     sj "뭐 하냐."
-    
     show yuna surprise with dissolve
     "유나는 내 목소리에 화들짝 놀라 휴대폰을 급히 뒤집었다."
 
@@ -1723,9 +1557,8 @@ label scene_9:
     show yuna smile with dissolve
     yn "없는데요?"
     yn "그냥, 엄마한테 연락했는데 답장이 좀 늦어서."
-    
     "말은 가볍게 했지만, 유나는 손에 쥔 휴대폰을 너무 세게 쥐고 있었다."
-
+    
     menu:
         "뭐라고 할까?"
         "괜히 혼자 끙끙대지 말라고 한다.":
@@ -1745,13 +1578,12 @@ label scene_9:
         "굳이 캐묻지 않고 음료 하나를 건넨다.":
             play sound "audio/sfw_walking.ogg"
             "나는 자판기 쪽으로 걸어가 캔 음료 하나를 뽑아 유나에게 건넸다."
-            
+            stop sound
             sj "표정이 너무 죽었어."
             sj "당 보충이나 해."
 
             show yuna surprise with dissolve
             yn "…이거, 저 주는 거예요?"
-            
             sj "내가 마실 거면 내가 벌써 땄겠지."
 
             "유나는 캔을 받아 들고 한참 말이 없었다."
@@ -1771,7 +1603,6 @@ label scene_9:
             yn "아무 말 안 하는 것도, 생각보다 위로되네요."
 
             sj "시끄러운 네가 그런 말 하니까 어색하다."
-            
             show yuna laugh with dissolve
             yn "아하하, 뭐예요 그게."
             
@@ -1784,7 +1615,7 @@ label scene_9:
     "교실로 돌아가는 길, 나는 괜히 뒤를 한 번 더 돌아봤다."
     "유나는 다시 평소처럼 웃고 있었다."
     "하지만 그 웃음이 전처럼 아무 걱정 없는 얼굴로만 보이지는 않았다."
-    
+    stop sound fadeout 1.5
     scene black with fade
     "누군가를 안다고 생각하는 것과, 실제로 아는 건 다른 문제였다."
 
@@ -1817,7 +1648,6 @@ label scene_10:
     yn "오는 길에 학생회 선배 붙잡혀서 테이프 좀 나눠주고 왔어요."
 
     sj "네가 붙잡힌 건지, 네가 먼저 끼어든 건지 모르겠다."
-    
     show yuna laugh at char_1 with dissolve
     yn "헤헤. 둘 다?"
 
@@ -1835,23 +1665,21 @@ label scene_10:
     play sound "audio/sfx_Cardboard_box_drop.ogg"
     "준비실 한구석에 쌓아 둔 장식 상자를 옮기던 중, 맨 위 박스가 한쪽으로 기울어졌다."
     "그 안에 있던 종이 장식과 파일 뭉치가 바닥에 와르르 쏟아졌다."
-    
     play sound "audio/sfx_pen_click.ogg"
 
     show harin surprise at char_3 with dissolve
     hr "잠깐…!"
     
-    play sound "audio/sfw_cloth_moving.ogg"
+    play sound "audio/sfw_cloth_moving.ogg" volume 0.7
     "하린이가 급히 다가갔고, 유나도 동시에 몸을 숙였다."
     "설아는 떨어진 종이들이 밟히지 않도록 재빨리 발끝으로 밀어 빼냈다."
     "가은 선배는 웃으며 '다친 사람 없지?'부터 확인했다."
-
     "순식간에 네 사람이 동시에 움직였다."
     "그 장면이 이상하게 눈에 박혔다."
     
     th "다들 엉망이 되는 건 싫어한다."
     th "방법만 다를 뿐."
-
+    
     menu:
         "누구를 먼저 챙길까?"
         "하린부터 본다.":
@@ -1860,7 +1688,6 @@ label scene_10:
 
             show harin surprise at char_3 with dissolve
             "하린이는 자기 손등을 보고서야 얕게 긁힌 자국을 알아챘다."
-            
             hr "이 정도는 별거 아니야."
 
             sj "별거 아닌 걸 자꾸 누적시키는 게 문제지."
@@ -1870,15 +1697,13 @@ label scene_10:
 
             show harin normal at char_3 with dissolve
             hr "…고마워."
-            
         "유나부터 본다.":
             sj "너는 또 무작정 몸부터 던졌냐."
             sj "안 다쳤어?"
 
             show yuna smile at char_1 with dissolve
             yn "저 정도는 하나도 안 아픈데요?"
-            
-            sj "그 말 하는 애들이 꼭 나중에 멍 든다."
+            sj "그 말 하는 애들이 꼭 나중에 정강이에 멍 들어 있다."
 
             "내가 팔목을 한 번 확인하듯 잡아 보자, 유나는 괜히 가만해졌다."
             "그리고 아주 잠깐, 웃는 걸 잊었다."
@@ -1888,7 +1713,6 @@ label scene_10:
             
             show yuna laugh at char_1 with dissolve
             yn "아, 아무튼 전 멀쩡합니다!"
-            
         "설아부터 본다.":
             sj "설아, 밟힐 뻔한 거 네가 먼저 뺐지."
             sj "괜찮아?"
@@ -1905,7 +1729,6 @@ label scene_10:
             
             th "짧은데 이상하게 오래 남는 말."
             th "설아는 늘 딱 필요한 만큼만 말하는데, 그래서 더 파고들 여백이 생긴다."
-            
         "가은 선배부터 본다.":
             sj "선배는요."
             sj "안색이 더 안 좋아 보이는데."
@@ -1923,7 +1746,7 @@ label scene_10:
             ge "조금 피곤한 것뿐이야."
 
             th "그 말은 진짜 같지 않았다."
-
+            
     hide harin with dissolve
     hide yuna with dissolve
     hide seola with dissolve
@@ -1961,7 +1784,6 @@ label scene_10:
 
     th "조금만 더 가까워지면 곤란해질 것 같은데."
     th "조금만 더 멀어지면, 어쩐지 신경 쓰일 것 같기도 했다."
-    
     "그리고 그 순간, 계단 위쪽에서 가은 선배의 기침 소리가 짧게 울렸다."
     
     hide seola
@@ -1974,7 +1796,6 @@ label scene_10:
 
     ge "왜, 다들 그런 표정이야."
     ge "진짜 괜찮다니까."
-    
     "선배는 웃었고, 우리는 아무도 그 말을 곧이곧대로 받아들이지 못했다."
     
     menu:
@@ -1985,7 +1806,6 @@ label scene_10:
 
             show yuna surprise at center_lower with dissolve
             yn "…그 말은, 기다려준다는 뜻이에요?"
-            
             sj "왜 꼭 그런 식으로 해석하냐."
 
             show yuna smile at center_lower with dissolve
@@ -2001,14 +1821,12 @@ label scene_10:
 
             show harin surprise at center_lower with dissolve
             hr "…네가?"
-            
             sj "나도 내가 왜 이런 말 하는지 잘 모르겠다."
 
             "하린이는 잠깐 입을 다물었다가, 아주 희미하게 고개를 끄덕였다."
             
             show harin normal at center_lower with dissolve
             hr "그럼, 잠깐만."
-            
             th "서하린은 강한 척을 잘한다."
             th "그래서 오히려, 기대는 순간이 더 선명하게 보인다."
             
@@ -2018,7 +1836,6 @@ label scene_10:
 
             show seola surprise at center_lower with dissolve
             "설아는 내 얼굴을 잠깐 바라보다가, 조용히 고개를 끄덕였다."
-            
             sa "…응."
 
             "짧은 대답."
@@ -2033,7 +1850,6 @@ label scene_10:
 
             show gaeun smile at center_lower with dissolve
             ge "명령이야, 부탁이야?"
-            
             sj "둘 다요."
 
             "가은 선배는 웃었다."
@@ -2044,7 +1860,7 @@ label scene_10:
 
             th "처음이었다."
             th "민가은이 그렇게 순순히 물러나는 건."
-
+            
     hide yuna with dissolve
     hide harin with dissolve
     hide seola with dissolve
@@ -2068,6 +1884,10 @@ label scene_10:
 
     "미지근했던 일상에, 아주 가느다란 금이 갔다."
     "그리고 그런 금은 대개, 소리도 없이 점점 깊어진다."
+    
+    th "정말 유치한데."
+    th "왜 이렇게 마음에 남는 건지."
+    scene black with fade
 
 # ---------------------------------------------------------
 # [Scene 11 타이틀]
