@@ -11,25 +11,47 @@ init python:
                 speaking = None
         return callback
 
-    # 포커스(반투명화)를 부드럽게 적용해주는 클래스
+    # 포커스/미세 반응을 부드럽게 적용해주는 클래스
     class FocusFunction:
         def __init__(self, char_tag):
             self.char_tag = char_tag
             
         def __call__(self, trans, st, at):
-            # 아무도 말을 안 하거나 본인이 말할 땐 밝기 100%, 다른 사람이 말할 땐 40%
-            target_alpha = 1.0 if (speaking == None or speaking == self.char_tag) else 0.4
+            is_active = (speaking is None or speaking == self.char_tag)
+
+            # 말하는 캐릭터는 더 또렷하게, 나머지는 너무 죽지 않게만 살짝만 낮춤
+            target_alpha = 1.0 if is_active else 0.62
+            target_zoom = 1.0 if is_active else 0.985
+            target_yoffset = 0 if is_active else 3
             
             if trans.alpha is None:
                 trans.alpha = 1.0
+            if trans.zoom is None:
+                trans.zoom = 1.0
+            if trans.yoffset is None:
+                trans.yoffset = 0
                 
-            # 부드러운 애니메이션 (서서히 어두워지고 서서히 밝아짐)
+            # 부드러운 애니메이션
             if trans.alpha != target_alpha:
                 diff = target_alpha - trans.alpha
-                if abs(diff) < 0.05:
+                if abs(diff) < 0.02:
                     trans.alpha = target_alpha
                 else:
-                    trans.alpha += diff * 0.15
+                    trans.alpha += diff * 0.18
+
+            if trans.zoom != target_zoom:
+                diff = target_zoom - trans.zoom
+                if abs(diff) < 0.002:
+                    trans.zoom = target_zoom
+                else:
+                    trans.zoom += diff * 0.18
+
+            if trans.yoffset != target_yoffset:
+                diff = target_yoffset - trans.yoffset
+                if abs(diff) < 0.2:
+                    trans.yoffset = target_yoffset
+                else:
+                    trans.yoffset += diff * 0.18
                     
             return 0.02 # 0.02초마다 부드럽게 갱신
 
@@ -60,91 +82,97 @@ transform auto_focus(char_tag):
 
 # --- 4. 화면 위치 조정을 위한 트랜스폼 정의 ---
 
-# 1~2명 등장 시 사용할 기본 위치 (무릎을 가리기 위해 더 내리고(ypos 증가), 크기를 키움(zoom 증가))
+# 1~2명 등장 시 사용할 기본 위치
 transform left:
     xalign 0.18
     yalign 1.0
     zoom 1.10
-    yoffset 156
+    yoffset 178
+
 transform center:
     xalign 0.5
     yalign 1.0
     zoom 1.10
-    yoffset 156
+    yoffset 178
+
 transform right:
     xalign 0.82
     yalign 1.0
     zoom 1.10
-    yoffset 156
+    yoffset 178
+
 transform center_lower:
     xalign 0.5
     yalign 1.0
     zoom 1.10
-    yoffset 156
+    yoffset 178
 
 # 4명 동시 등장 시 사용할 위치
 transform char_1:
     xalign 0.10
     yalign 1.0
     zoom 1.00
-    yoffset 140
+    yoffset 160
+
 transform char_2:
     xalign 0.37
     yalign 1.0
     zoom 1.00
-    yoffset 140
+    yoffset 160
+
 transform char_3:
     xalign 0.63
     yalign 1.0
     zoom 1.00
-    yoffset 140
+    yoffset 160
+
 transform char_4:
     xalign 0.90
     yalign 1.0
     zoom 1.00
-    yoffset 140
+    yoffset 160
 
 transform far_left:
     xalign 0.06
     yalign 1.0
     zoom 1.00
-    yoffset 140
+    yoffset 160
 
 transform left2:
     xalign 0.24
     yalign 1.0
     zoom 1.03
-    yoffset 146
+    yoffset 168
 
 transform center2:
     xalign 0.5
     yalign 1.0
     zoom 1.07
-    yoffset 152
+    yoffset 174
 
 transform right2:
     xalign 0.76
     yalign 1.0
     zoom 1.03
-    yoffset 146
+    yoffset 168
 
 transform far_right:
     xalign 0.94
     yalign 1.0
     zoom 1.00
-    yoffset 140
+    yoffset 160
 
 transform left_mid:
     xalign 0.24
     yalign 1.0
     zoom 1.03
-    yoffset 146
+    yoffset 168
 
 transform right_mid:
     xalign 0.76
     yalign 1.0
     zoom 1.03
-    yoffset 146
+    yoffset 168
 
 define flash = Fade(0.08, 0.0, 0.18, color="#ffffff")
 
@@ -181,6 +209,16 @@ transform sway_soft:
     ease 1.2 yoffset -1
     ease 1.2 yoffset 0
     repeat
+
+transform react_tiny:
+    yoffset 0
+    ease 0.10 yoffset -3
+    ease 0.10 yoffset 0
+
+transform react_surprised:
+    yoffset 0
+    ease 0.08 yoffset -8
+    ease 0.08 yoffset 0
 
 
 # --- 5. 이미지 정의 (크기 80% 축소 + 높이 보정 + 포커스 효과 모두 포함) ---
