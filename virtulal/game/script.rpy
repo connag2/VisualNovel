@@ -303,10 +303,10 @@ image seola normal = At(Transform("images/seola normal.webp", zoom=0.94, yoffset
 image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 
 # [가은 이미지]
-image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
 
 # 여기서부터 본 게임 시작
 # [추가 이미지 별칭/호환 정의 - 실제 존재 리소스만 사용]
@@ -348,15 +348,15 @@ image seola sigh = At(Transform("images/seola sigh.webp", zoom=0.94, yoffset=12)
 image seola smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 image seola vivid = At(Transform("images/seola vivid.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 
-image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
-image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
 
 image bg classroom_day = "bg classroom"
 image bg classroom_evening = "bg classroom"
@@ -4588,7 +4588,7 @@ label scene_14:
 
     ge "그건 맞아."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     "가은 선배가 뒤에서 우리 속도에 맞춰 천천히 걸어오고 있었다."
     "언제 자연스럽게 합류했는지도 모를 만큼 익숙한 얼굴이었다."
@@ -4665,7 +4665,7 @@ label scene_14:
     show yuna normal at left, sway_soft with dissolve
     show harin normal at center_lower, sway_soft with dissolve
     show seola normal at right, sway_soft with dissolve
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     yn "다들 집 방향 어디예요?"
     yn "생각해보니까 제대로 물어본 적 없네."
@@ -4879,7 +4879,7 @@ label scene_14:
     show yuna smile at left, tiny_bounce with dissolve
     show harin normal at center_lower, sway_soft with dissolve
     show seola normal at right, sway_soft with dissolve
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     "우리는 편의점 앞 좁은 벤치와 난간 근처에 적당히 흩어져 섰다."
     "누가 먼저라고 할 것도 없이 포장을 뜯는 소리들이 이어졌다."
@@ -5043,7 +5043,7 @@ label scene_14:
     show yuna normal at left, sway_soft with dissolve
     show harin normal at center_lower, sway_soft with dissolve
     show seola normal at right, sway_soft with dissolve
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     hr "난 여기서 타."
     sa "나도 다음 버스."
@@ -5568,7 +5568,7 @@ label scene_14:
     "단체방 설명란을 '축제 준비 중 / 지각 금지 / 간식 권장'으로 정리했을 때쯤,"
     "준비실 문이 가볍게 두드려졌다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     ge "실례합니다, 조용한 봄 여러분."
 
@@ -5763,7 +5763,7 @@ label scene_14:
     "유나는 하트를 그리려다가 하린이 눈치를 보고 그냥 동그라미,"
     "나는 대충 사선 하나."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "난?"
     yn "가은 선배는 특별 게스트!"
     ge "오, 좋다."
@@ -6158,7 +6158,7 @@ label scene_14:
 
     "그 순간 문이 가볍게 열렸다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     ge "실례."
     ge "오늘도 성실한 조용한 봄 여러분."
@@ -6214,7 +6214,7 @@ label scene_14:
     show yuna smile at left, tiny_bounce with dissolve
     show harin normal at center_lower, sway_soft with dissolve
     show seola normal at right, sway_soft with dissolve
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     ge "근데 너희."
     ge "이쯤 되면 누가 제일 손 빠른지도 나와야 되는 거 아냐?"
@@ -6481,7 +6481,7 @@ label scene_14:
     show yuna smile at left, tiny_bounce with dissolve
     show harin faint_smile at center_lower, tiny_bounce with dissolve
     show seola normal at right, sway_soft with dissolve
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     yn "음."
     yn "오늘은 뭔가."
@@ -6525,7 +6525,7 @@ label scene_14:
     th "이제는 이런 흐름이 정말 자연스럽다."
     th "누가 시작하면, 누군가 이어받고, 나머지가 받아친다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "좋아."
     ge "그럼 학교 앞 자판기까지만?"
     ge "그 정도면 잠깐 맞지."
@@ -6738,7 +6738,7 @@ label scene_14:
 
     scene bg school_road_dusk with dissolve
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     ge "그럼 난…"
 
@@ -6821,7 +6821,7 @@ label scene_14:
     show yuna normal at left, sway_soft with dissolve
     show harin faint_smile at center_lower, tiny_bounce with dissolve
     show seola normal at right, sway_soft with dissolve
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     yn "좋아."
     yn "그럼 이제 음료 취향이 나왔으니 다른 것도 해 봅시다."
@@ -7027,7 +7027,7 @@ label scene_14:
     th "며칠 전엔 빨리 끝나길 바랐을지도 모르는데."
     th "지금은 오히려 조금 늦춰지고 있다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "내일도 준비실?"
     yn "당연하죠!"
     hr "상황 보고."
@@ -7490,7 +7490,7 @@ label scene_14:
 
     ge "오, 다 좋아 보이는데?"
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     "언제 왔는지 모르게,"
     "가은 선배가 문가에 기대 우리 종이를 내려다보고 있었다."
@@ -7631,7 +7631,7 @@ label scene_14:
     "이상한 규칙 하나 추가했을 뿐인데,"
     "벌써 절반이 넘었다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "너희 진짜 내부 밈 생기기 시작했네."
 
     sj "그건 또 뭔가요."
@@ -7666,7 +7666,7 @@ label scene_14:
     "유나는 메모지 아래에 아주 작은 벚꽃 낙서를 추가했다."
     "가은 선배는 그걸 보며 결국 웃음을 참지 못했다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "너 진짜 벚꽃에 진심이다."
 
     show yuna grin at left, idle_bounce with dissolve
@@ -8136,7 +8136,7 @@ label scene_14:
     "책상 구석에 안전하게 놓인 젤리 통과,"
     "그 옆에 적혀 있는 새 문장을 먼저 발견했다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     ge "어라."
     ge "'간식은 안전거리 유지'?"
@@ -8301,7 +8301,7 @@ label scene_14:
     sj "수습 담당은 오늘도 고생했다."
     ge "그리고 벚꽃 습격은 오래 남는다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     "다섯 사람의 말이 거의 동시에 엉켰고,"
     "결국 또 웃음이 터졌다."
@@ -8614,7 +8614,7 @@ label scene_14:
     "문을 열자마자 선배는 우리 넷을 한 번 보고,"
     "익숙하게 웃었다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     ge "다들 벌써 모였네."
     ge "이제 여기 들어오면 매번 같은 풍경이라 좋다."
@@ -8776,7 +8776,7 @@ label scene_14:
     "예비종이 울리기 직전,"
     "가은 선배가 준비실 문쪽으로 한 걸음 물러서며 웃었다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "좋다."
     ge "이제 여기 오면 진짜 준비실보다 '너희 있는 곳' 같아."
 
@@ -8941,7 +8941,7 @@ label scene_14:
 
     ge "그거 중요하지."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     "가은 선배는 언제나처럼 타이밍 좋게 문가에서 말을 받았다."
     "이제는 진짜 문 열리고 선배 목소리 들리는 것도 익숙하다."
@@ -9015,7 +9015,7 @@ label scene_14:
     "정말 누구 하나만의 취향은 아니었다."
     "대신 다 같이 만든 느낌이 분명히 있었다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "좋다."
     ge "딱 너희 같아."
 
@@ -9212,7 +9212,7 @@ label scene_14:
     "가은 선배는 그런 우리를 가만히 보다가,"
     "아주 만족스러운 얼굴로 웃었다."
 
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
     ge "좋다."
     ge "너희 지금 엄청 팀 같다."
 
@@ -9247,7 +9247,7 @@ label scene_14:
     show yuna smile at left, tiny_bounce with dissolve
     show harin normal at center_lower, sway_soft with dissolve
     show seola normal at right, sway_soft with dissolve
-    show gaeun smile at char_4, tiny_bounce with dissolve
+    show gaeun smile at far_right, tiny_bounce with dissolve
 
     yn "좋아."
     yn "기념으로 오늘 간식 먹어도 되죠?"
