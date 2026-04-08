@@ -381,7 +381,7 @@ label chapter2_start:
     stop sound
 
     show yuna flustered at char_2 with dissolve
-    yn "죄송! 늦었다!"
+    yn "죄송해요..! 늦었어요!"
     yn "선생님이 갑자기 심부름 시켜서— 아, 진짜 미치는 줄."
 
     show harin sigh at left_mid, react_tiny
