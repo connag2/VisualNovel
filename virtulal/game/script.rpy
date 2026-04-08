@@ -10524,5 +10524,5 @@ label scene_14:
 
     stop sound fadeout 1.0
     stop music fadeout 2.0
-
+ 
     jump chapter2_start
