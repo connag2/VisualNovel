@@ -1,5 +1,7 @@
 ﻿# --- 1. 대화하는 사람을 추적 및 자동 포커스 파이썬 코드 ---
 init python:
+    import math
+
     speaking = None
     reaction_tick = 0
     reaction_mode = "listen"
@@ -32,57 +34,63 @@ init python:
             self.char_tag = char_tag
 
         def __call__(self, trans, st, at):
-            is_active = (speaking is None or speaking == self.char_tag)
+            is_active = (speaking == self.char_tag)
 
             if not hasattr(trans, "_last_reaction_tick"):
                 trans._last_reaction_tick = -1
                 trans._react_offset = 0.0
                 trans._react_zoom = 0.0
 
-            # 새 대사가 시작될 때, 말하지 않는 캐릭터도 살짝 반응하게 함.
+            # 새 대사가 시작될 때, 말하는 캐릭터는 기본적으로 더 살아 있고
+            # 말하지 않는 캐릭터는 짧고 약하게만 반응하도록 조정.
             if trans._last_reaction_tick != reaction_tick:
                 trans._last_reaction_tick = reaction_tick
 
                 if is_active:
                     if reaction_mode == "surprised":
-                        trans._react_offset = -2.0
-                        trans._react_zoom = 0.008
+                        trans._react_offset = -2.2
+                        trans._react_zoom = 0.006
                     elif reaction_mode == "soft":
-                        trans._react_offset = -1.0
-                        trans._react_zoom = 0.003
+                        trans._react_offset = -1.2
+                        trans._react_zoom = 0.0025
                     else:
-                        trans._react_offset = -1.4
-                        trans._react_zoom = 0.004
+                        trans._react_offset = -1.6
+                        trans._react_zoom = 0.003
                 else:
                     if reaction_mode == "surprised":
-                        trans._react_offset = -8.0
-                        trans._react_zoom = 0.016
+                        trans._react_offset = -2.4
+                        trans._react_zoom = 0.0035
                     elif reaction_mode == "soft":
-                        trans._react_offset = -2.5
-                        trans._react_zoom = 0.005
+                        trans._react_offset = -0.9
+                        trans._react_zoom = 0.0012
                     else:
-                        trans._react_offset = -4.0
-                        trans._react_zoom = 0.009
+                        trans._react_offset = -1.2
+                        trans._react_zoom = 0.0015
 
             # 시간이 지나며 자연스럽게 원위치로 돌아가게 함.
-            if abs(trans._react_offset) < 0.08:
+            if abs(trans._react_offset) < 0.05:
                 trans._react_offset = 0.0
             else:
-                trans._react_offset *= 0.72
+                trans._react_offset *= 0.62
 
-            if abs(trans._react_zoom) < 0.0006:
+            if abs(trans._react_zoom) < 0.00025:
                 trans._react_zoom = 0.0
             else:
-                trans._react_zoom *= 0.72
+                trans._react_zoom *= 0.62
 
-            # 말하는 캐릭터는 더 또렷하게, 나머지는 너무 죽지 않게만 살짝 낮춤.
-            base_alpha = 1.0 if is_active else 0.72
-            base_zoom = 1.0 if is_active else 0.987
-            base_yoffset = 0 if is_active else 3
+            active_idle_offset = 0.0
+            active_idle_zoom = 0.0
+            if is_active:
+                active_idle_offset = -1.4 * ((math.sin(st * 4.6) + 1.0) * 0.5)
+                active_idle_zoom = 0.0018 * ((math.sin(st * 4.6) + 1.0) * 0.5)
+
+            base_alpha = 1.0 if is_active else 0.82
+            base_zoom = 1.0 if is_active else 0.992
+            base_yoffset = 0 if is_active else 2
 
             target_alpha = base_alpha
-            target_zoom = base_zoom + trans._react_zoom
-            target_yoffset = base_yoffset + trans._react_offset
+            target_zoom = base_zoom + active_idle_zoom + trans._react_zoom
+            target_yoffset = base_yoffset + active_idle_offset + trans._react_offset
 
             if trans.alpha is None:
                 trans.alpha = 1.0
@@ -91,7 +99,6 @@ init python:
             if trans.yoffset is None:
                 trans.yoffset = 0
 
-            # 부드러운 애니메이션
             if trans.alpha != target_alpha:
                 diff = target_alpha - trans.alpha
                 if abs(diff) < 0.02:
@@ -101,19 +108,19 @@ init python:
 
             if trans.zoom != target_zoom:
                 diff = target_zoom - trans.zoom
-                if abs(diff) < 0.002:
+                if abs(diff) < 0.0012:
                     trans.zoom = target_zoom
                 else:
-                    trans.zoom += diff * 0.20
+                    trans.zoom += diff * 0.18
 
             if trans.yoffset != target_yoffset:
                 diff = target_yoffset - trans.yoffset
-                if abs(diff) < 0.2:
+                if abs(diff) < 0.12:
                     trans.yoffset = target_yoffset
                 else:
-                    trans.yoffset += diff * 0.22
+                    trans.yoffset += diff * 0.18
 
-            return 0.02 # 0.02초마다 부드럽게 갱신
+            return 0.03
 
 # --- 2. 캐릭터 정의 (콜백 연결) ---
 define sj = Character('서진', color="#c8c8c8")
@@ -159,7 +166,7 @@ transform right:
     xalign 0.82
     yalign 1.0
     zoom 1.10
-    yoffset 178
+    yoffset 170
 
 transform center_lower:
     xalign 0.5
@@ -214,13 +221,13 @@ transform right2:
     xalign 0.76
     yalign 1.0
     zoom 1.03
-    yoffset 168
+    yoffset 160
 
 transform far_right:
     xalign 0.94
     yalign 1.0
     zoom 1.00
-    yoffset 160
+    yoffset 152
 
 transform left_mid:
     xalign 0.24
@@ -232,30 +239,24 @@ transform right_mid:
     xalign 0.76
     yalign 1.0
     zoom 1.03
-    yoffset 168
+    yoffset 160
 
 define flash = Fade(0.08, 0.0, 0.18, color="#ffffff")
 
 transform idle_bounce:
     yoffset 0
-    ease 0.34 yoffset -4
-    ease 0.34 yoffset 0
-    pause 0.24
-    repeat
+    ease 0.20 yoffset -2
+    ease 0.24 yoffset 0
 
 transform soft_bounce:
     yoffset 0
-    ease 0.48 yoffset -3
-    ease 0.48 yoffset 0
-    pause 0.32
-    repeat
+    ease 0.24 yoffset -2
+    ease 0.28 yoffset 0
 
 transform tiny_bounce:
     yoffset 0
-    ease 0.62 yoffset -2
-    ease 0.62 yoffset 0
-    pause 0.38
-    repeat
+    ease 0.20 yoffset -1
+    ease 0.24 yoffset 0
 
 transform excited_hop:
     yoffset 0
@@ -266,9 +267,8 @@ transform excited_hop:
 
 transform sway_soft:
     yoffset 0
-    ease 1.6 yoffset -1
-    ease 1.6 yoffset 0
-    repeat
+    ease 0.28 yoffset -1
+    ease 0.30 yoffset 0
 
 transform react_tiny:
     yoffset 0
