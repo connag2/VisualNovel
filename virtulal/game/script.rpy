@@ -303,10 +303,10 @@ image seola normal = At(Transform("images/seola normal.webp", zoom=0.94, yoffset
 image seola surprise = At(Transform("images/seola surprise.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 
 # [가은 이미지]
-image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun normal = At(Transform("images/gaeun normal.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun smile = At(Transform("images/gaeun smile.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun laugh = At(Transform("images/gaeun laugh.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun surprise = At(Transform("images/gaeun surprise.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
 
 # 여기서부터 본 게임 시작
 # [추가 이미지 별칭/호환 정의 - 실제 존재 리소스만 사용]
@@ -348,15 +348,15 @@ image seola sigh = At(Transform("images/seola sigh.webp", zoom=0.94, yoffset=12)
 image seola smile = At(Transform("images/seola smile.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 image seola vivid = At(Transform("images/seola vivid.webp", zoom=0.94, yoffset=12), auto_focus("seola"))
 
-image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
-image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=1.00, yoffset=12), auto_focus("gaeun"))
+image gaeun angry = At(Transform("images/gaeun angry.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun annoyed = At(Transform("images/gaeun annoyed.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun anxious = At(Transform("images/gaeun anxious.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun flustered = At(Transform("images/gaeun flustered.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun happy = At(Transform("images/gaeun happy.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun hollow = At(Transform("images/gaeun hollow.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun sad = At(Transform("images/gaeun sad.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun sigh = At(Transform("images/gaeun sigh.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
+image gaeun vivid = At(Transform("images/gaeun vivid.webp", zoom=0.94, yoffset=12), auto_focus("gaeun"))
 
 image bg classroom_day = "bg classroom"
 image bg classroom_evening = "bg classroom"
@@ -413,7 +413,7 @@ label start:
     centered "{size=30}아침 등굣길{/size}" with dissolve
     scene bg school_road_morning with fade
     
-    "집을 나서자 봄 특유의 훅 끼치는 따뜻한 공기가 뺨을 스쳤다."
+    "집을 나서자 봄 특유의 훅 끼쳐 오는 따뜻한 공기가 뺨을 스쳤다."
     play sound "audio/sfw_walking.ogg"
     "거리에는 나와 같은 교복을 입은 학생들이 무리 지어 걸어가고 있었다."
     "어제 본 예능 프로그램 이야기, 새로 산 화장품 이야기, 피시방에서 올린 티어 이야기… {w=0.5}시시콜콜하고 가벼운 대화들이 벚꽃잎처럼 흩날린다."
@@ -605,10 +605,10 @@ label start:
     "하린이는 눈을 질끈 감았다."
     "아주 짧고 작게 새어 나온 한숨이었지만, 그 안에는 깊은 짜증과 피로가 배어 있었다."
     "장난을 치던 녀석들도 순간적으로 얼어붙은 분위기를 파악했는지 멋쩍게 웃으며 슬금슬금 뒷자리로 도망쳤다."
-    stu_a "아, 미안 미안 반장! 우리가 밀려다가 너무 세게 부딪혔다."
+    stu_a "아, 미안 미안 반장! 우리가 밀리다가 너무 세게 부딪혔다."
     play sound "audio/sfx_paper_flutter.ogg" volume 0.5
     "하린이는 도망치는 녀석들의 등짝에 대고 소리를 지르거나 화를 내는 대신, 입술을 일자로 꾹 다문 채 서랍에서 수정테이프를 꺼냈다."
-    "그러고는 빗나간 1mm의 선을 지우기 위해, 아예 그 주변의 완벽했던 두 줄 전체를 새하얗게 덮어 지우기 시작했다."
+    "그러고는 빗나간 1mm의 선을 지우기 위해, 아예 그 주변의 완벽했던 두 줄 전체를 새하얗게 덮어버리기 시작했다."
     "마치 그 작은 오점 하나가 종이 전체를 망쳐버렸다는 듯이."
 
     menu:
@@ -4539,7 +4539,7 @@ label scene_14:
 
     th "시끄럽고, 어수선하고, 별거 아닌 방과 후였다."
     th "그런데 오늘도 이상하게."
-    th "혼자보다 같이였던 시간이 더 오래 남을 것 같은 기분이 든다."
+    th "혼자보다 함께했던 시간이 더 오래 남을 것 같은 기분이 든다."
 
     scene black with fade
 
