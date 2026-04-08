@@ -1,6 +1,6 @@
 # Chapter 2 Main
 
-label chapter2_start:
+label chapter2_start_stub_unused:
     # 축제 시작 / 불안 20% 누적
     return
 

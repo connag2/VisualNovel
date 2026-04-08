@@ -2772,4 +2772,6 @@ label chapter2_start:
     th "그래서 더 오래 남는다."
 
     stop music fadeout 2.0 
-    return
+    
+
+    
