@@ -123,24 +123,84 @@ init python:
             return 0.03
 
 # --- 2. 캐릭터 정의 (콜백 연결) ---
-define sj = Character('서진', color="#c8c8c8")
-define th = Character('서진', color="#999999", what_prefix="(", what_suffix=")")
+# 이름 공통 스타일 - 이름이 배경에 안 묻히게
+# 예전에 공통 외곽선 넣어둔 게 있으면 약하게 하거나 비워두기
+style say_label:
+    outlines []
 
-# 각 캐릭터가 말할 때 작동하도록 speaker("태그")를 달아줍니다.
-define hr = Character('서하린', color="#a4c2f4", callback=speaker("harin"))
-define yn = Character('유나', color="#fce5cd", callback=speaker("yuna"))
-define sa = Character('설아', color="#ffffff", callback=speaker("seola"))
-define ge = Character('민가은', color="#e6b8af", callback=speaker("gaeun"))
+define sj = Character(
+    '서진',
+    color="#E7E2E0",
+    who_outlines=[(1, "#8F8186", 0, 0)]
+)
 
-define stu_a = Character('남학생 A', color="#999999")
-define stu_b = Character('남학생 B', color="#999999")
-define girl_a = Character('여학생 A', color="#999999")
-define girl_b = Character('여학생 B', color="#999999")
+define th = Character(
+    '서진',
+    color="#D9D2CF",
+    what_prefix="(",
+    what_suffix=")",
+    who_outlines=[(1, "#8F8186", 0, 0)]
+)
 
+define hr = Character(
+    '서하린',
+    color="#D7E7FF",
+    callback=speaker("harin"),
+    who_outlines=[(1, "#7387A8", 0, 0)]
+)
+
+define yn = Character(
+    '유나',
+    color="#FFE7C7",
+    callback=speaker("yuna"),
+    who_outlines=[(1, "#A88672", 0, 0)]
+)
+
+define sa = Character(
+    '설아',
+    color="#F8FCFF",
+    callback=speaker("seola"),
+    who_outlines=[(1, "#8796A6", 0, 0)]
+)
+
+define ge = Character(
+    '민가은',
+    color="#F3D7D1",
+    callback=speaker("gaeun"),
+    who_outlines=[(1, "#A37A7D", 0, 0)]
+)
+
+define stu_a = Character(
+    '남학생 A',
+    color="#E8E2E2",
+    who_outlines=[(1, "#8B8186", 0, 0)]
+)
+
+define stu_b = Character(
+    '남학생 B',
+    color="#E8E2E2",
+    who_outlines=[(1, "#8B8186", 0, 0)]
+)
+
+define girl_a = Character(
+    '여학생 A',
+    color="#E8E2E2",
+    who_outlines=[(1, "#8B8186", 0, 0)]
+)
+
+define girl_b = Character(
+    '여학생 B',
+    color="#E8E2E2",
+    who_outlines=[(1, "#8B8186", 0, 0)]
+)
 default yuna_point = 0
 default harin_point = 0
 default seola_point = 0
 default gaeun_point = 0
+
+define gui.name_text_size = 40
+define gui.namebox_width = 240
+define gui.namebox_height = 72
 
 # --- 3. 대화 시 강조/반투명화 자동 트랜스폼 ---
 transform auto_focus(char_tag):
