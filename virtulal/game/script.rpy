@@ -388,6 +388,8 @@ label start:
     scene bg dark_room with fade
     play music "audio/bgm_spring_morning.ogg" fadein 3.0
 
+    play sound "sfx_alarm.ogg" volume 0.8
+
     "띠딕, 띠딕, 띠딕—"
     "규칙적이고 신경질적인 전자음이 고막을 찌른다."
     "나는 이불 밖으로 무거운 팔을 뻗어 휴대폰의 알람을 거칠게 껐다."
