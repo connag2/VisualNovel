@@ -133,3 +133,30 @@ bgm_end_true.ogg (닿지 않는 말랑함 - 트루 엔딩)
 Style of Music: instrumental, post-rock, clean guitar riffs, emotional, lingering dawn, acceptance, healing, cinematic climax
 
 사운드 목표: 폭발적인 기타 사운드와 함께 새벽이 밝아오는 듯한 깊은 여운(포스트 록 스타일)
+
+📁 7. 효과음 리스트 (Sound Effects)
+모든 효과음은 5초 이내로 제한합니다.
+
+일상 효과음
+
+se_bell.ogg (학교 종소리) — 수업 시작/끝, 시간 전환
+se_door.ogg (문 열리는 소리) — 준비실 진입, 교실 입장
+se_footstep.ogg (복도 발걸음) — 복도 이동, 등하교
+se_phone_buzz.ogg (핸드폰 진동) — 단체방 알림, 엄마 답장
+se_camera.ogg (셔터 소리) — 단체사진, 사진 촬영
+se_wind.ogg (바람 소리) — 옥상, 창가 분위기 연출
+
+캐릭터 고유 효과음
+
+se_pen_click.ogg (볼펜 딸깍) — 하린의 습관, 긴장 표현
+se_candy_wrapper.ogg (사탕 포장지 바스락) — 유나의 사탕 관련 장면
+se_page_turn.ogg (책장 넘기는 소리) — 설아의 도서관 장면
+se_cough.ogg (기침 소리) — 가은의 기침/사레 장면
+
+심리/붕괴 효과음
+
+se_heartbeat.ogg (심장 박동) — 긴장, 공황, 고백 직전
+se_glass_crack.ogg (유리 금 가는 소리) — 심리 균열, 감정 붕괴 연출
+se_slap.ogg (뺨 때리는 소리) — 유나 붕괴 씬
+se_scratch.ogg (피부 긁는 소리) — 설아의 환촉 발작
+se_vomit.ogg (구역질 소리) — 가은의 구토 장면

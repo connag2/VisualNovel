@@ -105,23 +105,51 @@ They represent a form of acceptance, trust, distance, waiting, or mutual underst
 
 ## 10. Document Map
 
-### Core Documents
-- `README.md`: project overview and entry point
-- `characters.md`: character bible and acting rules
-- `story.md`: core narrative philosophy, theme, and emotional structure
-- `concept_setting.md`: route outlines, scene ideas, and event planning
-- `master_tree.md`: affection, flags, route branching, and ending logic
-- `somethingdo.md`: production task board and writing priorities
+> 모든 기획 문서는 `readme/` 폴더에 정리되어 있습니다.
 
-### Future Recommended Documents
-- `script_common.md`
-- `script_harin.md`
-- `script_yuna.md`
-- `script_seola.md`
-- `script_gaeun.md`
-- `foreshadowing_map.md`
-- `cg_bgm_direction.md`
-- `system_design.md`
+### 📖 핵심 기획 문서
+| 파일 | 역할 |
+|---|---|
+| `README.md` | 프로젝트 개요 및 진입점 |
+| `readme/story.md` | 스토리 바이블 — 세계관, 철학, 톤 가이드, 그랜드 트루엔딩 |
+| `readme/characters.md` | 캐릭터 설정 바이블 — 프로필, 연기 규칙, 감정 단계 |
+| `readme/character_complete_guide.md` | 캐릭터 완전판 설정집 — 관계 구조, 실무 지침 포함 |
+| `readme/concept_setting.md` | 시나리오 실무 기획 — 루트별 전개, 붕괴 씬 대본 초안 |
+
+### 🌿 분기 & 시스템
+| 파일 | 역할 |
+|---|---|
+| `readme/master_tree.md` | 마스터 라우트 트리 — 호감도, 플래그, 엔딩 조건 |
+| `readme/branch_structure.md` | 챕터별 분기 구조 안내 |
+| `readme/ending_route_guide.md` | 엔딩/루트 상세 가이드 |
+| `readme/system_design.md` | 시스템 명세서 *(작성 예정)* |
+
+### 📝 스크립트 & 진행
+| 파일 | 역할 |
+|---|---|
+| `readme/script_common.md` | 공통 루트 풀 스크립트 (Scene 01~08) |
+| `readme/story_progress.md` | Scene별 진행 현황 & 캐릭터 감정선 추적 |
+| `readme/ch1_summary_ch2_direction.md` | Chapter 1 요약 & Chapter 2 방향 |
+
+### 🎨 연출 & 에셋
+| 파일 | 역할 |
+|---|---|
+| `readme/cg_direction.md` | CG 이벤트 연출 통합 — 씬 연출 + AI 프롬프트 |
+| `readme/cg_bgm_direction.md` | BGM 음향 연출 가이드 — 17곡 사양서 |
+| `readme/making_music_guide.md` | BGM 마스터 리스트 & 인게임 사용 해설 |
+| `readme/story_asset_guide.md` | 스토리 에셋 가이드 |
+
+### 🔍 복선 & 추적
+| 파일 | 역할 |
+|---|---|
+| `readme/foreshadowing_map.md` | 복선 배치표 — 캐릭터별 떡밥, 회수 추적, 우선순위 |
+
+### 🛠️ 제작 가이드
+| 파일 | 역할 |
+|---|---|
+| `readme/making_guide.md` | 렌파이 스크립트 작성 규칙 |
+| `readme/cutguide.md` | 렌파이 연출 테크니컬 메모 |
+| `readme/somethingdo.md` | 제작 로드맵 & 작업 체크리스트 |
 
 ## 11. Production Rule
 
@@ -149,5 +177,6 @@ All major writing decisions must satisfy the following:
 - Organize script files for implementation
 - Polish route transitions and emotional pacing
 
-warning!!!! 중요함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-꼭 readme 폴더의 모든 md 파일을 읽고 올것 그리고 스크립트 파일도 읽어서 꼭 현재 스토리가 어느정도로 나갔는지 기억 할것 그리고 스토리 나간후 스토리 진행 상황을 꼭 적을것 그리고 떡밥 이나 그런걸 넣었으면 꼭 맨 밑에 다른 txt 창에 나에게 story_steps.md 파일에 넣으라 알려줄것
+---
+
+> ⚠️ **중요**: 꼭 `readme/` 폴더의 모든 md 파일을 읽고 올 것. 스크립트 파일도 읽어서 현재 스토리 진행 상황을 파악할 것. 새로운 떡밥이나 복선을 넣었으면 반드시 `readme/foreshadowing_map.md`에 기록하고, 스토리 진행 후 `readme/story_progress.md`를 업데이트할 것.
